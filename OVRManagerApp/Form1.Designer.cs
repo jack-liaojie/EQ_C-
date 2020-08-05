@@ -188,7 +188,7 @@
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(365, 237);
+            this.ClientSize = new System.Drawing.Size(366, 236);
             this.Controls.Add(this.lbDatabase);
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbUserID);
