@@ -286,8 +286,6 @@ namespace AutoSports.OVRManagerApp
 
             GetSystemConfiguration();
 
-            
-
             foreach (int id in m_lstRoleModuleID)
             {
                 if (id == (int)EMainFormUIType.emWndGeneralData)
@@ -564,6 +562,7 @@ namespace AutoSports.OVRManagerApp
 
         private void DatabaseBackup()
         {
+            if (UIMessageDialog.ShowAskDialog(this,"Are you sure to backup DB?",this.Style) != true) return;
             if (SqlCon.State == System.Data.ConnectionState.Closed)
                 SqlCon.Open();
 
@@ -806,21 +805,7 @@ namespace AutoSports.OVRManagerApp
             Header.SetNodeSymbol(Header.Nodes[0], 61451);
             TreeNode parent = Aside.CreateNode("基础数据", 61451, 24, pageIndex);
             //通过设置PageIndex关联
-            //Aside.CreateChildNode(parent, 61842, 24, AddPage(new OVRGeneralDataForm("GeneralData"), ++pageIndex));
             Aside.CreateChildNode(parent, 61842, 24, AddPage(m_ModuleGeneralData.GetModuleUI, ++pageIndex));
-            //Aside.CreateChildNode(parent, 61776, 24, AddPage(new FCombobox(), ++pageIndex));
-            //Aside.CreateChildNode(parent, 61646, 24, AddPage(new FDataGridView(), ++pageIndex));
-            //Aside.CreateChildNode(parent, 61474, 24, AddPage(new FListBox(), ++pageIndex));
-            //Aside.CreateChildNode(parent, 61499, 24, AddPage(new FTreeView(), ++pageIndex));
-            //Aside.CreateChildNode(parent, 61912, 24, AddPage(new FNavigation(), ++pageIndex));
-            //Aside.CreateChildNode(parent, 61716, 24, AddPage(new FTabControl(), ++pageIndex));
-            //Aside.CreateChildNode(parent, 61544, 24, AddPage(new FLine(), ++pageIndex));
-            //Aside.CreateChildNode(parent, 61590, 24, AddPage(new FPanel(), ++pageIndex));
-            //Aside.CreateChildNode(parent, 61516, 24, AddPage(new FTransfer(), ++pageIndex));
-            //Aside.CreateChildNode(parent, 61447, 24, AddPage(new FAvatar(), ++pageIndex));
-            //Aside.CreateChildNode(parent, 62104, 24, AddPage(new FContextMenuStrip(), ++pageIndex));
-            //Aside.CreateChildNode(parent, 61668, 24, AddPage(new FMeter(), ++pageIndex));
-            //Aside.CreateChildNode(parent, 62173, 24, AddPage(new FOther(), ++pageIndex));
             Aside.SetNodeTipsText(parent.Nodes[0], "1");
 
             pageIndex = 2000;
@@ -829,8 +814,6 @@ namespace AutoSports.OVRManagerApp
             parent = Aside.CreateNode("报名报项", 61818, 24, pageIndex);
             //通过设置GUID关联，节点字体图标和大小由UIPage设置
             Aside.CreateChildNode(parent, AddPage(m_ModuleRegister.GetModuleUI));
-            //Aside.CreateChildNode(parent, AddPage(new FEditor(), Guid.NewGuid()));
-            //Aside.CreateChildNode(parent, AddPage(new FFrames(), Guid.NewGuid()));
 
             pageIndex = 3000;
             Header.SetNodePageIndex(Header.Nodes[2], pageIndex);
@@ -838,8 +821,6 @@ namespace AutoSports.OVRManagerApp
             parent = Aside.CreateNode("抽签编排", 61950, 24, pageIndex);
             //直接关联（默认自动生成GUID）
             Aside.CreateChildNode(parent, AddPage(m_ModuleDrawArrange.GetModuleUI));
-            //Aside.CreateChildNode(parent, AddPage(new FBarChart()));
-            //Aside.CreateChildNode(parent, AddPage(new FDoughnutChart()));
 
 
             pageIndex = 4000;
@@ -848,9 +829,6 @@ namespace AutoSports.OVRManagerApp
             parent = Aside.CreateNode("比赛安排", 62082, 24, pageIndex);
             //直接关联（默认自动生成GUID）
             Aside.CreateChildNode(parent, AddPage(m_ModuleMatchSchedule.GetModuleUI));
-            //Aside.CreateChildNode(parent, AddPage(new OVRRegisterForm()));
-            //Aside.CreateChildNode(parent, AddPage(new FDoughnutChart()));
-
 
 
             pageIndex = 5000;
@@ -859,8 +837,6 @@ namespace AutoSports.OVRManagerApp
             parent = Aside.CreateNode("赛时数据", 61962, 24, pageIndex);
             //直接关联（默认自动生成GUID）
             Aside.CreateChildNode(parent, AddPage(m_ModulePluginMgr.GetModuleUI));
-            //Aside.CreateChildNode(parent, AddPage(new FBarChart()));
-            //Aside.CreateChildNode(parent, AddPage(new FDoughnutChart()));
 
 
             pageIndex = 6000;
@@ -869,8 +845,6 @@ namespace AutoSports.OVRManagerApp
             parent = Aside.CreateNode("报表管理", 61776, 24, pageIndex);
             //直接关联（默认自动生成GUID）
             Aside.CreateChildNode(parent, AddPage(new OVRReportPrintingForm()));
-            //Aside.CreateChildNode(parent, AddPage(new FBarChart()));
-            //Aside.CreateChildNode(parent, AddPage(new FDoughnutChart()));
 
             pageIndex = 7000;
             Header.SetNodePageIndex(Header.Nodes[6], pageIndex);
@@ -878,17 +852,12 @@ namespace AutoSports.OVRManagerApp
             parent = Aside.CreateNode("排名奖牌", 61646, 24, pageIndex);
             //直接关联（默认自动生成GUID）
             Aside.CreateChildNode(parent, AddPage(m_ModuleRankMedal.GetModuleUI));
-            //Aside.CreateChildNode(parent, AddPage(new FBarChart()));
-            //Aside.CreateChildNode(parent, AddPage(new FDoughnutChart()));
 
             pageIndex = 8000;
             Header.SetNodePageIndex(Header.Nodes[7], pageIndex);
             Header.SetNodeSymbol(Header.Nodes[7], 61499);
             parent = Aside.CreateNode("数据库备份", 61499, 24, pageIndex);
             //直接关联（默认自动生成GUID）
-            //Aside.CreateChildNode(parent, AddPage(new FPieChart()));
-            //Aside.CreateChildNode(parent, AddPage(new FBarChart()));
-            //Aside.CreateChildNode(parent, AddPage(new FDoughnutChart()));
 
             pageIndex = 9000;
             Header.SetNodePageIndex(Header.Nodes[8], pageIndex);
@@ -896,8 +865,6 @@ namespace AutoSports.OVRManagerApp
             parent = Aside.CreateNode("官方公告", 61516, 24, pageIndex);
             //直接关联（默认自动生成GUID）
             Aside.CreateChildNode(parent, AddPage(frmOfficialCommunication));
-            //Aside.CreateChildNode(parent, AddPage(new FBarChart()));
-            //Aside.CreateChildNode(parent, AddPage(new FDoughnutChart()));
 
 
             pageIndex = 10000;
@@ -906,8 +873,6 @@ namespace AutoSports.OVRManagerApp
             parent = Aside.CreateNode("网络功能", 61668, 24, pageIndex);
             //直接关联（默认自动生成GUID）
             Aside.CreateChildNode(parent, AddPage(new OVRNetworkManagerForm()));
-            //Aside.CreateChildNode(parent, AddPage(new FBarChart()));
-            //Aside.CreateChildNode(parent, AddPage(new FDoughnutChart()));
 
             pageIndex = 11000;
             Header.SetNodePageIndex(Header.Nodes[10], pageIndex);
@@ -915,8 +880,6 @@ namespace AutoSports.OVRManagerApp
             parent = Aside.CreateNode("赛事纪录", 62104, 24, pageIndex);
             //直接关联（默认自动生成GUID）
             Aside.CreateChildNode(parent, AddPage(m_ModuleRecord.GetModuleUI));
-            //Aside.CreateChildNode(parent, AddPage(new FBarChart()));
-            //Aside.CreateChildNode(parent, AddPage(new FDoughnutChart()));
 
 
             Header.SetNodeSymbol(Header.Nodes[11], 61502);
@@ -933,41 +896,34 @@ namespace AutoSports.OVRManagerApp
             switch (menuIndex)
             {
                 case 0:
-                    //ItemGenData();
-                    GeneralDataOpen();
+                    m_ModuleGeneralData.GetModuleUI.Visible = true;
                     Aside.SelectPage(pageIndex);
                     break;
                 case 1:
-                    //ItemRegister();
-                    RegisterOpen();
+                    m_ModuleRegister.GetModuleUI.Visible = true;
                     Aside.SelectPage(pageIndex);
                     break;
                 case 2:
-                    //ItemDrawArrage();
-                    DrawArrangeOpen();
+                    m_ModuleDrawArrange.GetModuleUI.Visible = true;
                     Aside.SelectPage(pageIndex);
                     break;
                 case 3:
-                    //ItemSchedule();
-                    MatchScheduleOpen();
+                    m_ModuleMatchSchedule.GetModuleUI.Visible = true;
                     Aside.SelectPage(pageIndex);
                     break;
                 case 4:
-                    //ItemMatchData();
-                    PluginMgrOpen();
+                    m_ModulePluginMgr.GetModuleUI.Visible = true;
                     Aside.SelectPage(pageIndex);
                     break;
                 case 5:
-                    //ItemMedal();
-                    RankMedalOpen();
+                    m_frmReportPrinting.Show();
                     Aside.SelectPage(pageIndex);
                     break;
                 case 6:
-                    //ItemRecord();
-                    RecordOpen();
+                    m_ModuleRankMedal.GetModuleUI.Visible = true;
                     Aside.SelectPage(pageIndex);
                     break;
-                case 7:
+                 case 7:
                     DatabaseBackup();
                     Aside.SelectPage(pageIndex);
                     break;
@@ -975,15 +931,18 @@ namespace AutoSports.OVRManagerApp
                     OnCommunication();
                     Aside.SelectPage(pageIndex);
                     break;
-                case 9:
-                    ReportsOpen();
+                 case 9:
+                    //NetworkOpen();
+                    m_frmNetworkManager.Show();
                     Aside.SelectPage(pageIndex);
                     break;
+
                 case 10:
-
+                    //ItemRecord();
+                    //RecordOpen();
+                    m_ModuleRecord.GetModuleUI.Visible = true;
                     Aside.SelectPage(pageIndex);
                     break;
-
                 case 11:
                     UIStyle style = (UIStyle)pageIndex;
                     StyleManager.Style = style;

@@ -42,32 +42,22 @@ namespace AutoSports.OVRManagerApp
             System.Windows.Forms.Panel panel1;
             this.splitContainerTpl = new System.Windows.Forms.SplitContainer();
             this.dgvReportsTpl = new Sunny.UI.UIDataGridView();
-            this._TplName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._TplID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._TplFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._TplType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._TplRscQuery = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._TplVersion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvReportsParam = new Sunny.UI.UIDataGridView();
-            this._Parameters = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._ParamType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._ParamValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._ParamTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnPreview = new Sunny.UI.UIButton();
             this.btnPrintToPdf = new Sunny.UI.UIButton();
             this.panelEx2 = new Sunny.UI.UIPanel();
             this.panelEx4 = new Sunny.UI.UIPanel();
+            this.tbRptType = new Sunny.UI.UITextBox();
             this.chbGenerateDoc = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.lbDisVersion = new System.Windows.Forms.Label();
             this.tbDisVersion = new Sunny.UI.UITextBox();
             this.chbTest = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.chbCorrected = new DevComponents.DotNetBar.Controls.CheckBoxX();
-            this.lbVersion = new System.Windows.Forms.Label();
             this.lbRptType = new System.Windows.Forms.Label();
             this.lbRscCode = new System.Windows.Forms.Label();
             this.tbVersion = new Sunny.UI.UITextBox();
-            this.tbRptType = new Sunny.UI.UITextBox();
             this.tbRscCode = new Sunny.UI.UITextBox();
+            this.lbVersion = new System.Windows.Forms.Label();
             this.panelEx3 = new Sunny.UI.UIPanel();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,6 +69,16 @@ namespace AutoSports.OVRManagerApp
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._TplName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._TplID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._TplFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._TplType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._TplRscQuery = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._TplVersion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._Parameters = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._ParamType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._ParamValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._ParamTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             panel2 = new System.Windows.Forms.Panel();
             panel1 = new System.Windows.Forms.Panel();
             panel2.SuspendLayout();
@@ -101,7 +101,7 @@ namespace AutoSports.OVRManagerApp
             panel2.Location = new System.Drawing.Point(7, 6);
             panel2.Margin = new System.Windows.Forms.Padding(4);
             panel2.Name = "panel2";
-            panel2.Size = new System.Drawing.Size(429, 405);
+            panel2.Size = new System.Drawing.Size(507, 450);
             panel2.TabIndex = 6;
             // 
             // splitContainerTpl
@@ -119,18 +119,18 @@ namespace AutoSports.OVRManagerApp
             // splitContainerTpl.Panel2
             // 
             this.splitContainerTpl.Panel2.Controls.Add(this.dgvReportsParam);
-            this.splitContainerTpl.Size = new System.Drawing.Size(429, 405);
-            this.splitContainerTpl.SplitterDistance = 203;
+            this.splitContainerTpl.Size = new System.Drawing.Size(507, 450);
+            this.splitContainerTpl.SplitterDistance = 225;
             this.splitContainerTpl.SplitterWidth = 5;
             this.splitContainerTpl.TabIndex = 5;
             // 
             // dgvReportsTpl
             // 
-            this.dgvReportsTpl.AllowUserToAddRows = false;
             this.dgvReportsTpl.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.dgvReportsTpl.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvReportsTpl.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvReportsTpl.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvReportsTpl.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvReportsTpl.BackgroundColor = System.Drawing.Color.White;
             this.dgvReportsTpl.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvReportsTpl.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -175,52 +175,10 @@ namespace AutoSports.OVRManagerApp
             this.dgvReportsTpl.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvReportsTpl.SelectedIndex = -1;
             this.dgvReportsTpl.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvReportsTpl.Size = new System.Drawing.Size(429, 203);
+            this.dgvReportsTpl.Size = new System.Drawing.Size(507, 225);
             this.dgvReportsTpl.TabIndex = 1;
             this.dgvReportsTpl.TagString = null;
             this.dgvReportsTpl.SelectionChanged += new System.EventHandler(this.dgvReportsTpl_SelectionChanged);
-            // 
-            // _TplName
-            // 
-            this._TplName.DataPropertyName = "F_TplName";
-            this._TplName.HeaderText = "Reports List";
-            this._TplName.Name = "_TplName";
-            this._TplName.ReadOnly = true;
-            // 
-            // _TplID
-            // 
-            this._TplID.DataPropertyName = "F_TplID";
-            this._TplID.HeaderText = "TplID";
-            this._TplID.Name = "_TplID";
-            this._TplID.Visible = false;
-            // 
-            // _TplFullName
-            // 
-            this._TplFullName.DataPropertyName = "F_TplFullName";
-            this._TplFullName.HeaderText = "TplFullName";
-            this._TplFullName.Name = "_TplFullName";
-            this._TplFullName.Visible = false;
-            // 
-            // _TplType
-            // 
-            this._TplType.DataPropertyName = "F_TplType";
-            this._TplType.HeaderText = "Template Type";
-            this._TplType.Name = "_TplType";
-            this._TplType.Visible = false;
-            // 
-            // _TplRscQuery
-            // 
-            this._TplRscQuery.DataPropertyName = "F_TplRscQueryString";
-            this._TplRscQuery.HeaderText = "RSC Query String";
-            this._TplRscQuery.Name = "_TplRscQuery";
-            this._TplRscQuery.Visible = false;
-            // 
-            // _TplVersion
-            // 
-            this._TplVersion.DataPropertyName = "F_TplVersion";
-            this._TplVersion.HeaderText = "TplVersion";
-            this._TplVersion.Name = "_TplVersion";
-            this._TplVersion.Visible = false;
             // 
             // dgvReportsParam
             // 
@@ -228,7 +186,7 @@ namespace AutoSports.OVRManagerApp
             this.dgvReportsParam.AllowUserToDeleteRows = false;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.dgvReportsParam.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvReportsParam.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvReportsParam.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvReportsParam.BackgroundColor = System.Drawing.Color.White;
             this.dgvReportsParam.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvReportsParam.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -271,53 +229,21 @@ namespace AutoSports.OVRManagerApp
             this.dgvReportsParam.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvReportsParam.SelectedIndex = -1;
             this.dgvReportsParam.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvReportsParam.Size = new System.Drawing.Size(429, 197);
+            this.dgvReportsParam.Size = new System.Drawing.Size(507, 220);
             this.dgvReportsParam.TabIndex = 2;
             this.dgvReportsParam.TagString = null;
             this.dgvReportsParam.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReportsParam_CellEndEdit);
             this.dgvReportsParam.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dgvReportsParam_CellValidating);
-            // 
-            // _Parameters
-            // 
-            this._Parameters.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this._Parameters.DataPropertyName = "F_ParamAlias";
-            this._Parameters.HeaderText = "Parameters";
-            this._Parameters.MaxInputLength = 100;
-            this._Parameters.Name = "_Parameters";
-            this._Parameters.ReadOnly = true;
-            this._Parameters.Width = 120;
-            // 
-            // _ParamType
-            // 
-            this._ParamType.DataPropertyName = "F_ParamType";
-            this._ParamType.HeaderText = "Type";
-            this._ParamType.MaxInputLength = 100;
-            this._ParamType.Name = "_ParamType";
-            this._ParamType.ReadOnly = true;
-            this._ParamType.Visible = false;
-            // 
-            // _ParamValue
-            // 
-            this._ParamValue.DataPropertyName = "F_ParamValue";
-            this._ParamValue.HeaderText = "Value";
-            this._ParamValue.Name = "_ParamValue";
-            // 
-            // _ParamTypeName
-            // 
-            this._ParamTypeName.DataPropertyName = "F_ParamTypeName";
-            this._ParamTypeName.HeaderText = "ParamTypeName";
-            this._ParamTypeName.Name = "_ParamTypeName";
-            this._ParamTypeName.Visible = false;
             // 
             // panel1
             // 
             panel1.Controls.Add(this.btnPreview);
             panel1.Controls.Add(this.btnPrintToPdf);
             panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            panel1.Location = new System.Drawing.Point(7, 411);
+            panel1.Location = new System.Drawing.Point(7, 456);
             panel1.Margin = new System.Windows.Forms.Padding(4);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(429, 44);
+            panel1.Size = new System.Drawing.Size(507, 44);
             panel1.TabIndex = 6;
             panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -352,11 +278,11 @@ namespace AutoSports.OVRManagerApp
             this.panelEx2.Controls.Add(this.panelEx4);
             this.panelEx2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelEx2.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.panelEx2.Location = new System.Drawing.Point(3, 463);
+            this.panelEx2.Location = new System.Drawing.Point(3, 508);
             this.panelEx2.Margin = new System.Windows.Forms.Padding(4);
             this.panelEx2.Name = "panelEx2";
             this.panelEx2.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.panelEx2.Size = new System.Drawing.Size(443, 137);
+            this.panelEx2.Size = new System.Drawing.Size(521, 137);
             this.panelEx2.TabIndex = 8;
             this.panelEx2.Text = null;
             // 
@@ -378,9 +304,24 @@ namespace AutoSports.OVRManagerApp
             this.panelEx4.Location = new System.Drawing.Point(0, 6);
             this.panelEx4.Margin = new System.Windows.Forms.Padding(4);
             this.panelEx4.Name = "panelEx4";
-            this.panelEx4.Size = new System.Drawing.Size(443, 131);
+            this.panelEx4.Size = new System.Drawing.Size(521, 131);
             this.panelEx4.TabIndex = 8;
             this.panelEx4.Text = null;
+            // 
+            // tbRptType
+            // 
+            this.tbRptType.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbRptType.FillColor = System.Drawing.Color.White;
+            this.tbRptType.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.tbRptType.Location = new System.Drawing.Point(47, 39);
+            this.tbRptType.Margin = new System.Windows.Forms.Padding(4);
+            this.tbRptType.Maximum = 2147483647D;
+            this.tbRptType.MaxLength = 20;
+            this.tbRptType.Minimum = -2147483648D;
+            this.tbRptType.Name = "tbRptType";
+            this.tbRptType.Padding = new System.Windows.Forms.Padding(5);
+            this.tbRptType.Size = new System.Drawing.Size(67, 29);
+            this.tbRptType.TabIndex = 6;
             // 
             // chbGenerateDoc
             // 
@@ -455,16 +396,6 @@ namespace AutoSports.OVRManagerApp
             this.chbCorrected.Text = "Corrected";
             this.chbCorrected.CheckedChanged += new System.EventHandler(this.chbCorrect_CheckedChanged);
             // 
-            // lbVersion
-            // 
-            this.lbVersion.Location = new System.Drawing.Point(96, 30);
-            this.lbVersion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbVersion.Name = "lbVersion";
-            this.lbVersion.Size = new System.Drawing.Size(90, 48);
-            this.lbVersion.TabIndex = 7;
-            this.lbVersion.Text = "VerSion";
-            this.lbVersion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // lbRptType
             // 
             this.lbRptType.Location = new System.Drawing.Point(4, 39);
@@ -498,21 +429,6 @@ namespace AutoSports.OVRManagerApp
             this.tbVersion.Size = new System.Drawing.Size(67, 29);
             this.tbVersion.TabIndex = 7;
             // 
-            // tbRptType
-            // 
-            this.tbRptType.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbRptType.FillColor = System.Drawing.Color.White;
-            this.tbRptType.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.tbRptType.Location = new System.Drawing.Point(47, 39);
-            this.tbRptType.Margin = new System.Windows.Forms.Padding(4);
-            this.tbRptType.Maximum = 2147483647D;
-            this.tbRptType.MaxLength = 20;
-            this.tbRptType.Minimum = -2147483648D;
-            this.tbRptType.Name = "tbRptType";
-            this.tbRptType.Padding = new System.Windows.Forms.Padding(5);
-            this.tbRptType.Size = new System.Drawing.Size(67, 29);
-            this.tbRptType.TabIndex = 6;
-            // 
             // tbRscCode
             // 
             this.tbRscCode.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -527,6 +443,16 @@ namespace AutoSports.OVRManagerApp
             this.tbRscCode.Size = new System.Drawing.Size(209, 29);
             this.tbRscCode.TabIndex = 5;
             // 
+            // lbVersion
+            // 
+            this.lbVersion.Location = new System.Drawing.Point(96, 30);
+            this.lbVersion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbVersion.Name = "lbVersion";
+            this.lbVersion.Size = new System.Drawing.Size(90, 48);
+            this.lbVersion.TabIndex = 7;
+            this.lbVersion.Text = "VerSion";
+            this.lbVersion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // panelEx3
             // 
             this.panelEx3.Controls.Add(panel2);
@@ -537,7 +463,7 @@ namespace AutoSports.OVRManagerApp
             this.panelEx3.Margin = new System.Windows.Forms.Padding(4);
             this.panelEx3.Name = "panelEx3";
             this.panelEx3.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.panelEx3.Size = new System.Drawing.Size(443, 461);
+            this.panelEx3.Size = new System.Drawing.Size(521, 506);
             this.panelEx3.TabIndex = 8;
             this.panelEx3.Text = null;
             // 
@@ -623,11 +549,87 @@ namespace AutoSports.OVRManagerApp
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             this.dataGridViewTextBoxColumn10.Visible = false;
             // 
+            // _TplName
+            // 
+            this._TplName.DataPropertyName = "F_TplName";
+            this._TplName.HeaderText = "Reports List";
+            this._TplName.Name = "_TplName";
+            this._TplName.ReadOnly = true;
+            this._TplName.Width = 122;
+            // 
+            // _TplID
+            // 
+            this._TplID.DataPropertyName = "F_TplID";
+            this._TplID.HeaderText = "TplID";
+            this._TplID.Name = "_TplID";
+            this._TplID.Width = 74;
+            // 
+            // _TplFullName
+            // 
+            this._TplFullName.DataPropertyName = "F_TplFullName";
+            this._TplFullName.HeaderText = "TplFullName";
+            this._TplFullName.Name = "_TplFullName";
+            this._TplFullName.Width = 130;
+            // 
+            // _TplType
+            // 
+            this._TplType.DataPropertyName = "F_TplType";
+            this._TplType.HeaderText = "Template Type";
+            this._TplType.Name = "_TplType";
+            this._TplType.Width = 146;
+            // 
+            // _TplRscQuery
+            // 
+            this._TplRscQuery.DataPropertyName = "F_TplRscQueryString";
+            this._TplRscQuery.HeaderText = "RSC Query String";
+            this._TplRscQuery.Name = "_TplRscQuery";
+            this._TplRscQuery.Width = 165;
+            // 
+            // _TplVersion
+            // 
+            this._TplVersion.DataPropertyName = "F_TplVersion";
+            this._TplVersion.HeaderText = "TplVersion";
+            this._TplVersion.Name = "_TplVersion";
+            this._TplVersion.Width = 114;
+            // 
+            // _Parameters
+            // 
+            this._Parameters.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this._Parameters.DataPropertyName = "F_ParamAlias";
+            this._Parameters.HeaderText = "Parameters";
+            this._Parameters.MaxInputLength = 100;
+            this._Parameters.Name = "_Parameters";
+            this._Parameters.ReadOnly = true;
+            this._Parameters.Width = 120;
+            // 
+            // _ParamType
+            // 
+            this._ParamType.DataPropertyName = "F_ParamType";
+            this._ParamType.HeaderText = "Type";
+            this._ParamType.MaxInputLength = 100;
+            this._ParamType.Name = "_ParamType";
+            this._ParamType.ReadOnly = true;
+            this._ParamType.Width = 70;
+            // 
+            // _ParamValue
+            // 
+            this._ParamValue.DataPropertyName = "F_ParamValue";
+            this._ParamValue.HeaderText = "Value";
+            this._ParamValue.Name = "_ParamValue";
+            this._ParamValue.Width = 77;
+            // 
+            // _ParamTypeName
+            // 
+            this._ParamTypeName.DataPropertyName = "F_ParamTypeName";
+            this._ParamTypeName.HeaderText = "ParamTypeName";
+            this._ParamTypeName.Name = "_ParamTypeName";
+            this._ParamTypeName.Width = 165;
+            // 
             // OVRReportPrintingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(449, 602);
+            this.ClientSize = new System.Drawing.Size(527, 647);
             this.Controls.Add(this.panelEx3);
             this.Controls.Add(this.panelEx2);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -675,12 +677,6 @@ namespace AutoSports.OVRManagerApp
         private UITextBox tbRptType;
         private UITextBox tbRscCode;
         private UITextBox tbVersion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _TplName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _TplID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _TplFullName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _TplType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _TplRscQuery;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _TplVersion;
         private System.Windows.Forms.SplitContainer splitContainerTpl;
         private DevComponents.DotNetBar.Controls.CheckBoxX chbCorrected;
         private DevComponents.DotNetBar.Controls.CheckBoxX chbTest;
@@ -690,16 +686,21 @@ namespace AutoSports.OVRManagerApp
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _Parameters;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _ParamType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _ParamValue;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _ParamTypeName;
         private System.Windows.Forms.Label lbDisVersion;
         private UITextBox tbDisVersion;
         private DevComponents.DotNetBar.Controls.CheckBoxX chbGenerateDoc;
         private UIPanel panelEx2;
         private UIPanel panelEx4;
         private UIPanel panelEx3;
-
+        private System.Windows.Forms.DataGridViewTextBoxColumn _TplName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _TplID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _TplFullName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _TplType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _TplRscQuery;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _TplVersion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _Parameters;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _ParamType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _ParamValue;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _ParamTypeName;
     }
 }

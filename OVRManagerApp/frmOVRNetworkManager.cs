@@ -61,7 +61,7 @@ namespace AutoSports.OVRManagerApp
             this.btnStartListen.Text = LocalizationRecourceManager.GetString(strSectionName, "btnStartListen");
         }
 
-        public void Initialize(bool bServer)
+        public new void Initialize(bool bServer)
         {
             UnInitialize();
 

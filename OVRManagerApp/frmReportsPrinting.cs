@@ -124,7 +124,7 @@ namespace AutoSports.OVRManagerApp
 
         #region Assist Functions
 
-        public void Initialize()
+        public new void Initialize()
         {
             GetSystemConfiguration();
 
