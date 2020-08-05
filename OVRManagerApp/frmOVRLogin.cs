@@ -763,7 +763,7 @@ namespace AutoSports.OVRManagerApp
         private void OVRLogin_Load(object sender, EventArgs e)
         {
             LoadSystemSettings();
-            bool bConnection = TestConnection();
+            bool bConnection = false;// TestConnection();
             this.cmbUser.Enabled = bConnection;
             this.cmbRole.Enabled = bConnection;
             this.txPwd.Enabled = bConnection;

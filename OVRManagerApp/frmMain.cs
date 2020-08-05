@@ -314,10 +314,7 @@ namespace AutoSports.OVRManagerApp
                 }
                 else if (id == (int)EMainFormUIType.emWndReports)
                 {
-                    ReportsOpen();
-                }
-                else if (id == (int)EMainFormUIType.emWndBackupDB)
-                {
+                    
                 }
                 else if (id == (int)EMainFormUIType.emWndCommunicate)
                 {
@@ -457,7 +454,7 @@ namespace AutoSports.OVRManagerApp
                 return;
 
             m_frmReportPrinting = new OVRReportPrintingForm();
-            //m_frmReportPrinting.Owner = this;
+            m_frmReportPrinting.Owner = this;
             m_frmReportPrinting.DBConnection = SqlCon;
 
             m_frmReportPrinting.m_EventReportContextQuery += new OVRReportContextQueryEventHandler(OnReportContextQuery);
@@ -584,10 +581,58 @@ namespace AutoSports.OVRManagerApp
 
         #region Assist Functions
 
+        private void ItemGenData()
+        {
+            m_ModuleGeneralData.GetModuleUI.Visible = true;
+
+            m_EventGeneralData(this, new OVRFrame2ModuleEventArgs(OVRFrame2ModuleEventType.emUpdateData, m_FlagsGeneralData));
+            m_FlagsGeneralData.Reset();
+
+            if (m_frmReportPrinting != null)
+                m_frmReportPrinting.OnCurModuleChanged("M_G");
+        }
+        private void ItemRegister() {
+
+            m_ModuleRegister.GetModuleUI.Visible = true;
+
+            m_EventRegister(this, new OVRFrame2ModuleEventArgs(OVRFrame2ModuleEventType.emUpdateData, m_FlagsRegister));
+            m_FlagsRegister.Reset();
+
+            if (m_frmReportPrinting != null)
+                m_frmReportPrinting.OnCurModuleChanged("M_R");
+        }
+        private void ItemDrawArrange()
+        {
+            m_ModuleDrawArrange.GetModuleUI.Visible = true;
+
+            m_EventDrawArrange(this, new OVRFrame2ModuleEventArgs(OVRFrame2ModuleEventType.emUpdateData, m_FlagsDrawArrange));
+            m_FlagsDrawArrange.Reset();
+
+            if (m_frmReportPrinting != null)
+                m_frmReportPrinting.OnCurModuleChanged("M_D");
+        }
+        private void ItemSchedule()
+        {
+            m_ModuleMatchSchedule.GetModuleUI.Visible = true;
+
+            m_EventMatchSchedule(this, new OVRFrame2ModuleEventArgs(OVRFrame2ModuleEventType.emUpdateData, m_FlagsMatchSchedule));
+            m_FlagsMatchSchedule.Reset();
+
+            if (m_frmReportPrinting != null)
+                m_frmReportPrinting.OnCurModuleChanged("M_S");
+        }
+        private void ItemMatchData()
+        {
+            m_ModulePluginMgr.GetModuleUI.Visible = true;
+
+            m_EventPluginMgr(this, new OVRFrame2ModuleEventArgs(OVRFrame2ModuleEventType.emUpdateData, m_FlagsPluginMgr));
+            m_FlagsPluginMgr.Reset();
+
+            if (m_frmReportPrinting != null)
+                m_frmReportPrinting.OnCurModuleChanged("M_E");
+        }
         private void ItemRecord()
         {
-            if (this.m_emMainFormUI == EMainFormUIType.emWndRecord)
-            {
                 m_ModuleRecord.GetModuleUI.Visible = true;
 
                 m_EventRecord(this, new OVRFrame2ModuleEventArgs(OVRFrame2ModuleEventType.emUpdateData, m_FlagsRecord));
@@ -595,17 +640,9 @@ namespace AutoSports.OVRManagerApp
 
                 if (m_frmReportPrinting != null)
                     m_frmReportPrinting.OnCurModuleChanged("M_B");
-            }
-            else
-            {
-                m_ModuleRecord.GetModuleUI.Visible = false;
-            }
         }
-
         private void ItemMedal()
         {
-            if (this.m_emMainFormUI == EMainFormUIType.emWndRankMedal)
-            {
                 m_ModuleRankMedal.GetModuleUI.Visible = true;
 
                 m_EventRankMedal(this, new OVRFrame2ModuleEventArgs(OVRFrame2ModuleEventType.emUpdateData, m_FlagsRankMedal));
@@ -613,102 +650,8 @@ namespace AutoSports.OVRManagerApp
 
                 if (m_frmReportPrinting != null)
                     m_frmReportPrinting.OnCurModuleChanged("M_M");
-            }
-            else
-            {
-                m_ModuleRankMedal.GetModuleUI.Visible = false;
-            }
         }
 
-        private void ItemMatchData()
-        {
-            if (this.m_emMainFormUI == EMainFormUIType.emWndPluginMgr)
-            {
-                m_ModulePluginMgr.GetModuleUI.Visible = true;
-
-                m_EventPluginMgr(this, new OVRFrame2ModuleEventArgs(OVRFrame2ModuleEventType.emUpdateData, m_FlagsPluginMgr));
-                m_FlagsPluginMgr.Reset();
-
-                if (m_frmReportPrinting != null)
-                    m_frmReportPrinting.OnCurModuleChanged("M_E");
-            }
-            else
-            {
-                m_ModulePluginMgr.GetModuleUI.Visible = false;
-            }
-        }
-
-        private void ItemSchedule()
-        {
-            if (this.m_emMainFormUI == EMainFormUIType.emWndMatchSchedule)
-            {
-                m_ModuleMatchSchedule.GetModuleUI.Visible = true;
-
-                m_EventMatchSchedule(this, new OVRFrame2ModuleEventArgs(OVRFrame2ModuleEventType.emUpdateData, m_FlagsMatchSchedule));
-                m_FlagsMatchSchedule.Reset();
-
-                if (m_frmReportPrinting != null)
-                    m_frmReportPrinting.OnCurModuleChanged("M_S");
-            }
-            else
-            {
-                m_ModuleMatchSchedule.GetModuleUI.Visible = false;
-            }
-        }
-
-        private void ItemDrawArrage()
-        {
-            if (this.m_emMainFormUI == EMainFormUIType.emWndDrawArrange)
-            {
-                m_ModuleDrawArrange.GetModuleUI.Visible = true;
-
-                m_EventDrawArrange(this, new OVRFrame2ModuleEventArgs(OVRFrame2ModuleEventType.emUpdateData, m_FlagsDrawArrange));
-                m_FlagsDrawArrange.Reset();
-
-                if (m_frmReportPrinting != null)
-                    m_frmReportPrinting.OnCurModuleChanged("M_D");
-            }
-            else
-            {
-                m_ModuleDrawArrange.GetModuleUI.Visible = false;
-            }
-        }
-
-        private void ItemRegister()
-        {
-            if (this.m_emMainFormUI == EMainFormUIType.emWndRegister)
-            {
-                m_ModuleRegister.GetModuleUI.Visible = true;
-
-                m_EventRegister(this, new OVRFrame2ModuleEventArgs(OVRFrame2ModuleEventType.emUpdateData, m_FlagsRegister));
-                m_FlagsRegister.Reset();
-
-                if (m_frmReportPrinting != null)
-                    m_frmReportPrinting.OnCurModuleChanged("M_R");
-            }
-            else
-            {
-                m_ModuleRegister.GetModuleUI.Visible = false;
-            }
-        }
-
-        private void ItemGenData()
-        {
-            if (this.m_emMainFormUI == EMainFormUIType.emWndGeneralData)
-            {
-                m_ModuleGeneralData.GetModuleUI.Visible = true;
-
-                m_EventGeneralData(this, new OVRFrame2ModuleEventArgs(OVRFrame2ModuleEventType.emUpdateData, m_FlagsGeneralData));
-                m_FlagsGeneralData.Reset();
-
-                if (m_frmReportPrinting != null)
-                    m_frmReportPrinting.OnCurModuleChanged("M_G");
-            }
-            else
-            {
-                m_ModuleGeneralData.GetModuleUI.Visible = false;
-            }
-        }
 
         private void GetSystemConfiguration()
         {
@@ -782,10 +725,7 @@ namespace AutoSports.OVRManagerApp
 
         private void SetNetwork()
         {
-            if (m_frmNetworkManager != null)
-            {
                 m_frmNetworkManager.Show();
-            }
         }
 
         #endregion
@@ -794,7 +734,7 @@ namespace AutoSports.OVRManagerApp
         public frmMain()
         {
             InitializeComponent();
-            //AddAside();
+            this.Name = "Equestrain System";
 
         }
 
@@ -805,7 +745,7 @@ namespace AutoSports.OVRManagerApp
             Header.SetNodeSymbol(Header.Nodes[0], 61451);
             TreeNode parent = Aside.CreateNode("基础数据", 61451, 24, pageIndex);
             //通过设置PageIndex关联
-            Aside.CreateChildNode(parent, 61842, 24, AddPage(m_ModuleGeneralData.GetModuleUI, ++pageIndex));
+            Aside.CreateChildNode(parent, 61842, 24,  AddPage(m_ModuleGeneralData.GetModuleUI, ++pageIndex));
             Aside.SetNodeTipsText(parent.Nodes[0], "1");
 
             pageIndex = 2000;
@@ -844,7 +784,7 @@ namespace AutoSports.OVRManagerApp
             Header.SetNodeSymbol(Header.Nodes[5], 61776);
             parent = Aside.CreateNode("报表管理", 61776, 24, pageIndex);
             //直接关联（默认自动生成GUID）
-            Aside.CreateChildNode(parent, AddPage(new OVRReportPrintingForm()));
+            //Aside.CreateChildNode(parent, AddPage(new OVRReportPrintingForm()));
 
             pageIndex = 7000;
             Header.SetNodePageIndex(Header.Nodes[6], pageIndex);
@@ -896,31 +836,32 @@ namespace AutoSports.OVRManagerApp
             switch (menuIndex)
             {
                 case 0:
-                    m_ModuleGeneralData.GetModuleUI.Visible = true;
+                    ItemGenData();
                     Aside.SelectPage(pageIndex);
                     break;
                 case 1:
-                    m_ModuleRegister.GetModuleUI.Visible = true;
+                    ItemRegister();
                     Aside.SelectPage(pageIndex);
                     break;
                 case 2:
-                    m_ModuleDrawArrange.GetModuleUI.Visible = true;
+                    ItemDrawArrange();
                     Aside.SelectPage(pageIndex);
                     break;
                 case 3:
-                    m_ModuleMatchSchedule.GetModuleUI.Visible = true;
+                    ItemSchedule();
                     Aside.SelectPage(pageIndex);
                     break;
                 case 4:
-                    m_ModulePluginMgr.GetModuleUI.Visible = true;
+                    ItemMatchData();
                     Aside.SelectPage(pageIndex);
                     break;
                 case 5:
+                    ReportsOpen();
                     m_frmReportPrinting.Show();
                     Aside.SelectPage(pageIndex);
                     break;
                 case 6:
-                    m_ModuleRankMedal.GetModuleUI.Visible = true;
+                    ItemMedal();
                     Aside.SelectPage(pageIndex);
                     break;
                  case 7:
@@ -928,19 +869,16 @@ namespace AutoSports.OVRManagerApp
                     Aside.SelectPage(pageIndex);
                     break;
                 case 8:
-                    OnCommunication();
+                    frmOfficialCommunication.Visible = true;
                     Aside.SelectPage(pageIndex);
                     break;
                  case 9:
-                    //NetworkOpen();
-                    m_frmNetworkManager.Show();
+                    SetNetwork();
                     Aside.SelectPage(pageIndex);
                     break;
 
                 case 10:
-                    //ItemRecord();
-                    //RecordOpen();
-                    m_ModuleRecord.GetModuleUI.Visible = true;
+                    ItemRecord();
                     Aside.SelectPage(pageIndex);
                     break;
                 case 11:

@@ -134,7 +134,7 @@ namespace AutoSports.OVRMatchSchedule
             panelEx1.Location = new System.Drawing.Point(5, 397);
             panelEx1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             panelEx1.Name = "panelEx1";
-            panelEx1.Size = new System.Drawing.Size(1075, 28);
+            panelEx1.Size = new System.Drawing.Size(875, 28);
             panelEx1.TabIndex = 48;
             panelEx1.Text = null;
             // 
@@ -199,7 +199,7 @@ namespace AutoSports.OVRMatchSchedule
             panelEx2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             panelEx2.Name = "panelEx2";
             panelEx2.Padding = new System.Windows.Forms.Padding(2, 72, 2, 2);
-            panelEx2.Size = new System.Drawing.Size(1075, 397);
+            panelEx2.Size = new System.Drawing.Size(875, 397);
             panelEx2.TabIndex = 48;
             panelEx2.Text = null;
             // 
@@ -523,7 +523,7 @@ namespace AutoSports.OVRMatchSchedule
             this.dgv_Scheduled.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgv_Scheduled.SelectedIndex = -1;
             this.dgv_Scheduled.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Scheduled.Size = new System.Drawing.Size(1071, 305);
+            this.dgv_Scheduled.Size = new System.Drawing.Size(871, 305);
             this.dgv_Scheduled.TabIndex = 44;
             this.dgv_Scheduled.TagString = null;
             this.dgv_Scheduled.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dgv_Scheduled_CellBeginEdit);
@@ -726,7 +726,7 @@ namespace AutoSports.OVRMatchSchedule
             // splitter1
             // 
             splitter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(237)))));
-            splitter1.Location = new System.Drawing.Point(215, 1);
+            splitter1.Location = new System.Drawing.Point(415, 1);
             splitter1.Name = "splitter1";
             splitter1.Size = new System.Drawing.Size(2, 613);
             splitter1.TabIndex = 49;
@@ -738,11 +738,11 @@ namespace AutoSports.OVRMatchSchedule
             panelEx5.Controls.Add(panelEx1);
             panelEx5.Dock = System.Windows.Forms.DockStyle.Fill;
             panelEx5.Font = new System.Drawing.Font("Î¢ÈíÑÅºÚ", 12F);
-            panelEx5.Location = new System.Drawing.Point(217, 189);
+            panelEx5.Location = new System.Drawing.Point(417, 189);
             panelEx5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             panelEx5.Name = "panelEx5";
             panelEx5.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            panelEx5.Size = new System.Drawing.Size(1080, 425);
+            panelEx5.Size = new System.Drawing.Size(880, 425);
             panelEx5.TabIndex = 52;
             panelEx5.Text = null;
             // 
@@ -810,9 +810,9 @@ namespace AutoSports.OVRMatchSchedule
             // 
             this.splitter2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(237)))));
             this.splitter2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter2.Location = new System.Drawing.Point(217, 187);
+            this.splitter2.Location = new System.Drawing.Point(417, 187);
             this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(1080, 2);
+            this.splitter2.Size = new System.Drawing.Size(880, 2);
             this.splitter2.TabIndex = 51;
             this.splitter2.TabStop = false;
             // 
@@ -821,11 +821,11 @@ namespace AutoSports.OVRMatchSchedule
             this.panelMatch.Controls.Add(this.dgv_UnScheduled);
             this.panelMatch.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMatch.Font = new System.Drawing.Font("Î¢ÈíÑÅºÚ", 12F);
-            this.panelMatch.Location = new System.Drawing.Point(217, 1);
+            this.panelMatch.Location = new System.Drawing.Point(417, 1);
             this.panelMatch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelMatch.Name = "panelMatch";
             this.panelMatch.Padding = new System.Windows.Forms.Padding(2);
-            this.panelMatch.Size = new System.Drawing.Size(1080, 186);
+            this.panelMatch.Size = new System.Drawing.Size(880, 186);
             this.panelMatch.TabIndex = 50;
             this.panelMatch.Text = null;
             // 
@@ -870,7 +870,7 @@ namespace AutoSports.OVRMatchSchedule
             this.dgv_UnScheduled.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgv_UnScheduled.SelectedIndex = -1;
             this.dgv_UnScheduled.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_UnScheduled.Size = new System.Drawing.Size(1076, 182);
+            this.dgv_UnScheduled.Size = new System.Drawing.Size(876, 182);
             this.dgv_UnScheduled.TabIndex = 45;
             this.dgv_UnScheduled.TagString = null;
             // 
@@ -884,7 +884,7 @@ namespace AutoSports.OVRMatchSchedule
             this.panelDiscipline.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelDiscipline.Name = "panelDiscipline";
             this.panelDiscipline.Padding = new System.Windows.Forms.Padding(2, 35, 2, 2);
-            this.panelDiscipline.Size = new System.Drawing.Size(214, 613);
+            this.panelDiscipline.Size = new System.Drawing.Size(414, 613);
             this.panelDiscipline.TabIndex = 45;
             this.panelDiscipline.Text = null;
             // 
@@ -908,7 +908,7 @@ namespace AutoSports.OVRMatchSchedule
             this.advTree.NodesConnector = this.nodeConnector1;
             this.advTree.NodeStyle = this.elementStyle1;
             this.advTree.PathSeparator = ";";
-            this.advTree.Size = new System.Drawing.Size(210, 576);
+            this.advTree.Size = new System.Drawing.Size(410, 576);
             this.advTree.Styles.Add(this.elementStyle1);
             this.advTree.TabIndex = 26;
             this.advTree.Text = "advTree1";

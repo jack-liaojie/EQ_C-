@@ -38,6 +38,7 @@ namespace AutoSports.OVRManagerApp
                 {
                     frmMainForm.SystemOpen();
                     Application.Run(frmMainForm);
+
                 }
             }
 

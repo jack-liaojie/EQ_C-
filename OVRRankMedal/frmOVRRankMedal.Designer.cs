@@ -82,7 +82,7 @@ namespace AutoSports.OVRRankMedal
             panelEx1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             panelEx1.Name = "panelEx1";
             panelEx1.Padding = new System.Windows.Forms.Padding(2, 35, 2, 2);
-            panelEx1.Size = new System.Drawing.Size(243, 628);
+            panelEx1.Size = new System.Drawing.Size(464, 628);
             panelEx1.Style = Sunny.UI.UIStyle.Custom;
             panelEx1.TabIndex = 15;
             panelEx1.Text = null;
@@ -106,7 +106,7 @@ namespace AutoSports.OVRRankMedal
             this.tvPhaseTree.NodesConnector = this.nodeConnector1;
             this.tvPhaseTree.NodeStyle = this.elementStyle1;
             this.tvPhaseTree.PathSeparator = ";";
-            this.tvPhaseTree.Size = new System.Drawing.Size(239, 591);
+            this.tvPhaseTree.Size = new System.Drawing.Size(460, 591);
             this.tvPhaseTree.Styles.Add(this.elementStyle1);
             this.tvPhaseTree.TabIndex = 10;
             this.tvPhaseTree.Text = "tvPhaseTree";
@@ -187,11 +187,11 @@ namespace AutoSports.OVRRankMedal
             panelEx2.Controls.Add(this.btnGroupPoints);
             panelEx2.Dock = System.Windows.Forms.DockStyle.Fill;
             panelEx2.Font = new System.Drawing.Font("微软雅黑", 12F);
-            panelEx2.Location = new System.Drawing.Point(243, 0);
+            panelEx2.Location = new System.Drawing.Point(464, 0);
             panelEx2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             panelEx2.Name = "panelEx2";
             panelEx2.Padding = new System.Windows.Forms.Padding(2, 35, 2, 2);
-            panelEx2.Size = new System.Drawing.Size(888, 628);
+            panelEx2.Size = new System.Drawing.Size(667, 628);
             panelEx2.Style = Sunny.UI.UIStyle.Custom;
             panelEx2.TabIndex = 15;
             panelEx2.Text = null;
@@ -311,7 +311,7 @@ namespace AutoSports.OVRRankMedal
             this.dgridResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgridResult.SelectedIndex = -1;
             this.dgridResult.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgridResult.Size = new System.Drawing.Size(884, 591);
+            this.dgridResult.Size = new System.Drawing.Size(663, 591);
             this.dgridResult.Style = Sunny.UI.UIStyle.Custom;
             this.dgridResult.TabIndex = 13;
             this.dgridResult.TagString = null;
@@ -378,7 +378,7 @@ namespace AutoSports.OVRRankMedal
             // splitter1
             // 
             this.splitter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(237)))));
-            this.splitter1.Location = new System.Drawing.Point(243, 0);
+            this.splitter1.Location = new System.Drawing.Point(464, 0);
             this.splitter1.Name = "splitter1";
             this.splitter1.Size = new System.Drawing.Size(2, 628);
             this.splitter1.TabIndex = 16;

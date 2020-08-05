@@ -15,7 +15,7 @@ using Sunny.UI;
 
 namespace AutoSports.OVRManagerApp
 {
-    public partial class OVRReportPrintingForm : UIPage
+    public partial class OVRReportPrintingForm : UIForm
     {
         private Stimulsoft.Report.StiReport m_stiReportRender;
 
@@ -306,7 +306,7 @@ namespace AutoSports.OVRManagerApp
             strValue = ConfigurationManager.GetUserSettingString("RptWndSplit");
             try
             {
-                this.splitContainerTpl.SplitterDistance = Convert.ToInt32(strValue);
+                //this.splitContainerTpl.SplitterDistance = Convert.ToInt32(strValue);
             }
             catch (System.Exception ex)
             {
@@ -1151,7 +1151,7 @@ namespace AutoSports.OVRManagerApp
         private void OVRReportPrintingForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             ConfigurationManager.SetUserSettingString("RptWndSize", this.Size.Width.ToString() + ", " + this.Size.Height.ToString());
-            ConfigurationManager.SetUserSettingString("RptWndSplit", this.splitContainerTpl.SplitterDistance.ToString());
+            //ConfigurationManager.SetUserSettingString("RptWndSplit", this.splitContainerTpl.SplitterDistance.ToString());
         }
 
         private void OVRReportPrintingForm_VisibleChanged(object sender, EventArgs e)

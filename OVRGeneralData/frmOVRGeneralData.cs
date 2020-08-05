@@ -26,7 +26,7 @@ namespace AutoSports.OVRGeneralData
         public OVRGeneralDataForm(string strName)
         {
             InitializeComponent();
-
+            this.Name = "General Data";
             this.lbVenueSet.Text = ConfigurationManager.GetUserSettingString("Venue");
             this.Name = strName;
 
