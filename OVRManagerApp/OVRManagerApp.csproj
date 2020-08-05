@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F932F1D-A1F7-45F9-BE33-F2B133109B0E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoSports.OVRManagerApp</RootNamespace>
+    <AssemblyName>OVRManagerApp</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ApplicationIcon>Resources\OVRManagerApp.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/OVRManagerApp/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\Bin\Debug\OVRManagerApp.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\Bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\Bin\Release\OVRManagerApp.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=9.0.0.5, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2011.2.1100.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls, Version=2011.2.1100.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls.Win, Version=2011.2.1100.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Database, Version=2011.2.1100.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Design, Version=2011.2.1100.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Editor, Version=2011.2.1100.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2011.2.1100.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Check, Version=2011.2.1100.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Design, Version=2011.2.1100.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Helper, Version=2011.2.1100.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Web, Version=2011.2.1100.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Win, Version=2011.2.1100.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SunnyUI, Version=2.2.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\HZ\Bin\SunnyUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OVRDBSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OVRDBSettingForm.Designer.cs">
+      <DependentUpon>OVRDBSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOfficialCommunication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOfficialCommunication.designer.cs">
+      <DependentUpon>frmOfficialCommunication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOfficialItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOfficialItem.designer.cs">
+      <DependentUpon>frmOfficialItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOVRNetworkManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRNetworkManager.Designer.cs">
+      <DependentUpon>frmOVRNetworkManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOVRLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRMainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRMainFrame.Designer.cs">
+      <DependentUpon>frmOVRMainFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportsPrinting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportsPrinting.Designer.cs">
+      <DependentUpon>frmReportsPrinting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OVRManagerApp.cs" />
+    <Compile Include="OVRSocketServer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OVRDBSettingForm.resx">
+      <DependentUpon>OVRDBSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOfficialCommunication.resx">
+      <DependentUpon>frmOfficialCommunication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOfficialItem.resx">
+      <DependentUpon>frmOfficialItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOVRNetworkManager.resx">
+      <DependentUpon>frmOVRNetworkManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOVRLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmOVRLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOVRMainFrame.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmOVRMainFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportsPrinting.resx">
+      <DependentUpon>frmReportsPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="XmlMessagePacker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OVRCommon\OVRCommon.csproj">
+      <Project>{5230BD9A-31F4-4E66-8D2A-001D26BFAC6A}</Project>
+      <Name>OVRCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OVRDrawArrange\OVRDrawArrange.csproj">
+      <Project>{518F9507-4D12-480A-8874-47403A7CC1EA}</Project>
+      <Name>OVRDrawArrange</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OVRDrawModel\OVRDrawModel.csproj">
+      <Project>{7ee50e52-549b-47e5-bb0a-a0b54afb23a7}</Project>
+      <Name>OVRDrawModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OVREQPlugin\OVREQPlugin.csproj">
+      <Project>{1C9D541B-D88B-441B-9C30-AD6F3CBF5794}</Project>
+      <Name>OVREQPlugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OVRGeneralData\OVRGeneralData.csproj">
+      <Project>{c07aea73-2d34-4fff-9a94-170fde5c1161}</Project>
+      <Name>OVRGeneralData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OVRMatchSchedule\OVRMatchSchedule.csproj">
+      <Project>{E41D40A9-3290-40E1-9DB3-6239C1340127}</Project>
+      <Name>OVRMatchSchedule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OVRPluginMgr\OVRPluginMgr.csproj">
+      <Project>{FB97599D-7159-40DE-9A7D-56BD8E3EB2C0}</Project>
+      <Name>OVRPluginMgr</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OVRRankMedal\OVRRankMedal.csproj">
+      <Project>{2A5695ED-94C6-4BEB-9FCE-7A5D6FE1A9C5}</Project>
+      <Name>OVRRankMedal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OVRRecord\OVRRecord.csproj">
+      <Project>{FB0F8EA7-32D3-43D2-82E0-159B951C3CC7}</Project>
+      <Name>OVRRecord</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OVRRegister\OVRRegister.csproj">
+      <Project>{73A3E733-23A2-43F8-96FC-C2F3AED3395F}</Project>
+      <Name>OVRRegister</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="Resources\GeneralData.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MatchSchedule.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OVRManagerApp.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RankMedal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adobe_24.png" />
+    <None Include="Resources\cancel_24.png" />
+    <None Include="Resources\add_24.png" />
+    <Content Include="Resources\Connected.png" />
+    <Content Include="Resources\DataEntry.ico" />
+    <Content Include="Resources\dbBackup.ico" />
+    <Content Include="Resources\DisConnected.png" />
+    <Content Include="Resources\DrawArrange.ico" />
+    <None Include="Resources\Preview_24.png" />
+    <None Include="Resources\Network_OK.ico" />
+    <None Include="Resources\Network_ERR.ico" />
+    <None Include="Resources\ok_24.png" />
+    <None Include="Resources\edit_24.png" />
+    <None Include="Resources\equestrian.jpg" />
+    <None Include="Resources\equestrian1.jpg" />
+    <Content Include="Resources\Register.ico" />
+    <None Include="Resources\remove_24.png" />
+    <Content Include="Resources\Report.ICO" />
+    <None Include="Resources\Stopped_16.png" />
+    <None Include="Resources\Running_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

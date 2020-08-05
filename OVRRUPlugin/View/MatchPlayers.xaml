@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="OVRRUPlugin.View.MatchPlayers"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="205" d:DesignWidth="323">
+    <UserControl.Resources>
+        <ResourceDictionary Source="../Style/DataGridStyle.xaml"/>
+    </UserControl.Resources>
+    <Grid>
+        <DataGrid RowStyle="{StaticResource dgRowStyle}" SelectionMode="Single" SelectionUnit="FullRow"  x:Name="grdCourtPlayers" FrozenColumnCount="11" Margin="0"
+                  SelectionChanged="grdCourtPlayers_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn HeaderStyle="{StaticResource midHeaderStyle}" Header="No" Binding="{Binding Path=Number,Mode=OneWay}" Width="21" ElementStyle="{StaticResource contentLeftTopStyle}"  />
+                <DataGridTextColumn HeaderStyle="{StaticResource leftHeaderStyle}" Header="Name" Binding="{Binding Path=Name,Mode=OneWay}" Width="110" ElementStyle="{StaticResource contentLeftTopStyle}"  />
+                <DataGridTextColumn HeaderStyle="{StaticResource midHeaderStyle}" Header="Try" Binding="{Binding Path=TRY,Mode=OneWay}" Width="22" ElementStyle="{StaticResource contentCenterStyle}"  />
+                <DataGridTextColumn HeaderStyle="{StaticResource midHeaderStyle}" Header="CG"  Binding="{Binding Path=ConversionGoal,Mode=OneWay}" Width="20" ElementStyle="{StaticResource contentCenterStyle}"  />
+                <DataGridTextColumn HeaderStyle="{StaticResource midHeaderStyle}" Header="CM" Binding="{Binding Path=ConversionMiss,Mode=OneWay}" Width="20" ElementStyle="{StaticResource 
+contentCenterStyle}"  />
+                <DataGridTextColumn HeaderStyle="{StaticResource midHeaderStyle}" Header="PG" Binding="{Binding Path=PenaltyGoal,Mode=OneWay}" Width="20" ElementStyle="{StaticResource contentCenterStyle}"  />
+                <DataGridTextColumn HeaderStyle="{StaticResource midHeaderStyle}" Header="PM" Binding="{Binding Path=PenaltyMiss,Mode=OneWay}" Width="20" ElementStyle="{StaticResource contentCenterStyle}"  />
+                <DataGridTextColumn HeaderStyle="{StaticResource midHeaderStyle}" Header="DG" Binding="{Binding Path=DropGoal,Mode=OneWay}" Width="20" ElementStyle="{StaticResource 
+contentCenterStyle}"  />
+                <DataGridTextColumn HeaderStyle="{StaticResource midHeaderStyle}" Header="DM" Binding="{Binding Path=DropMiss,Mode=OneWay}" Width="20" ElementStyle="{StaticResource contentCenterStyle}"  />
+                <DataGridTextColumn HeaderStyle="{StaticResource midHeaderStyle}" Header="YC" Binding="{Binding Path=YellowCard,Mode=OneWay}" Width="20" ElementStyle="{StaticResource contentCenterStyle}"  />
+                <DataGridTextColumn HeaderStyle="{StaticResource midHeaderStyle}" Header="RC" Binding="{Binding Path=RedCard,Mode=OneWay}" Width="20" ElementStyle="{StaticResource contentCenterStyle}"  />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

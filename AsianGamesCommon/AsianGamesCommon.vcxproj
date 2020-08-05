@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B092E199-701E-446F-BE91-95BD2EBA65A3}</ProjectGuid>
+    <RootNamespace>OVRCommon</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ShowIncludes>false</ShowIncludes>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)D.dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>../../Lib/AsianGamesCommonD.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Inc;..\..\Inc\CoolGridCtrl;..\..\Inc\AxCommonTools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>../../Lib/AsianGamesCommon.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AsianGamesCommonInit.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SystemSetupDlg.cpp" />
+    <ClCompile Include="CoolGridCtrl\AsCoolGridCell.cpp" />
+    <ClCompile Include="CoolGridCtrl\AsCoolGridCellBase.cpp" />
+    <ClCompile Include="CoolGridCtrl\AsCoolGridCellButton.cpp" />
+    <ClCompile Include="CoolGridCtrl\AsCoolGridCellCheck.cpp" />
+    <ClCompile Include="CoolGridCtrl\AsCoolGridCellCombo.cpp" />
+    <ClCompile Include="CoolGridCtrl\AsCoolGridCellDateTime.cpp" />
+    <ClCompile Include="CoolGridCtrl\AsCoolGridCellNumeric.cpp" />
+    <ClCompile Include="CoolGridCtrl\AsCoolGridCellURL.cpp" />
+    <ClCompile Include="CoolGridCtrl\AsCoolGridCtrl.cpp" />
+    <ClCompile Include="CoolGridCtrl\AsCoolGridDropTarget.cpp" />
+    <ClCompile Include="CoolGridCtrl\AsCoolGridInPlaceEdit.cpp" />
+    <ClCompile Include="CoolGridCtrl\AsCoolGridTitleTip.cpp" />
+    <ClCompile Include="AxCommonTools\AxCommonUtils.cpp" />
+    <ClCompile Include="AxCommonTools\AxCoolADO.cpp" />
+    <ClCompile Include="AxCommonTools\AxIdeaEncryption.cpp" />
+    <ClCompile Include="AxCommonTools\AxIPAddressCtrl.cpp" />
+    <ClCompile Include="AxCommonTools\AxMarkup.cpp" />
+    <ClCompile Include="AxCommonTools\AxReadWriteINI.cpp" />
+    <ClCompile Include="AxCommonTools\AxRichEditEx.cpp" />
+    <ClCompile Include="AxCommonTools\AxSplitString.cpp" />
+    <ClCompile Include="AxCommonTools\AxStaDigiClock.cpp" />
+    <ClCompile Include="AxCommonTools\AxStaticLabel.cpp" />
+    <ClCompile Include="AxCommonTools\AxStdioFileEx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AsianGamesCommon.h" />
+    <ClInclude Include="AsianGamesCommonInit.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SystemSetupDlg.h" />
+    <ClInclude Include="CoolGridCtrl\AsCoolGridCell.h" />
+    <ClInclude Include="CoolGridCtrl\AsCoolGridCellBase.h" />
+    <ClInclude Include="CoolGridCtrl\AsCoolGridCellButton.h" />
+    <ClInclude Include="CoolGridCtrl\AsCoolGridCellCheck.h" />
+    <ClInclude Include="CoolGridCtrl\AsCoolGridCellCombo.h" />
+    <ClInclude Include="CoolGridCtrl\AsCoolGridCellDateTime.h" />
+    <ClInclude Include="CoolGridCtrl\AsCoolGridCellNumeric.h" />
+    <ClInclude Include="CoolGridCtrl\AsCoolGridCellRange.h" />
+    <ClInclude Include="CoolGridCtrl\AsCoolGridCellURL.h" />
+    <ClInclude Include="CoolGridCtrl\AsCoolGridCtrl.h" />
+    <ClInclude Include="CoolGridCtrl\AsCoolGridDropTarget.h" />
+    <ClInclude Include="CoolGridCtrl\AsCoolGridInPlaceEdit.h" />
+    <ClInclude Include="CoolGridCtrl\AsCoolGridMemDC.h" />
+    <ClInclude Include="CoolGridCtrl\AsCoolGridTitleTip.h" />
+    <ClInclude Include="CoolGridCtrl\CoolGridCtrl.h" />
+    <ClInclude Include="AxCommonTools\AxCommonTools.h" />
+    <ClInclude Include="AxCommonTools\AxCommonUtils.h" />
+    <ClInclude Include="AxCommonTools\AxCoolADO.h" />
+    <ClInclude Include="AxCommonTools\AxIdeaEncryption.h" />
+    <ClInclude Include="AxCommonTools\AxIPAddressCtrl.h" />
+    <ClInclude Include="AxCommonTools\AxMarkup.h" />
+    <ClInclude Include="AxCommonTools\AxMemDC.h" />
+    <ClInclude Include="AxCommonTools\AxReadWriteINI.h" />
+    <ClInclude Include="AxCommonTools\AxRichEditEx.h" />
+    <ClInclude Include="AxCommonTools\AxSplitString.h" />
+    <ClInclude Include="AxCommonTools\AxStaDigiClock.h" />
+    <ClInclude Include="AxCommonTools\AxStaticLabel.h" />
+    <ClInclude Include="AxCommonTools\AxStdioFileEx.h" />
+    <ClInclude Include="AxCommonTools\AxTableRecordDef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AsianGamesCommon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\AsianGamesCommon.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="AsianGamesCommon.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

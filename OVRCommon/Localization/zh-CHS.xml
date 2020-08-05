@@ -1,0 +1,2826 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Localization language="Chinese" description="Chinese (Simplified)" cultureName="zh-CHS">
+  <OVRLogin>
+    <TitleLogin>场馆成绩系统 - 登录</TitleLogin>
+    <Server>服 务 器:</Server>
+    <DataBase>数 据 库:</DataBase>
+    <Language>语    言:</Language>
+    <DiscCode>项目代码:</DiscCode>
+    <PrintDir>报表(.pdf)生成至:</PrintDir>
+    <DbSetting>数据库设置</DbSetting>
+    <User>用    户:</User>
+    <Role>角    色:</Role>
+    <Password>密    码:</Password>
+    <Login>登  录</Login>
+    <DiscCodeNullException>项目代码为空，请选择一个项目!</DiscCodeNullException>
+    <PwdIncorrect>密码不正确!</PwdIncorrect>
+    <DBConnectingError>数据库连接错误</DBConnectingError>
+    <DBSetting>数据库设置</DBSetting>
+    <SavePwd>记住密码</SavePwd>
+    <Test>测试</Test>
+    <OK>确定</OK>
+    <Cancel>取消</Cancel>
+    <TestSucceed>数据库连接成功!</TestSucceed>
+  </OVRLogin>
+
+  <MainFrame>
+    <ValidateLoginUser>很抱歉，当前登录帐号的角色权限不够操作当前模块!</ValidateLoginUser>
+    <BackupDBCaption>数据库备份</BackupDBCaption>
+    <BackupDBSuccessMsg>数据库备份成功！</BackupDBSuccessMsg>
+    <BackupDBFailMsg>数据库备份失败！</BackupDBFailMsg>
+    <TitleMainFrame>场馆成绩系统 - AutoSports OVR</TitleMainFrame>
+    <ExistSystem>系统退出，确定？</ExistSystem>
+    <sbItemGameMgr>比赛管理</sbItemGameMgr>
+    <btnItemGenData>基础数据</btnItemGenData>
+    <btnItemRegister>报名报项</btnItemRegister>
+    <btnItemDrawArrange>抽签编排</btnItemDrawArrange>
+    <btnItemSchedule>比赛安排</btnItemSchedule>
+    <btnItemMatchData>赛时数据</btnItemMatchData>
+    <btnItemReports>报表管理</btnItemReports>
+    <btnItemMedal>排名奖牌</btnItemMedal>
+    <btnItemBackup>数据备份</btnItemBackup>
+    <btnItemBackup>数据备份</btnItemBackup>
+    <btnItemNetwork>网络状态</btnItemNetwork>
+    <btnItemCommunication>官方通告</btnItemCommunication>
+
+    <OVRReportSettingForm>报表打印</OVRReportSettingForm>
+    <btnPreview>预览报表</btnPreview>
+    <btnPrintToPdf>生成报表</btnPrintToPdf>
+    <lbRscCode>RSC</lbRscCode>
+    <lbRptType>类型</lbRptType>
+    <lbVersion>版本</lbVersion>
+    <lbDisVersion>已发送版本</lbDisVersion>
+    <chbCorrected>纠正</chbCorrected>
+    <chbTest>测试</chbTest>
+    <_TplName>报表模板</_TplName>
+    <_Parameters>参数名</_Parameters>
+    <_ParamType>类型</_ParamType>
+    <_ParamValue>值</_ParamValue>
+    <TplDirNotExist>模板路径不存在</TplDirNotExist>
+    <LoadTplFailed>加载模板失败</LoadTplFailed>
+    <RptDirNotExist>报表路径不存在</RptDirNotExist>
+    <LoadRptFailed>加载报表失败</LoadRptFailed>
+    <PrtDirCreateFailed>输出路径创建失败</PrtDirCreateFailed>
+    <PrtDirectoryInvalid>报表输出路径无效，请在登录时设置!</PrtDirectoryInvalid>
+    <OverWriteFileExistOrNot>报表已经存在！是否复盖该报表？</OverWriteFileExistOrNot>
+    <RptPdfExportSucceed>报表(.pdf)导出成功</RptPdfExportSucceed>
+    <RptPdfExportFailed>报表(.pdf)导出失败</RptPdfExportFailed>
+    <InvdVarValue>出现无效变量值，请重新设置!</InvdVarValue>
+    <GenRptError>报表生成错误</GenRptError>
+    <NoTemplatesFound>找不到模板文件: </NoTemplatesFound>
+    <RscCodeQueryError>RSC代码查询错误</RscCodeQueryError>
+    <SportID_Error>SportID无效，请选择一个赛事!</SportID_Error>
+    <DisciplineID_Error>DisciplineID无效，请选择一个比赛项目!</DisciplineID_Error>
+    <EventID_Error>EventID无效，请选择一个比赛小项!</EventID_Error>
+    <PhaseID_Error>PhaseID无效，请选择一个比赛阶段!</PhaseID_Error>
+    <MatchID_Error>MatchID无效，请选择一场比赛!</MatchID_Error>
+    <RegisterID_Error>RegisterID无效，请选择一个参赛人员!</RegisterID_Error>
+    <RoundID_Error>RoundID无效，请选择一个比赛轮次!</RoundID_Error>
+    <DateID_Error>DateID无效，请选择一个比赛日期!</DateID_Error>
+    <SessionID_Error>SessionID无效，请选择一个比赛单元!</SessionID_Error>
+    <SplitID_Error>SplitID无效，请选择一个比赛小节!</SplitID_Error>
+    <GroupID_Error>GroupID无效，请选择一个比赛小组!</GroupID_Error>
+    <FederationID_Error>FederationID无效，请选择一个代表团!</FederationID_Error>
+    <ClubID_Error>ClubID无效，请选择一个俱乐部!</ClubID_Error>
+    <NOCID_Error>NOCID无效，请选择一个国家!</NOCID_Error>
+    <DelegationID_Error>DelegationID无效，请选择一个代表团!</DelegationID_Error>
+
+  </MainFrame>
+
+  <GeneralDataBasicInfo>
+    <tabItemBasicInfo>基本项目信息</tabItemBasicInfo>
+    <lbGameSetting>赛事设置</lbGameSetting>
+    <lbDiscSetting>项目设置</lbDiscSetting>
+    <lbEventSetting>小项设置</lbEventSetting>
+    <lbLanguage>语言</lbLanguage>
+    <lbIRM>IRM</lbIRM>
+    <lbFunction>职务</lbFunction>
+    <lbPosition>场上位置</lbPosition>
+    <btnGameNew>新建赛事</btnGameNew>
+    <btnGameModify>修改赛事</btnGameModify>
+    <btnGameDel>删除赛事</btnGameDel>
+    <btnDiscNew>新建项目</btnDiscNew>
+    <btnDiscModify>修改项目</btnDiscModify>
+    <btnDiscDel>删除项目</btnDiscDel>
+    <btnEventNew>新建小项</btnEventNew>
+    <btnEventModify>修改小项</btnEventModify>
+    <btnEventDel>删除小项</btnEventDel>
+    <btnLanguageNew>添加语言</btnLanguageNew>
+    <btnLanguageModify>修改语言</btnLanguageModify>
+    <btnLanguageDel>删除语言</btnLanguageDel>
+    <btnIRMNew>添加IRM</btnIRMNew>
+    <btnIRMModify>修改IRM</btnIRMModify>
+    <btnIRMDel>删除IRM</btnIRMDel>
+    <btnFunctionNew>添加职务</btnFunctionNew>
+    <btnFunctionModify>修改职务</btnFunctionModify>
+    <btnFunctionDel>删除职务</btnFunctionDel>
+    <btnPositionNew>添加场上位置</btnPositionNew>
+    <btnPositionModify>修改场上位置</btnPositionModify>
+    <btnPositionDel>删除场上位置</btnPositionDel>
+    <btnRecord>纪录</btnRecord>
+    <PromotionAddSportFailed>添加赛事失败！</PromotionAddSportFailed>
+    <PromotionModifySportFailed>修改赛事失败！</PromotionModifySportFailed>
+    <PromotionDelSportFailed>删除赛事失败！</PromotionDelSportFailed>
+    <PromotionEditSportConfigFailed> 修改赛事配置失败!</PromotionEditSportConfigFailed>
+    <PromotionAddDiscFailed>添加项目失败！</PromotionAddDiscFailed>
+    <PromotionModifyDiscFailed>修改项目失败！</PromotionModifyDiscFailed>
+    <PromotionDelDiscFailed>删除项目失败！</PromotionDelDiscFailed>
+    <PromotionAddEventFailed>添加小项失败！</PromotionAddEventFailed>
+    <PromotionModifyEventFailed>修改小项失败！</PromotionModifyEventFailed>
+    <PromotionDelEventFailed>删除小项失败！</PromotionDelEventFailed>
+    <PromotionDelEventFailed1>删除小项失败，@EventID无效！</PromotionDelEventFailed1>
+    <PromotionDelEventFailed2>删除小项失败，小项状态不允许删除！</PromotionDelEventFailed2>
+    <PromotionDelEventFailed3>删除小项失败，小项的子阶段状态不允许删除！</PromotionDelEventFailed3>
+    <PromotionDelEventFailed4>删除小项失败，小项下的比赛装状态不允许删除！</PromotionDelEventFailed4>
+    <PromotionDelEventFailed5>删除小项失败，已有参赛者报项此小项！</PromotionDelEventFailed5>
+    <PromotionAdd>添加</PromotionAdd>
+    <PromotionModify>修改</PromotionModify>
+    <PromotionDel>删除</PromotionDel>
+    <PromotionFailed>失败！</PromotionFailed>
+    <DelMsgBox>删除后无法恢复，真的要删除么？</DelMsgBox>
+    <PromotionFunction_Code>操作为完成，职责的Code已存在！</PromotionFunction_Code>
+  </GeneralDataBasicInfo>
+
+  <GeneralDataSystemSetting>
+    <tabSystemSetting>系统设置</tabSystemSetting>
+    <lbWeather>天气类型</lbWeather>
+    <lbRegtype>注册人员类型</lbRegtype>
+    <lbCitySetting>城市设置</lbCitySetting>
+    <lbVenueSetting>场馆设置</lbVenueSetting>
+    <lbCourtSetting>场地设置</lbCourtSetting>
+    <btnWeatherNew>添加天气类型</btnWeatherNew>
+    <btnWeatherModify>修改天气类型</btnWeatherModify>
+    <btnWeatherDel>删除天气类型</btnWeatherDel>
+    <btnCityNew>新建城市</btnCityNew>
+    <btnCityModify>修改城市</btnCityModify>
+    <btnCityDel>删除城市</btnCityDel>
+    <btnVenueNew>添加场馆</btnVenueNew>
+    <btnVenueModify>修改场馆</btnVenueModify>
+    <btnVenueDel>删除场馆</btnVenueDel>
+    <btnDisciplineVenue>项目场馆</btnDisciplineVenue>
+    <btnCourtNew>添加场地</btnCourtNew>
+    <btnCourtModify>修改场地</btnCourtModify>
+    <btnCourtDel>删除场地</btnCourtDel>
+    <btnRegtypeNew>添加注册人员类型</btnRegtypeNew>
+    <btnRegtypeModify>修改注册人员类型</btnRegtypeModify>
+    <btnRegtypeDel>删除注册人员类型</btnRegtypeDel>
+    <lbOtherSetting>其它设置</lbOtherSetting>
+    <btnImageEdit>图片编辑</btnImageEdit>
+    <btnVenueSet>当前场馆</btnVenueSet>
+    <PromotionAddCityFailed>添加城市失败！</PromotionAddCityFailed>
+    <PromotionModifyCityFailed>修改城市失败！</PromotionModifyCityFailed>
+    <PromotionDelCityFailed>删除城市失败！</PromotionDelCityFailed>
+    <PromotionAddVenueFailed>添加场馆失败！</PromotionAddVenueFailed>
+    <PromotionModifyVenueFailed>修改场馆失败！</PromotionModifyVenueFailed>
+    <PromotionDelVenueFailed>删除场馆失败！</PromotionDelVenueFailed>
+    <PromotionAddCourtFailed>添加场地失败！</PromotionAddCourtFailed>
+    <PromotionAddCourtFailed2>添加场地失败，Court Code已存在！</PromotionAddCourtFailed2>
+    <PromotionModifyCourtFailed>修改场地失败！</PromotionModifyCourtFailed>
+    <PromotionDelCourtFailed>删除场地失败！</PromotionDelCourtFailed>
+    <PromotionAdd>添加</PromotionAdd>
+    <PromotionModify>修改</PromotionModify>
+    <PromotionDel>删除</PromotionDel>
+    <PromotionFailed>失败！</PromotionFailed>
+    <DelMsgBox>删除后无法恢复，真的要删除么？</DelMsgBox>
+  </GeneralDataSystemSetting>
+
+  <OVRPictureEditForm>
+    <frmOVRPictureEdit>系统图片编辑</frmOVRPictureEdit>
+    <btnImport>更改图片文件</btnImport>
+    <btnExport>导出图片文件</btnExport>
+    <btnNewPic>添加图片文件</btnNewPic>
+    <btnDeletePic>删除图片</btnDeletePic>
+    <PromotionFailed>操作失败！</PromotionFailed>
+    <DeleteMsgBox>你确定要删除该图片吗?</DeleteMsgBox>
+  </OVRPictureEditForm>
+
+  <OVRVenueListForm>
+    <frmOVRVenueList>可选场馆列表</frmOVRVenueList>
+  </OVRVenueListForm>
+
+  <OfficialCommunication>
+    <frmOfficialCommunication>公告打印</frmOfficialCommunication>
+    <grpReportForDuty>值勤报告</grpReportForDuty>
+    <grpOfficialCom>官方公告</grpOfficialCom>
+    <btnPreview>预览报表</btnPreview>
+    <btnPrintToPdf>生成报表</btnPrintToPdf>
+    <lbRscCode>RSC</lbRscCode>
+    <lbFileName>文件名</lbFileName>
+    <lbRptType>类型</lbRptType>
+    <lbVersion>版本</lbVersion>
+    <lbDisVersion>已发送版本</lbDisVersion>
+    <chbCorrected>纠正</chbCorrected>
+    <chbTest>测试</chbTest>
+    <frmOfficialItem>公告编辑</frmOfficialItem>
+    <btnAdd>增加</btnAdd>
+    <btnEdit>修改</btnEdit>
+    <btnDelete>删除</btnDelete>
+    <lbItem>编号:</lbItem>
+    <lbSubTitle>标题:</lbSubTitle>
+    <lbHeading>摘要:</lbHeading>
+    <lbText>内容:</lbText>
+    <lbIssuedBy>签署人:</lbIssuedBy>
+    <lbType_OC>类型:</lbType_OC>
+    <lbDate_OC>日期:</lbDate_OC>
+    <lbNote>注意:</lbNote>
+    <btnOK>确定</btnOK>
+    <btnCancel>取消</btnCancel>
+    <PromotionFailed>操作失败!</PromotionFailed>
+    <PromotionDelete>确定要删除该项吗?</PromotionDelete>
+  </OfficialCommunication>
+
+  <OVRNetworkManager>
+    <OVRNetworkManager>网路控制</OVRNetworkManager>
+    <gpClient>客户端</gpClient>
+    <lbServerIP>服务器地址:</lbServerIP>
+    <lbServerPort>端口:</lbServerPort>
+    <btnConnectServer>连接服务器</btnConnectServer>
+    <btnDisConnectServer>断开连接</btnDisConnectServer>
+    <ClientStoppedMsgTitle>客户端</ClientStoppedMsgTitle>
+    <ClientStoppedMsgInfo>是否断开连接?</ClientStoppedMsgInfo>
+
+    <gpServer>服务端</gpServer>
+    <lbListenPort>监听端口:</lbListenPort>
+    <btnStartListen>开始监听</btnStartListen>
+    <btnStopListen>停止监听</btnStopListen>
+    <ServerStoppedMsgTitle>服务端</ServerStoppedMsgTitle>
+    <ServerStoppedMsgInfo>是否停止服务端监听?</ServerStoppedMsgInfo>
+  </OVRNetworkManager>
+
+  <OVRBasicItemEditForm>
+    <frmOVRBasicItemEdit>详细信息</frmOVRBasicItemEdit>
+    <lbLanguage>语言</lbLanguage>
+    <lbLongName>长名</lbLongName>
+    <lbShortName>短名</lbShortName>
+    <lbRegCode>代码</lbRegCode>
+    <lbStartDate>开始日期</lbStartDate>
+    <lbEndDate>结束日期</lbEndDate>
+    <lbSex>注册性别</lbSex>
+    <lbType>注册类型</lbType>
+    <lbFunctionCategoryCode>职责类型</lbFunctionCategoryCode>
+    <lbCompetitionType>比赛类型</lbCompetitionType>
+    <lbOrder>序号</lbOrder>
+    <cmb_Club>根据俱乐部</cmb_Club>
+    <cmb_NOC>根据国家</cmb_NOC>
+    <cmb_Federation>根据组织</cmb_Federation>
+    <cmb_Delegation>根据代表团</cmb_Delegation>
+    <lbGroup>分类</lbGroup>
+    <lbComment>备注</lbComment>
+    <btnOK>确定</btnOK>
+    <btnCancel>取消</btnCancel>
+    <PromotionMissingRegCode>代码不能为空！</PromotionMissingRegCode>
+    <PromotionMissingSexID>注册性别不能为空！</PromotionMissingSexID>
+    <PromotionMissingRegTypeID>注册类型不能为空！</PromotionMissingRegTypeID>
+    <PromotionMissingDate>日期不能为空！</PromotionMissingDate>
+    <PromotionMissingCompetitionTypeID>比赛类型不能为空</PromotionMissingCompetitionTypeID>
+  </OVRBasicItemEditForm>
+
+  <OVRDisciplineVenueEditForm>
+    <frmOVRDisciplineVenueEdit>设置项目场馆</frmOVRDisciplineVenueEdit>
+    <lbDiscipline>项目名称:</lbDiscipline>
+    <btnAddDisVenue>增加场馆</btnAddDisVenue>
+    <btnRemoveDisVenue>移除场馆</btnRemoveDisVenue>
+    <btnOK>确定</btnOK>
+    <btnCancel>取消</btnCancel>
+    <PromotionSelDiscipline>请选择项目!</PromotionSelDiscipline>
+    <PromotionSelVenue>请选择场馆!</PromotionSelVenue>
+    <AddDisVenue_Failed>添加失败!</AddDisVenue_Failed>
+    <AddDisVenue_FailedForDis>添加失败，不存在此项目编号!</AddDisVenue_FailedForDis>
+    <AddDisVenue_FailedForVenue>添加失败，不存在此场馆编号!</AddDisVenue_FailedForVenue>
+    <AddDisVenue_FailedForExists>添加失败，此项目已存在此场馆!</AddDisVenue_FailedForExists>
+    <RemoveDisVenue_Failed>移出失败!</RemoveDisVenue_Failed>
+    <RemoveDisVenue_FailedForMatch>移出场馆失败!该项目的已有比赛使用该场馆!</RemoveDisVenue_FailedForMatch>
+  </OVRDisciplineVenueEditForm>
+
+  <EventRecords>
+    <EventRecords>赛事纪录</EventRecords>
+    <btnRecordNew>添加赛事纪录</btnRecordNew>
+    <btnRecordDel>删除赛事纪录</btnRecordDel>
+    <btnRecordValueNew>添加纪录详述</btnRecordValueNew>
+    <btnRecordValueDel>删除纪录详述</btnRecordValueDel>
+    <btnRecordValueNew>添加纪录成员</btnRecordValueNew>
+    <btnRecordMemberDel>删除纪录成员</btnRecordMemberDel>
+    <lbEventRecords>赛事纪录列表：</lbEventRecords>
+    <lbRecordMember>记录成员列表：</lbRecordMember>
+    <lbRecordValue>纪录详述列表：</lbRecordValue>
+  </EventRecords>
+
+  <OVRRegisterInfo>
+    <tabItemBasicInfo>参赛人员信息</tabItemBasicInfo>
+    <lbFliter>注册类型</lbFliter>
+    <btnUpdate>刷新数据</btnUpdate>
+    <btnFederation>编辑组织</btnFederation>
+    <btnClub>编辑俱乐部</btnClub>
+    <btnNOC>编辑国家</btnNOC>
+    <btnDelegation>编辑代表团</btnDelegation>
+    <btnEditAthlete>修改人员信息</btnEditAthlete>
+    <btnDelAthlete>删除人员信息</btnDelAthlete>
+    <cmbFliter_None>所有人员</cmbFliter_None>
+    <cmbFliter_Athlete>运动员</cmbFliter_Athlete>
+    <cmbFliter_NonAthlete>非运动员</cmbFliter_NonAthlete>
+    <MenuAddTeam>增加参赛队</MenuAddTeam>
+    <MenuAddPair>增加参赛组合</MenuAddPair>
+    <MenuAddAthlete>增加运动员</MenuAddAthlete>
+    <MenuAddNonAthlete>增加非运动员</MenuAddNonAthlete>
+    <MenuDelTeam>删除参赛队</MenuDelTeam>
+    <MenuDelPair>删除参赛组合</MenuDelPair>
+    <MenuEditItem>编辑队员</MenuEditItem>
+    <MenuEditFederation>编辑组织</MenuEditFederation>
+    <MenuEditClub>编辑俱乐部</MenuEditClub>
+    <MenuEditNOC>编辑国家</MenuEditNOC>
+    <MenuEditDelegation>编辑代表团</MenuEditDelegation>
+    <DelAthleteMsgBox>确定要删除该注册人员?</DelAthleteMsgBox>
+    <DelAthletePromotion_Failed>删除失败!</DelAthletePromotion_Failed>
+    <DelAthletePromotion_Uneffect>注册人员无效，删除失败!</DelAthletePromotion_Uneffect>
+    <DelAthletePromotion_HasMatch>该注册人员有比赛，删除失败!</DelAthletePromotion_HasMatch>
+    <DelInscriptionPromotion_Failed>删除失败!</DelInscriptionPromotion_Failed>
+    <DelInscriptionPromotion_Uneffect>人员无效，删除失败!</DelInscriptionPromotion_Uneffect>
+    <DelInscriptionPromotion_HasMatch>已有比赛，删除失败!</DelInscriptionPromotion_HasMatch>
+    <InsertInscriptionPromotion_Failed>添加失败!</InsertInscriptionPromotion_Failed>
+    <InsertInscriptionPromotion_Uneffect>人员或赛事无效，添加失败!</InsertInscriptionPromotion_Uneffect>
+    <InsertInscriptionPromotion_OverExist>已注册过，添加失败!</InsertInscriptionPromotion_OverExist>
+    <DelTeamMsgBox>确定要删除该队伍?</DelTeamMsgBox>
+    <DelPairMsgBox>确定要删除该组合?</DelPairMsgBox>
+    <Number_Msg>请输入数字！</Number_Msg>
+    <EditRegisterInfoFrm>注册信息</EditRegisterInfoFrm>
+    <lbLanguage>语言类型:</lbLanguage>
+    <lbRegType>注册类型:</lbRegType>
+    <lbSex>性别:</lbSex>
+    <lbRegCode>注册码:</lbRegCode>
+    <lbPlayerBib>运动员号码:</lbPlayerBib>
+    <lbFirstName>名:</lbFirstName>
+    <lbLastName>姓:</lbLastName>
+    <lbLongName>长名:</lbLongName>
+    <lbShortName>短名:</lbShortName>
+    <lbPrintLongName>打印长名:</lbPrintLongName>
+    <lbPrintShortName>打印短名:</lbPrintShortName>
+    <lbSCBLongName>电子屏长名:</lbSCBLongName>
+    <lbSCBShortName>电子屏短名:</lbSCBShortName>
+    <lbTVLongName>电视长名:</lbTVLongName>
+    <lbTVShortName>电视短名:</lbTVShortName>
+    <lbWNPAFirstName>WNPA 名:</lbWNPAFirstName>
+    <lbWNPALastName>WNPA 姓:</lbWNPALastName>
+    <lbNOC>国籍:</lbNOC>
+    <lbNation>民族:</lbNation>
+    <lbFederation>组织:</lbFederation>
+    <lbClub>俱乐部:</lbClub>
+    <lbDelegation>代表团:</lbDelegation>
+    <lbFunction>职责:</lbFunction>
+    <lbIFNum>协会编码:</lbIFNum>
+    <lbHeight>身高(cm):</lbHeight>
+    <lbWeight>体重(kg):</lbWeight>
+    <lbBirthDate>出生日期:</lbBirthDate>
+    <lbUniform>队服信息:</lbUniform>
+    <lbBirthCountry>出生国家:</lbBirthCountry>
+    <lbBirthCity>出生城市:</lbBirthCity>
+    <lbRecCountry>居住国家:</lbRecCountry>
+    <lbRecCity>居住城市:</lbRecCity>
+    <btnAutoName>自动生成名字</btnAutoName>
+    <btnEditMember>编辑队伍成员</btnEditMember>
+    <btnEditComment>编辑备注信息</btnEditComment>
+    <btnAutoPairName>生成组合名字</btnAutoPairName>
+    <btnAddUniform>添加</btnAddUniform>
+    <btnDelUniform>删除</btnDelUniform>
+    <btnEditColor>编辑颜色</btnEditColor>
+    <AutoName_Msg>是否需要自动生成名字吗？</AutoName_Msg>
+    <btnOK>确定</btnOK>
+    <btnCancel>取消</btnCancel>
+    <btnOKAgain>确定并继续</btnOKAgain>
+    <chkIsRecord>记录保持者</chkIsRecord>
+    <RegCodeMsgBox>请输入注册码!</RegCodeMsgBox>
+    <LanguageMsgBox>请选择语言类型!</LanguageMsgBox>
+    <RegTypeMsgBox>请选择注册类型!</RegTypeMsgBox>
+    <SexMsgBox>请选择性别类型!</SexMsgBox>
+    <FederationMsgBox> 请选择组织!</FederationMsgBox>
+    <NOCMsgBox>请选择国家!</NOCMsgBox>
+    <ClubMsgBox>请选择俱乐部!</ClubMsgBox>
+    <DelegationMsgBox>请选择代表团!</DelegationMsgBox>
+    <AddRegister_Failed>添加注册人员失败!</AddRegister_Failed>
+    <AddRegister_RegType>注册类型不对，添加失败!</AddRegister_RegType>
+    <AddRegister_RegCode2>注册码有重复，添加失败!</AddRegister_RegCode2>
+    <EditRegister_Failed>更新失败!</EditRegister_Failed>
+    <EditRegister_Discipline>项目ID无效，更新失败!</EditRegister_Discipline>
+    <EditRegister_RegType>注册类型无效，更新失败!</EditRegister_RegType>
+    <EditRegister_RegCode2>注册码有重复，更新失败!</EditRegister_RegCode2>
+    <AddMember_Failed>添加失败!</AddMember_Failed>
+    <AddMember_Team>队无效，添加失败!</AddMember_Team>
+    <AddMember_Pair>组合无效，添加失败!</AddMember_Pair>
+    <EditMemberFrm>参赛者设定</EditMemberFrm>
+    <FailedMsgBox>操作失败！</FailedMsgBox>
+    <AddUniform_Color>颜色无效，添加失败!</AddUniform_Color>
+    <DelUniform_Chose>请选择队服!</DelUniform_Chose>
+    <DelUniform_Team>队无效，删除失败!</DelUniform_Team>
+    <DelUniform_Uniform>队服无效，删除失败!</DelUniform_Uniform>
+    <DelUniform_Match>队服已指定到比赛，删除失败!</DelUniform_Match>
+    <InfoListFrm>信息列表</InfoListFrm>
+    <lbListInfo_Color>颜色列表</lbListInfo_Color>
+    <lbListInfo_Nation>民族列表</lbListInfo_Nation>
+    <lbListInfo_Club>俱乐部列表</lbListInfo_Club>
+    <lbListInfo_NOC>国家列表</lbListInfo_NOC>
+    <btnAddInfo>添加</btnAddInfo>
+    <btnDelInfo>删除</btnDelInfo>
+    <btnEditInfo>编辑</btnEditInfo>
+    <InfoEditFrm>编辑信息</InfoEditFrm>
+    <lbCode>代码:</lbCode>
+    <lbComment>备注:</lbComment>
+    <lbDelegationType>组织类型:</lbDelegationType>
+    <EditClub_Failed>修改失败，不存在此俱乐部ID!</EditClub_Failed>
+    <EditNation_Failed>修改失败，不存在此民族ID!</EditNation_Failed>
+    <EditColor_Failed>修改失败，不存在此颜色ID!</EditColor_Failed>
+    <DelInfoMsgBox>确定要删除此条信息?</DelInfoMsgBox>
+    <DelFailed_ID>ID无效，删除失败!</DelFailed_ID>
+    <DelFailed_Player>已存在运动员，删除失败!</DelFailed_Player>
+    <DelColor_Used>颜色已被使用，删除失败!</DelColor_Used>
+    <CommentEditFrm>备注信息</CommentEditFrm>
+    <CommentEdit_ID>操作失败，不存在此备注号!</CommentEdit_ID>
+    <CommetEdit_Title>操作失败，此运动员已具备此Title的备注!</CommetEdit_Title>
+    <CommentEdit_PlayerID>操作失败，运动员ID不一致!</CommentEdit_PlayerID>
+    <FederationListFrm>代表团列表</FederationListFrm>
+    <btnActive>批次激活</btnActive>
+    <btnNonActive>批次不激活</btnNonActive>
+    <Operation_Msg>请选择要操作的对象!</Operation_Msg>
+    <AddFederation_Code>操作失败，代表团Code重复!</AddFederation_Code>
+    <EditFederation_Failed>操作失败，代表团ID无效!</EditFederation_Failed>
+    <DelFederation_Player>操作失败！该代表团已经有运动员参加比赛!</DelFederation_Player>
+    <RegisterDisplayFrm>注册人员显示</RegisterDisplayFrm>
+    <lbEvent>小项:</lbEvent>
+
+    <MenuAddHorse>增加马</MenuAddHorse>
+    <lbHorseName>马名</lbHorseName>
+    <lbHorseBib>背号</lbHorseBib>
+    <lbHorseColor>毛色</lbHorseColor>
+    <lbHorseBreed>品种</lbHorseBreed>
+    <lbHDes1>马龄</lbHDes1>
+    <lbHDes2>血型</lbHDes2>
+    <lbHDes3>出生地</lbHDes3>
+    <lbHDes4>马烙号</lbHDes4>
+    <lbHDes5>预备马匹</lbHDes5>
+    <lbHDes6>马夫</lbHDes6>
+</OVRRegisterInfo>
+
+  <OVRInscriptionInfo>
+    <tabInscription>报项信息</tabInscription>
+    <GroupBox>报项方式</GroupBox>
+    <RadioEvent>按项目报项</RadioEvent>
+    <RadioRegister>按人员报项</RadioRegister>
+    <btnRegister>检索人员</btnRegister>
+    <btnAllRegister>全报项</btnAllRegister>
+    <lbEvent>项目:</lbEvent>
+    <lbFederation>代表团:</lbFederation>
+    <lbAvailable>未报项人员</lbAvailable>
+    <lbRegister>已报项人员</lbRegister>
+    <lbAllRegister>所有人员</lbAllRegister>
+    <lbAllEvent>可选项目</lbAllEvent>
+    <btnInscribe>报项</btnInscribe>
+    <btnInscribeAll>全部报项</btnInscribeAll>
+    <btnRemove>取消报项</btnRemove>
+    <btnRemoveAll>取消所有报项</btnRemoveAll>
+    <MenuAddRegister>增加</MenuAddRegister>
+    <MenuEditRegister>修改</MenuEditRegister>
+    <MenuDeleteRegister>删除</MenuDeleteRegister>
+    <MsgInscribeAll>该操作会将所有符合要求的运动员报项，是否确定继续？</MsgInscribeAll>
+    <DelInscription>该操作会取消该运动员的该项目报项，是否确定继续？</DelInscription>
+
+    <HorseInscription>马报项</HorseInscription>
+  </OVRInscriptionInfo>
+
+
+  <OVRDrawArrange>
+    <tabItemDrawArrange>抽签编排</tabItemDrawArrange>
+    <tabItemDrawRep>抽签展示</tabItemDrawRep>
+    <btnRefresh>刷新</btnRefresh>
+    <btnAutoProgress>自动晋级</btnAutoProgress>
+    <btnProgressByes>轮空晋级</btnProgressByes>
+    <labelCompetitors>运动员</labelCompetitors>
+    <labelMatches>比赛</labelMatches>
+    <MenuSetEventModel>设定项目模型</MenuSetEventModel>
+    <MenuAddPhase>添加赛事阶段</MenuAddPhase>
+    <MenuEditPhase>编辑赛事阶段</MenuEditPhase>
+    <MenuDelPhase>删除赛事阶段</MenuDelPhase>
+    <MenuAddMatch>添加比赛</MenuAddMatch>
+    <MenuEditMatch>编辑比赛</MenuEditMatch>
+    <MenuDelMatch>删除比赛</MenuDelMatch>
+    <MenuSaveLoadEventModel>存储编排模型</MenuSaveLoadEventModel>
+    <MenuSetMatchesRule>批量修改竞赛规则</MenuSetMatchesRule>
+
+    <MenuEditCompetitionPostion>编辑比赛位置</MenuEditCompetitionPostion>
+    <MenuAddCompetitionPosition>增加比赛位置</MenuAddCompetitionPosition>
+    <MenuDeleteCompetitionPosition>删除比赛位置</MenuDeleteCompetitionPosition>
+    <MenuAddMultiCompetitionPosition>添加多个比赛位置</MenuAddMultiCompetitionPosition>
+    <frmSetPositionNum_CompetitionPos>设置比赛位置</frmSetPositionNum_CompetitionPos>
+    <lbPosNum_CompetitionPos>位置数</lbPosNum_CompetitionPos>
+
+    <MenuLoadPartModel>设定阶段模型</MenuLoadPartModel>
+    <MenuSavePartModel>保存阶段模型</MenuSavePartModel>
+
+    <frmPartModelInfo>阶段模型</frmPartModelInfo>
+    <frmSetPartModel>指定阶段模型</frmSetPartModel>
+
+    <btnSaveEventModel>保存阶段模型</btnSaveEventModel>
+    <btnDelEventModel>删除阶段模型</btnDelEventModel>
+
+    <MsgSavePartModel0>保存阶段模型成功!</MsgSavePartModel0>
+    <MsgSavePartModel1>保存阶段模型出错! @PhaseID或者@MatchID无效!</MsgSavePartModel1>
+
+    <MsgDelPartModel1>首先选中一个模型!</MsgDelPartModel1>
+    <MsgDelPartModel2>你将要进行的是删除操作，删除后不能撤销!你确信要删除这个阶段模型?</MsgDelPartModel2>
+    <MsgDelPartModel3>删除阶段模型出错!</MsgDelPartModel3>
+
+    <MsgLoadPartModel1>首先选中一个模型!</MsgLoadPartModel1>
+    <MsgLoadPartModel2>重新设定阶段模型会改变比赛的运动员的晋级关系!你确信要采用此阶段模型?</MsgLoadPartModel2>
+    <MsgLoadPartModel3>设定阶段模型出错!</MsgLoadPartModel3>
+    <MsgLoadPartModel4>设定阶段模型出错, 本阶段的状态不允许进行阶段模型的设定!</MsgLoadPartModel4>
+    <MsgLoadPartModel5>设定阶段模型出错!  @PhaseID或者@MatchID无效!</MsgLoadPartModel5>
+
+
+    <btnOK>确定</btnOK>
+    <btnCancle>取消</btnCancle>
+    <MenuEditEventStatus>修改小项状态</MenuEditEventStatus>
+    <lbEventLongName>长名</lbEventLongName>
+    <lbEventShortName>短名</lbEventShortName>
+    <lbEventStatus>状态</lbEventStatus>
+    <lbMatchStatus>状态</lbMatchStatus>
+    <lbPhaseStatus>状态</lbPhaseStatus>
+    <lbPhaseCode>编码</lbPhaseCode>
+    <lbStartDate>开始日期</lbStartDate>
+    <lbEndDate>结束日期</lbEndDate>
+    <lbPhaseOrder>序号</lbPhaseOrder>
+    <lbLanguage>语言</lbLanguage>
+    <lbPhaseLongName>长名</lbPhaseLongName>
+    <lbPhaseShortName>短名</lbPhaseShortName>
+    <lbPhaseComment>备注</lbPhaseComment>
+    <lbPhaseIsPool>是小组赛否</lbPhaseIsPool>
+    <lbPhaseHasPools>含小组赛否</lbPhaseHasPools>
+    <lbMatchCode>场次码</lbMatchCode>
+    <lbMatchOrder>序号</lbMatchOrder>
+    <lbMatchNum>比赛号</lbMatchNum>
+    <lbHasMedal>产生奖牌否</lbHasMedal>
+    <lbCompetitorsNum>参赛人数</lbCompetitorsNum>
+    <lbMatchType>比赛类型</lbMatchType>
+    <lbMatchLongName>长名</lbMatchLongName>
+    <lbMatchShortName>短名</lbMatchShortName>
+    <lbMatchComment>备注</lbMatchComment>
+    <lbMatchComment2>备注2</lbMatchComment2>
+    <btnClose>退出</btnClose>
+    <btnSaveEventModel>保存项目模型</btnSaveEventModel>
+    <btnImportEventModel>导入模型</btnImportEventModel>
+    <btnLoadEventModel>指定项目模型</btnLoadEventModel>
+    <btnDelEventModel>删除模型</btnDelEventModel>
+    <btnExportEventModel>导出模型</btnExportEventModel>
+    <lbModelComment>模型备注</lbModelComment>
+    <lbModelName>模型名称</lbModelName>
+    <lbModelList>模型列表</lbModelList>
+    <RadioByParameter>参数化创建项目编排模型</RadioByParameter>
+    <RadioFromModel>使用自定义模板创建项目编排模型</RadioFromModel>
+    <frmSetEventModel>设定项目模型</frmSetEventModel>
+    <frmModelInfo>保存项目模型</frmModelInfo>
+    <frmPhaseInfo>赛事阶段信息</frmPhaseInfo>
+    <frmMatchInfo>比赛信息</frmMatchInfo>
+    <MsgSaveEventModel0>保存项目模型成功!</MsgSaveEventModel0>
+    <MsgSaveEventModel1>保存项目模型失败!</MsgSaveEventModel1>
+    <MsgLoadEventModel1>首先选中一个项目模型！</MsgLoadEventModel1>
+    <MsgLoadEventModel2>为项目指定编排模型会将该项目下原有的编排删除掉！你确信要为该项目制定编排模型吗？</MsgLoadEventModel2>
+    <MsgLoadEventModel3>为项目指定编排模型失败，该项目的状态不允许进行此操作!</MsgLoadEventModel3>
+    <MsgLoadEventModel4>为项目指定编排模型成功!</MsgLoadEventModel4>
+    <MsgImportEventModel1>选择文件无效!</MsgImportEventModel1>
+    <MsgImportEventModel2>由文件导入项目模型失败!</MsgImportEventModel2>
+    <MsgDelEventModel1>首先选中一个项目模型！</MsgDelEventModel1>
+    <MsgDelEventModel2>你将要进行的是删除项目模型，删除操作无法撤销！你确信是要删除该模型吗？</MsgDelEventModel2>
+    <MsgDelEventModel3>删除项目模型失败!</MsgDelEventModel3>
+    <MsgExportEventModel1>首先选中一个项目模型！</MsgExportEventModel1>
+    <MsgExportEventModel2>选择导出文件路径无效!</MsgExportEventModel2>
+    <MsgExportEventModel3>将项目模型导出文件成功!</MsgExportEventModel3>
+    <MsgAddPhase1>添加失败!</MsgAddPhase1>
+    <MsgAddPhase2>添加Phase失败，@EventID无效、@FatherPhaseID无效!</MsgAddPhase2>
+    <MsgAddPhase3>请先选中Event或者Phase后再进行添加操作!</MsgAddPhase3>
+    <MsgAddPhase4>添加Phase失败，该节点的状态不允许添加新Phase!</MsgAddPhase4>
+    <MsgEditPhase1>修改失败!</MsgEditPhase1>
+    <MsgEditPhase2>修改失败!Phase的参数无效!</MsgEditPhase2>
+    <MsgDelPhase1>您将要进行的是删除操作，删除后不可撤销，是否要删除该Phase?</MsgDelPhase1>
+    <MsgDelPhase2>删除该Phase失败！</MsgDelPhase2>
+    <MsgDelPhase3>删除Phase失败，该PhaseID无效!</MsgDelPhase3>
+    <MsgDelPhase4>删除Phase失败，该Phase的状态不允许删除!</MsgDelPhase4>
+    <MsgDelPhase5>删除Phase失败，该Phase的子Phase的状态不允许删除!</MsgDelPhase5>
+    <MsgDelPhase6>删除Phase失败，该Phase的子Match的状态不允许删除!</MsgDelPhase6>
+    <MsgDelPhase7>删除Phase失败，该Phase的父节点的状态不允许删除此Phase!</MsgDelPhase7>
+    <MsgDelEventPhase1>删除Event下的Phase失败!</MsgDelEventPhase1>
+    <MsgDelEventPhase2>删除Event下的Phase失败，该EventID无效!</MsgDelEventPhase2>
+    <MsgDelEventPhase3>删除Event下的Phase失败，该Event的状态不允许删除其下的Phase!</MsgDelEventPhase3>
+    <MsgDelEventPhase4>删除Event下的Phase失败，该Event的子Phase的状态不允许删除其下的Phase!</MsgDelEventPhase4>
+    <MsgDelEventPhase5>删除Event下的Phase失败，该Event的子Match的状态不允许删除其下的Phase!</MsgDelEventPhase5>
+    <MsgAddMatch1>添加失败!</MsgAddMatch1>
+    <MsgAddMatch2>添加Match失败，@DisciplineID无效!</MsgAddMatch2>
+    <MsgAddMatch3>添加Match失败, 父Phase的状态不允许添加Match!</MsgAddMatch3>
+    <MsgEditMatch1>修改失败!</MsgEditMatch1>
+    <MsgEditMatch2>修改Match失败，@MatchID无效!</MsgEditMatch2>
+    <MsgDelMatch1>您将要进行的是删除操作，删除后不可撤销，是否要删除该Match?</MsgDelMatch1>
+    <MsgDelMatch2>删除该Phase失败！</MsgDelMatch2>
+    <MsgDelMatch3>删除Match失败，该MatchID无效!</MsgDelMatch3>
+    <MsgDelMatch4>删除Match失败，该Match的状态不允许删除!</MsgDelMatch4>
+    <MsgDelMatch5>删除Match失败，该Match的父节点的状态不允许此Match删除!</MsgDelMatch5>
+    <MsgUpdateSourceMatch1>更改SourceMatch失败!</MsgUpdateSourceMatch1>
+    <MsgUpdateStartPhase1>更改StartPhase失败!</MsgUpdateStartPhase1>
+    <MsgUpdateSourcePhase1>更改SourcePhase失败!</MsgUpdateSourcePhase1>
+    <MsgUpdateMatchCompetitor1>更改参赛人员失败!</MsgUpdateMatchCompetitor1>
+    <MsgUpdateGroupCompetitor1>更改小组赛签位失败!</MsgUpdateGroupCompetitor1>
+    <MsgDelEventModel>你将要进行的是项目整体自动编排，该操作首先会删除该项目已有的编排，确信要进行项目整体自动编排吗？</MsgDelEventModel>
+    <MsgAutoEventModel>项目整体自动编排</MsgAutoEventModel>
+    <btnAutoDraw>自动抽签</btnAutoDraw>
+    <btnCleanDraw>清除抽签</btnCleanDraw>
+    <btnChosePhaseCompetitors>选择阶段运动员</btnChosePhaseCompetitors>
+    <btnCreateMatchUp>生成对阵</btnCreateMatchUp>
+    <btnCleanMatchUp>清空对阵</btnCleanMatchUp>
+    <MsgDelPhaseCompetitorsFailed>删除运动员失败，该运动员已存在签位信息！</MsgDelPhaseCompetitorsFailed>
+    <menuAddPosition>添加签位</menuAddPosition>
+    <menuDelPosition>删除签位</menuDelPosition>
+    <menuAddMultiPosition>添加多个签位</menuAddMultiPosition>
+    <menuDelDrawPos>取消抽签</menuDelDrawPos>
+    <lbRegisterID>运动员ID</lbRegisterID>
+    <lbLongName>运动员长名</lbLongName>
+    <lbNOC>国家代码</lbNOC>
+    <lbPosition>签位号</lbPosition>
+    <lbDrawPlayers>已抽签运动员</lbDrawPlayers>
+    <lbAvailablePlayers>候选运动员</lbAvailablePlayers>
+    <lbEventPlayers>可选运动员</lbEventPlayers>
+    <lbPhasePlayers>候选运动员</lbPhasePlayers>
+    <titleChosePhaseCompetitors>选择该阶段运动员</titleChosePhaseCompetitors>
+    <MsgUpdatePosition>该PhaseID下已存在相同的Position，是否删除？</MsgUpdatePosition>
+    <MsgEditPosition>修改签位</MsgEditPosition>
+    <MsgDrawPositionExist>已存在签位信息，请先清除后再抽签！</MsgDrawPositionExist>
+    <MsgCleanDrawPosition>是否确定清除签位信息？</MsgCleanDrawPosition>
+    <MsgCleanPosition>清除签位信息</MsgCleanPosition>
+    <MsgUpdatePhasePosition2Match1>生成对阵失败，@PhaseID/@EventID无效！</MsgUpdatePhasePosition2Match1>
+    <MsgUpdatePhasePosition2Match2>生成对阵失败，已有比赛进行，不允许重新生成对阵！</MsgUpdatePhasePosition2Match2>
+    <MsgUpdatePhasePosition2Match3>生成对阵成功！</MsgUpdatePhasePosition2Match3>
+
+    <MsgCleanMatchCompetitorFromPostion1>置空对阵失败，@PhaseID/@EventID无效！</MsgCleanMatchCompetitorFromPostion1>
+    <MsgCleanMatchCompetitorFromPostion2>置空对阵失败，已有比赛进行，不允许重新生成对阵！</MsgCleanMatchCompetitorFromPostion2>
+    <MsgCleanMatchCompetitorFromPostion3>置空对阵成功！</MsgCleanMatchCompetitorFromPostion3>
+
+    <MsgAutoProgress1>自动晋级成功!</MsgAutoProgress1>
+    <MsgProgressByes1>轮空晋级成功!</MsgProgressByes1>
+    <frmSetPositionNum>设置签位数量</frmSetPositionNum>
+    <lbPosNum>签位数量</lbPosNum>
+    <MsgDelDrawPosition>是否确定删除所选签位？</MsgDelDrawPosition>
+    <MsgDelPosition>删除签位信息</MsgDelPosition>
+    <MsgAddCompetitionPosition1>添加比赛位置失败!</MsgAddCompetitionPosition1>
+    <MsgAddCompetitionPosition2>添加比赛位置失败, MatchID无效!</MsgAddCompetitionPosition2>
+    <MsgDelCompetitionPosition1>你将要进行的是比赛位置删除，删除后不能撤消，确信删除此比赛位置?</MsgDelCompetitionPosition1>
+    <MsgDelCompetitionPosition2>删除比赛位置失败!</MsgDelCompetitionPosition2>
+    <MsgDelCompetitionPosition3>删除比赛位置失败, MatchID 无效!</MsgDelCompetitionPosition3>
+    <MsgCancelDrawRegister>是否确定从该阶段取消已选参赛人员!</MsgCancelDrawRegister>
+    <MsgCancelDraw>取消抽签</MsgCancelDraw>
+    <menuDelInscription>取消报项</menuDelInscription>
+    <MsgDelInscription>是否确定取消该参赛人员的报项?</MsgDelInscription>
+    <MsgCancelInscription>取消报项</MsgCancelInscription>
+    <DelInscriptionPromotion_Failed>删除失败!</DelInscriptionPromotion_Failed>
+    <DelInscriptionPromotion_Uneffect>人员无效，删除失败!</DelInscriptionPromotion_Uneffect>
+    <DelInscriptionPromotion_HasMatch>已有比赛，删除失败!</DelInscriptionPromotion_HasMatch>
+
+
+    <MsgUpdateSourceProgressDes>更新位置来源晋级描述失败!</MsgUpdateSourceProgressDes>
+    <MsgUpdateProgressDes>更新位置晋级描述!</MsgUpdateProgressDes>
+
+    <frmSetMatchesRule>批量修改竞赛规则</frmSetMatchesRule>
+    <lbCompetitionRule>竞赛规则:</lbCompetitionRule>
+    <MsgUpdateMatchesCompetitionRule1>批量更改比赛竞赛规则失败!</MsgUpdateMatchesCompetitionRule1>
+    <MsgUpdateMatchesCompetitionRule2>批量更改比赛竞赛规则失败, @CompetitionRuleID无效!</MsgUpdateMatchesCompetitionRule2>
+    <MsgUpdateMatchesCompetitionRule3>批量更改比赛竞赛规则失败, 所选的Match有的状态不允许进行比赛竞赛规则的修改!</MsgUpdateMatchesCompetitionRule3>
+
+    <frmMatchCompetitionPositionInfo>比赛位置信息</frmMatchCompetitionPositionInfo>
+    <lbPosition>位置</lbPosition>
+    <lbPositionDes1>位置1</lbPositionDes1>
+    <lbPositionDes2>位置2</lbPositionDes2>
+    <lbMatchName>比赛名称</lbMatchName>
+    <lbCompetitorName>参赛者</lbCompetitorName>
+    <LbPositionSourceDes>位置来源描述</LbPositionSourceDes>
+    <lbStartPhase>起始阶段</lbStartPhase>
+    <lbPhasePosition>起始位置</lbPhasePosition>
+    <RadioFromPhasePosition>来自阶段签位</RadioFromPhasePosition>
+    <RadioFromPhaseRank>来自阶段排名</RadioFromPhaseRank>
+    <RadioFromMatchRank>来自比赛排名</RadioFromMatchRank>
+    <RadioFromMatchHistory>来自历史战绩</RadioFromMatchHistory>
+    <lbSourcePhase>源阶段</lbSourcePhase>
+    <lbPhaseRank>阶段排名</lbPhaseRank>
+
+    <lbSourcePhaseforMatch>源阶段</lbSourcePhaseforMatch>
+    <lbSourceMatch>源比赛</lbSourceMatch>
+    <lbMatchRank>排名</lbMatchRank>
+
+    <lbSourcePhaseforHistoryMatch>源阶段</lbSourcePhaseforHistoryMatch>
+    <lbHistoryMatch>关键比赛</lbHistoryMatch>
+    <lbHistoryMatchRank>排名</lbHistoryMatchRank>
+    <lbHistoryLevel>历史层数</lbHistoryLevel>
+
+    <btnPrevious>前一个</btnPrevious>
+    <btnNext>后一个</btnNext>
+    <lbSourceProgress>位置来源晋级描述</lbSourceProgress>
+    <lbProgress>位置晋级描述</lbProgress>
+
+    <MsgEditMatchStatus1>修改比赛状态失败！</MsgEditMatchStatus1>
+    <MsgEditMatchStatus2>修改比赛状态失败，输入的参数无效！</MsgEditMatchStatus2>
+    <MsgEditPhaseStatus1>修改比赛阶段状态失败！</MsgEditPhaseStatus1>
+    <MsgEditPhaseStatus2>修改比赛阶段状态失败，数据参数无效</MsgEditPhaseStatus2>
+    <MsgEditPhaseStatus3>修改比赛阶段状态失败，该阶段的子阶段或者子比赛的状态不允许该阶段进行此状态修改！</MsgEditPhaseStatus3>
+    <MsgSetEventStatus1>修改小项的状态失败</MsgSetEventStatus1>
+    <MsgSetEventStatus2>修改小项的状态失败，@eventID无效！</MsgSetEventStatus2>
+    <MsgSetEventStatus3>修改小项的状态失败，该小项的子阶段或者子比赛的状态不允许该小项进行此状态修改！</MsgSetEventStatus3>
+
+    <CompetitionPosSetForm>批量修改比赛位置</CompetitionPosSetForm>
+    <CompetitionPosSetForm_labXStartNumber>起始数:</CompetitionPosSetForm_labXStartNumber>
+    <CompetitionPosSetForm_labXStep>步长:</CompetitionPosSetForm_labXStep>
+    <CompetitionPosSetForm_labXCodeLength>长度:</CompetitionPosSetForm_labXCodeLength>
+    <CompetitionPosSetForm_btnXOK>确定</CompetitionPosSetForm_btnXOK>
+    <CompetitionPosSetForm_btnXCancel>取消</CompetitionPosSetForm_btnXCancel>
+    <CompetitionPosSetForm_MsgNumberInput>请输入数字！</CompetitionPosSetForm_MsgNumberInput>
+
+    <MenuCompetitionPos1Setting>批量指定比赛位置1</MenuCompetitionPos1Setting>
+    <MenuCompetitionPos2Setting>批量指定比赛位置2</MenuCompetitionPos2Setting>
+    <MenuCompetitionSourceSetting>批量指定晋级来源</MenuCompetitionSourceSetting>
+
+    <frmMatchCompetitionSourceSet>批量指定晋级来源</frmMatchCompetitionSourceSet>
+    <lbStep>步长</lbStep>
+    <lbStartPos>起始位置</lbStartPos>
+    <lbStartPhaseRank>起始阶段排名</lbStartPhaseRank>
+    <lbStartMatchRank>起始比赛排名</lbStartMatchRank>
+
+
+
+
+  </OVRDrawArrange>
+
+  <OVRDrawModel>
+    <lbTitle>标题</lbTitle>
+    <lbType>类型</lbType>
+    <lbNumber>人数</lbNumber>
+    <lbRank>名次</lbRank>
+    <chbBracket>产生晋级</chbBracket>
+    <chbUseBegol>使用贝格尔算法</chbUseBegol>
+    <btnOk>确定</btnOk>
+    <btnCancel>取消</btnCancel>
+    <btnPrevious>上一步</btnPrevious>
+    <btnNext>下一步</btnNext>
+    <btnFinish>完成</btnFinish>
+    <lbMaxSize>最大人数</lbMaxSize>
+    <lbRankSize>名次人数</lbRankSize>
+    <lbStageTitle>阶段标题</lbStageTitle>
+    <lbGroupSize>每组人数</lbGroupSize>
+    <lbGroupCount>小组数量</lbGroupCount>
+    <lbGroupQual>每组晋级</lbGroupQual>
+    <lbGroupName>命名前缀</lbGroupName>
+    <lbNamingMode>命名连续方式</lbNamingMode>
+    <gpRankFirst>第一阶段</gpRankFirst>
+    <gpRankSecond>第二阶段</gpRankSecond>
+    <gpRankThird>第三阶段</gpRankThird>
+    <chbRank>使用</chbRank>
+    <cbTypeManual>自定义</cbTypeManual>
+    <cbTypeRoundRobin>循环赛</cbTypeRoundRobin>
+    <cbTypeKnockOut>淘汰赛</cbTypeKnockOut>
+    <tbTitleManual>阶段</tbTitleManual>
+    <tbTypeRoundRobin>组</tbTypeRoundRobin>
+    <RankPlayerError>淘汰赛中，名次人数必须小于等于比赛人数，请修正！</RankPlayerError>
+    <DelModelOrNot>该修改将删除此赛事模块中所有的成绩，人员编排信息，是否继续？</DelModelOrNot>
+    <frmDrawModel>赛事创建向导</frmDrawModel>
+    <SingleKnockOut>单淘汰赛</SingleKnockOut>
+    <SingleRoundRobin>单循环赛</SingleRoundRobin>
+    <RoundRobinKnockOut>先循环赛，再淘汰赛</RoundRobinKnockOut>
+    <DoubleKnockOut>先淘汰赛，再淘汰赛</DoubleKnockOut>
+    <RoundRobinMultiKnockOut>先循环赛，再多个淘汰赛</RoundRobinMultiKnockOut>
+    <tbTypeFinal>决赛</tbTypeFinal>
+    <KORankPlayerError>参加赛事人数必须大于排名人数</KORankPlayerError>
+    <KOStageQual>预赛</KOStageQual>
+    <KOGroupKnock>淘汰赛</KOGroupKnock>
+    <KOGroupGroup>组</KOGroupGroup>
+    <GroupNameLetter>示例:{0}A,{1}B,{2}C,{3}D</GroupNameLetter>
+    <GroupNameNumber>示例:{0}1,{1}2,{2}3,{3}4</GroupNameNumber>
+    <GroupInfo>分{0:D}组,每组{1:D}人,晋级{2:D}人.本阶段共{3:D}人参赛,共{4:D}人晋级</GroupInfo>
+    <KnockOut1Error>第一个淘汰赛超出了8人</KnockOut1Error>
+    <KnockOut2Error>第二个淘汰赛超出了8人</KnockOut2Error>
+    <KnockOut3Error>第三个淘汰赛超出了8人</KnockOut3Error>
+    <tbRank1Title>第一</tbRank1Title>
+    <tbRank2Title>第二</tbRank2Title>
+    <tbRank3Title>第三</tbRank3Title>
+    <lbRankInfo>决出{0:D}-{1:D}名</lbRankInfo>
+    <lbRankStart>每组第{0:D}名至</lbRankStart>
+    <lbRankFirst>每组第1名至</lbRankFirst>
+    <lbHelp1Welcome>欢迎使用赛事创建向导</lbHelp1Welcome>
+    <lbHelp2Choose>请选择一种赛事模型</lbHelp2Choose>
+    <lbMKoToSKo>多淘汰赛->单淘汰赛</lbMKoToSKo>
+    <lbRRToSKo>循环赛->单淘汰赛</lbRRToSKo>
+    <lbRRToMKo>循环赛->多淘汰赛</lbRRToMKo>
+    <lbSetRRParam>1.设置循环赛的参数</lbSetRRParam>
+    <lbSetKOParam>设置淘汰赛的参数</lbSetKOParam>
+    <lbSetFirstPhaseParam>1.设置第一阶段淘汰赛的参数</lbSetFirstPhaseParam>
+    <lbSetSecondPhaseParam>2.设置第二阶段淘汰赛的参数</lbSetSecondPhaseParam>
+    <frmDrawModelEdit>设置赛事阶段模型</frmDrawModelEdit>
+  </OVRDrawModel>
+
+  <OVRMatchSchedule>
+    <OVRMatchScheduleFrom_tabItemSchedule>赛事安排</OVRMatchScheduleFrom_tabItemSchedule>
+    <OVRMatchScheduleFrom_btnXUpdate>数据更新</OVRMatchScheduleFrom_btnXUpdate>
+    <OVRMatchScheduleFrom_btnXAdd>加入</OVRMatchScheduleFrom_btnXAdd>
+    <OVRMatchScheduleFrom_btnXAddAll>全部加入</OVRMatchScheduleFrom_btnXAddAll>
+    <OVRMatchScheduleFrom_btnXDate>日期</OVRMatchScheduleFrom_btnXDate>
+    <OVRMatchScheduleFrom_btnXSession>单元</OVRMatchScheduleFrom_btnXSession>
+    <OVRMatchScheduleFrom_btnXRound>轮次</OVRMatchScheduleFrom_btnXRound>
+    <OVRMatchScheduleFrom_btnXRemove>移除</OVRMatchScheduleFrom_btnXRemove>
+    <OVRMatchScheduleFrom_btnXRemoveAll>全部移除</OVRMatchScheduleFrom_btnXRemoveAll>
+    <OVRMatchScheduleFrom_labXDate>日期</OVRMatchScheduleFrom_labXDate>
+    <OVRMatchScheduleFrom_labXSession>单元</OVRMatchScheduleFrom_labXSession>
+    <OVRMatchScheduleFrom_labXVenue>场馆</OVRMatchScheduleFrom_labXVenue>
+    <OVRMatchScheduleFrom_labXCourt>场地</OVRMatchScheduleFrom_labXCourt>
+    <OVRMatchScheduleFrom_labXEvent>项目</OVRMatchScheduleFrom_labXEvent>
+    <OVRMatchScheduleFrom_labXPhase>阶段</OVRMatchScheduleFrom_labXPhase>
+    <OVRMatchScheduleFrom_labXRound>轮次</OVRMatchScheduleFrom_labXRound>
+    <OVRMatchScheduleFrom_chkXStatus>状态</OVRMatchScheduleFrom_chkXStatus>
+    <OVRMatchScheduleFrom_chkXTime>时间</OVRMatchScheduleFrom_chkXTime>
+    <OVRMatchScheduleFrom_labXStartTime>起始</OVRMatchScheduleFrom_labXStartTime>
+    <OVRMatchScheduleFrom_labXSpendTime>消耗</OVRMatchScheduleFrom_labXSpendTime>
+    <OVRMatchScheduleFrom_labXSpanTime>间隔</OVRMatchScheduleFrom_labXSpanTime>
+    <OVRMatchSchedule_DateFrom_txtTitle>日期</OVRMatchSchedule_DateFrom_txtTitle>
+    <OVRMatchSchedule_DateFrom_btnXAdd>添加</OVRMatchSchedule_DateFrom_btnXAdd>
+    <OVRMatchSchedule_DateFrom_btnXDel>删除</OVRMatchSchedule_DateFrom_btnXDel>
+    <OVRMatchSchedule_DateFrom_AddFailed>添加比赛日期失败!</OVRMatchSchedule_DateFrom_AddFailed>
+    <OVRMatchSchedule_DateFrom_AddFailed_F1>添加比赛日期失败,该比赛日赛已经存在!</OVRMatchSchedule_DateFrom_AddFailed_F1>
+    <OVRMatchSchedule_DateFrom_DelTip>确认需要删除该比赛日期?</OVRMatchSchedule_DateFrom_DelTip>
+    <OVRMatchSchedule_DateFrom_DelFailed>删除比赛日期失败!</OVRMatchSchedule_DateFrom_DelFailed>
+    <OVRMatchSchedule_DateFrom_DelFailed_F2>删除比赛日期失败,该比赛日期已经关联单元!</OVRMatchSchedule_DateFrom_DelFailed_F2>
+    <OVRMatchSchedule_SessionFrom_txtTitle>单元</OVRMatchSchedule_SessionFrom_txtTitle>
+    <OVRMatchSchedule_SessionFrom_btnXAdd>添加</OVRMatchSchedule_SessionFrom_btnXAdd>
+    <OVRMatchSchedule_SessionFrom_btnXDel>删除</OVRMatchSchedule_SessionFrom_btnXDel>
+    <OVRMatchSchedule_SessionFrom_AddFailed>添加比赛单元失败!</OVRMatchSchedule_SessionFrom_AddFailed>
+    <OVRMatchSchedule_SessionFrom_DelTip>确认需要删除该比赛单元?</OVRMatchSchedule_SessionFrom_DelTip>
+    <OVRMatchSchedule_SessionFrom_DelFailed>删除比赛单元失败!</OVRMatchSchedule_SessionFrom_DelFailed>
+    <OVRMatchSchedule_RoundFrom_txtTitle>轮次</OVRMatchSchedule_RoundFrom_txtTitle>
+    <OVRMatchSchedule_RoundFrom_btnXAdd>添加</OVRMatchSchedule_RoundFrom_btnXAdd>
+    <OVRMatchSchedule_RoundFrom_btnXDel>删除</OVRMatchSchedule_RoundFrom_btnXDel>
+    <OVRMatchSchedule_RoundFrom_DelTip>确认需要删除该比赛轮次?</OVRMatchSchedule_RoundFrom_DelTip>
+    <OVRMatchSchedule_RoundFrom_AddFailed>添加比赛轮次失败!</OVRMatchSchedule_RoundFrom_AddFailed>
+    <OVRMatchSchedule_RoundFrom_DelFailed>删除比赛轮次失败!</OVRMatchSchedule_RoundFrom_DelFailed>
+    <OVRMatchScheduleFrom_btnXSearchMatches>查询</OVRMatchScheduleFrom_btnXSearchMatches>
+    <OVRMatchScheduleFrom_menuSetRaceNumber>设置场次编码</OVRMatchScheduleFrom_menuSetRaceNumber>
+    <OVRMatchScheduleFrom_menuSetMatchCode>设置比赛编码</OVRMatchScheduleFrom_menuSetMatchCode>
+    <OVRMatchScheduleFrom_menuSetMatchDate>设置比赛日期</OVRMatchScheduleFrom_menuSetMatchDate>
+    <OVRMatchScheduleFrom_menuSetMatchSession>设置比赛单元</OVRMatchScheduleFrom_menuSetMatchSession>
+    <OVRMatchScheduleFrom_menuSetMatchStartTime>设置比赛开始时间</OVRMatchScheduleFrom_menuSetMatchStartTime>
+    <OVRMatchScheduleFrom_menuSetMatchEndTime>设置比赛结束时间</OVRMatchScheduleFrom_menuSetMatchEndTime>
+    <OVRMatchScheduleFrom_menuSetMatchVenue>设置比赛场馆</OVRMatchScheduleFrom_menuSetMatchVenue>
+    <OVRMatchScheduleFrom_menuSetMatchCourt>设置比赛场地</OVRMatchScheduleFrom_menuSetMatchCourt>
+    <OVRMatchScheduleFrom_menuSetMatchOIS>设置单元序号</OVRMatchScheduleFrom_menuSetMatchOIS>
+    <OVRMatchScheduleFrom_menuSetMatchOIR>设置轮次序号</OVRMatchScheduleFrom_menuSetMatchOIR>
+    <OVRMatchSchedule_RaceNumberForm>场次编码设置</OVRMatchSchedule_RaceNumberForm>
+    <OVRMatchSchedule_RaceNumberForm_labXPreFix>编码前缀:</OVRMatchSchedule_RaceNumberForm_labXPreFix>
+    <OVRMatchSchedule_RaceNumberForm_labXStartNumber>编码的起始数:</OVRMatchSchedule_RaceNumberForm_labXStartNumber>
+    <OVRMatchSchedule_RaceNumberForm_labXStep>步长:</OVRMatchSchedule_RaceNumberForm_labXStep>
+    <OVRMatchSchedule_RaceNumberForm_labXCodeLength>编码长度:</OVRMatchSchedule_RaceNumberForm_labXCodeLength>
+    <OVRMatchSchedule_RaceNumberForm_chkXSortByTime>按时间排序:</OVRMatchSchedule_RaceNumberForm_chkXSortByTime>
+    <OVRMatchSchedule_RaceNumberForm_btnXOK>确定</OVRMatchSchedule_RaceNumberForm_btnXOK>
+    <OVRMatchSchedule_RaceNumberForm_btnXCancel>取消</OVRMatchSchedule_RaceNumberForm_btnXCancel>
+    <OVRMatchSchedule_RaceNumberForm_PreFixMsgBox>请输入编码前缀!</OVRMatchSchedule_RaceNumberForm_PreFixMsgBox>
+    <OVRMatchSchedule_RaceNumberForm_StartNumberMsgBox>请输入编码的起始数!</OVRMatchSchedule_RaceNumberForm_StartNumberMsgBox>
+    <OVRMatchSchedule_RaceNumberForm_StepMsgBox>请输入步长!</OVRMatchSchedule_RaceNumberForm_StepMsgBox>
+    <OVRMatchSchedule_RaceNumberForm_CodeLengthMsgBox>请输入编码长度!</OVRMatchSchedule_RaceNumberForm_CodeLengthMsgBox>
+    <OVRMatchSchedule_RaceNumberForm_NumberMsgBox>请输入合法数字!</OVRMatchSchedule_RaceNumberForm_NumberMsgBox>
+    <OVRMatchSchedule_MatchCodeForm>比赛编码设置</OVRMatchSchedule_MatchCodeForm>
+    <OVRMatchSchedule_MatchCodeForm_labXPreFix>编码前缀:</OVRMatchSchedule_MatchCodeForm_labXPreFix>
+    <OVRMatchSchedule_MatchCodeForm_labXStartNumber>编码的起始数:</OVRMatchSchedule_MatchCodeForm_labXStartNumber>
+    <OVRMatchSchedule_MatchCodeForm_labXStep>步长:</OVRMatchSchedule_MatchCodeForm_labXStep>
+    <OVRMatchSchedule_MatchCodeForm_labXCodeLength>编码长度:</OVRMatchSchedule_MatchCodeForm_labXCodeLength>
+    <OVRMatchSchedule_MatchCodeForm_chkXSortByTime>按时间排序:</OVRMatchSchedule_MatchCodeForm_chkXSortByTime>
+    <OVRMatchSchedule_MatchCodeForm_btnXOK>确定</OVRMatchSchedule_MatchCodeForm_btnXOK>
+    <OVRMatchSchedule_MatchCodeForm_btnXCancel>取消</OVRMatchSchedule_MatchCodeForm_btnXCancel>
+    <OVRMatchSchedule_MatchCodeForm_PreFixMsgBox>请输入编码前缀!</OVRMatchSchedule_MatchCodeForm_PreFixMsgBox>
+    <OVRMatchSchedule_MatchCodeForm_StartNumberMsgBox>请输入编码的起始数!</OVRMatchSchedule_MatchCodeForm_StartNumberMsgBox>
+    <OVRMatchSchedule_MatchCodeForm_StepMsgBox>请输入步长!</OVRMatchSchedule_MatchCodeForm_StepMsgBox>
+    <OVRMatchSchedule_MatchCodeForm_CodeLengthMsgBox>请输入编码长度!</OVRMatchSchedule_MatchCodeForm_CodeLengthMsgBox>
+    <OVRMatchSchedule_MatchCodeForm_NumberMsgBox>请输入合法数字!</OVRMatchSchedule_MatchCodeForm_NumberMsgBox>
+    <OVRMatchSchedule_MatchDateForm>比赛日期设置</OVRMatchSchedule_MatchDateForm>
+    <OVRMatchSchedule_MatchDateForm_labXDate>日期:</OVRMatchSchedule_MatchDateForm_labXDate>
+    <OVRMatchSchedule_MatchDateForm_btnXOK>确定</OVRMatchSchedule_MatchDateForm_btnXOK>
+    <OVRMatchSchedule_MatchDateForm_btnXCancel>取消</OVRMatchSchedule_MatchDateForm_btnXCancel>
+    <OVRMatchSchedule_MatchSessionForm>比赛单元设置</OVRMatchSchedule_MatchSessionForm>
+    <OVRMatchSchedule_MatchSessionForm_labXDate>日期:</OVRMatchSchedule_MatchSessionForm_labXDate>
+    <OVRMatchSchedule_MatchSessionForm_labXSession>单元:</OVRMatchSchedule_MatchSessionForm_labXSession>
+    <OVRMatchSchedule_MatchSessionForm_btnXOK>确定</OVRMatchSchedule_MatchSessionForm_btnXOK>
+    <OVRMatchSchedule_MatchSessionForm_btnXCancel>取消</OVRMatchSchedule_MatchSessionForm_btnXCancel>
+    <OVRMatchSchedule_MatchStartTimeForm>比赛开始时间设置</OVRMatchSchedule_MatchStartTimeForm>
+    <OVRMatchSchedule_MatchStartTimeForm_labXStartTime>起始时间:</OVRMatchSchedule_MatchStartTimeForm_labXStartTime>
+    <OVRMatchSchedule_MatchStartTimeForm_labXSpendTime>比赛时间:</OVRMatchSchedule_MatchStartTimeForm_labXSpendTime>
+    <OVRMatchSchedule_MatchStartTimeForm_labXSpanTime>间隔时间:</OVRMatchSchedule_MatchStartTimeForm_labXSpanTime>
+    <OVRMatchSchedule_MatchStartTimeForm_labXAdvanceTime>提前时间:</OVRMatchSchedule_MatchStartTimeForm_labXAdvanceTime>
+    <OVRMatchSchedule_MatchStartTimeForm_labXDelayTime>推迟时间:</OVRMatchSchedule_MatchStartTimeForm_labXDelayTime>
+    <OVRMatchSchedule_MatchStartTimeForm_btnXOK>确定</OVRMatchSchedule_MatchStartTimeForm_btnXOK>
+    <OVRMatchSchedule_MatchStartTimeForm_btnXCancel>取消</OVRMatchSchedule_MatchStartTimeForm_btnXCancel>
+    <OVRMatchSchedule_MatchEndTimeForm>比赛结束时间设置</OVRMatchSchedule_MatchEndTimeForm>
+    <OVRMatchSchedule_MatchEndTimeForm_labXEndTime>结束时间:</OVRMatchSchedule_MatchEndTimeForm_labXEndTime>
+    <OVRMatchSchedule_MatchEndTimeForm_labXSpanTime>间隔时间:</OVRMatchSchedule_MatchEndTimeForm_labXSpanTime>
+    <OVRMatchSchedule_MatchEndTimeForm_btnXOK>确定</OVRMatchSchedule_MatchEndTimeForm_btnXOK>
+    <OVRMatchSchedule_MatchEndTimeForm_btnXCancel>取消</OVRMatchSchedule_MatchEndTimeForm_btnXCancel>
+    <OVRMatchSchedule_MatchVenueForm>比赛场馆设置</OVRMatchSchedule_MatchVenueForm>
+    <OVRMatchSchedule_MatchVenueForm_labXVenue>场馆:</OVRMatchSchedule_MatchVenueForm_labXVenue>
+    <OVRMatchSchedule_MatchVenueForm_btnXOK>确定</OVRMatchSchedule_MatchVenueForm_btnXOK>
+    <OVRMatchSchedule_MatchVenueForm_btnXCancel>取消</OVRMatchSchedule_MatchVenueForm_btnXCancel>
+    <OVRMatchSchedule_MatchCourtForm>比赛场地设置</OVRMatchSchedule_MatchCourtForm>
+    <OVRMatchSchedule_MatchCourtForm_labXVenue>场馆:</OVRMatchSchedule_MatchCourtForm_labXVenue>
+    <OVRMatchSchedule_MatchCourtForm_labXCourt>场地:</OVRMatchSchedule_MatchCourtForm_labXCourt>
+    <OVRMatchSchedule_MatchCourtForm_btnXOK>确定</OVRMatchSchedule_MatchCourtForm_btnXOK>
+    <OVRMatchSchedule_MatchCourtForm_btnXCancel>取消</OVRMatchSchedule_MatchCourtForm_btnXCancel>
+    <OVRMatchSchedule_OrderInSessionForm>单元序号设置</OVRMatchSchedule_OrderInSessionForm>
+    <OVRMatchSchedule_OrderInSessionForm_labXStartNumber>起始数:</OVRMatchSchedule_OrderInSessionForm_labXStartNumber>
+    <OVRMatchSchedule_OrderInSessionForm_labXStep>步长:</OVRMatchSchedule_OrderInSessionForm_labXStep>
+    <OVRMatchSchedule_OrderInSessionForm_labXCodeLength>长度:</OVRMatchSchedule_OrderInSessionForm_labXCodeLength>
+    <OVRMatchSchedule_OrderInSessionForm_btnXOK>确定</OVRMatchSchedule_OrderInSessionForm_btnXOK>
+    <OVRMatchSchedule_OrderInSessionForm_btnXCancel>取消</OVRMatchSchedule_OrderInSessionForm_btnXCancel>
+    <OVRMatchSchedule_OrderInSessionForm_StartNumberMsgBox>请输入起始数!</OVRMatchSchedule_OrderInSessionForm_StartNumberMsgBox>
+    <OVRMatchSchedule_OrderInSessionForm_StepMsgBox>请输入步长!</OVRMatchSchedule_OrderInSessionForm_StepMsgBox>
+    <OVRMatchSchedule_OrderInSessionForm_CodeLengthMsgBox>请输入长度!</OVRMatchSchedule_OrderInSessionForm_CodeLengthMsgBox>
+    <OVRMatchSchedule_OrderInSessionForm_NumberMsgBox>请输入合法数字!</OVRMatchSchedule_OrderInSessionForm_NumberMsgBox>
+    <OVRMatchSchedule_OrderInRoundForm>轮次序号设置</OVRMatchSchedule_OrderInRoundForm>
+    <OVRMatchSchedule_OrderInRoundForm_labXStartNumber>起始数:</OVRMatchSchedule_OrderInRoundForm_labXStartNumber>
+    <OVRMatchSchedule_OrderInRoundForm_labXStep>步长:</OVRMatchSchedule_OrderInRoundForm_labXStep>
+    <OVRMatchSchedule_OrderInRoundForm_labXCodeLength>长度:</OVRMatchSchedule_OrderInRoundForm_labXCodeLength>
+    <OVRMatchSchedule_OrderInRoundForm_btnXOK>确定</OVRMatchSchedule_OrderInRoundForm_btnXOK>
+    <OVRMatchSchedule_OrderInRoundForm_btnXCancel>取消</OVRMatchSchedule_OrderInRoundForm_btnXCancel>
+    <OVRMatchSchedule_OrderInRoundForm_StartNumberMsgBox>请输入起始数!</OVRMatchSchedule_OrderInRoundForm_StartNumberMsgBox>
+    <OVRMatchSchedule_OrderInRoundForm_StepMsgBox>请输入步长!</OVRMatchSchedule_OrderInRoundForm_StepMsgBox>
+    <OVRMatchSchedule_OrderInRoundForm_CodeLengthMsgBox>请输入长度!</OVRMatchSchedule_OrderInRoundForm_CodeLengthMsgBox>
+    <OVRMatchSchedule_OrderInRoundForm_NumberMsgBox>请输入合法数字!</OVRMatchSchedule_OrderInRoundForm_NumberMsgBox>
+
+
+
+
+
+
+
+  </OVRMatchSchedule>
+
+  <OVRPluginMgr>
+    <LoadPluginError>加载插件错误</LoadPluginError>
+    <Update>刷新</Update>
+    <MatchList>比赛列表</MatchList>
+    <Event>赛  事</Event>
+    <Date>日  期</Date>
+    <Venue>场  馆</Venue>
+    <Phase>阶  段</Phase>
+    <Court>场  地</Court>
+  </OVRPluginMgr>
+
+  <OVRReportMgr>
+    <lbDiscInfo>项目信息</lbDiscInfo>
+    <lbCurGame>当前赛事</lbCurGame>
+    <lbCurDisc>当前项目</lbCurDisc>
+    <lbRptInfo>报表信息</lbRptInfo>
+    <btnRefleshDisc>刷新项目信息</btnRefleshDisc>
+    <btnLoadTpl>加载模板</btnLoadTpl>
+    <btnDesign>修改模板</btnDesign>
+    <btnRender>生成报表</btnRender>
+    <_RoundOrder>轮次</_RoundOrder>
+    <_RoundLongName>长名</_RoundLongName>
+    <_RoundShortName>短名</_RoundShortName>
+    <_SessionNum>单元</_SessionNum>
+    <_SessionDate>日期</_SessionDate>
+    <_SessionType>类型</_SessionType>
+    <_TplName>报表模板</_TplName>
+    <_RptName>已生成报表</_RptName>
+    <_VarName>变量名</_VarName>
+    <_VarType>类型</_VarType>
+    <_VarValue>值</_VarValue>
+    <TplDirNotExist>模板路径不存在</TplDirNotExist>
+    <LoadTplFailed>加载模板失败</LoadTplFailed>
+    <RptDirNotExist>报表路径不存在</RptDirNotExist>
+    <LoadRptFailed>加载报表失败</LoadRptFailed>
+    <InvdVarValue>出现无效变量值，请重新设置!</InvdVarValue>
+    <GenRptError>报表生成错误</GenRptError>
+  </OVRReportMgr>
+
+  <OVRRankMedal>
+    <lbResult>结果排名</lbResult>
+    <btnRefresh>刷新</btnRefresh>
+    <btnExportResult>导出成绩公告</btnExportResult>
+    <btnEventResult>统计项目成绩</btnEventResult>
+    <btnGroupResult>计算小组排名</btnGroupResult>
+    <btnGroupPoints>小组赛积分规则</btnGroupPoints>
+    <btnSendEventResult>发送项目成绩</btnSendEventResult>
+    <MsgSendEventResult>发送项目成绩成功！</MsgSendEventResult>
+    <cmdAddResult>添加成绩</cmdAddResult>
+    <cmdDelResult>删除成绩</cmdDelResult>
+    <cmdExportResult>导出成绩</cmdExportResult>
+    <btnEventDateSetting>指定成绩日期</btnEventDateSetting>
+    <btnMedalDateSetting>指定奖牌日期</btnMedalDateSetting>
+    <ExpResSucceed>导出名次公告成功!</ExpResSucceed>
+    <ExpResFailed>导出名次公告失败!</ExpResFailed>
+    <CalRankSucceed>生成项目排名成功!</CalRankSucceed>
+    <CalGrpResSucceed>计算小组成绩成功!</CalGrpResSucceed>
+    <AddResultFailed>添加成绩失败!</AddResultFailed>
+    <AddResultFailed_InvdEvtID>添加成绩失败! EventID无效!</AddResultFailed_InvdEvtID>
+    <DelResultConfirm>确定要删除这条项目结果？</DelResultConfirm>
+    <DelResultFailed>删除成绩失败!</DelResultFailed>
+    <DelResultFailed_Invd>删除成绩失败! EventID或Position无效!</DelResultFailed_Invd>
+    <UpdEvtMdlFailed>更改获奖情况失败!</UpdEvtMdlFailed>
+    <UpdEvtMdlFailed_InvdParam>更改获奖情况失败，输入参数无效!</UpdEvtMdlFailed_InvdParam>
+    <UpdEvtMdlFailed_NotAllowed>更改获奖情况失败，当前赛事状态不允许修改!</UpdEvtMdlFailed_NotAllowed>
+    <SetGrpPointsFailed>重新设定小组赛积分规则失败!</SetGrpPointsFailed>
+    <SetGrpPointsFailed_NotGrp>重新设定小组赛积分规则失败，该Phase不是小组赛!</SetGrpPointsFailed_NotGrp>
+    <btnOK>确定</btnOK>
+    <btnCancel>取消</btnCancel>
+    <lbWinPoints>胜积分</lbWinPoints>
+    <lbDrawPoints>平积分</lbDrawPoints>
+    <lbLostPoints>败积分</lbLostPoints>
+    <MenuEditEventStatus>修改小项状态</MenuEditEventStatus>
+    <MsgSetEventStatus1>修改小项的状态失败</MsgSetEventStatus1>
+    <MsgSetEventStatus2>修改小项的状态失败，@eventID无效！</MsgSetEventStatus2>
+    <MsgSetEventStatus3>修改小项的状态失败，该小项的子阶段或者子比赛的状态不允许该小项进行此状态修改！</MsgSetEventStatus3>
+    <lbEventLongName>长名</lbEventLongName>
+    <lbEventShortName>短名</lbEventShortName>
+    <lbEventStatus>状态</lbEventStatus>
+  </OVRRankMedal>
+
+  <OVRROPlugin>
+    <frmOVRSPMatchWeatherConfig>天气</frmOVRSPMatchWeatherConfig>
+    <lbAirtemp>空气温度</lbAirtemp>
+    <lbWater>水温</lbWater>
+    <lbHumidity>湿度</lbHumidity>
+    <lbDescription>天气描述</lbDescription>
+    <groupBWind>风</groupBWind>
+    <lbStartWind>开始风速</lbStartWind>
+    <lbFinishWind>结束风速</lbFinishWind>
+    <lbUnit>m/s</lbUnit>
+    <lbWindDirection>风向</lbWindDirection>
+    <frmOVRSPMatchJudgeConfig>场次裁判</frmOVRSPMatchJudgeConfig>
+    <lbJudgeName>姓名:</lbJudgeName>
+    <lbJudgeFunction>职责:</lbJudgeFunction>
+    <gvcMatchJudgeOrder>序号</gvcMatchJudgeOrder>
+    <gvcMatchJudgeName>姓名</gvcMatchJudgeName>
+    <gvcMatchJudgeFunction>职责</gvcMatchJudgeFunction>
+  </OVRROPlugin>
+
+  <OVRCBPlugin>
+    <frmOVRSPMatchWeatherConfig>天气</frmOVRSPMatchWeatherConfig>
+    <lbAirtemp>空气温度</lbAirtemp>
+    <lbHumidity>湿度</lbHumidity>
+    <lbDescription>天气描述</lbDescription>
+    <groupBWind>风</groupBWind>
+    <lbWindSpeed>风速</lbWindSpeed>
+    <lbUnit>m/s</lbUnit>
+    <lbWindDirection>风向</lbWindDirection>
+    <btnOK>确定</btnOK>
+    <btnCancel>取消</btnCancel>
+    <SelectMatchInfo>请选择一场比赛!</SelectMatchInfo>
+    <ExitInfo>确定退出当前比赛么?</ExitInfo>
+    <OtherMatchInto>请先退出当前比赛!</OtherMatchInto>
+    <ExitWithReceivedThreadOpen>数据接收线程正在运行，比赛无法退出。要退出请先关闭接收端口!</ExitWithReceivedThreadOpen>
+    <labelX_SerialPort>串口:</labelX_SerialPort>
+    <labelX_Baudrate>波特率:</labelX_Baudrate>
+    <labelX_Parity>校验:</labelX_Parity>
+    <labelX_Databits>数据位:</labelX_Databits>
+    <labelX_Stopbits>停止位:</labelX_Stopbits>
+    <SerialPortOpen_Error>该串口已经被占用,请选择别的串口!</SerialPortOpen_Error>
+    <groupBox_Receive_Setting>数据接收设置</groupBox_Receive_Setting>
+    <label_ConnectionType>类型:</label_ConnectionType>
+    <label_Port>端口:</label_Port>
+    <btn_ReceiceSetting>设置...</btn_ReceiceSetting>
+    <btn_start_receive>开始</btn_start_receive>
+    <btn_stop_receive>停止</btn_stop_receive>
+  </OVRCBPlugin>
+
+  <OVRCRPlugin>
+    <chk_SetOperateLog>记录操作日志</chk_SetOperateLog>
+    <CR_DataBase_NOT_Exist>当前数据库中不包含公路自行车项目，请重新选择数据库!</CR_DataBase_NOT_Exist>
+    <TR_DataBase_NOT_Exist>当前数据库中不包含铁人三项项目，请重新选择数据库!</TR_DataBase_NOT_Exist>
+    <CM_DataBase_NOT_Exist>当前数据库中不包含山地自行车项目，请重新选择数据库!</CM_DataBase_NOT_Exist>
+    <btnMatchSet>赛段设置...</btnMatchSet>
+    <btnRunSetUp>比赛配置...</btnRunSetUp>
+    <btnWeatherSet>天气设置...</btnWeatherSet>
+    <btnExit>退出</btnExit>
+    <WarnExitMatchFirst>不能切换到另一场比赛，应该首先退出当前的比赛!</WarnExitMatchFirst>
+    <ExitInfo>确定退出当前比赛么?</ExitInfo>
+    <MatchSettingWithReceivedThreadOpen>数据接收线程正在运行，比赛无法配置。要配置请先关闭接收端口!</MatchSettingWithReceivedThreadOpen>
+    <ExitWithReceivedThreadOpen>数据接收线程正在运行，比赛无法退出。要退出请先关闭接收端口!</ExitWithReceivedThreadOpen>
+    <label_CurSplit>当前计时点:</label_CurSplit>
+    <label_CurGroup>当前组:</label_CurGroup>
+    <btnX_Schedule>比赛日程</btnX_Schedule>
+    <btnX_StartList>出发单</btnX_StartList>
+    <btnX_Running>比赛</btnX_Running>
+    <btnX_Suspend>暂停</btnX_Suspend>
+    <btnX_Unofficial>非官方</btnX_Unofficial>
+    <btnX_Finished>结束</btnX_Finished>
+    <btnX_Revision>修改</btnX_Revision>
+    <btnX_Canceled>取消</btnX_Canceled>
+    <MenuItem_Edit_StartTime>编辑 出发时间</MenuItem_Edit_StartTime>
+    <MenuItem_Adjust_StartTime>调整 出发时间</MenuItem_Adjust_StartTime>
+    <MenuItem_Shift_StartTime>偏移</MenuItem_Shift_StartTime>
+    <MenuItem_Shift_AllStartTime>所有偏移</MenuItem_Shift_AllStartTime>
+    <MenuItem_Shift_StartTime_By_GroupNumber>按组偏移</MenuItem_Shift_StartTime_By_GroupNumber>
+    <MenuItem_Change_Bib>改变 Bib号</MenuItem_Change_Bib>
+    <SwapTime>交换成绩 </SwapTime>
+    <BibForSwapTime>请输入想要交换成绩的Bib号</BibForSwapTime>
+    <MenuItem_Change_StartOrder>改变出发顺序</MenuItem_Change_StartOrder>
+    <MenuItem_Change_Group>改变 组号</MenuItem_Change_Group>
+    <MenuItem_Swap_Time>与另一运动员交换时间...</MenuItem_Swap_Time>
+    <MenuItem_UseTimeFromLOG>使用LOG时间</MenuItem_UseTimeFromLOG>
+    <MenuItem_ReCanculateAll>重新计算所有成绩</MenuItem_ReCanculateAll>
+    <MenuItem_Shift_StartTime_Error>运动员已经出发，无法偏移时间</MenuItem_Shift_StartTime_Error>
+    <MenuItem_Shift_StartTime_OutRange_Error> 偏移时间超出了有效范围</MenuItem_Shift_StartTime_OutRange_Error>
+    <MenuItem_ShiftAll_StartTime_Error>有些运动员已经出发，无法偏移时间</MenuItem_ShiftAll_StartTime_Error>
+    <MenuItem_ShiftAll_StartTime_OutRange_Error>有些运动员的偏移时间超出了有效范围</MenuItem_ShiftAll_StartTime_OutRange_Error>
+    <status_OK>OK</status_OK>
+    <status_REL>REL-降低排名</status_REL>
+    <status_DNF>DNF-未完成</status_DNF>
+    <status_DNS>DNS-未出发</status_DNS>
+    <status_DSQ>DSQ-取消资格</status_DSQ>
+    <status_DSQ_C>DSQ_C -取消资格并清空成绩</status_DSQ_C>
+    <status_LAP>OVL/LAP-套圈</status_LAP>
+    <StripMenuItem_Restart>重新开始</StripMenuItem_Restart>
+    <frm_MatchSetting>赛段设置</frm_MatchSetting>
+    <frm_RunSetUp>比赛配置</frm_RunSetUp>
+    <label_RaceDesc>比赛描述</label_RaceDesc>
+    <label_StartTime>出发时间</label_StartTime>
+    <label_Interval>间隔</label_Interval>
+    <label_GapTime>大团时间</label_GapTime>
+    <label_Intermediate>计时点时间:</label_Intermediate>
+    <label_Range>赛段时间:</label_Range>
+    <checkBox_SetStartTime>设置出发时间</checkBox_SetStartTime>
+    <checkBox_TeamTimeTrial>团体计时赛</checkBox_TeamTimeTrial>
+    <btnOK>确定</btnOK>
+    <btnCancel>取消</btnCancel>
+    <addToolStripMenuItem>增加</addToolStripMenuItem>
+    <deleteToolStripMenuItem>删除</deleteToolStripMenuItem>
+    <insertToolStripMenuItem>插入</insertToolStripMenuItem>
+    <QueryMatch_Error>查寻比赛失败,不能填充DataGridView!</QueryMatch_Error>
+    <Interval_NULL_Error>请输入时间间隔!</Interval_NULL_Error>
+    <Interval_Format_Error>时间间隔格式错误!</Interval_Format_Error>
+    <LegSet_NULL_Error>请在编辑框中输入赛段设置!</LegSet_NULL_Error>
+    <LegSet_Format_Error>编辑框中的数值应该大于零!</LegSet_Format_Error>
+    <StartTime_Format_Error>出发时间格式错误!</StartTime_Format_Error>
+    <Hour_Format_Error>小时位格式错误!</Hour_Format_Error>
+    <Minute_Format_Error>分钟位格式错误!</Minute_Format_Error>
+    <Second_Format_Error>秒位格式错误!</Second_Format_Error>
+    <StartOrderNULL_Error>赛段时间的开始计时点不应该为空!</StartOrderNULL_Error>
+    <StartOrderOutofRange_Error>赛段时间的开始计时点超过了计时点范围</StartOrderOutofRange_Error>
+    <EndOrderOutofRange_Error>赛段时间的终止计时点超过了计时点范围</EndOrderOutofRange_Error>
+    <EndOrderNULL_Error>赛段时间的终止计时点应该大于0</EndOrderNULL_Error>
+    <Start_End_Order_Error>赛段时间的终止计时点应大于开始计时点!</Start_End_Order_Error>
+    <SelectMatchInfo>请选择一场比赛!</SelectMatchInfo>
+    <MatchTypeError>比赛类型错误，无法配置比赛!</MatchTypeError>
+    <EditTime>编辑时间</EditTime>
+    <NewTime>新时间  </NewTime>
+    <NewBib>新Bib号 </NewBib>
+    <NewStartOrder>新出发号 </NewStartOrder>
+    <NewGroupNumber>新组号 </NewGroupNumber>
+    <EditStartTime>编辑出发时间</EditStartTime>
+    <TimeOutofRange_Error>出发时间超过已有的成绩时间，不符合逻辑</TimeOutofRange_Error>
+    <RestartMatchInfo>确定要重新开始比赛么，这会删除所有的比赛数据!</RestartMatchInfo>
+    <ShiftStartTime>偏移出发时间</ShiftStartTime>
+    <ShiftAllStartTime>偏移所有出发时间</ShiftAllStartTime>
+    <ShiftStartTimeCaption>偏移格式 (例:"20" "-2:30" )</ShiftStartTimeCaption>
+
+    <OVRCRWeatherConfig>天气设置</OVRCRWeatherConfig>
+    <lbAirtemp>气温</lbAirtemp>
+    <lbWatertemp>水温</lbWatertemp>
+    <lbHumidity>湿度</lbHumidity>
+    <lbWeatherConditionDes>天气情况</lbWeatherConditionDes>
+    <lbWindSpeed>风速</lbWindSpeed>
+    <lbUnit>千米/时</lbUnit>
+    <lbWindDirection>风向</lbWindDirection>
+
+    <checkbox_RELasLastPlace>将REL状态的运动员排在同一集团的最后</checkbox_RELasLastPlace>
+    <checkbox_LapAsDNF>将LAP状态当成DNF状态来排序</checkbox_LapAsDNF>
+    <checkbox_RankLap>排名LAP状态的运动员</checkbox_RankLap>
+    <checkbox_SubsortDNFbyLastLapTime>DNF状态的子排序依据最后一圈的时间</checkbox_SubsortDNFbyLastLapTime>
+    <checkbox_DNSbeforeDSQ>将DNS排在DSQ之前</checkbox_DNSbeforeDSQ>
+    <checkbox_SubsortDNSbyNOC>DNS状态的子排序依据NOC</checkbox_SubsortDNSbyNOC>
+    <checkbox_SubsortDSQbyNOC>DSQ状态的子排序依据NOC</checkbox_SubsortDSQbyNOC>
+
+    <labelX_SerialPort>串口:</labelX_SerialPort>
+    <labelX_Baudrate>波特率:</labelX_Baudrate>
+    <labelX_Parity>校验:</labelX_Parity>
+    <labelX_Databits>数据位:</labelX_Databits>
+    <labelX_Stopbits>停止位:</labelX_Stopbits>
+    <SerialPortOpen_Error>该串口已经被占用,请选择别的串口!</SerialPortOpen_Error>
+    <groupBox_Receive_Setting>数据接收设置</groupBox_Receive_Setting>
+    <groupBox_Receive_SettingBackUp>备用串口</groupBox_Receive_SettingBackUp>
+    <label_ConnectionType>类型:</label_ConnectionType>
+    <label_Port>端口:</label_Port>
+    <btn_ReceiceSetting>设置...</btn_ReceiceSetting>
+    <btn_start_receive>开始</btn_start_receive>
+    <btn_stop_receive>停止</btn_stop_receive>
+    <btn_Save>保存...</btn_Save>
+    <btn_Load>加载...</btn_Load>
+    <LoadCourseSetting>加载赛段配置</LoadCourseSetting>
+    <SaveCourseSetting>保存赛段配置</SaveCourseSetting>
+    <btn_LegSetup>设置赛段...</btn_LegSetup>
+
+    <LogWindowText>选择时间</LogWindowText>
+    <label_LEG>赛段</label_LEG>
+    <label_SplitPoint>计时点</label_SplitPoint>
+    <label_SplitTime>时间</label_SplitTime>
+    <LoadCourseSetting_Warning>确实要加载赛段配置文件么？这会删除当前比赛的所有成绩数据</LoadCourseSetting_Warning>
+
+    <lb_Swim>游泳圈数:</lb_Swim>
+    <lb_Bike>骑行圈数:</lb_Bike>
+    <lb_Run>跑步圈数:</lb_Run>
+
+    <frm_ModeSel>选择模式</frm_ModeSel>
+    <chk_DataEntry>数据录入模式</chk_DataEntry>
+    <chk_DataMonitor>数据监控模式</chk_DataMonitor>
+    <lbModeDesc>在数据录入模式下，你可以做任何操作；数据监控模式下，你不能录入数据，只能监看数据；只有连接计时计分设备的计算机才可以选择数据录入模式!</lbModeDesc>
+    <chkAutoUpdate>每分钟刷新一次</chkAutoUpdate>
+    <btnUpdate>手动刷新</btnUpdate>
+  </OVRCRPlugin>
+
+  <OVRSQPlugin>
+    <gbMatchInfo>比赛信息</gbMatchInfo>
+    <gbMatchScore>比分信息</gbMatchScore>
+    <lbSportName>赛事名称:</lbSportName>
+    <lbPhaseName>赛事阶段:</lbPhaseName>
+    <lbDate>比赛时间:</lbDate>
+    <lbVenue>比赛场馆:</lbVenue>
+    <lbTotalScore>总比分</lbTotalScore>
+    <lbPlayers>运动员</lbPlayers>
+    <lbGameTotal>局总分</lbGameTotal>
+    <lbRegu>场次:</lbRegu>
+    <btnxOfficialInfo>官员信息</btnxOfficialInfo>
+    <btnxTeamInfo>两队信息</btnxTeamInfo>
+    <btnxExitMatch>退出比赛</btnxExitMatch>
+    <btnxModifyResult>修改结果</btnxModifyResult>
+    <btnxModifyTime>修改时间</btnxModifyTime>
+    <btnxSchedule>已安排</btnxSchedule>
+    <btnxStartList>进入场地</btnxStartList>
+    <btnxRunning>进行中</btnxRunning>
+    <btnxSuspend>已挂起</btnxSuspend>
+    <btnxUnofficial>非官方</btnxUnofficial>
+    <btnxFinished>已结束</btnxFinished>
+    <btnxRevision>重修改</btnxRevision>
+    <btnxCanceled>取消</btnxCanceled>
+    <btnxMatch1>第一场</btnxMatch1>
+    <btnxMatch2>第二场</btnxMatch2>
+    <btnxMatch3>第三场</btnxMatch3>
+    <btnxMatch4>第四场</btnxMatch4>
+    <btnxMatch5>第五场</btnxMatch5>
+    <radServerA>A发球</radServerA>
+    <radServerB>B发球</radServerB>
+    <SubMatchResult>单场结果</SubMatchResult>
+    <GameResult>局结果</GameResult>
+    <radGame1>第一局</radGame1>
+    <radGame2>第二局</radGame2>
+    <radGame3>第三局</radGame3>
+    <radGame4>第四局</radGame4>
+    <radGame5>第五局</radGame5>
+    <frmModifyResult>修改比赛结果</frmModifyResult>
+    <frmModifyTime>修改比赛时间</frmModifyTime>
+    <frmEntryOfficial>选择官员信息</frmEntryOfficial>
+    <lbAvailableOfficials>可选裁判</lbAvailableOfficials>
+    <lbMatchOfficials>已选裁判</lbMatchOfficials>
+    <frmSetTeamPlayers>设置两队信息</frmSetTeamPlayers>
+    <lbAvailablePlayers>可选运动员</lbAvailablePlayers>
+    <lbMatchPlayers>已选运动员</lbMatchPlayers>
+    <mbRunningMatch>请先退出比赛!</mbRunningMatch>
+    <mbChooseMatch>请先选择一场比赛!</mbChooseMatch>
+    <mbMatchStatus>比赛状态: </mbMatchStatus>
+    <mbConfigMatchUp>请先选择对阵双方!</mbConfigMatchUp>
+    <mbExitMatch>是否确定退出比赛!</mbExitMatch>
+    <mbMatchRule>请先设置比赛规则!</mbMatchRule>
+    <mbCreateSplit>创建失败!</mbCreateSplit>
+    <mbUpdateTime>更新时间失败!</mbUpdateTime>
+    <mbUpdateServer>更新球权失败!</mbUpdateServer>
+    <mbSetTeamPlayers>请先选择单场队员信息!</mbSetTeamPlayers>
+    <gbExportImport>导入导出</gbExportImport>
+    <lbSelectDate>比赛日期</lbSelectDate>
+    <lbExportPath>导出路径</lbExportPath>
+    <btnxExportAthlete>导出运动员</btnxExportAthlete>
+    <btnxExportSchedule>导出今日赛程</btnxExportSchedule>
+    <lbImportPath>导入路径</lbImportPath>
+    <btnxImportMatchInfo>导入实时比分</btnxImportMatchInfo>
+    <btnxImportAction>导入技术统计</btnxImportAction>
+    <btnxImportResult>导入比赛结果</btnxImportResult>
+    <chkAutoImport>自动导入</chkAutoImport>
+    <chkExternalData>外部数据</chkExternalData>
+    <msgExportPath>导出路径无效!</msgExportPath>
+    <msgImportPath>导入路径无效!</msgImportPath>
+    <msgSelectDate>请选择比赛日期!</msgSelectDate>
+    <msgFilePath>文件不存在!</msgFilePath>
+    <msgExportFile>导出文件成功!</msgExportFile>
+    <msgImportMatchInfoSuc>导入实时比分成功!</msgImportMatchInfoSuc>
+    <msgImportActionSuc>导入技术统计成功!</msgImportActionSuc>
+    <msgImportResultSuc>导入比赛结果成功!</msgImportResultSuc>
+    <msgImportMatchInfo>导入实时比分失败!</msgImportMatchInfo>
+    <msgImportAction>导入技术统计失败!</msgImportAction>
+    <msgImportMatchResult>导入比赛结果失败!</msgImportMatchResult>
+  </OVRSQPlugin>
+
+  <OVRSLPlugin>
+    <OVRSLPlugin_OVRSLDataEntryForm_labX_IP>地址:</OVRSLPlugin_OVRSLDataEntryForm_labX_IP>
+    <OVRSLPlugin_OVRSLDataEntryForm_labX_Port>端口:</OVRSLPlugin_OVRSLDataEntryForm_labX_Port>
+    <OVRSLPlugin_OVRSLDataEntryForm_chkX_Connect>连接</OVRSLPlugin_OVRSLDataEntryForm_chkX_Connect>
+    <OVRSLPlugin_OVRSLDataEntryForm_labX_MatchInfo>比赛名称</OVRSLPlugin_OVRSLDataEntryForm_labX_MatchInfo>
+    <OVRSLPlugin_OVRSLDataEntryForm_labX_Sel>准备及比赛:</OVRSLPlugin_OVRSLDataEntryForm_labX_Sel>
+    <OVRSLPlugin_OVRSLDataEntryForm_labX_All>运动员列表:</OVRSLPlugin_OVRSLDataEntryForm_labX_All>
+    <OVRSLPlugin_OVRSLDataEntryForm_btnX_MatchSetting>比赛设置</OVRSLPlugin_OVRSLDataEntryForm_btnX_MatchSetting>
+    <OVRSLPlugin_OVRSLDataEntryForm_btnX_WeatherSetting>天气设置</OVRSLPlugin_OVRSLDataEntryForm_btnX_WeatherSetting>
+    <OVRSLPlugin_OVRSLDataEntryForm_btnX_StatusSetting>状态设置</OVRSLPlugin_OVRSLDataEntryForm_btnX_StatusSetting>
+    <OVRSLPlugin_OVRSLDataEntryForm_btnX_Exit>退出</OVRSLPlugin_OVRSLDataEntryForm_btnX_Exit>
+    <OVRSLPlugin_OVRSLDataEntryForm_menX_OK>确定</OVRSLPlugin_OVRSLDataEntryForm_menX_OK>
+    <OVRSLPlugin_OVRSLDataEntryForm_menX_Cancel>取消</OVRSLPlugin_OVRSLDataEntryForm_menX_Cancel>
+    <OVRSLPlugin_OVRSLDataEntryForm_menX_Ready>准备</OVRSLPlugin_OVRSLDataEntryForm_menX_Ready>
+    <OVRSLPlugin_OVRSLDataEntryForm_menX_Clear>清除</OVRSLPlugin_OVRSLDataEntryForm_menX_Clear>
+    <OVRSLPlugin_OVRSLDataEntryForm_menX_EditForerunInfo>编辑预备划信息</OVRSLPlugin_OVRSLDataEntryForm_menX_EditForerunInfo>
+    <OVRSLPlugin_OVRSLDataEntryForm_menX_EditStartTime>编辑出发时间</OVRSLPlugin_OVRSLDataEntryForm_menX_EditStartTime>
+    <OVRSLPlugin_OVRSLDataEntryForm_Msg_SelectMatchInfo>请选择一场比赛!</OVRSLPlugin_OVRSLDataEntryForm_Msg_SelectMatchInfo>
+    <OVRSLPlugin_OVRSLDataEntryForm_Msg_UpdateMatchInfo>是否更新比赛?</OVRSLPlugin_OVRSLDataEntryForm_Msg_UpdateMatchInfo>
+    <OVRSLPlugin_OVRSLDataEntryForm_Msg_ChangeMatchInfo>是否切换比赛?</OVRSLPlugin_OVRSLDataEntryForm_Msg_ChangeMatchInfo>
+    <OVRSLPlugin_OVRSLDataEntryForm_Msg_CancelReadyInfo>是否取消准备?</OVRSLPlugin_OVRSLDataEntryForm_Msg_CancelReadyInfo>
+    <OVRSLPlugin_OVRSLDataEntryForm_Msg_ClearInfo>是否清除?</OVRSLPlugin_OVRSLDataEntryForm_Msg_ClearInfo>
+    <OVRSLPlugin_OVRSLDataEntryForm_Msg_ExitMatchInfo>是否退出比赛?</OVRSLPlugin_OVRSLDataEntryForm_Msg_ExitMatchInfo>
+
+    <OVRSLPlugin_MatchSettingForm_titleText>比赛设置</OVRSLPlugin_MatchSettingForm_titleText>
+    <OVRSLPlugin_MatchSettingForm_labX_SplitCount>分段数量:</OVRSLPlugin_MatchSettingForm_labX_SplitCount>
+    <OVRSLPlugin_MatchSettingForm_labX_GateCount>旗门数量:</OVRSLPlugin_MatchSettingForm_labX_GateCount>
+    <OVRSLPlugin_MatchSettingForm_labX_SplitGate1>分段旗门1:</OVRSLPlugin_MatchSettingForm_labX_SplitGate1>
+    <OVRSLPlugin_MatchSettingForm_labX_SplitGate2>分段旗门2:</OVRSLPlugin_MatchSettingForm_labX_SplitGate2>
+    <OVRSLPlugin_MatchSettingForm_labX_SplitGate3>分段旗门3:</OVRSLPlugin_MatchSettingForm_labX_SplitGate3>
+    <OVRSLPlugin_MatchSettingForm_labX_SplitGate4>分段旗门4:</OVRSLPlugin_MatchSettingForm_labX_SplitGate4>
+    <OVRSLPlugin_MatchSettingForm_labX_WaterSpeed>水速:</OVRSLPlugin_MatchSettingForm_labX_WaterSpeed>
+    <OVRSLPlugin_MatchSettingForm_btnX_OK>确定</OVRSLPlugin_MatchSettingForm_btnX_OK>
+    <OVRSLPlugin_MatchSettingForm_btnX_Cancel>取消</OVRSLPlugin_MatchSettingForm_btnX_Cancel>
+
+    <OVRSLWeatherForm>天气设置</OVRSLWeatherForm>
+    <lbAirtemp>气温:</lbAirtemp>
+    <lbWatertemp>水温:</lbWatertemp>
+    <lbHumidity>湿度:</lbHumidity>
+    <lbWeatherConditionDes>天气情况:</lbWeatherConditionDes>
+    <lbWindSpeed>风速:</lbWindSpeed>
+    <lbUnit>千米/时</lbUnit>
+    <lbWindDirection>风向:</lbWindDirection>
+    <btnX_OK>确定</btnX_OK>
+    <btnX_Cancel>取消</btnX_Cancel>
+
+    <OVRSLPlugin_OVRSLEditTimeFrom_titleText>编辑出发时间</OVRSLPlugin_OVRSLEditTimeFrom_titleText>
+    <OVRSLPlugin_OVRSLEditTimeFrom_labXStartTime>开始时间:</OVRSLPlugin_OVRSLEditTimeFrom_labXStartTime>
+    <OVRSLPlugin_OVRSLEditTimeFrom_labXSpanTime>间隔时间:</OVRSLPlugin_OVRSLEditTimeFrom_labXSpanTime>
+    <OVRSLPlugin_OVRSLEditTimeFrom_btnXOK>确定</OVRSLPlugin_OVRSLEditTimeFrom_btnXOK>
+    <OVRSLPlugin_OVRSLEditTimeFrom_btnXCancel>取消</OVRSLPlugin_OVRSLEditTimeFrom_btnXCancel>
+
+    <OVRSLPlugin_OVRSLEditForerunInfoFrom_titleText>编辑预备划信息</OVRSLPlugin_OVRSLEditForerunInfoFrom_titleText>
+    <OVRSLPlugin_OVRSLEditForerunInfoFrom_labXRegister>人员:</OVRSLPlugin_OVRSLEditForerunInfoFrom_labXRegister>
+    <OVRSLPlugin_OVRSLEditForerunInfoFrom_labXEvent>项目:</OVRSLPlugin_OVRSLEditForerunInfoFrom_labXEvent>
+    <OVRSLPlugin_OVRSLEditForerunInfoFrom_btnXOK>确定</OVRSLPlugin_OVRSLEditForerunInfoFrom_btnXOK>
+    <OVRSLPlugin_OVRSLEditForerunInfoFrom_btnXCancel>取消</OVRSLPlugin_OVRSLEditForerunInfoFrom_btnXCancel>
+
+    <OVRSLPlugin_OVRSLEditPenSecFrom_titleText>编辑罚分信息</OVRSLPlugin_OVRSLEditPenSecFrom_titleText>
+    <OVRSLPlugin_OVRSLEditPenSecFrom_btnXOK>确定</OVRSLPlugin_OVRSLEditPenSecFrom_btnXOK>
+    <OVRSLPlugin_OVRSLEditPenSecFrom_btnXCancel>取消</OVRSLPlugin_OVRSLEditPenSecFrom_btnXCancel>
+  </OVRSLPlugin>
+
+  <OVRARPlugin>
+    <OVRARPlugin_OVRARDataEntryForm_labX_MatchInfo>比赛名称</OVRARPlugin_OVRARDataEntryForm_labX_MatchInfo>
+    <OVRARPlugin_OVRARDataEntryForm_labX_EndCount>组数:</OVRARPlugin_OVRARDataEntryForm_labX_EndCount>
+    <OVRARPlugin_OVRARDataEntryForm_labX_ArrowCount>每组箭数:</OVRARPlugin_OVRARDataEntryForm_labX_ArrowCount>
+    <OVRARPlugin_OVRARDataEntryForm_btnX_MatchSetting>比赛设置</OVRARPlugin_OVRARDataEntryForm_btnX_MatchSetting>
+    <OVRARPlugin_OVRARDataEntryForm_btnX_StatusSetting>状态设置</OVRARPlugin_OVRARDataEntryForm_btnX_StatusSetting>
+    <OVRARPlugin_OVRARDataEntryForm_btnX_Exit>退出</OVRARPlugin_OVRARDataEntryForm_btnX_Exit>
+    <OVRARPlugin_OVRARDataEntryForm_btnX_Edit>编辑</OVRARPlugin_OVRARDataEntryForm_btnX_Edit>
+    <OVRARPlugin_OVRARDataEntryForm_btnX_Officials>竞赛官员</OVRARPlugin_OVRARDataEntryForm_btnX_Officials>
+    <OVRARPlugin_OVRARDataEntryForm_labX_Interface>通过接口更新数据</OVRARPlugin_OVRARDataEntryForm_labX_Interface>
+    <OVRARPlugin_OVRARDataEntryForm_btnX_Check>核对成绩</OVRARPlugin_OVRARDataEntryForm_btnX_Check>
+
+    <OVRARPlugin_MatchSettingForm_titleText>比赛设置</OVRARPlugin_MatchSettingForm_titleText>
+    <OVRARPlugin_MatchSettingForm_labX_EndCount>组数:</OVRARPlugin_MatchSettingForm_labX_EndCount>
+    <OVRARPlugin_MatchSettingForm_labX_ArrowCount>每组箭数:</OVRARPlugin_MatchSettingForm_labX_ArrowCount>
+    <OVRARPlugin_MatchSettingForm_btnX_OK>确定</OVRARPlugin_MatchSettingForm_btnX_OK>
+    <OVRARPlugin_MatchSettingForm_btnX_Cancel>取消</OVRARPlugin_MatchSettingForm_btnX_Cancel>
+    
+    <OVRARPlugin_UCQualification_columnHeader_Target>靶位</OVRARPlugin_UCQualification_columnHeader_Target>
+    <OVRARPlugin_UCQualification_columnHeader_Name>姓名</OVRARPlugin_UCQualification_columnHeader_Name>
+    <OVRARPlugin_UCQualification_columnHeader_Noc>单位</OVRARPlugin_UCQualification_columnHeader_Noc>
+    <OVRARPlugin_UCQualification_columnHeader_Result>成绩</OVRARPlugin_UCQualification_columnHeader_Result>
+    <OVRARPlugin_UCQualification_columnHeader_Rank>排名</OVRARPlugin_UCQualification_columnHeader_Rank>
+    <OVRARPlugin_UCQualification_columnHeader_Records>记录</OVRARPlugin_UCQualification_columnHeader_Records>
+    
+    <OVRARPlugin_UCElimination_labX_Winner>胜者</OVRARPlugin_UCElimination_labX_Winner>
+    <OVRARPlugin_UCElimination_labX_Loser>负者</OVRARPlugin_UCElimination_labX_Loser>
+    <OVRARPlugin_UCElimination_labX_AutoUpdateScore>自动更新环数</OVRARPlugin_UCElimination_labX_AutoUpdateScore>
+    <OVRARPlugin_UCElimination_labX_AutoUpdatePoint>自动更新局点</OVRARPlugin_UCElimination_labX_AutoUpdatePoint>
+    <OVRARPlugin_UCElimination_labX_AutoUpdateWinner>自动设置胜负</OVRARPlugin_UCElimination_labX_AutoUpdateWinner>
+    <OVRARPlugin_UCElimination_labX_Totals>10环和内10环总数：</OVRARPlugin_UCElimination_labX_Totals>
+  </OVRARPlugin>
+
+  <OVRSGPlugin>
+    <OVRSGPlugin_OVRSGDataEntryForm_labX_MatchInfo>比赛名称</OVRSGPlugin_OVRSGDataEntryForm_labX_MatchInfo>
+    <OVRSGPlugin_OVRSGDataEntryForm_btnX_StatusSetting>状态设置</OVRSGPlugin_OVRSGDataEntryForm_btnX_StatusSetting>
+    <OVRSGPlugin_OVRSGDataEntryForm_btnX_Exit>退出</OVRSGPlugin_OVRSGDataEntryForm_btnX_Exit>
+    <OVRSGPlugin_OVRSGDataEntryForm_Msg_SelectMatchInfo>请选择一场比赛!</OVRSGPlugin_OVRSGDataEntryForm_Msg_SelectMatchInfo>
+    <OVRSGPlugin_OVRSGDataEntryForm_Msg_UpdateMatchInfo>是否更新比赛?</OVRSGPlugin_OVRSGDataEntryForm_Msg_UpdateMatchInfo>
+    <OVRSGPlugin_OVRSGDataEntryForm_Msg_ChangeMatchInfo>是否切换比赛?</OVRSGPlugin_OVRSGDataEntryForm_Msg_ChangeMatchInfo>
+    <OVRSGPlugin_OVRSGDataEntryForm_Msg_ExitMatchInfo>是否退出比赛?</OVRSGPlugin_OVRSGDataEntryForm_Msg_ExitMatchInfo>
+    <OVRSGPlugin_OVRSGDataEntryForm_menX_GetResult>获取成绩</OVRSGPlugin_OVRSGDataEntryForm_menX_GetResult>
+    <OVRSGPlugin_OVRSGDataEntryForm_menX_ClearResult>清除成绩</OVRSGPlugin_OVRSGDataEntryForm_menX_ClearResult>
+    <OVRSGPlugin_OVRSGDataEntryForm_menX_Delete>删除</OVRSGPlugin_OVRSGDataEntryForm_menX_Delete>
+
+    <OVRSGPlugin_OVRSGSelRecordTypeFrom_titleText>选择纪录类型</OVRSGPlugin_OVRSGSelRecordTypeFrom_titleText>
+    <OVRSGPlugin_OVRSGSelRecordTypeFrom_labXRecordType>纪录类型:</OVRSGPlugin_OVRSGSelRecordTypeFrom_labXRecordType>
+    <OVRSGPlugin_OVRSGSelRecordTypeFrom_btnXOK>确定</OVRSGPlugin_OVRSGSelRecordTypeFrom_btnXOK>
+    <OVRSGPlugin_OVRSGSelRecordTypeFrom_btnXCancel>取消</OVRSGPlugin_OVRSGSelRecordTypeFrom_btnXCancel>
+  </OVRSGPlugin>
+
+  <OVRWLPlugin>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_MatchInfo>比赛名称</OVRWLPlugin_OVRWLDataEntryForm_labX_MatchInfo>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_Weighin>称重时间:</OVRWLPlugin_OVRWLDataEntryForm_labX_Weighin>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_AtheleName>运动员姓名</OVRWLPlugin_OVRWLDataEntryForm_labX_AtheleName>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_Order>上场顺序</OVRWLPlugin_OVRWLDataEntryForm_labX_Order>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_Bib>序号</OVRWLPlugin_OVRWLDataEntryForm_labX_Bib>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_Weight>体重</OVRWLPlugin_OVRWLDataEntryForm_labX_Weight>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_NOC>国籍</OVRWLPlugin_OVRWLDataEntryForm_labX_NOC>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_IRM>IRM</OVRWLPlugin_OVRWLDataEntryForm_labX_IRM>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_MatchName>比赛名称</OVRWLPlugin_OVRWLDataEntryForm_labX_MatchName>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_1st>第一次</OVRWLPlugin_OVRWLDataEntryForm_labX_1st>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_2nd>第二次</OVRWLPlugin_OVRWLDataEntryForm_labX_2nd>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_3rd>第三次</OVRWLPlugin_OVRWLDataEntryForm_labX_3rd>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_Result>结果</OVRWLPlugin_OVRWLDataEntryForm_labX_Result>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_AvailableOfficial>可选择的官员</OVRWLPlugin_OVRWLDataEntryForm_labX_AvailableOfficial>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_MatchOfficial>比赛官员</OVRWLPlugin_OVRWLDataEntryForm_labX_MatchOfficial>
+
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_StatusSetting>状态设置</OVRWLPlugin_OVRWLDataEntryForm_btnX_StatusSetting>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_Exit>退出</OVRWLPlugin_OVRWLDataEntryForm_btnX_Exit>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_Officials>官员设置</OVRWLPlugin_OVRWLDataEntryForm_btnX_Officials>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_Draw>抽签</OVRWLPlugin_OVRWLDataEntryForm_btnX_Draw>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_TS>计时记分路径</OVRWLPlugin_OVRWLDataEntryForm_btnX_TS>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_LoadTS>加载计时记分数据</OVRWLPlugin_OVRWLDataEntryForm_btnX_LoadTS>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_Attempt>填入试举重量</OVRWLPlugin_OVRWLDataEntryForm_btnX_Attempt>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_CurrentAttempt>当前试举</OVRWLPlugin_OVRWLDataEntryForm_btnX_CurrentAttempt>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_LightStatus>试举灯状态</OVRWLPlugin_OVRWLDataEntryForm_btnX_LightStatus>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_Finished>完成试举</OVRWLPlugin_OVRWLDataEntryForm_btnX_Finished>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_1st>第一次 试举</OVRWLPlugin_OVRWLDataEntryForm_btnX_1st>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_2nd>第二次 试举</OVRWLPlugin_OVRWLDataEntryForm_btnX_2nd>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_3rd>第三次 试举</OVRWLPlugin_OVRWLDataEntryForm_btnX_3rd>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_SetOfficialGroup>设置官员分组</OVRWLPlugin_OVRWLDataEntryForm_btnX_SetOfficialGroup>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_Login>登陆</OVRWLPlugin_OVRWLDataEntryForm_btnX_Login>
+
+    <OVRWLPlugin_OVRWLDataEntryForm_cbX_TS>接收数据</OVRWLPlugin_OVRWLDataEntryForm_cbX_TS>
+    <OVRWLPlugin_OVRWLDataEntryForm_cbX_MixTS>接收数据(混合单场)</OVRWLPlugin_OVRWLDataEntryForm_cbX_MixTS>
+    <OVRWLPlugin_OVRWLDataEntryForm_cbX_Attempt>自动填入试举重量</OVRWLPlugin_OVRWLDataEntryForm_cbX_Attempt>
+
+    <OVRWLPlugin_OVRWLDataEntryForm_frmEntryOfficial>比赛官员设置</OVRWLPlugin_OVRWLDataEntryForm_frmEntryOfficial>
+    <OVRWLPlugin_OVRWLDataEntryForm_frmEntryOfficialGroup>设置竞赛官员官员分组</OVRWLPlugin_OVRWLDataEntryForm_frmEntryOfficialGroup>
+    <OVRWLPlugin_OVRWLDataEntryForm_frmOVRWLAutoDraw>举重 - 抽签</OVRWLPlugin_OVRWLDataEntryForm_frmOVRWLAutoDraw>
+
+    <OVRWLPlugin_OVRWLDataEntryForm_Msg_SelectMatchInfo>请选择一场比赛!</OVRWLPlugin_OVRWLDataEntryForm_Msg_SelectMatchInfo>
+    <OVRWLPlugin_OVRWLDataEntryForm_Msg_UpdateMatchInfo>是否更新比赛?</OVRWLPlugin_OVRWLDataEntryForm_Msg_UpdateMatchInfo>
+    <OVRWLPlugin_OVRWLDataEntryForm_Msg_ChangeMatchInfo>是否切换比赛?</OVRWLPlugin_OVRWLDataEntryForm_Msg_ChangeMatchInfo>
+    <OVRWLPlugin_OVRWLDataEntryForm_Msg_ExitMatchInfo>是否退出比赛?</OVRWLPlugin_OVRWLDataEntryForm_Msg_ExitMatchInfo>
+    <OVRWLPlugin_OVRWLDataEntryForm_Msg_WrongPassworld>密码错误!</OVRWLPlugin_OVRWLDataEntryForm_Msg_WrongPassworld>
+    <OVRWLPlugin_OVRWLDataEntryForm_Msg_ValueExisted>输入的值已经存在，请重新输入!</OVRWLPlugin_OVRWLDataEntryForm_Msg_ValueExisted>
+  </OVRWLPlugin>
+
+  <OVRFBPlugin>
+    <mbExit>请先退出当前比赛!</mbExit>
+    <mbExitMatch>确定退出比赛吗?</mbExitMatch>
+    <Msg_Register>比赛队伍无效!</Msg_Register>
+    <Msg_period>阶段无效！</Msg_period>
+    <Msg_Action>已存在另一个未完成动作，此动作失败！</Msg_Action>
+    <Msg_ErrorPlayer>该动作中的运动员的ShirtNo为空，操作失败!</Msg_ErrorPlayer>
+    <Msg_ErrorPlayerIn>请先让场上运动员下场!</Msg_ErrorPlayerIn>
+    <MatchStatusWarning>当前的比赛正在进行中,确认进入么?</MatchStatusWarning>
+    <YCardWarn>已经选择了一张黄牌</YCardWarn>
+    <Y2CardWarn>在选择第二张黄牌之前,应改先选择一张黄牌</Y2CardWarn>
+    <lbHomePossTime>主队</lbHomePossTime>
+    <lbVisitPossTime>客队</lbVisitPossTime>
+    <lbHome>主队</lbHome>
+    <lbVisit>客队</lbVisit>
+    <lbSet1>Set1</lbSet1>
+    <lbSet2>Set2</lbSet2>
+    <lbExa1>Extra1</lbExa1>
+    <lbExa2>Extra2</lbExa2>
+    <btnStop>暂停</btnStop>
+    <btnStart>开始</btnStart>
+    <btnStartPeriod>开始小节</btnStartPeriod>
+    <btnEndPeriod>结束小节</btnEndPeriod>
+    <btnOfficial>官员信息</btnOfficial>
+    <btnTeamInfo>队伍信息</btnTeamInfo>
+    <btnWeatherSet>天气...</btnWeatherSet>
+    <btnExit>退出</btnExit>
+    <btnPenaltyScore>点球赛</btnPenaltyScore>
+    <btnMatchResult>比赛结果</btnMatchResult>
+    <btnAllOut_Home>全部下场</btnAllOut_Home>
+    <btnAllOut_Visit>全部下场</btnAllOut_Visit>
+    <btn_Export>导出</btn_Export>
+    <btnx_Schedule>已安排</btnx_Schedule>
+    <btnx_StartList>进入场地</btnx_StartList>
+    <btnx_Running>进行中</btnx_Running>
+    <btnx_Suspend>已挂起</btnx_Suspend>
+    <btnx_Unofficial>非官方</btnx_Unofficial>
+    <btnx_Finished>已结束</btnx_Finished>
+    <btnx_Revision>重新修改</btnx_Revision>
+    <btnx_Canceled>取消</btnx_Canceled>
+    <btnx_Score>比分模式</btnx_Score>
+    <btnx_Statistic>技术统计模式</btnx_Statistic>
+    <btnx_Result>成绩模式</btnx_Result>
+    <btnCorner>角球</btnCorner>
+    <btnOffside>越位</btnOffside>
+    <btnShot>射门</btnShot>
+    <btnFreeKick>任意球射门</btnFreeKick>
+    <btnPenalty>点球射门</btnPenalty>
+    <btnGoal>进球</btnGoal>
+    <btnBlock>队员解围</btnBlock>
+    <btnMissed>打飞</btnMissed>
+    <btnCrossbar>门框</btnCrossbar>
+    <btnOwnGoal>乌龙球</btnOwnGoal>
+    <btnYCard>黄牌</btnYCard>
+    <btn2YCard>第2张黄牌</btn2YCard>
+    <btnRCard>红牌</btnRCard>
+    <btnOut>下场</btnOut>
+    <btnIn>上场</btnIn>
+    <btnFoulS>被犯规</btnFoulS>
+    <btnFoulC>犯规</btnFoulC>
+    <gbAttempt>射门</gbAttempt>
+    <gbResult>结果</gbResult>
+    <gbCards>红黄牌</gbCards>
+    <gbSubstitutions>换人</gbSubstitutions>
+    <gbFouls>犯规</gbFouls>
+    <gbTeamPlay>队伍统计</gbTeamPlay>
+    <gbBallPossesion>控球</gbBallPossesion>
+    <gbMatchScore>比赛成绩</gbMatchScore>
+    <lbAddTime>补时</lbAddTime>
+    <OVROWWeatherConfig>天气设置</OVROWWeatherConfig>
+    <lbAirtemp>气温</lbAirtemp>
+    <lbWatertemp>水温</lbWatertemp>
+    <lbHumidity>湿度</lbHumidity>
+    <lbWeatherConditionDes>天气情况</lbWeatherConditionDes>
+    <lbWindSpeed>风速</lbWindSpeed>
+    <lbUnit>米/秒</lbUnit>
+    <lbWindDirection>风向</lbWindDirection>
+    <btnOK>确定</btnOK>
+    <btnCancel>取消</btnCancel>
+    <lbAvailableOfficial>备选竞赛官员</lbAvailableOfficial>
+    <lbMatchOfficial>本场竞赛官员</lbMatchOfficial>
+    <frmEntryOfficial>竞赛官员设置</frmEntryOfficial>
+    <frmTeamMember>本场队伍设置</frmTeamMember>
+    <lbAvailable_Home>主队大名单</lbAvailable_Home>
+    <lbAvailable_Visit>客队大名单</lbAvailable_Visit>
+    <lbMember_Home>主队上场队员</lbMember_Home>
+    <lbMember_Visit>客队上场队员</lbMember_Visit>
+    <lbUniform_Home>队服</lbUniform_Home>
+    <lbUniform_Visit>队服</lbUniform_Visit>
+    <lbAttendance>观众数量</lbAttendance>
+    <lbMatchMode>比赛模式</lbMatchMode>
+    <YellowItem>警告...</YellowItem>
+    <RedItem>罚下...</RedItem>
+    <CardAttribute>判罚设置</CardAttribute>
+    <chkMissMatch1>禁赛1场</chkMissMatch1>
+    <chkMissMatch2>禁赛2场</chkMissMatch2>
+    <btnClearAction>清除动作</btnClearAction>
+    <lbMin>分</lbMin>
+    <ResultForm>如果胜负关系有效，点击yes按钮，当比赛状态变为已结束的时候比赛结果不会被重新自动计算，当前结果被保留。如果点击No按钮，当比赛状态变为已结束的时候比赛结果会被重新计算!</ResultForm>
+  </OVRFBPlugin>
+
+  <OVRHBPlugin>
+    <mbExit>请先退出当前比赛!</mbExit>
+    <mbExitMatch>确定退出比赛吗?</mbExitMatch>
+    <Msg_Register>比赛队伍无效!</Msg_Register>
+    <Msg_period>阶段无效！</Msg_period>
+    <Msg_Action>已存在另一个未完成动作，此动作失败！</Msg_Action>
+    <lbMatchTime>比赛时间</lbMatchTime>
+    <lbHome>主队</lbHome>
+    <lbVisit>客队</lbVisit>
+    <lbSet1>Set1</lbSet1>
+    <lbSet2>Set2</lbSet2>
+    <lbExa1>Extra1</lbExa1>
+    <lbExa2>Extra2</lbExa2>
+    <btnStart>开始</btnStart>
+    <btnStop>暂停</btnStop>
+    <btnReset>复位</btnReset>
+    <btnStartPeriod>开始小节</btnStartPeriod>
+    <btnEndPeriod>结束小节</btnEndPeriod>
+    <btnOfficial>官员信息</btnOfficial>
+    <btnTeamInfo>队伍信息</btnTeamInfo>
+    <btnExit>退出</btnExit>
+    <btnPenaltyScore>点球赛</btnPenaltyScore>
+    <btnMatchResult>比赛结果</btnMatchResult>
+    <btnAllOut_Home>全部下场</btnAllOut_Home>
+    <btnAllOut_Visit>全部下场</btnAllOut_Visit>
+    <btnTimeOut_Home>Time Out</btnTimeOut_Home>
+    <btnTimeOut_Visit>Time Out</btnTimeOut_Visit>
+    <btnFreeThrow>Free Throw</btnFreeThrow>
+    <btnCornerThrow_Home>Corner Throw</btnCornerThrow_Home>
+    <btnCornerThrow_Visit>Corner Throw</btnCornerThrow_Visit>
+    <btnActionShot>A Shot</btnActionShot>
+    <btnCentreShot>C Shot</btnCentreShot>
+    <btnXShot>X Shot</btnXShot>
+    <btn5mShot>5m Shot</btn5mShot>
+    <btnPSShot>PS Shot</btnPSShot>
+    <btnCounterShot>CA Shot</btnCounterShot>
+    <btnGoal>Goal</btnGoal>
+    <btnSaved>Saved</btnSaved>
+    <btnMissed>Missed</btnMissed>
+    <btnPost>Post</btnPost>
+    <btnAssist>Assist</btnAssist>
+    <btnTournOver>TournOver</btnTournOver>
+    <btnSteal>Steal</btnSteal>
+    <btnBlockShot>Block Shot</btnBlockShot>
+    <btnBlock>Block</btnBlock>
+    <btn20C>20C</btn20C>
+    <btn20F>20F</btn20F>
+    <btnEXS>EX-S</btnEXS>
+    <btnEXN>EX-N</btnEXN>
+    <btnSpinWon>Spin Won</btnSpinWon>
+    <btnSpinLost>Spin Lost</btnSpinLost>
+    <btnPenalty>Penalty</btnPenalty>
+    <gbMatchScore>比赛结果</gbMatchScore>
+    <gbMatchStatistic>比赛技术统计</gbMatchStatistic>
+    <gbHome>主队</gbHome>
+    <gbVisit>客队</gbVisit>
+    <gbAttempt>射门</gbAttempt>
+    <gbResult>结果</gbResult>
+    <gbStatistic>技术统计</gbStatistic>
+    <btnx_Schedule>已安排</btnx_Schedule>
+    <btnx_StartList>进入场地</btnx_StartList>
+    <btnx_Running>进行中</btnx_Running>
+    <btnx_Suspend>已挂起</btnx_Suspend>
+    <btnx_Unofficial>非官方</btnx_Unofficial>
+    <btnx_Finished>已结束</btnx_Finished>
+    <btnx_Revision>重新修改</btnx_Revision>
+    <btnx_Canceled>取消</btnx_Canceled>
+    <btnx_Score>比分模式</btnx_Score>
+    <btnx_Statistic>技术统计模式</btnx_Statistic>
+    <btnx_Result>成绩模式</btnx_Result>
+
+    <btnx_6MShot>6米近射</btnx_6MShot>
+    <btnx_7MShot>7米球</btnx_7MShot>
+    <btnx_9MShot>9米远射</btnx_9MShot>
+    <btnx_WingShot>边锋射门</btnx_WingShot>
+    <btnx_FastbreakShot>快攻</btnx_FastbreakShot>
+    <btnx_BreakthroughShot>突破</btnx_BreakthroughShot>
+
+    <btnx_Goal>得分</btnx_Goal>
+    <btnx_Save>被救</btnx_Save>
+    <btnx_Missed>射失</btnx_Missed>
+    <btnx_Post>击柱</btnx_Post>
+    <btnx_Blocked>被封</btnx_Blocked>
+
+    <btnx_YellowCard>黄牌</btnx_YellowCard>
+    <btnx_2Min>2分钟</btnx_2Min>
+    <btnx_RedCard>红牌</btnx_RedCard>
+    <btnx_DR>开除</btnx_DR>
+    <btnx_TimeOut>暂停</btnx_TimeOut>
+
+    <btnx_SubstituteIn>上场</btnx_SubstituteIn>
+    <btnx_SubstituteOut>下场</btnx_SubstituteOut>
+
+    <btnX_SelCol_Home>颜色</btnX_SelCol_Home>
+    <btnX_SelCol_Visit>颜色</btnX_SelCol_Visit>
+    <btnX_MakeStat>进行统计</btnX_MakeStat>
+    
+    <lbPossTime>PossTime</lbPossTime>
+    <lbPossNum>PossNum</lbPossNum>
+
+    <frmEntryOfficial>比赛官员设置</frmEntryOfficial>
+    <lbAvailableOfficial>可选择的</lbAvailableOfficial>
+    <lbMatchOfficial>比赛官员</lbMatchOfficial>
+
+    <frmTeamMember>队伍成员设置</frmTeamMember>
+    <lbAvailable_Home>主队可选择的</lbAvailable_Home>
+    <lbAvailable_Visit>客队可选择的</lbAvailable_Visit>
+    <lbMember_Home>主队上场队员</lbMember_Home>
+    <lbMember_Visit>客队上场队员</lbMember_Visit>
+    <lbUniform_Home>队服</lbUniform_Home>
+    <lbUniform_Visit>队服</lbUniform_Visit>
+
+    <frmMatchResultEntry>比赛成绩录入</frmMatchResultEntry>
+
+    <frmPenalytScore>点球录入</frmPenalytScore>
+    <btnSetPlayer>选择运动员</btnSetPlayer>
+    <btnOK>确定</btnOK>
+    <btnCancel>取消</btnCancel>
+    <labelX_SerialPort>串口:</labelX_SerialPort>
+    <labelX_Baudrate>波特率:</labelX_Baudrate>
+    <labelX_Parity>校验:</labelX_Parity>
+    <labelX_Databits>数据位:</labelX_Databits>
+    <labelX_Stopbits>停止位:</labelX_Stopbits>
+    <SerialPortOpen_Error>该串口已经被占用,请选择别的串口!</SerialPortOpen_Error>
+    <btn_ReceiceSetting>设置...</btn_ReceiceSetting>
+    <btn_start_receive>开始</btn_start_receive>
+    <btn_stop_receive>停止</btn_stop_receive>
+  
+</OVRHBPlugin>
+
+  <OVRWPPlugin>
+    <mbExit>请先退出当前比赛!</mbExit>
+    <mbExitMatch>确定退出比赛吗?</mbExitMatch>
+    <Msg_Register>比赛队伍无效!</Msg_Register>
+    <Msg_period>阶段无效！</Msg_period>
+    <Msg_Action>已存在另一个未完成动作，此动作失败！</Msg_Action>
+    <lbMatchTime>比赛时间</lbMatchTime>
+    <lbWaterTem>水温（℃）</lbWaterTem>
+    <lbHome>主队</lbHome>
+    <lbVisit>客队</lbVisit>
+    <lbSet1>Set1</lbSet1>
+    <lbSet2>Set2</lbSet2>
+    <lbSet3>Set3</lbSet3>
+    <lbSet4>Set4</lbSet4>
+    <lbExa1>Extra1</lbExa1>
+    <lbExa2>Extra2</lbExa2>
+    <btnStart>开始</btnStart>
+    <btnStop>暂停</btnStop>
+    <btnReset>复位</btnReset>
+    <btnStartPeriod>开始小节</btnStartPeriod>
+    <btnEndPeriod>结束小节</btnEndPeriod>
+    <btnOfficial>官员信息</btnOfficial>
+    <btnTeamInfo>队伍信息</btnTeamInfo>
+    <btnWeatherSet>天气...</btnWeatherSet>
+    <btnExit>退出</btnExit>
+    <btnPenaltyScore>点球赛</btnPenaltyScore>
+    <btnMatchResult>比赛结果</btnMatchResult>
+    <btnAllOut_Home>全部下场</btnAllOut_Home>
+    <btnAllOut_Visit>全部下场</btnAllOut_Visit>
+    <btnTimeOut_Home>暂停</btnTimeOut_Home>
+    <btnTimeOut_Visit>暂停</btnTimeOut_Visit>
+    <btnFreeThrow>任意球</btnFreeThrow>
+    <btnCornerThrow_Home>角球</btnCornerThrow_Home>
+    <btnCornerThrow_Visit>角球</btnCornerThrow_Visit>
+    <btnActionShot>射门</btnActionShot>
+    <btnCentreShot>中间射门</btnCentreShot>
+    <btnXShot>多打少射门</btnXShot>
+    <btn5mShot>5米射门</btn5mShot>
+    <btnPSShot>点球射门</btnPSShot>
+    <btnCounterShot>快攻射门</btnCounterShot>
+    <btnGoal>进球</btnGoal>
+    <btnSaved>扑救</btnSaved>
+    <btnMissed>打飞</btnMissed>
+    <btnPost>门柱</btnPost>
+    <btnAssist>助攻</btnAssist>
+    <btnTournOver>攻防犯规</btnTournOver>
+    <btnSteal>抢断</btnSteal>
+    <btnBlockShot>队员解围</btnBlockShot>
+    <btnBlock>解围</btnBlock>
+    <btn20C>中卫20秒</btn20C>
+    <btn20F>外线20秒</btn20F>
+    <btnEXS>罚下-替</btnEXS>
+    <btnEXN>罚下-不可替</btnEXN>
+    <btnSpinWon>争球胜</btnSpinWon>
+    <btnSpinLost>争球败</btnSpinLost>
+    <btnPenalty>犯规</btnPenalty>
+    <btnIn>上场</btnIn>
+    <btnOut>下场</btnOut>
+    <gbMatchScore>比赛结果</gbMatchScore>
+    <gbMatchStatistic>比赛技术统计</gbMatchStatistic>
+    <gbHome>主队</gbHome>
+    <gbVisit>客队</gbVisit>
+    <gbAttempt>射门</gbAttempt>
+    <gbResult>结果</gbResult>
+    <gbStatistic>技术统计</gbStatistic>
+    <gbSubstitutions>换人</gbSubstitutions>
+    <btnx_Schedule>已安排</btnx_Schedule>
+    <btnx_StartList>进入场地</btnx_StartList>
+    <btnx_Running>进行中</btnx_Running>
+    <btnx_Suspend>已挂起</btnx_Suspend>
+    <btnx_Unofficial>非官方</btnx_Unofficial>
+    <btnx_Finished>已结束</btnx_Finished>
+    <btnx_Revision>重新修改</btnx_Revision>
+    <btnx_Canceled>取消</btnx_Canceled>
+    <btnx_Score>比分模式</btnx_Score>
+    <btnx_Statistic>技术统计模式</btnx_Statistic>
+    <btnx_Result>成绩模式</btnx_Result>
+
+    <btn_Export>导出</btn_Export>
+    <lbPossTime>持球时间</lbPossTime>
+    <lbPossNum>持球次数</lbPossNum>
+
+    <frmEntryOfficial>比赛官员设置</frmEntryOfficial>
+    <lbAvailableOfficial>可选择的</lbAvailableOfficial>
+    <lbMatchOfficial>比赛官员</lbMatchOfficial>
+
+    <frmTeamMember>队伍成员设置</frmTeamMember>
+    <lbAvailable_Home>主队可选择的</lbAvailable_Home>
+    <lbAvailable_Visit>客队可选择的</lbAvailable_Visit>
+    <lbMember_Home>主队上场队员</lbMember_Home>
+    <lbMember_Visit>客队上场队员</lbMember_Visit>
+    <lbUniform_Home>队服</lbUniform_Home>
+    <lbUniform_Visit>队服</lbUniform_Visit>
+
+    <frmMatchResultEntry>比赛成绩录入</frmMatchResultEntry>
+    <btnClearAction>清空动作</btnClearAction>
+
+    <frmPenalytScore>点球录入</frmPenalytScore>
+    <btnSetPlayer>选择运动员</btnSetPlayer>
+    <lbGK>守门员</lbGK>
+    <btnOK>确定</btnOK>
+    <btnCancel>取消</btnCancel>
+    <labelX_SerialPort>串口:</labelX_SerialPort>
+    <labelX_Baudrate>波特率:</labelX_Baudrate>
+    <labelX_Parity>校验:</labelX_Parity>
+    <labelX_Databits>数据位:</labelX_Databits>
+    <labelX_Stopbits>停止位:</labelX_Stopbits>
+    <SerialPortOpen_Error>该串口已经被占用,请选择别的串口!</SerialPortOpen_Error>
+    <btn_ReceiceSetting>设置...</btn_ReceiceSetting>
+    <btn_start_receive>开始</btn_start_receive>
+    <btn_stop_receive>停止</btn_stop_receive>
+
+    <OVROWWeatherConfig>天气设置</OVROWWeatherConfig>
+    <lbAirtemp>气温</lbAirtemp>
+    <lbWatertemp>水温</lbWatertemp>
+    <lbHumidity>湿度</lbHumidity>
+    <lbWeatherConditionDes>天气情况</lbWeatherConditionDes>
+    <lbWindSpeed>风速</lbWindSpeed>
+    <lbUnit>米/秒</lbUnit>
+    <lbWindDirection>风向</lbWindDirection>
+    <btnOK>确定</btnOK>
+    <btnCancel>取消</btnCancel>
+    <Msg_ErrorPlayerIn>请先让场上运动员下场!</Msg_ErrorPlayerIn>
+
+    <frm_ModeSel>选择模式</frm_ModeSel>
+    <lbModeDesc>在只有一台机器为比赛录入技术统计的情况下,需要选择单机模式; 在需要用多台机器协调配合录入技术统计的情况下，需要选择多机模式，并且为不同的机器选择相应的工作模式！</lbModeDesc>
+    <rd_SingleMode>单机模式</rd_SingleMode>
+    <lb_MultipleMode>多机模式</lb_MultipleMode>
+    <rd_Monitor>监看模式</rd_Monitor>
+    <rd_Admin>管理员模式</rd_Admin>
+    <rd_Substitute>换人模式</rd_Substitute>
+    <rd_WhiteStat>白队技术统计</rd_WhiteStat>
+    <rd_BlueStat>蓝队技术统计模式</rd_BlueStat>
+    <rd_DoubleStat>两队技术统计模式</rd_DoubleStat>
+  
+</OVRWPPlugin>
+
+  <OVRBKPlugin>
+    <mbExit>请先退出当前比赛!</mbExit>
+    <mbExitMatch>确定退出比赛吗?</mbExitMatch>
+    <Msg_Register>比赛队伍无效!</Msg_Register>
+    <Msg_period>阶段无效！</Msg_period>
+    <Msg_Action>已存在另一个未完成动作，此动作失败！</Msg_Action>
+    <lbMatchTime>比赛时间</lbMatchTime>
+    <lbHome>主队</lbHome>
+    <lbVisit>客队</lbVisit>
+    <lbSet1>Set1</lbSet1>
+    <lbSet2>Set2</lbSet2>
+    <lbSet3>Set3</lbSet3>
+    <lbSet4>Set4</lbSet4>
+    <lbExa1>Extra1</lbExa1>
+    <lbExa2>Extra2</lbExa2>
+    <lbExa3>Extra3</lbExa3>
+    <lbExa4>Extra4</lbExa4>
+    <btnStart>开始</btnStart>
+    <btnStop>暂停</btnStop>
+    <btnReset>复位</btnReset>
+    <btnStartPeriod>开始小节</btnStartPeriod>
+    <btnEndPeriod>结束小节</btnEndPeriod>
+    <btnOfficial>官员信息</btnOfficial>
+    <btnTeamInfo>队伍信息</btnTeamInfo>
+    <btnExit>退出</btnExit>
+    <btnPenaltyScore>点球赛</btnPenaltyScore>
+    <btnMatchResult>比赛结果</btnMatchResult>
+    <btnAllOut_Home>全部下场</btnAllOut_Home>
+    <btnAllOut_Visit>全部下场</btnAllOut_Visit>
+    <btnTimeOut_Home>Time Out</btnTimeOut_Home>
+    <btnTimeOut_Visit>Time Out</btnTimeOut_Visit>
+    <btnFreeThrow>Free Throw</btnFreeThrow>
+    <btnCornerThrow_Home>Corner Throw</btnCornerThrow_Home>
+    <btnCornerThrow_Visit>Corner Throw</btnCornerThrow_Visit>
+    <btnActionShot>A Shot</btnActionShot>
+    <btnCentreShot>C Shot</btnCentreShot>
+    <btnXShot>X Shot</btnXShot>
+    <btn5mShot>5m Shot</btn5mShot>
+    <btnPSShot>PS Shot</btnPSShot>
+    <btnCounterShot>CA Shot</btnCounterShot>
+    <btnGoal>Goal</btnGoal>
+    <btnSaved>Saved</btnSaved>
+    <btnMissed>Missed</btnMissed>
+    <btnPost>Post</btnPost>
+    <btnAssist>Assist</btnAssist>
+    <btnTournOver>TournOver</btnTournOver>
+    <btnSteal>Steal</btnSteal>
+    <btnBlockShot>Block Shot</btnBlockShot>
+    <btnBlock>Block</btnBlock>
+    <btn20C>20C</btn20C>
+    <btn20F>20F</btn20F>
+    <btnEXS>EX-S</btnEXS>
+    <btnEXN>EX-N</btnEXN>
+    <btnSpinWon>Spin Won</btnSpinWon>
+    <btnSpinLost>Spin Lost</btnSpinLost>
+    <btnPenalty>Penalty</btnPenalty>
+    <gbMatchScore>比赛结果</gbMatchScore>
+    <gbMatchStatistic>比赛技术统计</gbMatchStatistic>
+    <gbHome>主队</gbHome>
+    <gbVisit>客队</gbVisit>
+    <gbAttempt>射门</gbAttempt>
+    <gbResult>结果</gbResult>
+    <gbStatistic>技术统计</gbStatistic>
+    <btnx_Schedule>已安排</btnx_Schedule>
+    <btnx_StartList>进入场地</btnx_StartList>
+    <btnx_Running>进行中</btnx_Running>
+    <btnx_Suspend>已挂起</btnx_Suspend>
+    <btnx_Unofficial>非官方</btnx_Unofficial>
+    <btnx_Finished>已结束</btnx_Finished>
+    <btnx_Revision>重新修改</btnx_Revision>
+    <btnx_Canceled>取消</btnx_Canceled>
+    <btnx_Score>比分模式</btnx_Score>
+    <btnx_Statistic>技术统计模式</btnx_Statistic>
+    <btnx_Result>成绩模式</btnx_Result>
+
+    <btnx_2PointsMade>2分命中</btnx_2PointsMade>
+    <btnx_2PointsMissed>2分不中</btnx_2PointsMissed>
+    <btnx_3PointsMade>3分命中</btnx_3PointsMade>
+    <btnx_3PointsMissed>3分不中</btnx_3PointsMissed>
+    <btnx_FreeThrowMade>罚球命中</btnx_FreeThrowMade>
+    <btnx_FreeThrowMissed>罚篮不中</btnx_FreeThrowMissed>
+    <btnx_OffensiveRebound>进攻篮板</btnx_OffensiveRebound>
+    <btnx_DefensiveRebound>防守篮板</btnx_DefensiveRebound>
+    <btnx_Assist>助攻</btnx_Assist>
+    <btnx_Turnover>失误</btnx_Turnover>
+    <btnx_Steal>抢断</btnx_Steal>
+    <btnx_BlockedShot>盖帽</btnx_BlockedShot>
+    <btnx_OffensiveFoul>进攻犯规</btnx_OffensiveFoul>
+    <btnx_DefensiveFoul>防守犯规</btnx_DefensiveFoul>
+    <btnx_SubstituteIn>上场</btnx_SubstituteIn>
+    <btnx_SubstituteOut>下场</btnx_SubstituteOut>
+
+    <lbPossTime>PossTime</lbPossTime>
+    <lbPossNum>PossNum</lbPossNum>
+
+    <frmEntryOfficial>比赛官员设置</frmEntryOfficial>
+    <lbAvailableOfficial>可选择的</lbAvailableOfficial>
+    <lbMatchOfficial>比赛官员</lbMatchOfficial>
+
+    <frmTeamMember>队伍成员设置</frmTeamMember>
+    <lbAvailable_Home>主队可选择的</lbAvailable_Home>
+    <lbAvailable_Visit>客队可选择的</lbAvailable_Visit>
+    <lbMember_Home>主队上场队员</lbMember_Home>
+    <lbMember_Visit>客队上场队员</lbMember_Visit>
+    <lbUniform_Home>队服</lbUniform_Home>
+    <lbUniform_Visit>队服</lbUniform_Visit>
+
+    <frmMatchResultEntry>比赛成绩录入</frmMatchResultEntry>
+
+    <frmPenalytScore>点球录入</frmPenalytScore>
+    <btnSetPlayer>选择运动员</btnSetPlayer>
+    <btnOK>确定</btnOK>
+    <btnCancel>取消</btnCancel>
+    <labelX_SerialPort>串口:</labelX_SerialPort>
+    <labelX_Baudrate>波特率:</labelX_Baudrate>
+    <labelX_Parity>校验:</labelX_Parity>
+    <labelX_Databits>数据位:</labelX_Databits>
+    <labelX_Stopbits>停止位:</labelX_Stopbits>
+    <SerialPortOpen_Error>该串口已经被占用,请选择别的串口!</SerialPortOpen_Error>
+    <btn_ReceiceSetting>设置...</btn_ReceiceSetting>
+    <btn_start_receive>开始</btn_start_receive>
+    <btn_stop_receive>停止</btn_stop_receive>
+  </OVRBKPlugin>
+
+  <OVRSTPlugin>
+    <gbMatchInfo>比赛信息</gbMatchInfo>
+    <gbMatchScore>比分信息</gbMatchScore>
+    <lbSportName>赛事名称:</lbSportName>
+    <lbPhaseName>赛事阶段:</lbPhaseName>
+    <lbDate>比赛时间:</lbDate>
+    <lbVenue>比赛场馆:</lbVenue>
+    <lbTotalScore>总比分</lbTotalScore>
+    <lbGameTotal>局总分</lbGameTotal>
+    <lbHomeFeed>主队 Feed</lbHomeFeed>
+    <lbVisitorFeed>客队 Feed</lbVisitorFeed>
+    <btnxOfficialInfo>官员信息</btnxOfficialInfo>
+    <btnxHomePlayer>主队队员信息</btnxHomePlayer>
+    <btnxVisitorPlayer>客队队员信息</btnxVisitorPlayer>
+    <btnxExitMatch>退出比赛</btnxExitMatch>
+    <btnxModifyResult>修改结果</btnxModifyResult>
+    <btnxSchedule>已安排</btnxSchedule>
+    <btnxStartList>进入场地</btnxStartList>
+    <btnxRunning>进行中</btnxRunning>
+    <btnxSuspend>已挂起</btnxSuspend>
+    <btnxUnofficial>非官方</btnxUnofficial>
+    <btnxFinished>已结束</btnxFinished>
+    <btnxRevision>重修改</btnxRevision>
+    <btnxCanceled>取消</btnxCanceled>
+    <btnxMatch1>第一场</btnxMatch1>
+    <btnxMatch2>第二场</btnxMatch2>
+    <btnxMatch3>第三场</btnxMatch3>
+    <btnxMatchResult>单场结果</btnxMatchResult>
+    <btnxModifyTime>修改时间</btnxModifyTime>
+    <btnxServer>发球</btnxServer>
+    <btnxSpikesSuccess>扣球成功</btnxSpikesSuccess>
+    <btnxSpikesFault>扣球失败</btnxSpikesFault>
+    <btnxAces>ACE球</btnxAces>
+    <btnxBlocksSuccess>拦网成功</btnxBlocksSuccess>
+    <btnxBlocksFault>拦网失败</btnxBlocksFault>
+    <btnxPass>垫球</btnxPass>
+    <btnxFault>失误</btnxFault>
+    <btnxYellowCard>黄牌</btnxYellowCard>
+    <btnxRedCard>红牌</btnxRedCard>
+    <btnUndo>撤销</btnUndo>
+    <radServerA>A发球</radServerA>
+    <radServerB>B发球</radServerB>
+    <radGame1>第一局</radGame1>
+    <radGame2>第二局</radGame2>
+    <radGame3>第三局</radGame3>
+    <frmModifyResult>修改比赛结果</frmModifyResult>
+    <frmModifyTime>修改比赛时间</frmModifyTime>
+    <frmEntryOfficial>选择官员信息</frmEntryOfficial>
+    <lbAvailableOfficials>可选裁判</lbAvailableOfficials>
+    <lbMatchOfficials>已选裁判</lbMatchOfficials>
+    <frmSetTeamPlayers>设置两队信息</frmSetTeamPlayers>
+    <lbAvailablePlayers>可选运动员</lbAvailablePlayers>
+    <lbMatchPlayers>已选运动员</lbMatchPlayers>
+    <lbRegu>Regu单组:</lbRegu>
+    <lbUniform>服装:</lbUniform>
+    <mbRunningMatch>请先退出比赛!</mbRunningMatch>
+    <mbChooseMatch>请先选择一场比赛!</mbChooseMatch>
+    <mbMatchStatus>比赛状态: </mbMatchStatus>
+    <mbConfigMatchUp>请先选择对阵双方!</mbConfigMatchUp>
+    <mbExitMatch>是否确定退出比赛!</mbExitMatch>
+    <mbMatchRule>请先设置比赛规则!</mbMatchRule>
+    <mbCreateSplit>创建失败!</mbCreateSplit>
+    <mbUpdateTime>更新时间失败!</mbUpdateTime>
+    <mbUpdateServer>更新球权失败!</mbUpdateServer>
+    <mbSetTeamPlayers>请先选择单场队员信息!</mbSetTeamPlayers>
+    <gbExportImport>导入导出</gbExportImport>
+    <lbSelectDate>比赛日期</lbSelectDate>
+    <lbExportPath>导出路径</lbExportPath>
+    <btnxExportAthlete>导出运动员</btnxExportAthlete>
+    <btnxExportSchedule>导出今日赛程</btnxExportSchedule>
+    <btnxExportTeam>导出队伍信息</btnxExportTeam>
+    <lbImportPath>导入路径</lbImportPath>
+    <btnxImportMatchInfo>导入实时比分</btnxImportMatchInfo>
+    <btnxImportAction>导入得分历程</btnxImportAction>
+    <btnxImportStatistic>导入技术统计</btnxImportStatistic>
+    <chkAutoImport>自动导入</chkAutoImport>
+    <chkExternalData>外部数据</chkExternalData>
+    <msgExportPath>导出路径无效!</msgExportPath>
+    <msgImportPath>导入路径无效!</msgImportPath>
+    <msgSelectDate>请选择比赛日期!</msgSelectDate>
+    <msgFilePath>文件不存在!</msgFilePath>
+    <msgExportFile>导出文件成功!</msgExportFile>
+    <msgImportMatchInfoSuc>导入实时比分成功!</msgImportMatchInfoSuc>
+    <msgImportActionSuc>导入得分历程成功!</msgImportActionSuc>
+    <msgImportStatisticSuc>导入技术统计成功!</msgImportStatisticSuc>
+    <msgImportMatchInfo>导入实时比分失败!</msgImportMatchInfo>
+    <msgImportAction>导入得分历程失败!</msgImportAction>
+    <msgImportStatistic>导入技术统计失败!</msgImportStatistic>
+  </OVRSTPlugin>
+
+  <OVRTEPlugin>
+    <mbRunningMatch>请先退出当前比赛!</mbRunningMatch>
+    <mbChooseMatch>请先选择一场比赛!</mbChooseMatch>
+    <mbExitMatch>你确定要退出本场比赛吗？</mbExitMatch>
+    <MsgSaveOnePoint2DataBase1>更新比分失败!</MsgSaveOnePoint2DataBase1>
+    <MsgDelRule1>删除比赛规则失败!</MsgDelRule1>
+    <MsgDelRule2>删除比赛规则失败, RuleID 无序!</MsgDelRule2>
+    <MsgDelRule3>删除比赛规则失败, 已有比赛使用该比赛规则!</MsgDelRule3>
+    <MsgDelRule4>请先选择一个比赛规则!</MsgDelRule4>
+    <MsgDelRule5>删除比赛规则后,则无法还要! 是否还要继续?</MsgDelRule5>
+    <MsgDelSet1>请先选择盘规则!</MsgDelSet1>
+    <MsgDelSet2>删除盘规则后,则无法还要! 是否还要继续?</MsgDelSet2>
+    <MsgApplySelRule1>为比赛应用比赛规则后，则该比赛的比分将清空，请问你是否继续？</MsgApplySelRule1>
+    <MsgApplySelRule2>为比赛应用比赛规则成功!</MsgApplySelRule2>
+    <MsgApplySelRule3>为比赛应用比赛规则失败, MatchID 或 MatchRuleID 无效!</MsgApplySelRule3>
+    <MsgApplySelRule4>为比赛应用比赛规则失败, 比赛状态不正确!</MsgApplySelRule4>
+    <MsgApplySelRule5>为比赛应用比赛规则失败!</MsgApplySelRule5>
+    <MsgMatchNoConfiged1>请先指定比赛规则!</MsgMatchNoConfiged1>
+    <MsgMatchNoOfficial>比赛没有指定裁判，是否还要继续？</MsgMatchNoOfficial>
+    <MsgSetServerPosition>请先指定发球者!</MsgSetServerPosition>
+    <MsgDataEntryTypeError>选择录入模式失败，比赛状态不正确!</MsgDataEntryTypeError>
+    <MsgImportMatchResultError>读取比赛成绩失败!</MsgImportMatchResultError>
+    <frmEntryOfficial>官员录入界面</frmEntryOfficial>
+    <lbAvailableOfficial>可用官员</lbAvailableOfficial>
+    <lbMatchOfficial>比赛官员</lbMatchOfficial>
+    <ExportAthlete>导出运动员信息成功!</ExportAthlete>
+    <ExportSchedule>导出本天的赛事计划成功!</ExportSchedule>
+    <MsgExportPath>请选择导出路径!</MsgExportPath>
+    <MsgUdpPort>请输入UDP端口!</MsgUdpPort>
+    <MsgMatchDate>请选择要导出的比赛日期!</MsgMatchDate>
+    <OVRTEWeatherConfig>天气设置</OVRTEWeatherConfig>
+    <lbAirtemp>温度</lbAirtemp>
+    <lbWatertemp>水温</lbWatertemp>
+    <lbHumidity>湿度</lbHumidity>
+    <lbWeatherConditionDes>天气</lbWeatherConditionDes>
+    <lbWindSpeed>风速</lbWindSpeed>
+    <lbWindDirection>风向</lbWindDirection>
+
+    <btnx_Exit>退出</btnx_Exit>
+    <btnx_Config>规则设置</btnx_Config>
+    <btnx_Judges>官员设置</btnx_Judges>
+    <btnWeather>天气设置</btnWeather>
+    <lbUDP>UDP 端口</lbUDP>
+    <btnOpenPort>打卡端口</btnOpenPort>
+    <btnClosePort>关闭端口</btnClosePort>
+    <btnImportResult>导入成绩</btnImportResult>
+    <btnExportPath>导出路径</btnExportPath>
+    <btnExportAthlete>导出运动员</btnExportAthlete>
+    <btnPreAthlete>预览运动员</btnPreAthlete>
+    <btnExportSchedule>导出赛程</btnExportSchedule>
+    <btnPreSchedule>预览赛程</btnPreSchedule>
+    <lb_Event>项目</lb_Event>
+    <lb_Venue>场馆</lb_Venue>
+    <lb_Date>日期</lb_Date>
+    <lb_Match>比赛</lb_Match>
+    <btnx_Points>得分模式</btnx_Points>
+    <btnx_Statistics>统计模式</btnx_Statistics>
+    <btnx_Both>综合模式</btnx_Both>
+    <btnx_FinalResult>输入模式</btnx_FinalResult>
+    <btnx_MatchResult>比赛结果</btnx_MatchResult>
+    <btnx_Schedule>已安排</btnx_Schedule>
+    <btnx_StartList>进入场地</btnx_StartList>
+    <btnx_Running>进行中</btnx_Running>
+    <btnx_Suspend>已挂起</btnx_Suspend>
+    <btnx_Unofficial>非官方</btnx_Unofficial>
+    <btnx_Finished>已结束</btnx_Finished>
+    <btnx_Revision>重修改</btnx_Revision>
+    <btnx_Canceled>取消</btnx_Canceled>
+    <lb_MatchTime>比赛时间</lb_MatchTime>
+    <btnx_StartTiming>开始</btnx_StartTiming>
+    <btnx_Stop>结束</btnx_Stop>
+    <lb_SetTime>盘时间</lb_SetTime>
+    <btnx_Serve>发球</btnx_Serve>
+    <btnx_Fault>失误</btnx_Fault>
+    <btnx_DoubleFault>双误</btnx_DoubleFault>
+    <btnx_Ace>Ace</btnx_Ace>
+    <btnx_Point2A>A得分</btnx_Point2A>
+    <btnx_Point2B>B得分</btnx_Point2B>
+    <btnx_ServiceWinner>发球得分</btnx_ServiceWinner>
+    <btn_Others>其他</btn_Others>
+    <btnx_Unforced>非受迫性</btnx_Unforced>
+    <btnx_Winning>主动得分</btnx_Winning>
+    <btnx_Return>回球</btnx_Return>
+    <btnx_Forehand>正手</btnx_Forehand>
+    <btnx_Backhand>反手</btnx_Backhand>
+    <btnx_Smassh>扣杀得分</btnx_Smassh>
+    <btnx_PassLob>穿越高吊得分</btnx_PassLob>
+    <btnx_Volley>截击得分</btnx_Volley>
+    <btnx_DriveDrop>抽/发得分</btnx_DriveDrop>
+    <btnx_PassVolley>穿越截击</btnx_PassVolley>
+    <btnx_StrokeNet>上网</btnx_StrokeNet>
+    <btnx_ExtraBtns>额外按钮</btnx_ExtraBtns>
+    <btnx_ChangeServe>换发球</btnx_ChangeServe>
+    <btnx_PenaltyAPoint>罚一分给A</btnx_PenaltyAPoint>
+    <btnx_PenaltyBPoint>罚一分给B</btnx_PenaltyBPoint>
+    <btnx_PenaltyAGame>罚一局给A</btnx_PenaltyAGame>
+    <btnx_PenaltyBGame>罚一局给B</btnx_PenaltyBGame>
+
+    <btnx_TeamMember>比赛成员</btnx_TeamMember>
+    <btn_TSInteraction>实时数据</btn_TSInteraction>
+  </OVRTEPlugin>
+
+  <OVRGFPlugin>
+    <lbSportName>赛事名称:</lbSportName>
+    <lbDate>比赛时间:</lbDate>
+    <lbEagleBetter>老鹰球 / 更好</lbEagleBetter>
+    <lbBirdie>小鸟球</lbBirdie>
+    <lbPar>标准杆</lbPar>
+    <lbBogey>博基</lbBogey>
+    <lbDBgeyWorse>双博基 / 更差</lbDBgeyWorse>
+    <lbHole>洞数</lbHole>
+    <lbCurRule>当前比赛规则</lbCurRule>
+    <lbSides>每组人数:</lbSides>
+    <lbStartGroup>开始组:</lbStartGroup>
+    <lbFinishGroup>结束组:</lbFinishGroup>
+    <lbStartTee>发球台:</lbStartTee>
+    <lbStartTime>开始时间:</lbStartTime>
+    <lbSpanTime>每组时间间隔:</lbSpanTime>
+    <lbGroup>组:</lbGroup>
+    <lbServerIP>地址:</lbServerIP>
+    <lbServerPort>端口:</lbServerPort>
+    <btnxStart>开始</btnxStart>
+    <btnxStop>停止</btnxStop>
+    <btnxSchedule>已安排</btnxSchedule>
+    <btnxStartList>进入场地</btnxStartList>
+    <btnxRunning>进行中</btnxRunning>
+    <btnxSuspend>已挂起</btnxSuspend>
+    <btnxUnofficial>非官方</btnxUnofficial>
+    <btnxOfficial>已结束</btnxOfficial>
+    <btnxRevision>重修改</btnxRevision>
+    <btnxCanceled>取消</btnxCanceled>
+    <btnxCreateGroup>创建组</btnxCreateGroup>
+    <btnxSetTee>设置出发台</btnxSetTee>
+    <btnxModifyGroup>修改组</btnxModifyGroup>
+    <btnxCourse>场地</btnxCourse>
+    <btnxExit>退出比赛</btnxExit>
+    <btnxDraw>抽签</btnxDraw>
+    <btnxCreateCourse>创建场地</btnxCreateCourse>
+    <btnxDelCourse>删除场地</btnxDelCourse>
+    <btnxApplayCourse>应用场地</btnxApplayCourse>
+    <btnxSaveXML>保存场地</btnxSaveXML>
+    <mbRunningMatch>请先退出当前的比赛!</mbRunningMatch>
+    <mbExitMatch>是否确定退出当前比赛!</mbExitMatch>
+    <mbChooseMatch>请先选择一场比赛!</mbChooseMatch>
+    <MsgHoleNum>输入的洞数无效!</MsgHoleNum>
+    <MsgAddRule1>添加比赛规则失败!</MsgAddRule1>
+    <MsgDelRule1>删除比赛规则失败!</MsgDelRule1>
+    <MsgDelRule2>删除比赛规则失败, 该RuleID无效!</MsgDelRule2>
+    <MsgDelRule3>删除比赛规则失败, 已有比赛应用该规则!</MsgDelRule3>
+    <MsgDelRule4>请先选择一个比赛规则!</MsgDelRule4>
+    <MsgDelRule5>将要删除选择的比赛规则, 删除后将不能恢复! 是否确定删除比赛规则?</MsgDelRule5>
+    <MsgApplySelRule1>将要应用选择的比赛规则, 当前比赛结果将被清除! 是否确定应用选择的比赛规则?</MsgApplySelRule1>
+    <MsgApplySelRule2>成功的应用比赛规则!</MsgApplySelRule2>
+    <MsgApplySelRule3>应用比赛规则失败, 该MatchID或RuleID无效!</MsgApplySelRule3>
+    <MsgApplySelRule4>应用比赛规则失败, 比赛状态不允许重新设定比赛规则!</MsgApplySelRule4>
+    <MsgApplySelRule5>应用比赛规则失败!</MsgApplySelRule5>
+    <MsgGreateGroup1>将要为选择的比赛创建组信息，已经创建的信息将被清除，是否继续?</MsgGreateGroup1>
+    <MsgGreateGroup2>创建组信息成功!</MsgGreateGroup2>
+    <MsgGreateGroup3>创建组信息失败, 该MatchID无效!</MsgGreateGroup3>
+    <MsgGreateGroup4>创建组信息失败, 发球台不存在!</MsgGreateGroup4>
+    <MsgGreateGroup5>创建组信息失败, 该场比赛没有运动员!</MsgGreateGroup5>
+    <MsgGreateGroup6>创建组信息失败!</MsgGreateGroup6>
+    <MsgModifyGroup1>请先选择一个组!</MsgModifyGroup1>
+    <MsgModifyGroup2>请先创建组!</MsgModifyGroup2>
+    <MsgModifyGroup3>修改组信息成功!</MsgModifyGroup3>
+    <MsgModifyGroup4>修改组信息失败, 该MatchID或组无效!</MsgModifyGroup4>
+    <MsgModifyGroup5>修改组信息失败, 该发球台无效!</MsgModifyGroup5>
+    <MsgModifyGroup6>修改组信息失败!</MsgModifyGroup6>
+    <MsgUpdateHole1>更新比赛结果失败!</MsgUpdateHole1>
+    <MsgAutoDraw1>比赛位置为空，请先添加比赛位置!</MsgAutoDraw1>
+    <MsgAutoDraw2>请先创建组!</MsgAutoDraw2>
+    <MsgAutoDraw3>该操作将会清除已存在的运动员，是否继续？</MsgAutoDraw3>
+    <MsgAutoDraw4>抽签成功!</MsgAutoDraw4>
+    <MsgAutoDraw5>抽签失败!</MsgAutoDraw5>
+  </OVRGFPlugin>
+
+  <OVRBDPlugin>
+    <gbMatchInfo>比赛信息</gbMatchInfo>
+    <gbMatchScore>比分信息</gbMatchScore>
+    <lbSportName>赛事名称:</lbSportName>
+    <lbPhaseName>赛事阶段:</lbPhaseName>
+    <lbDate>比赛时间:</lbDate>
+    <lbVenue>比赛场馆:</lbVenue>
+    <lbTotalScore>总比分</lbTotalScore>
+    <lbPlayers>运动员</lbPlayers>
+    <lbGameTotal>局总分</lbGameTotal>
+    <lbMatchName>比赛名称：</lbMatchName>
+    <lbRuleName>规则：</lbRuleName>
+    <lbMatchTime>比赛时间：</lbMatchTime>
+    <lbMatchCourt>场地：</lbMatchCourt>
+    <lbMatchID>比赛ID:</lbMatchID>
+    <lbMatchRSC>比赛编码:</lbMatchRSC>
+    <lbRegu>场次:</lbRegu>
+    <btnxOfficialInfo>官员信息</btnxOfficialInfo>
+    <btnxTeamInfo>两队信息</btnxTeamInfo>
+    <btnxExitMatch>退出比赛</btnxExitMatch>
+    <btnxModifyResult>修改结果</btnxModifyResult>
+    <btnxModifyTime>修改时间</btnxModifyTime>
+    <btnxSchedule>已安排</btnxSchedule>
+    <btnxStartList>进入场地</btnxStartList>
+    <btnxRunning>进行中</btnxRunning>
+    <btnxSuspend>已挂起</btnxSuspend>
+    <btnxUnofficial>非官方</btnxUnofficial>
+    <btnxFinished>已结束</btnxFinished>
+    <btnxRevision>重修改</btnxRevision>
+    <btnxCanceled>取消</btnxCanceled>
+    <btnxMatch1>第一盘</btnxMatch1>
+    <btnxMatch2>第二盘</btnxMatch2>
+    <btnxMatch3>第三盘</btnxMatch3>
+    <btnxMatch4>第四盘</btnxMatch4>
+    <btnxMatch5>第五盘</btnxMatch5>
+    <radServerA>A发球</radServerA>
+    <radServerB>B发球</radServerB>
+    <SubMatchResult>单场结果</SubMatchResult>
+    <GameResult>局结果</GameResult>
+    <radGame1>第一局</radGame1>
+    <radGame2>第二局</radGame2>
+    <radGame3>第三局</radGame3>
+    <radGame4>第四局</radGame4>
+    <radGame5>第五局</radGame5>
+    <radGame6>第六局</radGame6>
+    <radGame7>第七局</radGame7>
+    <frmModifyResult>修改比赛结果</frmModifyResult>
+    <frmModifyTime>修改比赛时间</frmModifyTime>
+    <frmEntryOfficial>选择官员信息</frmEntryOfficial>
+    <lbAvailableOfficials>可选裁判</lbAvailableOfficials>
+    <lbMatchOfficials>已选裁判</lbMatchOfficials>
+    <frmSetTeamPlayers>设置两队信息</frmSetTeamPlayers>
+    <lbAvailablePlayers>可选运动员</lbAvailablePlayers>
+    <lbMatchPlayers>已选运动员</lbMatchPlayers>
+    <mbRunningMatch>请先退出比赛!</mbRunningMatch>
+    <mbChooseMatch>请先选择一场比赛!</mbChooseMatch>
+    <mbMatchStatus>比赛状态: </mbMatchStatus>
+    <mbConfigMatchUp>请先选择对阵双方!</mbConfigMatchUp>
+    <mbExitMatch>是否确定退出比赛!</mbExitMatch>
+    <mbMatchRule>请先设置比赛规则!</mbMatchRule>
+    <mbCreateSplit>创建失败!</mbCreateSplit>
+    <mbUpdateTime>更新时间失败!</mbUpdateTime>
+    <mbUpdateServer>更新球权失败!</mbUpdateServer>
+    <mbSetTeamPlayers>请先选择单场队员信息!</mbSetTeamPlayers>
+    <gbExportImport>导入导出</gbExportImport>
+    <lbSelectDate>比赛日期</lbSelectDate>
+    <lbExportPath>导出路径</lbExportPath>
+    <btnxExportAthlete>导出运动员</btnxExportAthlete>
+    <btnxExportSchedule>导出今日赛程</btnxExportSchedule>
+    <lbImportPath>导入路径</lbImportPath>
+    <btnxImportMatchInfo>导入实时比分</btnxImportMatchInfo>
+    <btnxImportAction>导入技术统计</btnxImportAction>
+    <btnxImportResult>导入比赛结果</btnxImportResult>
+    <btnScoreBoard>比分板</btnScoreBoard>
+    <btnClearResult>清除成绩</btnClearResult>
+    <btnOpenMonitor>打开监控</btnOpenMonitor>
+    <btnOpenConfig>打开配置</btnOpenConfig>
+    <btnDelAction>删除历程</btnDelAction>
+    <btnAutoScore>自动比分</btnAutoScore>
+    <chkAutoImport>自动导入</chkAutoImport>
+    <chkExternalData>外部数据</chkExternalData>
+    <msgExportPath>导出路径无效!</msgExportPath>
+    <msgImportPath>导入路径无效!</msgImportPath>
+    <msgSelectDate>请选择比赛日期!</msgSelectDate>
+    <msgFilePath>文件不存在!</msgFilePath>
+    <msgExportFile>导出文件成功!</msgExportFile>
+    <msgImportMatchInfoSuc>导入实时比分成功!</msgImportMatchInfoSuc>
+    <msgImportActionSuc>导入技术统计成功!</msgImportActionSuc>
+    <msgImportResultSuc>导入比赛结果成功!</msgImportResultSuc>
+    <msgImportMatchInfo>导入实时比分失败!</msgImportMatchInfo>
+    <msgImportAction>导入技术统计失败!</msgImportAction>
+    <msgImportMatchResult>导入比赛结果失败!</msgImportMatchResult>
+  </OVRBDPlugin>
+  <OVROWPlugin>
+    <chk_SetOperateLog>记录操作日志</chk_SetOperateLog>
+    <OW_DataBase_NOT_Exist>当前数据库中不包含公路自行车项目，请重新选择数据库!</OW_DataBase_NOT_Exist>
+    <TR_DataBase_NOT_Exist>当前数据库中不包含铁人三项项目，请重新选择数据库!</TR_DataBase_NOT_Exist>
+    <CM_DataBase_NOT_Exist>当前数据库中不包含山地自行车项目，请重新选择数据库!</CM_DataBase_NOT_Exist>
+    <btnMatchSet>赛段设置...</btnMatchSet>
+    <btnRunSetUp>比赛配置...</btnRunSetUp>
+    <btnWeatherSet>天气设置...</btnWeatherSet>
+    <btnExit>退出</btnExit>
+    <WarnExitMatchFirst>不能切换到另一场比赛，应该首先退出当前的比赛!</WarnExitMatchFirst>
+    <ExitInfo>确定退出当前比赛么?</ExitInfo>
+    <MatchSettingWithReceivedThreadOpen>数据接收线程正在运行，比赛无法配置。要配置请先关闭接收端口!</MatchSettingWithReceivedThreadOpen>
+    <ExitWithReceivedThreadOpen>数据接收线程正在运行，比赛无法退出。要退出请先关闭接收端口!</ExitWithReceivedThreadOpen>
+    <label_CurSplit>当前计时点:</label_CurSplit>
+    <label_CurGroup>当前组:</label_CurGroup>
+    <btnX_Schedule>比赛日程</btnX_Schedule>
+    <btnX_StartList>出发单</btnX_StartList>
+    <btnX_Running>比赛</btnX_Running>
+    <btnX_Suspend>暂停</btnX_Suspend>
+    <btnX_Unofficial>非官方</btnX_Unofficial>
+    <btnX_Finished>结束</btnX_Finished>
+    <btnX_Revision>修改</btnX_Revision>
+    <btnX_Canceled>取消</btnX_Canceled>
+    <MenuItem_Edit_StartTime>编辑 出发时间</MenuItem_Edit_StartTime>
+    <MenuItem_Adjust_StartTime>调整 出发时间</MenuItem_Adjust_StartTime>
+    <MenuItem_Shift_StartTime>偏移</MenuItem_Shift_StartTime>
+    <MenuItem_Shift_AllStartTime>所有偏移</MenuItem_Shift_AllStartTime>
+    <MenuItem_Shift_StartTime_By_GroupNumber>按组偏移</MenuItem_Shift_StartTime_By_GroupNumber>
+    <MenuItem_Change_Bib>改变 Bib号</MenuItem_Change_Bib>
+    <SwapTime>交换成绩 </SwapTime>
+    <BibForSwapTime>请输入想要交换成绩的Bib号</BibForSwapTime>
+    <MenuItem_Change_StartOrder>改变出发顺序</MenuItem_Change_StartOrder>
+    <MenuItem_Change_Group>改变 组号</MenuItem_Change_Group>
+    <MenuItem_Swap_Time>与另一运动员交换时间...</MenuItem_Swap_Time>
+    <MenuItem_UseTimeFromLOG>使用LOG时间</MenuItem_UseTimeFromLOG>
+    <MenuItem_ReCanculateAll>重新计算所有成绩</MenuItem_ReCanculateAll>
+    <MenuItem_Shift_StartTime_Error>运动员已经出发，无法偏移时间</MenuItem_Shift_StartTime_Error>
+    <MenuItem_Shift_StartTime_OutRange_Error> 偏移时间超出了有效范围</MenuItem_Shift_StartTime_OutRange_Error>
+    <MenuItem_ShiftAll_StartTime_Error>有些运动员已经出发，无法偏移时间</MenuItem_ShiftAll_StartTime_Error>
+    <MenuItem_ShiftAll_StartTime_OutRange_Error>有些运动员的偏移时间超出了有效范围</MenuItem_ShiftAll_StartTime_OutRange_Error>
+    <status_OK>OK</status_OK>
+    <status_REL>REL-降低排名</status_REL>
+    <status_DNF>DNF-未完成</status_DNF>
+    <status_DNS>DNS-未出发</status_DNS>
+    <status_DSQ>DSQ-取消资格</status_DSQ>
+    <status_DSQ_C>DSQ_C -取消资格并清空成绩</status_DSQ_C>
+    <status_LAP>OTL-超出规定时间</status_LAP>
+    <StripMenuItem_Restart>重新开始</StripMenuItem_Restart>
+    <frm_MatchSetting>赛段设置</frm_MatchSetting>
+    <frm_RunSetUp>比赛配置</frm_RunSetUp>
+    <label_RaceDesc>比赛描述</label_RaceDesc>
+    <label_StartTime>出发时间</label_StartTime>
+    <label_Interval>间隔</label_Interval>
+    <label_GapTime>大团时间</label_GapTime>
+    <label_Intermediate>计时点时间:</label_Intermediate>
+    <label_Range>赛段时间:</label_Range>
+    <checkBox_SetStartTime>设置出发时间</checkBox_SetStartTime>
+    <btnOK>确定</btnOK>
+    <btnCancel>取消</btnCancel>
+    <addToolStripMenuItem>增加</addToolStripMenuItem>
+    <deleteToolStripMenuItem>删除</deleteToolStripMenuItem>
+    <insertToolStripMenuItem>插入</insertToolStripMenuItem>
+    <QueryMatch_Error>查寻比赛失败,不能填充DataGridView!</QueryMatch_Error>
+    <Interval_NULL_Error>请输入时间间隔!</Interval_NULL_Error>
+    <Interval_Format_Error>时间间隔格式错误!</Interval_Format_Error>
+    <LegSet_NULL_Error>请在编辑框中输入赛段设置!</LegSet_NULL_Error>
+    <LegSet_Format_Error>编辑框中的数值应该大于零!</LegSet_Format_Error>
+    <StartTime_Format_Error>出发时间格式错误!</StartTime_Format_Error>
+    <Hour_Format_Error>小时位格式错误!</Hour_Format_Error>
+    <Minute_Format_Error>分钟位格式错误!</Minute_Format_Error>
+    <Second_Format_Error>秒位格式错误!</Second_Format_Error>
+    <StartOrderNULL_Error>赛段时间的开始计时点不应该为空!</StartOrderNULL_Error>
+    <StartOrderOutofRange_Error>赛段时间的开始计时点超过了计时点范围</StartOrderOutofRange_Error>
+    <EndOrderOutofRange_Error>赛段时间的终止计时点超过了计时点范围</EndOrderOutofRange_Error>
+    <EndOrderNULL_Error>赛段时间的终止计时点应该大于0</EndOrderNULL_Error>
+    <Start_End_Order_Error>赛段时间的终止计时点应大于开始计时点!</Start_End_Order_Error>
+    <SelectMatchInfo>请选择一场比赛!</SelectMatchInfo>
+    <MatchTypeError>比赛类型错误，无法配置比赛!</MatchTypeError>
+    <EditTime>编辑时间</EditTime>
+    <NewTime>新时间  </NewTime>
+    <NewBib>新Bib号 </NewBib>
+    <NewStartOrder>新出发号 </NewStartOrder>
+    <NewGroupNumber>新组号 </NewGroupNumber>
+    <EditStartTime>编辑出发时间</EditStartTime>
+    <TimeOutofRange_Error>出发时间超过已有的成绩时间，不符合逻辑</TimeOutofRange_Error>
+    <RestartMatchInfo>确定要重新开始比赛么，这会删除所有的比赛数据!</RestartMatchInfo>
+    <ShiftStartTime>偏移出发时间</ShiftStartTime>
+    <ShiftAllStartTime>偏移所有出发时间</ShiftAllStartTime>
+    <ShiftStartTimeCaption>偏移格式 (例:"20" "-2:30" )</ShiftStartTimeCaption>
+
+    <OVROWWeatherConfig>天气设置</OVROWWeatherConfig>
+    <lbAirtemp>气温</lbAirtemp>
+    <lbWatertemp>水温</lbWatertemp>
+    <lbHumidity>湿度</lbHumidity>
+    <lbWeatherConditionDes>天气情况</lbWeatherConditionDes>
+    <lbWindSpeed>风速</lbWindSpeed>
+    <lbUnit>千米/时</lbUnit>
+    <lbWindDirection>风向</lbWindDirection>
+
+    <checkbox_RELasLastPlace>将REL状态的运动员排在同一集团的最后</checkbox_RELasLastPlace>
+    <checkbox_LapAsDNF>将OTL状态当成DNF状态来排序</checkbox_LapAsDNF>
+    <checkbox_RankLap>排名OTL状态的运动员</checkbox_RankLap>
+    <checkbox_SubsortDNFbyLastLapTime>DNF状态的子排序依据最后一圈的时间</checkbox_SubsortDNFbyLastLapTime>
+    <checkbox_DNSbeforeDSQ>将DNS排在DSQ之前</checkbox_DNSbeforeDSQ>
+    <checkbox_SubsortDNSbyNOC>DNS状态的子排序依据NOC</checkbox_SubsortDNSbyNOC>
+    <checkbox_SubsortDSQbyNOC>DSQ状态的子排序依据NOC</checkbox_SubsortDSQbyNOC>
+
+    <labelX_SerialPort>串口:</labelX_SerialPort>
+    <labelX_Baudrate>波特率:</labelX_Baudrate>
+    <labelX_Parity>校验:</labelX_Parity>
+    <labelX_Databits>数据位:</labelX_Databits>
+    <labelX_Stopbits>停止位:</labelX_Stopbits>
+    <SerialPortOpen_Error>该串口已经被占用,请选择别的串口!</SerialPortOpen_Error>
+    <groupBox_Receive_Setting>数据接收设置</groupBox_Receive_Setting>
+    <groupBox_Receive_SettingBackUp>备用串口</groupBox_Receive_SettingBackUp>
+    <label_ConnectionType>类型:</label_ConnectionType>
+    <label_Port>端口:</label_Port>
+    <btn_ReceiceSetting>设置...</btn_ReceiceSetting>
+    <btn_start_receive>开始</btn_start_receive>
+    <btn_stop_receive>停止</btn_stop_receive>
+    <btn_Save>保存...</btn_Save>
+    <btn_Load>加载...</btn_Load>
+    <LoadCourseSetting>加载赛段配置</LoadCourseSetting>
+    <SaveCourseSetting>保存赛段配置</SaveCourseSetting>
+    <btn_LegSetup>设置赛段...</btn_LegSetup>
+
+    <LogWindowText>选择时间</LogWindowText>
+    <label_LEG>赛段</label_LEG>
+    <label_SplitPoint>计时点</label_SplitPoint>
+    <label_SplitTime>时间</label_SplitTime>
+    <LoadCourseSetting_Warning>确实要加载赛段配置文件么？这会删除当前比赛的所有成绩数据</LoadCourseSetting_Warning>
+
+    <lb_Swim>游泳圈数:</lb_Swim>
+    <lb_Bike>骑行圈数:</lb_Bike>
+    <lb_Run>跑步圈数:</lb_Run>
+
+    <frm_ModeSel>选择模式</frm_ModeSel>
+    <chk_DataEntry>数据录入模式</chk_DataEntry>
+    <chk_DataMonitor>数据监控模式</chk_DataMonitor>
+    <lbModeDesc>在数据录入模式下，你可以做任何操作；数据监控模式下，你不能录入数据，只能监看数据；只有连接计时计分设备的计算机才可以选择数据录入模式!</lbModeDesc>
+    <chkAutoUpdate>每分钟刷新一次</chkAutoUpdate>
+    <btnUpdate>手动刷新</btnUpdate>
+  </OVROWPlugin>
+
+	<OVRTKPlugin>
+
+		<lblName>姓名</lblName>
+		<lblNOCCode>NOC
+代码</lblNOCCode>
+		<lblBibNo>Bib号</lblBibNo>
+		<lblTotal>总分</lblTotal>
+		<lblRounds>回合</lblRounds>
+		<lblTotalPoints>总得分</lblTotalPoints>
+		<lblTotalDeductions>总扣分</lblTotalDeductions>
+		<Status_Available>可选</Status_Available>
+		<Status_Startlist>上场</Status_Startlist>
+		<Status_Running>进行中</Status_Running>
+		<Status_Unofficial>非官方</Status_Unofficial>
+		<Status_Official>官方</Status_Official>
+		<Status_Revision>修改</Status_Revision>
+		<lblRound>回合</lblRound>
+		<lblTime>时间</lblTime>
+		<lblWinner>胜者</lblWinner>
+		<cmbWinner_Blue>青方</cmbWinner_Blue>
+		<cmbWinner_Red>红方</cmbWinner_Red>
+		<lblDecision>判定方式</lblDecision>
+		<btnHelp>帮助(&amp;H)</btnHelp>
+		<btnJudges_Poomsae>裁判(&amp;J)</btnJudges_Poomsae>
+
+		<strHelp_Title>帮助</strHelp_Title>
+		<strHelp_Kyorugi>
+			K   - 警告
+			G   - 扣分
+			O1  - 进攻踢得1分
+			O2  - 进攻踢得2分
+			O3  - 进攻踢得3分
+			O4  - 进攻踢得4分
+			D1  - 防守踢得1分
+			D2  - 防守踢得2分
+			D3  - 防守踢得3分
+			D4  - 防守踢得4分
+			OP  - 进攻直拳
+			DP  - 防守直拳
+
+			KO  - 击倒胜
+			RSC - 主裁判终止比赛胜
+			PTF - 比分胜
+			PTG - 分差胜
+			SDP - 突然死亡胜
+			SUP - 优势胜
+			WDR - 弃权胜
+			DSQ - 失格胜
+			PUN - 犯规胜
+		</strHelp_Kyorugi>
+
+		<strError_Title>错误</strError_Title>
+		<strError_CheckRound>轮次在"进行中"状态下才能进行打分!</strError_CheckRound>
+		<strError_CheckMatch>比赛在"进行中"或"修改"状态下才能进行打分!</strError_CheckMatch>
+		<strError_SelectWinner>请选择胜者和判定方式!</strError_SelectWinner>
+
+		<btnRank>排名(&amp;R)</btnRank>
+		<btnJudges_Kyorugi>裁判(&amp;J)</btnJudges_Kyorugi>
+		<btnOptions>选项(&amp;O)</btnOptions>
+
+		<lblCompetitorStatus>参赛者 状态</lblCompetitorStatus>
+		<lblCompetitorIRM>参赛者 无效标记</lblCompetitorIRM>
+
+		<lblPoomsae1>第一品势</lblPoomsae1>
+		<lblPoomsae1Name>第一品势 名称</lblPoomsae1Name>
+		<lblPoomsae1Status>第一品势 状态</lblPoomsae1Status>
+		<lblPoomsae1IRM>第一品势 无效标记</lblPoomsae1IRM>
+
+		<lblPoomsae2>第二品势</lblPoomsae2>
+		<lblPoomsae2Name>第二品势 名称</lblPoomsae2Name>
+		<lblPoomsae2Status>第二品势 状态</lblPoomsae2Status>
+		<lblPoomsae2IRM>第二品势 无效标记</lblPoomsae2IRM>
+
+		<strHelp_Poomsae>
+			Acc. - 正确性
+			Pre. - 表现力
+			Ded. - 扣分
+			Tot. - 总得分
+
+			RF   - 主裁判
+			Jn   - n号裁判
+		</strHelp_Poomsae>
+
+		<strError_InputError>输入错误!</strError_InputError>
+
+		<Fight_Start>比赛第{0}轮开始</Fight_Start>
+		<New_Point>{0} {1}</New_Point>
+		<Fight_Long_Pause>比赛暂停</Fight_Long_Pause>
+		<Fight_Resume>比赛继续</Fight_Resume>
+		<Fight_Stop_Round>比赛第{0}轮结束</Fight_Stop_Round>
+		<Fight_Stop_Match>比赛结束, {0} 获胜</Fight_Stop_Match>
+		<Fight_Time>比赛滚动时钟</Fight_Time>
+
+		<Type_Punch>直拳得1分</Type_Punch>
+		<Type_Head>踢中头部得3分</Type_Head>
+		<Type_Exceed>超过力度得1分</Type_Exceed>
+		<Type_Tech>旋转技术得1分</Type_Tech>
+		<Type_Hogu>踢中护具得1分</Type_Hogu>
+		<Type_ManualAdd>手动加1分</Type_ManualAdd>
+		<Type_ManualDed>手动减1分</Type_ManualDed>
+		<Type_Warning>警告</Type_Warning>
+		<Type_DedWarning>取消警告</Type_DedWarning>
+
+		<MessageString>场地: {0} 场次号: {1} 轮次: {2} 时间: {3} 事件: {4} 比分: {5} 警告: {6}</MessageString>
+
+		<LogColumn_Court>场地</LogColumn_Court>
+		<LogColumn_ContestNo>场次号</LogColumn_ContestNo>
+		<LogColumn_Round>回合</LogColumn_Round>
+		<LogColumn_Time>时间</LogColumn_Time>
+		<LogColumn_Action>事件</LogColumn_Action>
+		<LogColumn_Points>比分</LogColumn_Points>
+		<LogColumn_Warning>警告</LogColumn_Warning>
+
+	</OVRTKPlugin>
+
+  <OVRHOPlugin>
+    <mbRunningMatch>请先退出当前比赛!</mbRunningMatch>
+    <mbChooseMatch>请先选择一场比赛!</mbChooseMatch>
+    <mbExitMatch>确定退出比赛吗?</mbExitMatch>
+    <Msg_Register>比赛队伍无效!</Msg_Register>
+    <Msg_Period>阶段无效！</Msg_Period>
+    <Msg_ErrorPlayerIn>请先让场上运动员下场!</Msg_ErrorPlayerIn>
+    <Msg_ChoosePlayer>请先选择运动员！</Msg_ChoosePlayer>
+
+    <btnx_Official>官员信息</btnx_Official>
+    <btnx_TeamInfo>队伍信息</btnx_TeamInfo>
+    <btnx_Exit>退出</btnx_Exit>
+
+    <btnx_Schedule>已安排</btnx_Schedule>
+    <btnx_StartList>进入场地</btnx_StartList>
+    <btnx_Running>进行中</btnx_Running>
+    <btnx_Suspend>已挂起</btnx_Suspend>
+    <btnx_Unofficial>非官方</btnx_Unofficial>
+    <btnx_Finished>已结束</btnx_Finished>
+    <btnx_Revision>重新修改</btnx_Revision>
+    <btnx_Canceled>取消</btnx_Canceled>
+
+    <lb_Half1>Set1</lb_Half1>
+    <lb_Half2>Set2</lb_Half2>
+    <lb_Extra1>Extra1</lb_Extra1>
+    <lb_Extra2>Extra2</lb_Extra2>
+    <lb_Pso>PSO</lb_Pso>
+    
+    <btnx_Stop>暂停</btnx_Stop>
+    <btnx_Start>开始</btnx_Start>
+    <btnx_StartPeriod>开始小节</btnx_StartPeriod>
+    <btnx_EndPeriod>结束小节</btnx_EndPeriod>
+    <btnx_MatchResult>比赛结果</btnx_MatchResult>
+      
+    <btnx_Score>比分模式</btnx_Score>
+    <btnx_Statistic>技术统计模式</btnx_Statistic>
+    <btnx_Result>成绩模式</btnx_Result>
+
+    <gbAction>动作</gbAction>
+    <gbCards>绿黄红牌</gbCards>
+    <gbSubstitutions>换人</gbSubstitutions>
+    <gb23M>23米球</gb23M>
+
+    <btnx_FGGoal>射门得分</btnx_FGGoal>
+    <btnx_FGMiss>射门失败</btnx_FGMiss>
+    <btnx_FGBlock>射门被拦截</btnx_FGBlock>
+    <btnx_PCGoal>短角球得分</btnx_PCGoal>
+    <btnx_PCMiss>短角球失败</btnx_PCMiss>
+    <btnx_PCBlock>短角球被拦截</btnx_PCBlock>
+    <btnx_PSGoal>罚点球得分</btnx_PSGoal>
+    <btnx_PSMiss>罚点球失败</btnx_PSMiss>
+    <btnx_PSBlock>罚点球被拦截</btnx_PSBlock>
+    <btnx_GreenCard>绿牌</btnx_GreenCard>
+    <btnx_YellowCard>黄牌</btnx_YellowCard>
+    <btnx_RedCard>红牌</btnx_RedCard>
+    <btnx_Out>下场</btnx_Out>
+    <btnx_In>上场</btnx_In>
+    <btnx_23MGoal>23米球得分</btnx_23MGoal>
+    <btnx_23MMiss>23米球失败</btnx_23MMiss>
+    <btnx_23MBlock>23米球被拦截</btnx_23MBlock>
+
+    <frmEntryOfficial>选择比赛官员</frmEntryOfficial>
+    <lbEventOfficial>可选比赛官员</lbEventOfficial>
+    <lbMatchOfficials>当场比赛官员</lbMatchOfficials>
+
+    <frmTeamPlayers>选择双方运动员</frmTeamPlayers>
+    <gbHome>主队</gbHome>
+    <gbVisit>客队</gbVisit>
+    <lbPlayers>可选运动员</lbPlayers>
+    <lbMatchPlayers>已选运动员</lbMatchPlayers>
+    <lbUniform>队服颜色</lbUniform>
+</OVRHOPlugin>
+<OVREQPlugin>
+    <mbRunningMatch>请先退出当前比赛!</mbRunningMatch>
+    <mbChooseMatch>请先选择一场比赛!</mbChooseMatch>
+    <mbExitMatch>你确定要退出本场比赛吗？</mbExitMatch>
+
+    <mbSelectIndividualMatch>请先选择个人比赛进行比赛数据录入!</mbSelectIndividualMatch>
+    <mbMatchNotConfiged>请先初始化比赛配置信息！</mbMatchNotConfiged>
+    <mbClearData>警告！点击确定后将清除比赛配置和成绩数据，并退出比赛录入界面，你确定要清除吗？</mbClearData>
+    <mbRegisterNotArranged>警告！存在某些比赛位置未安排运动员，或者某些运动员未选择马匹，请先在编排界面进行相关操作！</mbRegisterNotArranged>
+    <mbMatchNoOfficial>请先选择比赛官员!</mbMatchNoOfficial>
+  
+    <g_MatchInfo>基础信息</g_MatchInfo>
+    <g_MatchScore>比赛成绩</g_MatchScore>
+    <g_MatchScoreDetail>比赛成绩详情</g_MatchScoreDetail>
+  
+    <lb_Event>项目</lb_Event>
+    <lb_Venue>场馆</lb_Venue>
+    <lb_Date>日期</lb_Date>
+    <lb_Match>比赛</lb_Match>
+
+    <btnx_Exit>退出</btnx_Exit>
+    <btnx_Config>配置设置</btnx_Config>
+    <btnx_Judges>官员设置</btnx_Judges>
+    <btnx_ClearData>清除数据</btnx_ClearData>
+    <btnx_Refresh>刷新</btnx_Refresh>
+  
+    <btnx_Status>比赛状态</btnx_Status>
+    <btnx_Schedule>已安排</btnx_Schedule>
+    <btnx_StartList>进入场地</btnx_StartList>
+    <btnx_Running>进行中</btnx_Running>
+    <btnx_Suspend>已挂起</btnx_Suspend>
+    <btnx_Unofficial>非官方</btnx_Unofficial>
+    <btnx_Finished>已结束</btnx_Finished>
+    <btnx_Revision>重修改</btnx_Revision>
+    <btnx_Canceled>取消</btnx_Canceled>
+  
+    <btnx_TeamResult>团队成绩</btnx_TeamResult>
+    <btnx_IndividualResult>个人成绩</btnx_IndividualResult>
+  
+    <frmEntryOfficial>官员录入界面</frmEntryOfficial>
+    <lbAvailableOfficial>可用官员</lbAvailableOfficial>
+    <lbMatchOfficial>比赛官员</lbMatchOfficial>
+  
+
+    <OVREQMatchConfig>比赛配置</OVREQMatchConfig>
+    <lb_MatchConfig>配置信息</lb_MatchConfig>
+    <btnx_MovementConfig>舞步配置</btnx_MovementConfig>
+    <btnx_FenceConfig>障碍配置</btnx_FenceConfig>
+
+    <OVREQMatchMovement>比赛舞步</OVREQMatchMovement>
+    <btnx_Movement>舞步库</btnx_Movement>
+  
+    <OVREQMatchFence>比赛障碍</OVREQMatchFence>
+    <btnx_Fence>障碍库</btnx_Fence>
+
+    <OVREQMovement>舞步库</OVREQMovement>
+    <lbListInfo_MF>列表</lbListInfo_MF>
+
+    <OVREQEditTime>编辑出发时间</OVREQEditTime>
+    <labXStartTime>开始时间:</labXStartTime>
+    <labXSpanTime>间隔时间:</labXSpanTime>
+    <labXBreakTime>中断时间:</labXBreakTime>
+    <btnXOK>确定</btnXOK>
+    <btnXCancel>取消</btnXCancel>
+
+    <OVREQJPTime>时间修改</OVREQJPTime>
+    <labXPauseTime>暂停时间:</labXPauseTime>
+    <labXCorrectTime>校正时间:</labXCorrectTime>
+    <labXFinalTime>最终时间:</labXFinalTime>
+
+    <OVREQIPadMark>打分器监控台</OVREQIPadMark>
+  </OVREQPlugin>
+  <OVRDVPlugin>
+    <mbRunningMatch>请先退出当前比赛!</mbRunningMatch>
+    <mbChooseMatch>请先选择一场比赛!</mbChooseMatch>
+    <mbExitMatch>你确定要退出本场比赛吗？</mbExitMatch>
+    <MsgSaveOnePoint2DataBase1>更新比分失败!</MsgSaveOnePoint2DataBase1>
+    <MsgDelRule1>删除比赛规则失败!</MsgDelRule1>
+    <MsgDelRule2>删除比赛规则失败, RuleID 无序!</MsgDelRule2>
+    <MsgDelRule3>删除比赛规则失败, 已有比赛使用该比赛规则!</MsgDelRule3>
+    <MsgDelRule4>请先选择一个比赛规则!</MsgDelRule4>
+    <MsgDelRule5>删除比赛规则后,则无法还要! 是否还要继续?</MsgDelRule5>
+    <MsgDelSet1>请先选择盘规则!</MsgDelSet1>
+    <MsgDelSet2>删除盘规则后,则无法还要! 是否还要继续?</MsgDelSet2>
+    <MsgApplySelRule1>为比赛应用比赛规则后，则该比赛的比分将清空，请问你是否继续？</MsgApplySelRule1>
+    <MsgApplySelRule2>为比赛应用比赛规则成功!</MsgApplySelRule2>
+    <MsgApplySelRule3>为比赛应用比赛规则失败, MatchID 或 MatchRuleID 无效!</MsgApplySelRule3>
+    <MsgApplySelRule4>为比赛应用比赛规则失败, 比赛状态不正确!</MsgApplySelRule4>
+    <MsgApplySelRule5>为比赛应用比赛规则失败!</MsgApplySelRule5>
+    <MsgMatchNoConfiged1>请先指定比赛规则!</MsgMatchNoConfiged1>
+    <MsgMatchNoOfficial>比赛没有指定裁判，是否还要继续？</MsgMatchNoOfficial>
+    <MsgSetServerPosition>请先指定发球者!</MsgSetServerPosition>
+    <MsgDataEntryTypeError>选择录入模式失败，比赛状态不正确!</MsgDataEntryTypeError>
+    <MsgImportMatchResultError>读取比赛成绩失败!</MsgImportMatchResultError>
+    <frmEntryOfficial>官员录入界面</frmEntryOfficial>
+    <lbAvailableOfficial>可用官员</lbAvailableOfficial>
+    <lbMatchOfficial>比赛官员</lbMatchOfficial>
+    <ExportAthlete>导出运动员信息成功!</ExportAthlete>
+    <ExportSchedule>导出本天的赛事计划成功!</ExportSchedule>
+    <MsgExportPath>请选择导出路径!</MsgExportPath>
+    <MsgUdpPort>请输入UDP端口!</MsgUdpPort>
+    <MsgMatchDate>请选择要导出的比赛日期!</MsgMatchDate>
+    <OVRTEWeatherConfig>天气设置</OVRTEWeatherConfig>
+    <lbAirtemp>温度</lbAirtemp>
+    <lbWatertemp>水温</lbWatertemp>
+    <lbHumidity>湿度</lbHumidity>
+    <lbWeatherConditionDes>天气</lbWeatherConditionDes>
+    <lbWindSpeed>风速</lbWindSpeed>
+    <lbWindDirection>风向</lbWindDirection>
+
+    <btnx_Exit>退出</btnx_Exit>
+    <btnx_Config>规则设置</btnx_Config>
+    <btnx_Judges>官员设置</btnx_Judges>
+    <btnWeather>天气设置</btnWeather>
+    <lbUDP>UDP 端口</lbUDP>
+    <btnOpenPort>打卡端口</btnOpenPort>
+    <btnClosePort>关闭端口</btnClosePort>
+    <btnImportResult>导入成绩</btnImportResult>
+    <btnExportPath>导出路径</btnExportPath>
+    <btnExportAthlete>导出运动员</btnExportAthlete>
+    <btnPreAthlete>预览运动员</btnPreAthlete>
+    <btnExportSchedule>导出赛程</btnExportSchedule>
+    <btnPreSchedule>预览赛程</btnPreSchedule>
+    <lb_Event>项目</lb_Event>
+    <lb_Venue>场馆</lb_Venue>
+    <lb_Date>日期</lb_Date>
+    <lb_Match>比赛</lb_Match>
+    <btnx_Points>得分模式</btnx_Points>
+    <btnx_Statistics>统计模式</btnx_Statistics>
+    <btnx_Both>综合模式</btnx_Both>
+    <btnx_FinalResult>输入模式</btnx_FinalResult>
+    <btnx_MatchResult>比赛结果</btnx_MatchResult>
+    <btnx_Schedule>已安排</btnx_Schedule>
+    <btnx_StartList>进入场地</btnx_StartList>
+    <btnx_Running>进行中</btnx_Running>
+    <btnx_Suspend>已挂起</btnx_Suspend>
+    <btnx_Unofficial>非官方</btnx_Unofficial>
+    <btnx_Finished>已结束</btnx_Finished>
+    <btnx_Revision>重修改</btnx_Revision>
+    <btnx_Canceled>取消</btnx_Canceled>
+    <lb_MatchTime>比赛时间</lb_MatchTime>
+    <btnx_StartTiming>开始</btnx_StartTiming>
+    <btnx_Stop>结束</btnx_Stop>
+    <lb_SetTime>盘时间</lb_SetTime>
+    <btnx_Serve>发球</btnx_Serve>
+    <btnx_Fault>失误</btnx_Fault>
+    <btnx_DoubleFault>双误</btnx_DoubleFault>
+    <btnx_Ace>Ace</btnx_Ace>
+    <btnx_Point2A>A得分</btnx_Point2A>
+    <btnx_Point2B>B得分</btnx_Point2B>
+    <btnx_ServiceWinner>发球得分</btnx_ServiceWinner>
+    <btn_Others>其他</btn_Others>
+    <btnx_Unforced>非受迫性</btnx_Unforced>
+    <btnx_Winning>主动得分</btnx_Winning>
+    <btnx_Return>回球</btnx_Return>
+    <btnx_Forehand>正手</btnx_Forehand>
+    <btnx_Backhand>反手</btnx_Backhand>
+    <btnx_Smassh>扣杀得分</btnx_Smassh>
+    <btnx_PassLob>穿越高吊得分</btnx_PassLob>
+    <btnx_Volley>截击得分</btnx_Volley>
+    <btnx_DriveDrop>抽/发得分</btnx_DriveDrop>
+    <btnx_PassVolley>穿越截击</btnx_PassVolley>
+    <btnx_StrokeNet>上网</btnx_StrokeNet>
+    <btnx_ExtraBtns>额外按钮</btnx_ExtraBtns>
+    <btnx_ChangeServe>换发球</btnx_ChangeServe>
+    <btnx_PenaltyAPoint>Penalty Point to A</btnx_PenaltyAPoint>
+    <btnx_PenaltyBPoint>Penalty Point to B</btnx_PenaltyBPoint>
+    <btnx_PenaltyAGame>Penalty Game to A</btnx_PenaltyAGame>
+    <btnx_PenaltyBGame>Penalty Game to B</btnx_PenaltyBGame>
+  </OVRDVPlugin>
+</Localization>

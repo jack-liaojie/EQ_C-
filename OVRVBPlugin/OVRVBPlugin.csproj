@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8F470E3-49E6-44D4-AD04-E1BDFEBCA0D1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoSports.OVRVOPlugin</RootNamespace>
+    <AssemblyName>VB</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Bin\Debug\Plugin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\Bin\Debug\Plugin\VB.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\Bin\Release\Plugin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\Bin\Release\Plugin\VB.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <OutputPath>..\..\Bin\Debug\Plugin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>..\..\Bin\Release\Plugin\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=9.0.0.5, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmOfficialEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOfficialEntry.Designer.cs">
+      <DependentUpon>frmOfficialEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOVRVODataEntry_ActionList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmOVRVODataEntry_MatchScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRVODataEntry_ScoreFromFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRVODataEntry_Setup.cs" />
+    <Compile Include="frmOVRVODataEntry_StatEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRVODataEntry_StatKeyboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScoreWinLose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScoreWinLose.Designer.cs">
+      <DependentUpon>frmScoreWinLose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTeamMemberEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTeamMemberEntry.Designer.cs">
+      <DependentUpon>frmTeamMemberEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOVRVODataEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRVODataEntry.Designer.cs">
+      <DependentUpon>frmOVRVODataEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTeamMemberEntry_Sql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameGeneralBall.cs" />
+    <Compile Include="OVRVOPlugin.Common.cs" />
+    <Compile Include="OVRVOPlugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OVRCommon\OVRCommon.csproj">
+      <Project>{5230BD9A-31F4-4E66-8D2A-001D26BFAC6A}</Project>
+      <Name>OVRCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmOfficialEntry.resx">
+      <DependentUpon>frmOfficialEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScoreWinLose.resx">
+      <DependentUpon>frmScoreWinLose.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTeamMemberEntry.resx">
+      <DependentUpon>frmTeamMemberEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOVRVODataEntry.resx">
+      <DependentUpon>frmOVRVODataEntry.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>Copy "$(TargetPath)" "BV.dll"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

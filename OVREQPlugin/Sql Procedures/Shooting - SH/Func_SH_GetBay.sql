@@ -1,0 +1,57 @@
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Func_SH_GetBay]') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+DROP FUNCTION [dbo].[Func_SH_GetBay]
+GO
+
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE FUNCTION [dbo].[Func_SH_GetBay]
+								(
+									@FP   INT
+								)
+RETURNS NVARCHAR(10)
+AS
+BEGIN
+
+	DECLARE @RETURN NVARCHAR(10)
+	
+	IF @FP = 1 SET @RETURN = 'A'
+	IF @FP = 2 SET @RETURN = 'B'
+	IF @FP = 3 SET @RETURN = 'C'
+	IF @FP = 4 SET @RETURN = 'D'
+	IF @FP = 5 SET @RETURN = 'E'
+	IF @FP = 6 SET @RETURN = 'F'
+	IF @FP = 7 SET @RETURN = 'G'
+	IF @FP = 8 SET @RETURN = 'H'
+	IF @FP = 9 SET @RETURN = 'I'
+	IF @FP = 10 SET @RETURN = 'J'
+	IF @FP = 11 SET @RETURN = 'K'
+	IF @FP = 12 SET @RETURN = 'L'
+	IF @FP = 13 SET @RETURN = 'M'
+	IF @FP = 14 SET @RETURN = 'N'
+	IF @FP = 15 SET @RETURN = 'O'
+	IF @FP = 16 SET @RETURN = 'P'
+	IF @FP = 17 SET @RETURN = 'Q'
+	IF @FP = 18 SET @RETURN = 'R'
+	IF @FP = 19 SET @RETURN = 'S'
+	IF @FP = 20 SET @RETURN = 'T'
+	IF @FP = 21 SET @RETURN = 'U'
+	IF @FP = 22 SET @RETURN = 'V'
+	IF @FP = 23 SET @RETURN = 'W'
+	IF @FP = 24 SET @RETURN = 'X'
+	IF @FP = 25 SET @RETURN = 'Y'
+	IF @FP = 26 SET @RETURN = 'Z'
+	
+	RETURN @RETURN
+
+END
+
+GO
+
+
+-- SELECT DBO.Func_SH_GetBay(1)

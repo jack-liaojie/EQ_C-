@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AutoSports.OVRARPlugin.AR_End">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwBZAQABACAgAAAAAQAAAAAACAJQAAEAEgAAAAAIIY=</HashCode>
+      <FileName>AREntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoSports.OVRARPlugin.AR_Team">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAYIAARCBAAAACAAAAADQAQSAAQAAAAAgAACAAACQ=</HashCode>
+      <FileName>AREntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoSports.OVRARPlugin.AR_Archer">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABYGAENHhABEkCCCAAADUAQSACQAAAgEgAiCAAICA=</HashCode>
+      <FileName>AREntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoSports.OVRARPlugin.AR_Arrow">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAABQAAAAAAAAFAAgAAAAAiABAAAEAEAAAAAAIAA=</HashCode>
+      <FileName>AREntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoSports.OVRARPlugin.AR_MatchInfo">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAgAgAKAAAAAIEIDABQAAAAAgchBCQIAUwCAIBAAIAg=</HashCode>
+      <FileName>AREntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

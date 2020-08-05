@@ -1,0 +1,251 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="MainBkGrd" Color="White"/>
+
+    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" x:Key="GridHeadBkGrd">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#FFFFFF" Offset="0" />
+            <GradientStop Color="#FFFFFF" Offset="0.499" />
+            <GradientStop Color="#F3F4F6" Offset="0.500" />
+            <GradientStop Color="#F3F4F6" Offset="1" />
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="GridRowBkGrd" Color="#E6EFF8"/>
+    <SolidColorBrush x:Key="GridRowAlterBkGrd" Color="#CADDEE"/>
+    <SolidColorBrush x:Key="GridLineBrush" Color="#909090"/>
+    <SolidColorBrush x:Key="GridBorderBrush" Color="#B4B4B4"/>
+    <SolidColorBrush x:Key="GridForegroudBrush" Color="Black"/>
+    <LinearGradientBrush x:Key="GridSelectedRowBackground2" StartPoint="0,0" EndPoint="0,1" >
+        <GradientStop Offset="0" Color="#FFFBD8AD" />
+        <GradientStop Offset="0.5" Color="#FFFEB95C" />
+        <GradientStop Offset="1.0" Color="#FFFDE79A" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="GridSelectedRowBackground" StartPoint="0,0" EndPoint="0,1" >
+        <GradientStop Offset="0" Color="Yellow" />
+        <GradientStop Offset="0.5" Color="Yellow" />
+        <GradientStop Offset="1.0" Color="Yellow" />
+    </LinearGradientBrush>
+    <!--<SolidColorBrush Color="#FFBCE3FA" x:Key="GridSelectedRowBackground" />-->
+
+    <LinearGradientBrush x:Key="GridMouseOverRowBackground" StartPoint="0,0" EndPoint="0,1" >
+        <GradientStop Offset="0" Color="#7F7F7F7F" />
+        <GradientStop Offset="0.5" Color="#7F444444" />
+        <GradientStop Offset="1.0" Color="#7F7F7F7F" />
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="GridSelectedClr" Color="Transparent"/>
+    
+    <Style TargetType="{x:Type DataGrid}">
+        <Setter Property="BorderBrush" Value="{StaticResource GridBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1,1,1,0" />
+        <Setter Property="AlternationCount" Value="1" />
+        <Setter Property="HorizontalGridLinesBrush" Value="{StaticResource GridLineBrush}" />
+        <Setter Property="VerticalGridLinesBrush" Value="{StaticResource GridLineBrush}" />
+        <Setter Property="AutoGenerateColumns" Value="False"/>
+        <Setter Property="HeadersVisibility" Value="Column" />
+        <Setter Property="AlternatingRowBackground" Value="{StaticResource GridRowAlterBkGrd}"/>
+        <Setter Property="Background" Value="{StaticResource MainBkGrd}"/>
+        <Setter Property="CanUserReorderColumns" Value="False"/>
+        <Setter Property="CanUserSortColumns" Value="False"/>
+        <Setter Property="Foreground" Value="{StaticResource GridForegroudBrush}"/>
+        <Setter Property="RowBackground" Value="{StaticResource GridRowBkGrd}"/>
+        <Setter Property="CanUserResizeColumns" Value="False"/>
+        <Setter Property="HorizontalScrollBarVisibility" Value="Auto" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="CanUserAddRows" Value="False" />
+        <Setter Property="CanUserDeleteRows" Value="False" />
+        <Setter Property="Background" Value="#C8D9ED" />
+    </Style>
+
+    <Style TargetType="{x:Type DataGrid}" x:Key="officeDataGrid">
+        <Setter Property="BorderBrush" Value="{StaticResource GridBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1,1,1,0" />
+        <Setter Property="AlternationCount" Value="1" />
+        <Setter Property="HorizontalGridLinesBrush" Value="{StaticResource GridLineBrush}" />
+        <Setter Property="VerticalGridLinesBrush" Value="{StaticResource GridLineBrush}" />
+        <Setter Property="AutoGenerateColumns" Value="False"/>
+        <Setter Property="HeadersVisibility" Value="Column" />
+        <Setter Property="AlternatingRowBackground" Value="White"/>
+        <Setter Property="Background" Value="#C8D9ED" />
+        <Setter Property="CanUserReorderColumns" Value="False"/>
+        <Setter Property="CanUserSortColumns" Value="False"/>
+        <Setter Property="Foreground" Value="{StaticResource GridForegroudBrush}"/>
+        <Setter Property="RowBackground" Value="White"/>
+        <Setter Property="CanUserResizeColumns" Value="False"/>
+        <Setter Property="HorizontalScrollBarVisibility" Value="Auto" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="CanUserAddRows" Value="False" />
+        <Setter Property="CanUserDeleteRows" Value="False" />
+    </Style>
+
+    <Style TargetType="{x:Type DataGridColumnHeader}" x:Key="leftHeaderStyle">
+        <Setter Property="Background" Value="{StaticResource GridHeadBkGrd}" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="BorderThickness" Value="0,0,1,1"/>
+        <Setter Property="BorderBrush" Value="#909090" />
+        <Setter Property="Padding" Value="5,0,0,0" />
+        <Setter Property="Height" Value="18" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontFamily" Value="Tahoma" />
+        <Setter Property="FontWeight" Value="Normal" />
+    </Style>
+
+    <Style TargetType="{x:Type DataGridColumnHeader}" x:Key="midHeaderStyle">
+        <Setter Property="Background" Value="{StaticResource GridHeadBkGrd}" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="BorderThickness" Value="0,0,1,1"/>
+        <Setter Property="BorderBrush" Value="#909090" />
+        <Setter Property="Padding" Value="0,0,0,0" />
+        <Setter Property="Height" Value="18" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontFamily" Value="Tahoma" />
+        <Setter Property="FontWeight" Value="Normal" />
+    </Style>
+
+    <Style TargetType="{x:Type DataGridColumnHeader}" x:Key="rightHeaderStyle">
+        <Setter Property="HorizontalContentAlignment" Value="Right" />
+        <Setter Property="Background" Value="{StaticResource GridHeadBkGrd}" />
+        <Setter Property="BorderThickness" Value="0,0,1,1"/>
+        <Setter Property="BorderBrush" Value="#909090" />
+        <Setter Property="Padding" Value="0,0,5,0" />
+        <Setter Property="Height" Value="18" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontFamily" Value="Tahoma" />
+        <Setter Property="FontWeight" Value="Normal" />
+    </Style>
+
+    <Style TargetType="{x:Type DataGridCell}">
+        <Setter Property="FontFamily" Value="Arial" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="FontWeight" Value="Normal" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="Border.BorderThickness" Value="0" />
+        <Style.Triggers >
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="Background" Value="Transparent"></Setter>
+                <Setter Property="Foreground" Value="Black" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="cellStyleOrange"  TargetType="{x:Type DataGridCell}">
+        <Setter Property="FontFamily" Value="Arial" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="FontWeight" Value="Normal" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="Border.BorderThickness" Value="0" />
+        <Style.Triggers >
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="Background" Value="{StaticResource GridSelectedRowBackground2}"></Setter>
+                <Setter Property="Foreground" Value="Black" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="GridCellStyle" TargetType="{x:Type DataGridCell}">
+        <Style.Triggers>
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Background" Value="Yellow" />
+                <Setter Property="Foreground" Value="Black" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="grdCellSelWithNoBk" TargetType="{x:Type DataGridCell}">
+        <Setter Property="FontFamily" Value="Arial" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="Border.BorderThickness" Value="0" />
+        <Style.Triggers>
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Background" Value="Transparent" />
+                <Setter Property="Foreground" Value="Black" />
+            </Trigger>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="Background" Value="Transparent" />
+                <Setter Property="Foreground" Value="Black" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="grdSupperCellWithOutBk" TargetType="{x:Type DataGridCell}">
+        <Style.Triggers>
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Background" Value="Transparent" />
+                <Setter Property="Foreground" Value="Black" />
+            </Trigger>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="Background" Value="Transparent" />
+                <Setter Property="Foreground" Value="Black" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="contentCenterStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="contentTopStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="Padding" Value="0,11,0,0" />
+    </Style>
+
+    <Style x:Key="contentLeftTopStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="Padding" Value="0,3,0,0" />
+    </Style>
+
+    <Style x:Key="contentLeftStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="1,0,0,0" />
+    </Style>
+
+    <Style x:Key="contentRightStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="HorizontalAlignment" Value="Right" />
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="0,0,1,0" />
+    </Style>
+
+    <Style x:Key="dgRowStyle" TargetType="{x:Type DataGridRow}" >
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background"
+                        Value="{StaticResource GridMouseOverRowBackground}" />
+            </Trigger>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="Background"
+                        Value="{StaticResource GridSelectedRowBackground}"/>
+                <Setter Property="Foreground" Value="Black" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="dgRowStyle2" TargetType="{x:Type DataGridRow}" >
+        <Setter Property="Height" Value="22" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{StaticResource GridMouseOverRowBackground}"/>
+            </Trigger>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="Background" Value="{StaticResource GridSelectedRowBackground}"/>
+                <Setter Property="Foreground" Value="Black" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+</ResourceDictionary>

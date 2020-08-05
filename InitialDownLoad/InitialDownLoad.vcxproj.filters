@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="AxPublic">
+      <UniqueIdentifier>{505445a1-0de7-4c97-82bd-217407b10806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AxPublic\CoolGridCtrl">
+      <UniqueIdentifier>{81caf355-11c0-4986-9a14-20a5bcc4d492}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\InitialDownLoad.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\InitialDownLoad.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="InitialDownLoad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InitialDownLoadDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportXLS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AxCommon_Export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\AxCommonUtils.h">
+      <Filter>AxPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\AxCoolADO.h">
+      <Filter>AxPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\AxIdeaEncryption.h">
+      <Filter>AxPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\AxIPAddressCtrl.h">
+      <Filter>AxPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\AxLogSystem.h">
+      <Filter>AxPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\AxMarkup.h">
+      <Filter>AxPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\AxMemDC.h">
+      <Filter>AxPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\AxReadWriteINI.h">
+      <Filter>AxPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\AxRichEditEx.h">
+      <Filter>AxPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\AxSplitString.h">
+      <Filter>AxPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\AxStaDigiClock.h">
+      <Filter>AxPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\AxStaticLabel.h">
+      <Filter>AxPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\AxStdioFileEx.h">
+      <Filter>AxPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\AxTableRecordDef.h">
+      <Filter>AxPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\SystemSetupDlg.h">
+      <Filter>AxPublic</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCell.h">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellBase.h">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellButton.h">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellCheck.h">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellCombo.h">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellDateTime.h">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellNumeric.h">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellRange.h">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellURL.h">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCtrl.h">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridDropTarget.h">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridInPlaceEdit.h">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridMemDC.h">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridTitleTip.h">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="AxPublic\CoolGridCtrl\CoolGridCtrl.h">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="InitialDownLoad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InitialDownLoadDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\AxCommonUtils.cpp">
+      <Filter>AxPublic</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\AxCoolADO.cpp">
+      <Filter>AxPublic</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\AxIdeaEncryption.cpp">
+      <Filter>AxPublic</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\AxIPAddressCtrl.cpp">
+      <Filter>AxPublic</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\AxLogSystem.cpp">
+      <Filter>AxPublic</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\AxMarkup.cpp">
+      <Filter>AxPublic</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\AxReadWriteINI.cpp">
+      <Filter>AxPublic</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\AxRichEditEx.cpp">
+      <Filter>AxPublic</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\AxSplitString.cpp">
+      <Filter>AxPublic</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\AxStaDigiClock.cpp">
+      <Filter>AxPublic</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\AxStaticLabel.cpp">
+      <Filter>AxPublic</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\AxStdioFileEx.cpp">
+      <Filter>AxPublic</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\SystemSetupDlg.cpp">
+      <Filter>AxPublic</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCell.cpp">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellBase.cpp">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellButton.cpp">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellCheck.cpp">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellCombo.cpp">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellDateTime.cpp">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellNumeric.cpp">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellURL.cpp">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCtrl.cpp">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridDropTarget.cpp">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridInPlaceEdit.cpp">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridTitleTip.cpp">
+      <Filter>AxPublic\CoolGridCtrl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="InitialDownLoad.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

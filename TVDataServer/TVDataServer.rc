@@ -1,0 +1,293 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\TVDataServer.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TVDataServer.ico"
+IDI_ICON_FILE           ICON                    "res\\File.ico"
+IDI_ICON_FOLDER         ICON                    "res\\Folder.ico"
+IDI_ICON_FILEGRD        ICON                    "res\\FileGrd.ico"
+IDI_ICON_NETBROKEN      ICON                    "res\\NetBroken.ico"
+IDI_ICON_NETOK          ICON                    "res\\NetOK.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TVDATASERVER_DIALOG DIALOGEX 0, 0, 663, 416
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TVG DataFeed Server - V1.1.1007"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE_TVDATE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,0,93,197,208
+    CONTROL         "",IDC_IP_SERVER,"SysIPAddress32",WS_TABSTOP,54,8,106,15
+    EDITTEXT        IDC_EDIT_PORT,166,8,29,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "Connect",IDC_BTN_CONNECT,202,6,39,17
+    PUSHBUTTON      "DisConnect",IDC_BTN_DISCONNECT,246,6,39,17
+    EDITTEXT        IDC_EDIT_EXPORT_PATH,388,9,135,15,ES_AUTOHSCROLL
+    CONTROL         "Show Court",IDC_CHK_SHOWCOURT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,552,9,49,15
+    DEFPUSHBUTTON   "Refresh",IDC_BTN_REFRESH,5,33,36,17,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Export",IDC_BTN_EXPORT_NODE,245,32,39,17
+    COMBOBOX        IDC_CMB_DATE,31,35,67,258,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_SESSION,132,35,62,218,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Auto Update Setting",IDC_BTN_UPDATE_SETTING,346,32,75,17
+    PUSHBUTTON      "Add Table",IDC_BTN_TABLE_ADD,453,32,47,17
+    PUSHBUTTON      "Modify Table",IDC_BTN_TABLE_MODIFY,502,32,47,17
+    PUSHBUTTON      "Del Table",IDC_BTN_TABLE_DEL,550,32,47,17
+    PUSHBUTTON      "...",IDC_BTN_EXPORT_PATHSEL,528,8,18,17
+    LTEXT           "",IDC_GRID_TVTABLES,212,97,444,75,NOT WS_VISIBLE | WS_DISABLED | WS_BORDER
+    LTEXT           "",IDC_GRID_SQLPREVIEW,212,185,444,224,NOT WS_VISIBLE | WS_DISABLED | WS_BORDER
+    LTEXT           "Session:",IDC_STATIC,103,36,26,11
+    LTEXT           "Date:",IDC_STATIC,10,37,17,11
+    EDITTEXT        IDC_EDIT_LOG,0,326,197,83,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    LTEXT           "Notify Server:",IDC_STATIC,7,10,44,8
+    GROUPBOX        "",IDC_STATIC,3,0,329,26
+    LTEXT           "",IDC_STC_NETICON,296,7,25,17,SS_CENTERIMAGE
+    LTEXT           "Export Path:",IDC_STATIC,344,12,40,8
+    PUSHBUTTON      "Rebuild",IDC_BTN_REBUILD,201,32,39,17
+    GROUPBOX        "",IDC_STATIC,339,0,269,52
+    GROUPBOX        "",IDC_STATIC,3,25,329,28
+    PUSHBUTTON      "Delete",IDC_BTN_DELETE_NODE,288,32,39,17
+END
+
+IDD_DLG_TVTABLE_SETTING DIALOGEX 0, 0, 658, 306
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+CAPTION "TV Table Template Setting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,285,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,59,285,50,14
+    LTEXT           "Table Name:",IDC_STATIC,7,7,41,8
+    LTEXT           "Table Level Type:",IDC_STATIC,7,30,58,8
+    LTEXT           "SQL Expression:",IDC_STATIC,7,112,53,8
+    EDITTEXT        IDC_EDIT_TABLE_NAME,70,7,181,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TABLE_SQLEXPRESSION,7,124,247,119,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    COMBOBOX        IDC_CMB_TABLELEVEL_TYPE,70,31,181,102,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_TABLE_UPDATETYPE,70,53,181,102,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Static",IDC_STC_GRID_SQLPREVIEW,259,7,392,292,NOT WS_VISIBLE | WS_BORDER
+    PUSHBUTTON      "Preview SQL Result",IDC_BTN_SQLPREVIEW,115,285,115,14
+    LTEXT           "Update Type:",IDC_STATIC,7,54,45,8,WS_DISABLED
+    LTEXT           "Test Parameter:",IDC_STATIC,7,79,53,8
+    EDITTEXT        IDC_EDIT_P1,74,78,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_P2,74,98,31,14,ES_AUTOHSCROLL
+    LTEXT           "[@P1]",IDC_STC_P1,115,79,129,12
+    LTEXT           "[@P2]",IDC_STC_P2,115,97,129,12
+    EDITTEXT        IDC_EDIT_SQL_PREVIEW,7,247,246,34,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "",IDC_STATIC,70,71,181,44,0,WS_EX_TRANSPARENT
+END
+
+IDD_DLG_NOTIFY_SETTING DIALOGEX 0, 0, 338, 201
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Notify Setting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,85,180,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,193,180,50,14
+    EDITTEXT        IDC_EDIT_NOTIFY_NAME,77,7,254,16,ES_AUTOHSCROLL
+    LTEXT           "Notify Type Name:",IDC_STATIC,7,9,61,13
+END
+
+IDD_DLG_UPDATE_SETTING DIALOGEX 0, 0, 362, 206
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TV Data Update Setting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,242,186,49,16
+    PUSHBUTTON      "Cancel",IDCANCEL,305,186,49,16
+    PUSHBUTTON      "Modify",IDC_BTN_NOTIFY_MODIFY,54,186,49,16
+    PUSHBUTTON      "Add",IDC_BTN_NOTIFY_ADD,3,186,49,16
+    PUSHBUTTON      "Delete",IDC_BTN_NOTIFY_DEL,104,186,49,16
+END
+
+IDD_DLG_TVFILE_OPEN DIALOGEX 0, 0, 460, 254
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,1007,0
+ PRODUCTVERSION 1,1,1007,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "China Digital Video"
+            VALUE "FileDescription", "TVG DataFeed Server"
+            VALUE "FileVersion", "1.1.1006"
+            VALUE "InternalName", "TVG DataFeed Server.exe"
+            VALUE "LegalCopyright", "China Digital Video.  All rights reserved."
+            VALUE "OriginalFilename", "TVG DataFeed Server.exe"
+            VALUE "ProductName", "TVG DataFeed Server"
+            VALUE "ProductVersion", "1.1.1007"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_TVDATASERVER_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 656
+        BOTTOMMARGIN, 409
+    END
+
+    IDD_DLG_TVTABLE_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 651
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 299
+    END
+
+    IDD_DLG_NOTIFY_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 331
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_DLG_UPDATE_SETTING, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_DLG_TVFILE_OPEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 453
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 247
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BMP_NOTIFY          BITMAP                  "res\\skinboard.bmp"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\TVDataServer.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{73A3E733-23A2-43F8-96FC-C2F3AED3395F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoSports.OVRRegister</RootNamespace>
+    <AssemblyName>OVRRegister</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\Bin\Debug\OVRRegister.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\Bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\Bin\Release\OVRRegister.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=9.0.0.5, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Program Files\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="SunnyUI, Version=2.2.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\HZ\Bin\SunnyUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmOVRHorseInscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRHorseInscription.designer.cs">
+      <DependentUpon>frmOVRHorseInscription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOVRDesInfoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRDesInfoEdit.Designer.cs">
+      <DependentUpon>frmOVRDesInfoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOVRDesInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRDesInfoList.Designer.cs">
+      <DependentUpon>frmOVRDesInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOVRRegisterHorseEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRRegisterHorseEdit.Designer.cs">
+      <DependentUpon>frmOVRRegisterHorseEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOVRClubNationInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRClubNationInfo.Designer.cs">
+      <DependentUpon>frmOVRClubNationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOVRClubNationList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRClubNationList.Designer.cs">
+      <DependentUpon>frmOVRClubNationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOVRCommentEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRCommentEdit.Designer.cs">
+      <DependentUpon>frmOVRCommentEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOVRFederationList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRFederationList.Designer.cs">
+      <DependentUpon>frmOVRFederationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOVRMemberEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRMemberEdit.Designer.cs">
+      <DependentUpon>frmOVRMemberEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOVRRegister.Inscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRRegister.RegisterInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRRegister.Designer.cs">
+      <DependentUpon>frmOVRRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOVRRegisterDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRRegisterDisplay.Designer.cs">
+      <DependentUpon>frmOVRRegisterDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOVRRegisterEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRRegisterEdit.Designer.cs">
+      <DependentUpon>frmOVRRegisterEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OVRRegisterModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmOVRHorseInscription.resx">
+      <DependentUpon>frmOVRHorseInscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOVRDesInfoEdit.resx">
+      <DependentUpon>frmOVRDesInfoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOVRDesInfoList.resx">
+      <DependentUpon>frmOVRDesInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOVRRegisterHorseEdit.resx">
+      <DependentUpon>frmOVRRegisterHorseEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOVRClubNationInfo.resx">
+      <DependentUpon>frmOVRClubNationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOVRClubNationList.resx">
+      <DependentUpon>frmOVRClubNationList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOVRCommentEdit.resx">
+      <DependentUpon>frmOVRCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOVRFederationList.resx">
+      <DependentUpon>frmOVRFederationList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOVRMemberEdit.resx">
+      <DependentUpon>frmOVRMemberEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOVRRegister.resx">
+      <DependentUpon>frmOVRRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOVRRegisterDisplay.resx">
+      <DependentUpon>frmOVRRegisterDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOVRRegisterEdit.resx">
+      <DependentUpon>frmOVRRegisterEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OVRCommon\OVRCommon.csproj">
+      <Project>{5230BD9A-31F4-4E66-8D2A-001D26BFAC6A}</Project>
+      <Name>OVRCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_24.png" />
+    <None Include="Resources\left_24.png" />
+    <None Include="Resources\Update_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

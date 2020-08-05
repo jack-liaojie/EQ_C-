@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F75AD4AD-84E5-478C-BC27-EA61F31CFD27}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoSports.OVRDVPlugin</RootNamespace>
+    <AssemblyName>DV</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\Debug\Plugin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bin\Release\Plugin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Bin\Debug\Plugin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\OVRDVPlugin.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\Bin\Release\Plugin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\OVRDVPlugin.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=9.0.0.5, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.Instrumentation, Version=9.0.0.5, Culture=neutral, PublicKeyToken=f90dc37c26666a67, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\DatabaseOperation.cs" />
+    <Compile Include="frmCopyPreviousDiveList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCopyPreviousDiveList.Designer.cs">
+      <DependentUpon>frmCopyPreviousDiveList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDBInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDBInterface.Designer.cs">
+      <DependentUpon>frmDBInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="linenum_rtf.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TSInterface\DVTSInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TSInterface\DVTSInterface.Designer.cs">
+      <DependentUpon>DVTSInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiveList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDiveList.Designer.cs">
+      <DependentUpon>frmDiveList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFixedDiveInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFixedDiveInfo.Designer.cs">
+      <DependentUpon>frmFixedDiveInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMatchCompetitionRule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMatchCompetitionRule.Designer.cs">
+      <DependentUpon>frmMatchCompetitionRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMatchJudge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMatchJudge.Designer.cs">
+      <DependentUpon>frmMatchJudge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServerGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServerGroup.Designer.cs">
+      <DependentUpon>frmServerGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSingleDiveList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSingleDiveList.Designer.cs">
+      <DependentUpon>frmSingleDiveList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MatchInfo.cs" />
+    <Compile Include="OVRDVDBManager.cs" />
+    <Compile Include="OVRDVPlugin.Common.cs" />
+    <Compile Include="frmOVRDVDataEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVRDVDataEntry.Designer.cs">
+      <DependentUpon>frmOVRDVDataEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OVRDVPlugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TSInterface\DivingProcess.cs" />
+    <Compile Include="TSInterface\DVSerialDataManager.cs" />
+    <Compile Include="TSInterface\SerialByteQueue.cs" />
+    <Compile Include="TSInterface\SerialPortConfig.cs" />
+    <Compile Include="TSInterface\TSMatchInfo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ViewModel\DVBaseViewModel.cs" />
+    <Compile Include="View\MatchJudgeView.xaml.cs">
+      <DependentUpon>MatchJudgeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ServerGroupView.xaml.cs">
+      <DependentUpon>ServerGroupView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OVRCommon\OVRCommon.csproj">
+      <Project>{5230BD9A-31F4-4E66-8D2A-001D26BFAC6A}</Project>
+      <Name>OVRCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmCopyPreviousDiveList.resx">
+      <DependentUpon>frmCopyPreviousDiveList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDBInterface.resx">
+      <DependentUpon>frmDBInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TSInterface\DVTSInterface.resx">
+      <DependentUpon>DVTSInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDiveList.resx">
+      <DependentUpon>frmDiveList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFixedDiveInfo.resx">
+      <DependentUpon>frmFixedDiveInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMatchCompetitionRule.resx">
+      <DependentUpon>frmMatchCompetitionRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMatchJudge.resx">
+      <DependentUpon>frmMatchJudge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOVRDVDataEntry.resx">
+      <DependentUpon>frmOVRDVDataEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServerGroup.resx">
+      <DependentUpon>frmServerGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSingleDiveList.resx">
+      <DependentUpon>frmSingleDiveList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Style\ButtonStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\DataGridStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MatchJudgeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ServerGroupView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\edit_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\edit_24.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

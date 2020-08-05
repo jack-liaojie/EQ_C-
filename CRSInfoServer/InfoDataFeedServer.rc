@@ -1,0 +1,350 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\InfoDataFeedServer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\InfoDataFeedServer.ico"
+IDI_CONNECTED           ICON                    "res\\connected.ico"
+IDI_DISCONNECTED        ICON                    "res\\disconnected.ico"
+IDI_DISCIPLINE          ICON                    "res\\Discipline.ico"
+IDI_EVENT               ICON                    "res\\Event.ico"
+IDI_MATCH               ICON                    "res\\Match.ico"
+IDI_PHASE               ICON                    "res\\Phase.ico"
+IDI_SPORT               ICON                    "res\\Sport.ico"
+IDI_SELECTED            ICON                    "res\\Selected.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INFODATAFEEDSERVER_DIALOG DIALOGEX 0, 0, 731, 423
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Add Msg",IDC_BTN_TOPIC_ADD,1,4,53,17
+    PUSHBUTTON      "Del Msg",IDC_BTN_TOPIC_DEL,109,4,53,17
+    PUSHBUTTON      "Modify Msg",IDC_BTN_TOPIC_MODIFY,55,4,53,17
+    PUSHBUTTON      "Auto Update Setting",IDC_BTN_UPDATE_SETTING,254,4,86,17
+    EDITTEXT        IDC_EDIT_LOG,5,258,380,148,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_IP_SERVER,"SysIPAddress32",WS_TABSTOP,441,6,104,15
+    EDITTEXT        IDC_EDIT_PORT,549,6,29,15,ES_AUTOHSCROLL
+    RTEXT           "NotifyServer:",IDC_STATIC,385,8,48,11
+    PUSHBUTTON      "Connect",IDC_BTN_CONNECT,581,5,43,17
+    LTEXT           "",IDC_STC_NETICON,632,4,29,18,SS_CENTERIMAGE
+    PUSHBUTTON      "DisConnect",IDC_BTN_DISCONNECT,626,5,45,17
+    CONTROL         "",IDC_TREE_SPORT,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,390,58,235,348
+    LTEXT           "Static",IDC_GRID_RECT,5,29,380,225,WS_BORDER
+    PUSHBUTTON      "Export",IDC_BTN_EXPORT,628,118,54,22,WS_DISABLED
+    PUSHBUTTON      "Preview",IDC_BTN_PREVIEW,628,89,54,22,WS_DISABLED
+    PUSHBUTTON      "Refresh",IDC_BTN_REFRESH,628,59,54,22
+    RTEXT           "File Path:",IDC_STATIC_FILEPATH,385,27,48,11
+    EDITTEXT        IDC_EDIT_FILEPATH,441,24,184,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set File Path",IDC_BTN_FILEPATH,626,23,45,17
+    COMBOBOX        IDC_CMB_DATE,441,41,184,110,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Date:",IDC_STATIC_DATE,385,43,48,11
+END
+
+IDD_DLG_XML_DISP DIALOGEX 0, 0, 703, 410
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DLG_FEEDSERVER_PANEL DIALOGEX 0, 0, 724, 409
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+CAPTION "CRS_Info Server V1.1"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DLG_TOPIC_SETTING DIALOGEX 0, 0, 262, 303
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+CAPTION "Message Setting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,282,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,71,282,50,14
+    LTEXT           "MsgType:",IDC_STATIC,7,29,56,12
+    LTEXT           "MsgName:",IDC_STATIC,7,50,56,12
+    LTEXT           "eg: ENG,CHN",IDC_STATIC,182,74,72,15,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "SQLExpression:",IDC_STATIC,7,111,56,12
+    EDITTEXT        IDC_EDIT_TOPIC_ID,73,29,181,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TOPIC_NAME,73,51,181,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TOPIC_SQLEXPRESSION,7,128,247,101,ES_AUTOHSCROLL
+    LTEXT           "Language:",IDC_STATIC,7,74,64,12
+    EDITTEXT        IDC_EDIT_LANG,73,73,104,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KEYWORDS,7,233,247,43,ES_MULTILINE | ES_READONLY
+    LTEXT           "MsgLevel:",IDC_STATIC,7,94,56,12
+    COMBOBOX        IDC_CMB_LEVEL,73,95,104,94,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "MsgKey:",IDC_STATIC,7,8,56,12
+    EDITTEXT        IDC_EDIT_TOPIC_KEY,73,8,181,16,ES_AUTOHSCROLL
+END
+
+IDD_DLG_UPDATE_SETTING DIALOGEX 0, 0, 362, 206
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Message Update Setting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,242,186,49,16
+    PUSHBUTTON      "Cancel",IDCANCEL,305,186,49,16
+    PUSHBUTTON      "Modify",IDC_BTN_NOTIFY_MODIFY,54,186,49,16
+    PUSHBUTTON      "Add",IDC_BTN_NOTIFY_ADD,3,186,49,16
+    PUSHBUTTON      "Delete",IDC_BTN_NOTIFY_DEL,104,186,49,16
+END
+
+IDD_DLG_NOTIFY_SETTING DIALOGEX 0, 0, 338, 201
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Notify Setting Dlg"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,85,180,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,193,180,50,14
+    EDITTEXT        IDC_EDIT_NOTIFY_NAME,77,7,254,16,ES_AUTOHSCROLL
+    LTEXT           "Notify TypeName:",IDC_STATIC,7,9,61,13
+END
+
+IDD_DLG_DB_SETUP DIALOGEX 0, 0, 207, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+CAPTION "系统数据库设置窗口"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_DISCIPLINE_CODE,65,6,43,16,ES_CENTER | ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "数据库配置...",IDC_BTN_DB_SETUP,116,6,82,17,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SERVER,65,27,133,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DATABASE,65,46,133,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_USER,65,65,133,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,65,84,133,13,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "测试",IDC_BTN_TEST,19,108,57,16
+    DEFPUSHBUTTON   "确定",IDOK,78,108,57,16
+    PUSHBUTTON      "取消",IDCANCEL,138,108,57,16
+    GROUPBOX        "",IDC_STATIC,3,0,199,104,0,WS_EX_TRANSPARENT
+    LTEXT           "数据库服务器:",IDC_STATIC,9,29,52,8
+    LTEXT           "登录帐号:",IDC_STATIC,25,67,36,8
+    LTEXT           "登录密码:",IDC_STATIC,25,86,36,8
+    LTEXT           "数据库名称:",IDC_STATIC,17,48,44,8
+    LTEXT           "当前项目编码:",IDC_STATIC,9,10,52,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_INFODATAFEEDSERVER_DIALOG, DIALOG
+    BEGIN
+    END
+
+    IDD_DLG_XML_DISP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 696
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 403
+    END
+
+    IDD_DLG_FEEDSERVER_PANEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 717
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 402
+    END
+
+    IDD_DLG_TOPIC_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 296
+    END
+
+    IDD_DLG_UPDATE_SETTING, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_DLG_NOTIFY_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 331
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_DLG_DB_SETUP, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_TRAY MENU
+BEGIN
+    POPUP "TrayMenu"
+    BEGIN
+        MENUITEM "Open",                        ID_TRAYMENU_OPEN
+        MENUITEM "Exit",                        ID_TRAYMENU_EXIT
+    END
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,0,0
+ PRODUCTVERSION 3,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "NewAutoVideo"
+            VALUE "FileDescription", "InfoDataFeedServer"
+            VALUE "FileVersion", "3.0.0.0"
+            VALUE "InternalName", "InfoDataFeedServer.exe"
+            VALUE "LegalCopyright", "NewAutoVideo.  All rights reserved."
+            VALUE "OriginalFilename", "InfoDataFeedServer.exe"
+            VALUE "ProductName", "InfoDataFeedServer"
+            VALUE "ProductVersion", "3.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\InfoDataFeedServer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,101 @@
+﻿<UserControl x:Class="OVRDVPlugin.View.MatchJudgeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"
+             d:DesignHeight="482" d:DesignWidth="984">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Style/ButtonStyle.xaml" />
+                <ResourceDictionary Source="../Style/DataGridStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <DataTemplate x:Key="functionTemp">
+                <TextBlock Text="{Binding Path=Function}" />
+            </DataTemplate>
+            <DataTemplate x:Key="positionTemp">
+                <TextBlock Text="{Binding Path=Position}" />
+            </DataTemplate>
+            <DataTemplate x:Key="ServerGroupTemp">
+                <TextBlock Text="{Binding Path=GroupLongName}" />
+            </DataTemplate>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition Width="130" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="1">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <Label FontSize="13" FontFamily="Arial">Filter:</Label>
+                <TextBox FontSize="13" FontFamily="Arial"  x:Name="tbFilter"  TextChanged="TextBox_TextChanged" VerticalContentAlignment="Center" Width="254" PreviewKeyDown="TextBox_PreviewKeyDown"></TextBox>
+            </StackPanel>
+
+            <DataGrid PreviewKeyDown="grdUnSelJudge_PreviewKeyDown"  Style="{StaticResource officeDataGrid}"  CanUserResizeColumns="True" Height="430" CellStyle="{StaticResource cellStyleOrange}" HorizontalAlignment="Left"  SelectedValuePath="RegisterID"  
+                      ScrollViewer.IsDeferredScrollingEnabled="True"  RowStyle="{StaticResource dgRowStyle2}" SelectionMode="Single" SelectionUnit="FullRow"  x:Name="grdUnSelJudge">
+                <DataGrid.Columns>
+                    <DataGridTextColumn HeaderStyle="{StaticResource rightHeaderStyle}" Header="NAT" Binding="{Binding Path=NOC,Mode=OneWay}"  Width="45"  ElementStyle="{StaticResource contentCenterStyle}"/>
+                    <DataGridTextColumn HeaderStyle="{StaticResource leftHeaderStyle}" Header="Name" Binding="{Binding Path=Name,Mode=OneWay}"  Width="250"  ElementStyle="{StaticResource contentLeftStyle}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+
+
+        <DataGrid Style="{StaticResource officeDataGrid}"  MinHeight="460"  CanUserResizeColumns="True" Grid.Row="1"  Grid.Column="2" CellStyle="{StaticResource cellStyleOrange}" ScrollViewer.IsDeferredScrollingEnabled="True"  RowStyle="{StaticResource dgRowStyle2}" SelectionMode="Single" SelectionUnit="FullRow"  x:Name="grdSelJudge" >
+            <DataGrid.Columns>
+                <DataGridTextColumn HeaderStyle="{StaticResource rightHeaderStyle}" Header="NAT" Binding="{Binding Path=NOC,Mode=OneWay}"  Width="45"  ElementStyle="{StaticResource contentCenterStyle}"/>
+                <DataGridTextColumn HeaderStyle="{StaticResource leftHeaderStyle}" Header="Name" Binding="{Binding Path=Name,Mode=OneWay}"  Width="200"  ElementStyle="{StaticResource contentLeftStyle}"/>
+                <DataGridTemplateColumn  HeaderStyle="{StaticResource leftHeaderStyle}" Header="Function"  Width="140"  >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Function}" Padding="3,0,0,0"  VerticalAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <ComboBox SelectedValuePath="FunctionID"  ItemTemplate="{StaticResource functionTemp}"  ItemsSource="{Binding Path=Functions}" SelectionChanged="ComboBox_SelectionChanged" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellEditingTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn HeaderStyle="{StaticResource leftHeaderStyle}" Header="Position"  Width="70"  >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Position}" Padding="3,0,0,0"  VerticalAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <ComboBox  SelectedValuePath="PositionID" SelectionChanged="ComboBox_PositionChanged"  ItemTemplate="{StaticResource positionTemp}"  ItemsSource="{Binding Path=Positions}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellEditingTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn  HeaderStyle="{StaticResource leftHeaderStyle}" Header="Group"  Width="70"  >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Group}" Padding="3,0,0,0"  VerticalAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Canvas Grid.Row="1" Grid.Column="1">
+            <Button Style="{StaticResource pageFooterButtonStyle}" x:Name="btnGroup"  Width="70" Height="30" Canvas.Left="25" Canvas.Top="11" Content="Group" Click="btnGroup_Click" />
+            <Button Style="{StaticResource pageFooterButtonStyle}" x:Name="btnUpdate"  Width="70" Height="30" Canvas.Left="25" Canvas.Top="197" Content=">>" Click="btnUpdate_Click" />
+            <Button Style="{StaticResource pageFooterButtonStyle}" x:Name="btnGenerate"  Width="70" Height="30" Canvas.Left="25" Canvas.Top="99" Content="Generate" Click="btnGenerate_Click" />
+            <Button Style="{StaticResource pageFooterButtonStyle}" x:Name="btnRemove"  Canvas.Left="25" Canvas.Top="245"   Height="30" Width="70" Content="&lt;&lt;" Click="btnRemove_Click" />
+            <Button Style="{StaticResource pageFooterButtonStyle}" Canvas.Left="25" Canvas.Top="328" Content="New Pos" Height="30" Name="btnNewPosition" Width="70" Click="btnNewPosition_Click" />
+            <Button Canvas.Left="25" Canvas.Top="380" Content="Del Pos" Height="30" Name="btnDelPos" Style="{StaticResource pageFooterButtonStyle}" Width="70" Click="btnDelPos_Click" />
+            <Button Canvas.Left="25" Canvas.Top="428" Content="Del All" Height="30" Name="btnDelAll" Style="{StaticResource pageFooterButtonStyle}" Width="70" Click="btnDelAll_Click" />
+            <ComboBox Canvas.Left="14" Canvas.Top="55" Height="26" Name="cmbServerGroup" Width="100" SelectedIndex="0" SelectionChanged="cmbServerGroup_SelectionChanged" ItemTemplate="{StaticResource ServerGroupTemp}" SelectedValuePath="GroupID" FontSize="16" />
+        </Canvas>
+    </Grid>
+</UserControl>

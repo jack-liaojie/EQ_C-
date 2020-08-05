@@ -1,0 +1,165 @@
+﻿<UserControl x:Class="AutoSports.OVRBDPlugin.InputScoreItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <DataTemplate x:Key="tempSetCol">
+            <Label HorizontalAlignment="Center" HorizontalContentAlignment="Center" Padding="0"  FontSize="14" >
+                <Label.Content>
+                        <Binding Path="SetName"/>
+                </Label.Content>
+            </Label>
+        </DataTemplate>
+
+        <DataTemplate x:Key="tempSetScore">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="14" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBox HorizontalAlignment="Right" HorizontalContentAlignment="Center" Foreground="Green" >
+                    <TextBox.Text>
+                        <Binding Path="SetScoreLeft"/>
+                    </TextBox.Text>
+                </TextBox>
+                <Label Grid.Column="1"  Content=":" HorizontalContentAlignment="Center" />
+                <TextBox Grid.Column="2"  HorizontalAlignment="Left" HorizontalContentAlignment="Center" Foreground="DarkGreen">
+                    <TextBox.Text>
+                        <Binding Path="SetScoreRight"/>
+                    </TextBox.Text>
+                </TextBox>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="tempGame1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="14" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBox HorizontalAlignment="Right" HorizontalContentAlignment="Center" >
+                    <TextBox.Text>
+                        <Binding Path="ScoreLeft1"/>
+                    </TextBox.Text>
+                </TextBox>
+                <Label Grid.Column="1"  Content=":" HorizontalContentAlignment="Center" />
+                <TextBox Grid.Column="2"  HorizontalAlignment="Left" HorizontalContentAlignment="Center" >
+                    <TextBox.Text>
+                        <Binding Path="ScoreRight1"/>
+                    </TextBox.Text>
+                </TextBox>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="tempGame2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="14" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBox HorizontalAlignment="Right" HorizontalContentAlignment="Center" >
+                    <TextBox.Text>
+                        <Binding Path="ScoreLeft2"/>
+                    </TextBox.Text>
+                </TextBox>
+                <Label Grid.Column="1"  Content=":" HorizontalContentAlignment="Center" />
+                <TextBox Grid.Column="2"  HorizontalAlignment="Left" HorizontalContentAlignment="Center" >
+                    <TextBox.Text>
+                        <Binding Path="ScoreRight2"/>
+                    </TextBox.Text>
+                </TextBox>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="tempGame3">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="14" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBox HorizontalAlignment="Right" HorizontalContentAlignment="Center" >
+                    <TextBox.Text>
+                        <Binding Path="ScoreLeft3"/>
+                    </TextBox.Text>
+                </TextBox>
+                <Label Grid.Column="1"  Content=":" HorizontalContentAlignment="Center" />
+                <TextBox Grid.Column="2" HorizontalAlignment="Left" HorizontalContentAlignment="Center" >
+                    <TextBox.Text>
+                        <Binding Path="ScoreRight3"/>
+                    </TextBox.Text>
+                </TextBox>
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
+    <GroupBox Margin="5">
+        <GroupBox.Header>
+            <StackPanel Orientation="Horizontal" Height="28">
+                <Label x:Name="lbCourtName"  Margin="0,0,10,0" Foreground="Blue" FontSize="13">
+                    <Label.Content>
+                        <Binding Path="CourtName" />
+                    </Label.Content>
+                </Label>
+                <Label x:Name="lbMatchName"  FontSize="13"  Content="{Binding Path=MatchName}" Margin="0,0,10,0"  Foreground="Blue" />
+                <Label x:Name="lbMatchID"  FontSize="13" Content="{Binding Path=MatchID}"  Foreground="Blue" Margin="0,0,20,0" />
+                <Button Content="刷新" Height="22" Width="50" Click="refreshClicked" />
+                <Button Visibility="Collapsed"  Content="修改" Margin="10,0,0,0"  Height="22" Width="50" Click="btnUpdate" />
+            </StackPanel>
+        </GroupBox.Header>
+        <Grid>
+            <StackPanel>
+                <Grid Height="28">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="lbPlayerNameA" FontSize="17" Foreground="Blue" Content="{Binding Path=PlayerNameA}" HorizontalAlignment="Center" />
+                    <Label x:Name="lbPlayerNameB" FontSize="17" Foreground="Blue" Content="{Binding Path=PlayerNameB}" HorizontalAlignment="Center" Grid.Column="2" />
+                    <Grid Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="20" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBox Height="25" Foreground="Red" FontSize="17" FontWeight="UltraBold"  x:Name="tbMatchScoreA"  Width="20" HorizontalAlignment="Right" HorizontalContentAlignment="Center" />
+                        <Label Grid.Column="1"  Content=":" HorizontalContentAlignment="Center" />
+                        <TextBox Height="25" Foreground="Red" FontSize="17" FontWeight="UltraBold" x:Name="tbMatchScoreB"  Grid.Column="2"  Width="20" HorizontalAlignment="Left" HorizontalContentAlignment="Center" />
+                    </Grid>
+                </Grid>
+                <ListView x:Name="lvScore" Background="#FFEDF5FD">
+                    <ListView.Resources>
+                        <Style TargetType="{x:Type TextBox}">
+                            <Setter Property="FontSize" Value="15" />
+                            <Setter Property="Foreground" Value="DarkOrange" />
+                            <Setter Property="Width" Value="22" />
+                            <Setter Property="Height" Value="22" />
+                            <Setter Property="VerticalContentAlignment" Value="Center" />
+                        </Style>
+                    </ListView.Resources>
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListViewItem}"  >
+                            <Setter Property="Height" Value="24" />
+                            <Setter Property="ToolTip" Value="{Binding Path=PlayerVSDes}" />
+                        </Style>
+                    </ListView.ItemContainerStyle>
+
+                    <ListView.View>
+                        <GridView AllowsColumnReorder="True">
+                            <GridViewColumn Width="30" Header="序号" CellTemplate="{StaticResource tempSetCol}"/>
+                            <GridViewColumn Width="90" Header="盘比分" CellTemplate="{StaticResource tempSetScore}"/>
+                            <GridViewColumn Width="90" Header="第一局" CellTemplate="{StaticResource tempGame1}"/>
+                            <GridViewColumn Width="90" Header="第二局" CellTemplate="{StaticResource tempGame2}"/>
+                            <GridViewColumn Width="90" Header="第三局" CellTemplate="{StaticResource tempGame3}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </StackPanel>    
+        </Grid>
+    </GroupBox>
+</UserControl>

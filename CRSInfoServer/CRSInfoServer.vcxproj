@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{59470355-A9B1-4D5D-92EC-4284682E8AF1}</ProjectGuid>
+    <RootNamespace>InfoDataFeedServer</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</PostBuildEventUseInBuild>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Bin\Release</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)D</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\..\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AxPublic\AxCommonUtils.cpp" />
+    <ClCompile Include="AxPublic\AxCoolADO.cpp" />
+    <ClCompile Include="AxPublic\AxIdeaEncryption.cpp" />
+    <ClCompile Include="AxPublic\AxIPAddressCtrl.cpp" />
+    <ClCompile Include="AxPublic\AxLogSystem.cpp" />
+    <ClCompile Include="AxPublic\AxMarkup.cpp" />
+    <ClCompile Include="AxPublic\AxReadWriteINI.cpp" />
+    <ClCompile Include="AxPublic\AxRichEditEx.cpp" />
+    <ClCompile Include="AxPublic\AxSplitString.cpp" />
+    <ClCompile Include="AxPublic\AxStaDigiClock.cpp" />
+    <ClCompile Include="AxPublic\AxStaticLabel.cpp" />
+    <ClCompile Include="AxPublic\AxStdioFileEx.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCell.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellBase.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellButton.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellCheck.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellCombo.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellDateTime.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellNumeric.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellURL.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCtrl.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridDropTarget.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridInPlaceEdit.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridTitleTip.cpp" />
+    <ClCompile Include="AxPublic\SystemSetupDlg.cpp" />
+    <ClCompile Include="compeerx1.cpp" />
+    <ClCompile Include="CRSInfoServer.cpp" />
+    <ClCompile Include="CRSInfoServerDlg.cpp" />
+    <ClCompile Include="DFSTopicManager.cpp" />
+    <ClCompile Include="ExportDBSetting.cpp" />
+    <ClCompile Include="InnerMisla.cpp" />
+    <ClCompile Include="LogFunc.cpp" />
+    <ClCompile Include="NotifyManager.cpp" />
+    <ClCompile Include="NotifySettingDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TopicSettingDlg.cpp" />
+    <ClCompile Include="TopicUpdateSettingDlg.cpp" />
+    <ClCompile Include="XmlDisplayDlg.cpp" />
+    <ClCompile Include="NetWork\DataSpliter.cpp" />
+    <ClCompile Include="NetWork\NetworkTrans.cpp" />
+    <ClCompile Include="NetWork\XmlMessageTrans.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AxPublic\AxCommonUtils.h" />
+    <ClInclude Include="AxPublic\AxCoolADO.h" />
+    <ClInclude Include="AxPublic\AxIdeaEncryption.h" />
+    <ClInclude Include="AxPublic\AxIPAddressCtrl.h" />
+    <ClInclude Include="AxPublic\AxLogSystem.h" />
+    <ClInclude Include="AxPublic\AxMarkup.h" />
+    <ClInclude Include="AxPublic\AxMemDC.h" />
+    <ClInclude Include="AxPublic\AxReadWriteINI.h" />
+    <ClInclude Include="AxPublic\AxRichEditEx.h" />
+    <ClInclude Include="AxPublic\AxSplitString.h" />
+    <ClInclude Include="AxPublic\AxStaDigiClock.h" />
+    <ClInclude Include="AxPublic\AxStaticLabel.h" />
+    <ClInclude Include="AxPublic\AxStdioFileEx.h" />
+    <ClInclude Include="AxPublic\AxTableRecordDef.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCell.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellBase.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellButton.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellCheck.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellCombo.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellDateTime.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellNumeric.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellRange.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellURL.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCtrl.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridDropTarget.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridInPlaceEdit.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridMemDC.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridTitleTip.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\CoolGridCtrl.h" />
+    <ClInclude Include="AxPublic\SystemSetupDlg.h" />
+    <ClInclude Include="compeerx1.h" />
+    <ClInclude Include="CRSInfoServer.h" />
+    <ClInclude Include="CRSInfoServerDlg.h" />
+    <ClInclude Include="CRSPublicDef.h" />
+    <ClInclude Include="DFSTopicManager.h" />
+    <ClInclude Include="ExportDBSetting.h" />
+    <ClInclude Include="InnerMisla.h" />
+    <ClInclude Include="LogFunc.h" />
+    <ClInclude Include="NotifyManager.h" />
+    <ClInclude Include="NotifySettingDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TopicSettingDlg.h" />
+    <ClInclude Include="TopicUpdateSettingDlg.h" />
+    <ClInclude Include="XmlDisplayDlg.h" />
+    <ClInclude Include="NetWork\DataSpliter.h" />
+    <ClInclude Include="NetWork\NetworkTrans.h" />
+    <ClInclude Include="NetWork\XmlMessageTrans.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\connected.ico" />
+    <None Include="res\Discipline.ico" />
+    <None Include="res\disconnected.ico" />
+    <None Include="res\Event.ico" />
+    <None Include="res\InfoDataFeedServer.ico" />
+    <None Include="res\InfoDataFeedServer.rc2" />
+    <None Include="res\Match.ico" />
+    <None Include="res\Phase.ico" />
+    <None Include="res\Selected.ico" />
+    <None Include="res\Sport.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="InfoDataFeedServer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UniversiadeCommon\UniversiadeCommon.vcxproj">
+      <Project>{c329ca80-dcc3-41ed-b4c5-0701d3e818cd}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="InfoDataFeedServer.rc" _x007B_93E33F6C-BCB2-4703-BE02-490FF67086FC_x007D_="CMsgpeercom" _x007B_DC4F2CBE-FDA8-4452-9DE4-593AEB0D9ECA_x007D_="CCompeerx1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

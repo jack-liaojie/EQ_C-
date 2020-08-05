@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EE6968F4-4999-4987-9A2C-4C369CB6B11D}</ProjectGuid>
+    <RootNamespace>InitialDownLoad</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\Bin\Debug</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Bin\Release</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\AutoSports 2010\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\AutoSports 2010\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\AutoSports 2010\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\InitialDownLoad.ico" />
+    <None Include="res\InitialDownLoad.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AxCommon_Export.h" />
+    <ClInclude Include="AxPublic\AxCommonUtils.h" />
+    <ClInclude Include="AxPublic\AxCoolADO.h" />
+    <ClInclude Include="AxPublic\AxIdeaEncryption.h" />
+    <ClInclude Include="AxPublic\AxIPAddressCtrl.h" />
+    <ClInclude Include="AxPublic\AxLogSystem.h" />
+    <ClInclude Include="AxPublic\AxMarkup.h" />
+    <ClInclude Include="AxPublic\AxMemDC.h" />
+    <ClInclude Include="AxPublic\AxReadWriteINI.h" />
+    <ClInclude Include="AxPublic\AxRichEditEx.h" />
+    <ClInclude Include="AxPublic\AxSplitString.h" />
+    <ClInclude Include="AxPublic\AxStaDigiClock.h" />
+    <ClInclude Include="AxPublic\AxStaticLabel.h" />
+    <ClInclude Include="AxPublic\AxStdioFileEx.h" />
+    <ClInclude Include="AxPublic\AxTableRecordDef.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCell.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellBase.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellButton.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellCheck.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellCombo.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellDateTime.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellNumeric.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellRange.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCellURL.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridCtrl.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridDropTarget.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridInPlaceEdit.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridMemDC.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\AsCoolGridTitleTip.h" />
+    <ClInclude Include="AxPublic\CoolGridCtrl\CoolGridCtrl.h" />
+    <ClInclude Include="AxPublic\SystemSetupDlg.h" />
+    <ClInclude Include="ImportXLS.h" />
+    <ClInclude Include="InitialDownLoad.h" />
+    <ClInclude Include="InitialDownLoadDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AxPublic\AxCommonUtils.cpp" />
+    <ClCompile Include="AxPublic\AxCoolADO.cpp" />
+    <ClCompile Include="AxPublic\AxIdeaEncryption.cpp" />
+    <ClCompile Include="AxPublic\AxIPAddressCtrl.cpp" />
+    <ClCompile Include="AxPublic\AxLogSystem.cpp" />
+    <ClCompile Include="AxPublic\AxMarkup.cpp" />
+    <ClCompile Include="AxPublic\AxReadWriteINI.cpp" />
+    <ClCompile Include="AxPublic\AxRichEditEx.cpp" />
+    <ClCompile Include="AxPublic\AxSplitString.cpp" />
+    <ClCompile Include="AxPublic\AxStaDigiClock.cpp" />
+    <ClCompile Include="AxPublic\AxStaticLabel.cpp" />
+    <ClCompile Include="AxPublic\AxStdioFileEx.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCell.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellBase.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellButton.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellCheck.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellCombo.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellDateTime.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellNumeric.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCellURL.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridCtrl.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridDropTarget.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridInPlaceEdit.cpp" />
+    <ClCompile Include="AxPublic\CoolGridCtrl\AsCoolGridTitleTip.cpp" />
+    <ClCompile Include="AxPublic\SystemSetupDlg.cpp" />
+    <ClCompile Include="InitialDownLoad.cpp" />
+    <ClCompile Include="InitialDownLoadDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="InitialDownLoad.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="InitialDownLoad.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

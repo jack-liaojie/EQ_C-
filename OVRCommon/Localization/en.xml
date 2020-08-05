@@ -1,0 +1,3055 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Localization language="English" description="English" cultureName="en">
+  <OVRLogin>
+    <TitleLogin>On Venue Result System - Login</TitleLogin>
+    <Server>Server:</Server>
+    <DataBase>Database:</DataBase>
+    <Language>Language:</Language>
+    <Password>Password:</Password>
+    <DiscCode>Disc Code:</DiscCode>
+    <PrintDir>Report(.pdf) Generate To:</PrintDir>
+    <DbSetting>DB Setting</DbSetting>
+    <User>User:</User>
+    <Role>Role:</Role>
+    <Login>Login</Login>
+    <DiscCodeNullException>Discipline Code is NULL, Please Select a Discipline!</DiscCodeNullException>
+    <PwdIncorrect>Password incorrect!</PwdIncorrect>
+    <DBConnectingError>Database Connecting Error</DBConnectingError>
+    <OVRReportViewerForm>Report</OVRReportViewerForm>
+    <DBSetting>Database Setting</DBSetting>
+    <SavePwd>Save Password</SavePwd>
+    <Test>Test</Test>
+    <OK>OK</OK>
+    <Cancel>Cancel</Cancel>
+    <TestSucceed>Database Connection Succeed!</TestSucceed>
+  </OVRLogin>
+
+  <MainFrame>
+    <ValidateLoginUser>Sorry，The Current User NO Access To This Module!</ValidateLoginUser>
+    <BackupDBCaption>Backup Database</BackupDBCaption>
+    <BackupDBSuccessMsg>Backup Database Success！</BackupDBSuccessMsg>
+    <BackupDBFailMsg>Backup Database Fail！</BackupDBFailMsg>
+    <TitleMainFrame>On Venue Result System - AutoSports OVR</TitleMainFrame>
+    <ExistSystem>Are you sure to exit the system?</ExistSystem>
+    <sbItemGameMgr>Game Manager</sbItemGameMgr>
+    <btnItemGenData>General Data</btnItemGenData>
+    <btnItemRegister>Register</btnItemRegister>
+    <btnItemDrawArrange>Draw Arrange</btnItemDrawArrange>
+    <btnItemSchedule>Match Schedule</btnItemSchedule>
+    <btnItemMatchData>Data Entry</btnItemMatchData>
+    <btnItemReports>Reports</btnItemReports>
+    <btnItemMedal>Medal</btnItemMedal>
+    <btnItemBackup>Backup Database</btnItemBackup>
+    <btnItemNetwork>Network</btnItemNetwork>
+    <btnItemCommunication>Communication</btnItemCommunication>
+
+    <OVRReportSettingForm>Report Printing</OVRReportSettingForm>
+    <btnPreview>Preview</btnPreview>
+    <btnPrintToPdf>Generate</btnPrintToPdf>
+    <lbRscCode>RSC</lbRscCode>
+    <lbRptType>Type</lbRptType>
+    <lbVersion>Version</lbVersion>
+    <lbDisVersion>Distrubuted Version</lbDisVersion>
+    <chbCorrected>Corrected</chbCorrected>
+    <chbTest>Test</chbTest>
+    <_TplName>Template Name</_TplName>
+    <_Parameters>Varible Name</_Parameters>
+    <_ParamType>Type</_ParamType>
+    <_ParamValue>Value</_ParamValue>
+    <TplDirNotExist>Template Directory Not Exist</TplDirNotExist>
+    <LoadTplFailed>Load Template Failed</LoadTplFailed>
+    <LoadRptFailed>Load Report Failed</LoadRptFailed>
+    <PrtDirCreateFailed>Output Directory Creation Failed</PrtDirCreateFailed>
+    <PrtDirectoryInvalid>Report Directory Invalid, Please Set it While Login!</PrtDirectoryInvalid>
+    <RptDirNotExist>Report Directory Not Exist</RptDirNotExist>
+    <OverWriteFileExistOrNot>Report already exist! Do you want to overwrite it?</OverWriteFileExistOrNot>
+    <RptPdfExportSucceed>Report(.pdf) Export Succeed</RptPdfExportSucceed>
+    <RptPdfExportFailed>Report(.pdf) Export Failed</RptPdfExportFailed>
+    <InvdVarValue>Invalid Value Exist, Please Reset Again!</InvdVarValue>
+    <GenRptError>Report Generation Error</GenRptError>
+    <NoTemplatesFound>Can't Find Template: </NoTemplatesFound>
+    <RscCodeQueryError>RSC Code Query Error</RscCodeQueryError>
+    <SportID_Error>SportID Invalid, Please select a sport!</SportID_Error>
+    <DisciplineID_Error>DisciplineID Invalid, Please select a discipline!</DisciplineID_Error>
+    <EventID_Error>EventID Invalid, Please select a event!</EventID_Error>
+    <PhaseID_Error>PhaseID Invalid, Please select a phase!</PhaseID_Error>
+    <MatchID_Error>MatchID Invalid, Please select a match!</MatchID_Error>
+    <RegisterID_Error>RegisterID Invalid, Please select a register!</RegisterID_Error>
+    <RoundID_Error>RoundID Invalid, Please select a round!</RoundID_Error>
+    <DateID_Error>DateID Invalid, Please select a match date!</DateID_Error>
+    <SessionID_Error>SessionID Invalid, Please select a session!</SessionID_Error>
+    <SplitID_Error>SplitID Invalid, Please select a split!</SplitID_Error>
+    <GroupID_Error>GroupID Invalid, Please select a group!</GroupID_Error>
+    <FederationID_Error>FederationID Invalid, Please select a federation!</FederationID_Error>
+    <ClubID_Error>ClubID Invalid, Please select a club!</ClubID_Error>
+    <NOCID_Error>NOCID Invalid, Please select a country!</NOCID_Error>
+    <DelegationID_Error>DelegationID Invalid, Please select a delegation!</DelegationID_Error>
+  </MainFrame>
+
+  <GeneralDataBasicInfo>
+    <tabItemBasicInfo>Common Info</tabItemBasicInfo>
+    <lbGameSetting>Game Setting</lbGameSetting>
+    <lbDiscSetting>Disc Setting</lbDiscSetting>
+    <lbEventSetting>Event Setting</lbEventSetting>
+    <lbLanguage>Language</lbLanguage>
+    <lbIRM>IRM</lbIRM>
+    <lbFunction>Function</lbFunction>
+    <lbPosition>Position</lbPosition>
+    <btnGameNew>New Game</btnGameNew>
+    <btnGameModify>Modify Game</btnGameModify>
+    <btnGameDel>Del Game</btnGameDel>
+    <btnDiscNew>New Disc</btnDiscNew>
+    <btnDiscModify>Modify Disc</btnDiscModify>
+    <btnDiscDel>Del Disc</btnDiscDel>
+    <btnEventNew>New Event</btnEventNew>
+    <btnEventModify>Modify Event</btnEventModify>
+    <btnEventDel>Del Event</btnEventDel>
+    <btnLanguageNew>Add Language</btnLanguageNew>
+    <btnLanguageModify>Modify Language</btnLanguageModify>
+    <btnLanguageDel>Delete Language</btnLanguageDel>
+    <btnIRMNew>Add IRM</btnIRMNew>
+    <btnIRMModify>Modify IRM</btnIRMModify>
+    <btnIRMDel>Delete IRM</btnIRMDel>
+    <btnFunctionNew>Add Function</btnFunctionNew>
+    <btnFunctionModify>Modify Function</btnFunctionModify>
+    <btnFunctionDel>Delete Function</btnFunctionDel>
+    <btnPositionNew>Add Position</btnPositionNew>
+    <btnPositionModify>Modify Position</btnPositionModify>
+    <btnPositionDel>Delete Position</btnPositionDel>
+    <btnRecord>Records</btnRecord>
+    <PromotionAddSportFailed>Add Game Failed!</PromotionAddSportFailed>
+    <PromotionModifySportFailed>Modify Game Failed!</PromotionModifySportFailed>
+    <PromotionDelSportFailed>Delete Game Failed!</PromotionDelSportFailed>
+    <PromotionEditSportConfigFailed> Modify Game Config Failed!</PromotionEditSportConfigFailed>
+    <PromotionAddDiscFailed>Add Discipine Failed!</PromotionAddDiscFailed>
+    <PromotionModifyDiscFailed>Modify Discipine Failed!</PromotionModifyDiscFailed>
+    <PromotionDelDiscFailed>Delete Discipine Failed!</PromotionDelDiscFailed>
+    <PromotionAddEventFailed>Add Event Failed!</PromotionAddEventFailed>
+    <PromotionModifyEventFailed>Modify Event Failed!</PromotionModifyEventFailed>
+    <PromotionDelEventFailed>Delete Event Failed!</PromotionDelEventFailed>
+    <PromotionDelEventFailed1>Delete Event Failed, @EventID is Invalid!</PromotionDelEventFailed1>
+    <PromotionDelEventFailed2>Delete Event Failed, the status of this event not allowed to delete the Event!</PromotionDelEventFailed2>
+    <PromotionDelEventFailed3>Delete Event Failed, the status of this event's children phase not allowed to delete the Event!</PromotionDelEventFailed3>
+    <PromotionDelEventFailed4>Delete Event Failed, the status of this event's children match not allowed to delete the Event!</PromotionDelEventFailed4>
+    <PromotionDelEventFailed5>Delete Event Failed, There are some registers have taken part in of this event!</PromotionDelEventFailed5>
+    <DelMsgBox>Do you really want to DELETE this?</DelMsgBox>
+    <PromotionAdd>Add </PromotionAdd>
+    <PromotionModify>Modify </PromotionModify>
+    <PromotionDel>Delete </PromotionDel>
+    <PromotionFailed>Failed!</PromotionFailed>
+    <PromotionFunction_Code>Failed to do for the function code has already in the database!</PromotionFunction_Code>
+  </GeneralDataBasicInfo>
+
+  <GeneralDataSystemSetting>
+    <tabSystemSetting>System Settings</tabSystemSetting>
+    <lbWeather>Weather Type</lbWeather>
+    <lbRegtype>Register Type</lbRegtype>
+    <lbCitySetting>City Setting</lbCitySetting>
+    <lbVenueSetting>Venue Setting</lbVenueSetting>
+    <lbCourtSetting>Court Setting</lbCourtSetting>
+    <btnCityNew>New City</btnCityNew>
+    <btnCityModify>Modify City</btnCityModify>
+    <btnCityDel>Del City</btnCityDel>
+    <btnVenueNew>New Venue</btnVenueNew>
+    <btnVenueModify>Modify Venue</btnVenueModify>
+    <btnVenueDel>Del Venue</btnVenueDel>
+    <btnDisciplineVenue>Discipline Venue</btnDisciplineVenue>
+    <btnCourtNew>New Court</btnCourtNew>
+    <btnCourtModify>Modify Court</btnCourtModify>
+    <btnCourtDel>Del Court</btnCourtDel>
+    <btnWeatherNew>Add Weather Type</btnWeatherNew>
+    <btnWeatherModify>Modify Weather Type</btnWeatherModify>
+    <btnWeatherDel>Delete Weather Type</btnWeatherDel>
+    <btnRegtypeNew>Add Register Type</btnRegtypeNew>
+    <btnRegtypeModify>Modify Register Type</btnRegtypeModify>
+    <btnRegtypeDel>Delete Register Type</btnRegtypeDel>
+    <lbOtherSetting>Other Setting</lbOtherSetting>
+    <btnImageEdit>Picture Edit</btnImageEdit>
+    <btnVenueSet>On Venue</btnVenueSet>
+    <PromotionAddCityFailed>Add City Failed!</PromotionAddCityFailed>
+    <PromotionModifyCityFailed>Modify City Failed!</PromotionModifyCityFailed>
+    <PromotionDelCityFailed>Delete City Failed!</PromotionDelCityFailed>
+    <PromotionAddVenueFailed>Add Venue Failed!</PromotionAddVenueFailed>
+    <PromotionModifyVenueFailed>Modify Venue Failed!</PromotionModifyVenueFailed>
+    <PromotionDelVenueFailed>Delete Venue Failed!</PromotionDelVenueFailed>
+    <PromotionAddCourtFailed>Add Court Failed!</PromotionAddCourtFailed>
+    <PromotionAddCourtFailed2>Add Court Failed For the CourtCode Has Already Existed!</PromotionAddCourtFailed2>
+    <PromotionModifyCourtFailed>Modify Court Failed!</PromotionModifyCourtFailed>
+    <PromotionDelCourtFailed>Delete Court Failed!</PromotionDelCourtFailed>
+    <PromotionAdd>Add </PromotionAdd>
+    <PromotionModify>Modify </PromotionModify>
+    <PromotionDel>Delete </PromotionDel>
+    <PromotionFailed>Failed!</PromotionFailed>
+    <DelMsgBox>Do you really want to DELETE this?</DelMsgBox>
+  </GeneralDataSystemSetting>
+
+  <OVRBasicItemEditForm>
+    <frmOVRBasicItemEdit>Item Info</frmOVRBasicItemEdit>
+    <lbLanguage>Language</lbLanguage>
+    <lbLongName>Long Name</lbLongName>
+    <lbShortName>Short Name</lbShortName>
+    <lbRegCode>Reg Code</lbRegCode>
+    <lbStartDate>Open Date</lbStartDate>
+    <lbEndDate>Close Date</lbEndDate>
+    <lbSex>Reg Sex</lbSex>
+    <lbType>Reg Type</lbType>
+    <lbFunctionCategoryCode>FunctionType</lbFunctionCategoryCode>
+    <lbCompetitionType>Cpt. Type</lbCompetitionType>
+    <lbOrder>Order</lbOrder>
+    <cmb_Club>By Club</cmb_Club>
+    <cmb_NOC>By Country</cmb_NOC>
+    <cmb_Federation>By Federation</cmb_Federation>
+    <cmb_Delegation>By Delegation</cmb_Delegation>
+    <lbGroup>Grouping</lbGroup>
+    <lbComment>Comment</lbComment>
+    <btnOK>Accept</btnOK>
+    <btnCancel>Cancel</btnCancel>
+    <PromotionMissingRegCode>Please input REG CODE!</PromotionMissingRegCode>
+    <PromotionMissingSexID>Please select REG SEX!</PromotionMissingSexID>
+    <PromotionMissingRegTypeID>Please select REG TYPE!</PromotionMissingRegTypeID>
+    <PromotionMissingDate>Please select Date!</PromotionMissingDate>
+    <PromotionMissingCompetitionTypeID>Please select Competition Type!</PromotionMissingCompetitionTypeID>
+  </OVRBasicItemEditForm>
+
+  <OVRPictureEditForm>
+    <frmOVRPictureEdit>Picture Edit</frmOVRPictureEdit>
+    <btnImport>Change Picture to the One from File</btnImport>
+    <btnExport>Save Picture to File</btnExport>
+    <btnNewPic>Add Picture from File</btnNewPic>
+    <btnDeletePic>Delete Picture</btnDeletePic>
+    <PromotionFailed>The operation is failed!</PromotionFailed>
+    <DeleteMsgBox>Are you sure to delete this picture?</DeleteMsgBox>
+  </OVRPictureEditForm>
+
+  <OVRVenueListForm>
+    <frmOVRVenueList>Venue List</frmOVRVenueList>
+  </OVRVenueListForm>
+
+  <OVRNetworkManager>
+    <OVRNetworkManager>NetWork Manager</OVRNetworkManager>
+    <gpClient>Client</gpClient>
+    <lbServerIP>Server IP:</lbServerIP>
+    <lbServerPort>Port:</lbServerPort>
+    <btnConnectServer>Connect</btnConnectServer>
+    <btnDisConnectServer>DisConnect</btnDisConnectServer>
+
+    <ClientStoppedMsgTitle>Client</ClientStoppedMsgTitle>
+    <ClientStoppedMsgInfo>DisConnected ?</ClientStoppedMsgInfo>
+
+    <gpServer>Server</gpServer>
+    <lbListenPort>Listen Port:</lbListenPort>
+    <btnStartListen>Start Listen</btnStartListen>
+    <btnStopListen>Stop Listen</btnStopListen>
+
+    <ServerStoppedMsgTitle>Server</ServerStoppedMsgTitle>
+    <ServerStoppedMsgInfo>Stop Listening ?</ServerStoppedMsgInfo>
+  </OVRNetworkManager>
+
+  <OfficialCommunication>
+    <frmOfficialCommunication>Communication Printing</frmOfficialCommunication>
+    <grpReportForDuty>Report For Duty</grpReportForDuty>
+    <grpOfficialCom>Official Communication</grpOfficialCom>
+    <btnPreview>Preview</btnPreview>
+    <btnPrintToPdf>Generate</btnPrintToPdf>
+    <lbRscCode>RSC</lbRscCode>
+    <lbFileName>FileName</lbFileName>
+    <lbRptType>Type</lbRptType>
+    <lbVersion>Version</lbVersion>
+    <lbDisVersion>Distrubuted Version</lbDisVersion>
+    <chbCorrected>Corrected</chbCorrected>
+    <chbTest>Test</chbTest>
+    <frmOfficialItem>OC Edit</frmOfficialItem>
+    <btnAdd>Add</btnAdd>
+    <btnEdit>Edit</btnEdit>
+    <btnDelete>Delete</btnDelete>
+    <lbItem>Item:</lbItem>
+    <lbSubTitle>SubTitle:</lbSubTitle>
+    <lbHeading>Heading:</lbHeading>
+    <lbText>Text:</lbText>
+    <lbIssuedBy>IssuedBy:</lbIssuedBy>
+    <lbType_OC>OC Type:</lbType_OC>
+    <lbDate_OC>OC Date:</lbDate_OC>
+    <lbNote>Note:</lbNote>
+    <btnOK>OK</btnOK>
+    <btnCancel>Cancel</btnCancel>
+    <PromotionFailed>The Operation is failed!</PromotionFailed>
+    <PromotionDelete>Are you sure to delete this item?</PromotionDelete>
+  </OfficialCommunication>
+
+  <OVRDisciplineVenueEditForm>
+    <frmOVRDisciplineVenueEdit>Set Discipline Venue</frmOVRDisciplineVenueEdit>
+    <lbDiscipline>Discipline:</lbDiscipline>
+    <btnAddDisVenue>Add Venue</btnAddDisVenue>
+    <btnRemoveDisVenue>Remove Venue</btnRemoveDisVenue>
+    <btnOK>OK</btnOK>
+    <btnCancel>Cancel</btnCancel>
+    <PromotionSelDiscipline>Please select the discipline!</PromotionSelDiscipline>
+    <PromotionSelVenue>Please select the venue!</PromotionSelVenue>
+    <AddDisVenue_Failed>Failed to add the venue to the discipline!</AddDisVenue_Failed>
+    <AddDisVenue_FailedForDis>Failed to add for the disciplineID is error!</AddDisVenue_FailedForDis>
+    <AddDisVenue_FailedForVenue>Failed to add for the venueID is error!</AddDisVenue_FailedForVenue>
+    <AddDisVenue_FailedForExists>Failed to add for the discipline already has the venue!</AddDisVenue_FailedForExists>
+    <RemoveDisVenue_Failed>Failed to  remove the venue to the discipline!</RemoveDisVenue_Failed>
+    <RemoveDisVenue_FailedForMatch>Failed to  remove for the venue is in match!</RemoveDisVenue_FailedForMatch>
+  </OVRDisciplineVenueEditForm>
+
+  <EventRecords>
+    <EventRecords>Event Records</EventRecords>
+    <btnRecordNew>Add Record</btnRecordNew>
+    <btnRecordDel>Delete Record</btnRecordDel>
+    <btnRecordValueNew>Add Record Value</btnRecordValueNew>
+    <btnRecordValueDel>Delete Record Value</btnRecordValueDel>
+    <btnRecordValueNew>Add Record Member</btnRecordValueNew>
+    <btnRecordMemberDel>Delete Record Member</btnRecordMemberDel>
+    <lbEventRecords>Event Records：</lbEventRecords>
+    <lbRecordMember>Record Members：</lbRecordMember>
+    <lbRecordValue>Record Values：</lbRecordValue>
+  </EventRecords>
+
+  <OVRRegisterInfo>
+    <tabItemBasicInfo>Register Info</tabItemBasicInfo>
+    <lbFliter>RegType</lbFliter>
+    <btnUpdate>Refresh</btnUpdate>
+    <btnFederation>Edit Federation</btnFederation>
+    <btnClub>Edit Club</btnClub>
+    <btnNOC>Edit Country</btnNOC>
+    <btnDelegation>Edit Delegation</btnDelegation>
+    <btnEditAthlete>Edit Register</btnEditAthlete>
+    <btnDelAthlete>Del Register</btnDelAthlete>
+    <cmbFliter_None>None</cmbFliter_None>
+    <cmbFliter_Athlete>Athlete</cmbFliter_Athlete>
+    <cmbFliter_NonAthlete>Non Athlete</cmbFliter_NonAthlete>
+    <MenuAddTeam>Add Team</MenuAddTeam>
+    <MenuAddPair>Add Pair</MenuAddPair>
+    <MenuAddAthlete>Add Athlete</MenuAddAthlete>
+    <MenuAddNonAthlete>Add NonAthlete</MenuAddNonAthlete>
+    <MenuDelTeam>Del Team</MenuDelTeam>
+    <MenuDelPair>Del Pair</MenuDelPair>
+    <MenuEditItem>Edit Item</MenuEditItem>
+    <MenuEditFederation>Edit Federation</MenuEditFederation>
+    <MenuEditClub>Edit Club</MenuEditClub>
+    <MenuEditNOC>Edit Country</MenuEditNOC>
+    <MenuEditDelegation>Edit Delegation</MenuEditDelegation>
+    <DelAthleteMsgBox>Are you sure to del Register?</DelAthleteMsgBox>
+    <DelAthletePromotion_Failed>Failed to del Register!</DelAthletePromotion_Failed>
+    <DelAthletePromotion_Uneffect>Failed to del because the Register is not effect!</DelAthletePromotion_Uneffect>
+    <DelAthletePromotion_HasMatch>Failed to del because the Register has match!</DelAthletePromotion_HasMatch>
+    <DelInsriptionPromotion_Failed>Failed to del inscription!</DelInsriptionPromotion_Failed>
+    <DelInscriptionPromotion_Uneffect>Failed to del because the Register is not effect!</DelInscriptionPromotion_Uneffect>
+    <DelInscriptionPromotion_HasMatch>Failed to del because having match!</DelInscriptionPromotion_HasMatch>
+    <InsertInscriptionPromotion_Failed>Failed to insert!</InsertInscriptionPromotion_Failed>
+    <InsertInscriptionPromotion_Uneffect>Failed to inser because register or event is not effect!</InsertInscriptionPromotion_Uneffect>
+    <InsertInscriptionPromotion_OverExist>Failed to insert because inscription has existed!</InsertInscriptionPromotion_OverExist>
+    <DelTeamMsgBox>Are you sure to del team?</DelTeamMsgBox>
+    <DelPairMsgBox>Are you sure to del team?</DelPairMsgBox>
+    <Number_Msg>Please input the number!</Number_Msg>
+    <EditRegisterInfoFrm>Register Info</EditRegisterInfoFrm>
+    <lbLanguage>Language:</lbLanguage>
+    <lbRegType>Reg Type:</lbRegType>
+    <lbSex>Sex:</lbSex>
+    <lbRegCode>Reg Code:</lbRegCode>
+    <lbPlayerBib>Player Bib:</lbPlayerBib>
+    <lbFirstName>Given Name:</lbFirstName>
+    <lbLastName>Family Name:</lbLastName>
+    <lbLongName>Long Name:</lbLongName>
+    <lbShortName>Short Name:</lbShortName>
+    <lbPrintLongName>Pri LongName:</lbPrintLongName>
+    <lbPrintShortName>Pri ShortName:</lbPrintShortName>
+    <lbSCBLongName>SCB LongName:</lbSCBLongName>
+    <lbSCBShortName>SCB ShortName:</lbSCBShortName>
+    <lbTVLongName>TV LongName:</lbTVLongName>
+    <lbTVShortName>TV ShortName:</lbTVShortName>
+    <lbWNPAFirstName>WNPA GivenName:</lbWNPAFirstName>
+    <lbWNPALastName>WNPA FamilyName:</lbWNPALastName>
+    <lbNOC>Nationality:</lbNOC>
+    <lbNation>Nation:</lbNation>
+    <lbFederation>Federation:</lbFederation>
+    <lbClub>Club:</lbClub>
+    <lbDelegation>Delegation:</lbDelegation>
+    <lbFunction>Function:</lbFunction>
+    <lbIFNum>IF Code:</lbIFNum>
+    <lbHeight>Height(cm):</lbHeight>
+    <lbWeight>Weight(kg):</lbWeight>
+    <lbBirthDate>BirthDate:</lbBirthDate>
+    <lbUniform>Uniform:</lbUniform>
+    <lbBirthCountry>BirthNOC:</lbBirthCountry>
+    <lbBirthCity>BirthCity:</lbBirthCity>
+    <lbRecCountry>RecNOC:</lbRecCountry>
+    <lbRecCity>RecCity:</lbRecCity>
+    <btnAutoName>Generate Name</btnAutoName>
+    <btnEditMember>Edit Member</btnEditMember>
+    <btnEditComment>Edit Comment</btnEditComment>
+    <btnAutoPairName>Generate PairName</btnAutoPairName>
+    <btnAddUniform>Add Uniform</btnAddUniform>
+    <btnDelUniform>Del Uniform</btnDelUniform>
+    <btnEditColor>Edit Color</btnEditColor>
+    <AutoName_Msg>Do you want to generate the name auto?</AutoName_Msg>
+    <btnOK>OK</btnOK>
+    <btnCancel>Cancel</btnCancel>
+    <btnOKAgain>OK and Again</btnOKAgain>
+    <chkIsRecord>RecordPlayer</chkIsRecord>
+    <RegCodeMsgBox>Please insert regCode!</RegCodeMsgBox>
+    <LanguageMsgBox>Please chose the language!</LanguageMsgBox>
+    <RegTypeMsgBox>Please chose the register type!</RegTypeMsgBox>
+    <SexMsgBox>Please chose the sex type!</SexMsgBox>
+    <FederationMsgBox> Please Chose the Federation!</FederationMsgBox>
+    <NOCMsgBox>Please Chose the NOC!</NOCMsgBox>
+    <ClubMsgBox>Please Chose the Club!</ClubMsgBox>
+    <DelegationMsgBox>Please Chose the Delegation!</DelegationMsgBox>
+    <AddRegister_Failed>Failed to add register!</AddRegister_Failed>
+    <AddRegister_RegType>Failed to add because the register type is error!</AddRegister_RegType>
+    <AddRegister_RegCode2>Failed to add because the Regcode has already existed!</AddRegister_RegCode2>
+    <EditRegister_Failed>Failed to edit register!</EditRegister_Failed>
+    <EditRegister_Discipline>Failed to edit because the disciplineID is error!</EditRegister_Discipline>
+    <EditRegister_RegType>Failed to edit because the register type is error!</EditRegister_RegType>
+    <EditRegister_RegCode2>Failed to edit because the RegCode has already existed!</EditRegister_RegCode2>
+    <AddMember_Failed>Failed to add member!</AddMember_Failed>
+    <AddMember_Team>Failed to add because the team is error!</AddMember_Team>
+    <AddMember_Pair>Failed to add because the pair is error!</AddMember_Pair>
+    <EditMemberFrm>Member Edit</EditMemberFrm>
+    <FailedMsgBox>The operation is failed!</FailedMsgBox>
+    <AddUniform_Color>Failed to add because the color is error!</AddUniform_Color>
+    <DelUniform_Chose>Please chose the uniform to del!</DelUniform_Chose>
+    <DelUniform_Team>Failed to del because the team is error!</DelUniform_Team>
+    <DelUniform_Uniform>Failed to del because the uniform is error!</DelUniform_Uniform>
+    <DelUniform_Match>Failed to del because the uniform is in match!</DelUniform_Match>
+    <InfoListFrm>Info List</InfoListFrm>
+    <lbListInfo_Color>Color List</lbListInfo_Color>
+    <lbListInfo_Nation>Nation List</lbListInfo_Nation>
+    <lbListInfo_Club>Club List</lbListInfo_Club>
+    <lbListInfo_NOC>NOC List</lbListInfo_NOC>
+    <btnAddInfo>Add</btnAddInfo>
+    <btnDelInfo>Del</btnDelInfo>
+    <btnEditInfo>Edit</btnEditInfo>
+    <InfoEditFrm>Edit Info</InfoEditFrm>
+    <lbCode>Code</lbCode>
+    <lbComment>Comment</lbComment>
+    <lbDelegationType>Type:</lbDelegationType>
+    <EditClub_Failed>Failed to edit the club because the clubID is error!</EditClub_Failed>
+    <EditNation_Failed>Failed to edit the nation because the nationID is error!</EditNation_Failed>
+    <EditColor_Failed>Failed To edit the color because the colorID is error!</EditColor_Failed>
+    <DelInfoMsgBox>Are you sure to del this info?</DelInfoMsgBox>
+    <DelFailed_ID>Failed to del because the ID is error!</DelFailed_ID>
+    <DelFailed_Player>Failed to del because there already had the Player!</DelFailed_Player>
+    <DelColor_Used>Failed to del the color because the color is being Used!</DelColor_Used>
+    <CommentEditFrm>Comment Edit</CommentEditFrm>
+    <CommentEdit_ID>Failed to edit ror the commentID is error!</CommentEdit_ID>
+    <CommetEdit_Title>Failed to edit because the title of this player has existed!</CommetEdit_Title>
+    <CommentEdit_PlayerID>Failed to edit because the playerID is error!</CommentEdit_PlayerID>
+    <FederationListFrm>Federation List</FederationListFrm>
+    <btnActive>Active</btnActive>
+    <btnNonActive>Non Active</btnNonActive>
+    <Operation_Msg>Please chose the item!</Operation_Msg>
+    <AddFederation_Code>Error!Federation Code has existed!</AddFederation_Code>
+    <EditFederation_Failed>Error! FederationID is error</EditFederation_Failed>
+    <DelFederation_Player>Error! The players of the federation have the match!</DelFederation_Player>
+    <RegisterDisplayFrm>Register Display</RegisterDisplayFrm>
+    <lbEvent>Event</lbEvent>
+
+    <MenuAddHorse>Add Horse</MenuAddHorse>
+    <lbHorseName>Horse Name</lbHorseName>
+    <lbHorseBib>Bib</lbHorseBib>
+    <lbHorseColor>Color</lbHorseColor>
+    <lbHorseBreed>Breed</lbHorseBreed>
+    <lbHDes1>Age</lbHDes1>
+    <lbHDes2>Blood</lbHDes2>
+    <lbHDes3>Born Place</lbHDes3>
+    <lbHDes4>Brand No.</lbHDes4>
+    <lbHDes5>Prepared Horse</lbHDes5>
+    <lbHDes6>Groom</lbHDes6>
+  </OVRRegisterInfo>
+
+  <OVRInscriptionInfo>
+    <tabInscription>Inscription</tabInscription>
+    <btnRegister>Search Register</btnRegister>
+    <GroupBox>Inscription Mode</GroupBox>
+    <RadioEvent>By Event</RadioEvent>
+    <RadioRegister>By Register</RadioRegister>
+    <btnAllRegister>All Inscription</btnAllRegister>
+    <lbEvent>Event:</lbEvent>
+    <lbFederation>Federation:</lbFederation>
+    <lbAvailable>Available Register</lbAvailable>
+    <lbRegister>Inscription Register</lbRegister>
+    <lbAllRegister>All Register</lbAllRegister>
+    <lbAllEvent>All Event</lbAllEvent>
+    <btnInscribe>Inscribe</btnInscribe>
+    <btnInscribeAll>Inscribe All</btnInscribeAll>
+    <btnRemove>Remove</btnRemove>
+    <btnRemoveAll>Remove All</btnRemoveAll>
+    <MenuAddRegister>Add</MenuAddRegister>
+    <MenuEditRegister>Edit</MenuEditRegister>
+    <MenuDeleteRegister>Delete</MenuDeleteRegister>
+    <MsgInscribeAll>This operation will make all register to inscirbe the event,Are you going on?</MsgInscribeAll>
+    <DelInscription>This operation will remove the register's inscription of this event, Are you going on?</DelInscription>
+  </OVRInscriptionInfo>
+
+  <OVRDrawArrange>
+    <tabItemDrawArrange>Draw Arrangement</tabItemDrawArrange>
+    <tabItemDrawRep>Draw Presentation</tabItemDrawRep>
+    <btnRefresh>Refresh</btnRefresh>
+    <btnAutoProgress>Auto Progress</btnAutoProgress>
+    <btnProgressByes>Progress Byes</btnProgressByes>
+    <labelCompetitors>Competitors</labelCompetitors>
+    <labelMatches>Matches</labelMatches>
+    <MenuSetEventModel>Set Event Model</MenuSetEventModel>
+    <MenuAddPhase>Add Phase</MenuAddPhase>
+    <MenuEditPhase>Edit Phase</MenuEditPhase>
+    <MenuDelPhase>Delete Phase</MenuDelPhase>
+    <MenuAddMatch>Add Match</MenuAddMatch>
+    <MenuEditMatch>Edit Match</MenuEditMatch>
+    <MenuDelMatch>Delete Match</MenuDelMatch>
+    <MenuSaveLoadEventModel>Save Event Model</MenuSaveLoadEventModel>
+    <MenuSetMatchesRule>Set Matches Rule</MenuSetMatchesRule>
+
+    <MenuEditCompetitionPostion>Edit Competition Position</MenuEditCompetitionPostion>
+    <MenuAddCompetitionPosition>Add Competition Position</MenuAddCompetitionPosition>
+    <MenuDeleteCompetitionPosition>Delete Competition Position</MenuDeleteCompetitionPosition>
+    <MenuAddMultiCompetitionPosition>Add Multi-CompetitionPostion</MenuAddMultiCompetitionPosition>
+    <frmSetPositionNum_CompetitionPos>SetPositionNum</frmSetPositionNum_CompetitionPos>
+    <lbPosNum_CompetitionPos>PositionNum</lbPosNum_CompetitionPos>
+
+    <frmPartModelInfo>Part Model Info</frmPartModelInfo>
+    <frmSetPartModel>Load Part Model</frmSetPartModel>
+    <MenuLoadPartModel>Load Part Model</MenuLoadPartModel>
+    <MenuSavePartModel>Save Part Model</MenuSavePartModel>
+
+    <btnSaveEventModel>Save Part Model</btnSaveEventModel>
+    <btnDelEventModel>Delete Part Model</btnDelEventModel>
+
+    <MsgSavePartModel0>Successed to save this Part Model!</MsgSavePartModel0>
+    <MsgSavePartModel1>Failed to save this Part Model! @PhaseID or @MatchID is Invalid!</MsgSavePartModel1>
+
+    <MsgDelPartModel1>You have to select one Model first!</MsgDelPartModel1>
+    <MsgDelPartModel2>You are going to delete a Part Model, Deleted Part Model can not be restored! Are you going to delete this Part Model?</MsgDelPartModel2>
+    <MsgDelPartModel3>Failed to delete this Part Model!</MsgDelPartModel3>
+
+    <MsgLoadPartModel1>You have to select one Model first!</MsgLoadPartModel1>
+    <MsgLoadPartModel2>Loading Part Model will Change the matches' competitors' source! Are you going to load this part model?</MsgLoadPartModel2>
+    <MsgLoadPartModel3>Failed to load this Part Model!</MsgLoadPartModel3>
+    <MsgLoadPartModel4>Failed to load this Part Model, the status of this phase or Match not allowed to load this Part Model!</MsgLoadPartModel4>
+    <MsgLoadPartModel5>Failed to load this Part Model! @PhaseID or @MatchID is Invalid!</MsgLoadPartModel5>
+
+    <btnOK>OK</btnOK>
+    <btnCancle>Cancel</btnCancle>
+    <MenuEditEventStatus>Edit Event Status</MenuEditEventStatus>
+    <lbEventLongName>Long Name</lbEventLongName>
+    <lbEventShortName>Short Name</lbEventShortName>
+    <lbEventStatus>Event Status</lbEventStatus>
+    <lbMatchStatus>Match Status</lbMatchStatus>
+    <lbPhaseStatus>Phase Status</lbPhaseStatus>
+    <lbPhaseCode>Phase Code</lbPhaseCode>
+    <lbStartDate>Start Date</lbStartDate>
+    <lbEndDate>End Date</lbEndDate>
+    <lbPhaseOrder>Order</lbPhaseOrder>
+    <lbLanguage>Language</lbLanguage>
+    <lbPhaseLongName>Long Name</lbPhaseLongName>
+    <lbPhaseShortName>Short Name</lbPhaseShortName>
+    <lbPhaseComment>Comment</lbPhaseComment>
+    <lbPhaseIsPool>Is Pool</lbPhaseIsPool>
+    <lbPhaseHasPools>Has Pools</lbPhaseHasPools>
+    <lbMatchCode>Code</lbMatchCode>
+    <lbMatchOrder>Order</lbMatchOrder>
+    <lbMatchNum>Match Num</lbMatchNum>
+    <lbHasMedal>Has Medal</lbHasMedal>
+    <lbCompetitorsNum>Competitors Num</lbCompetitorsNum>
+    <lbMatchType>Match Type</lbMatchType>
+    <lbMatchLongName>Long Name</lbMatchLongName>
+    <lbMatchShortName>Short Name</lbMatchShortName>
+    <lbMatchComment>Comment</lbMatchComment>
+    <lbMatchComment2>Comment2</lbMatchComment2>
+    <btnClose>Close</btnClose>
+    <btnSaveEventModel>Save Event Model</btnSaveEventModel>
+    <btnImportEventModel>Import Event Model</btnImportEventModel>
+    <btnLoadEventModel>Set Event Model</btnLoadEventModel>
+    <btnDelEventModel>Delete Event Model</btnDelEventModel>
+    <btnExportEventModel>Export Event Model</btnExportEventModel>
+    <lbModelComment>Model Comment</lbModelComment>
+    <lbModelName>Model Name</lbModelName>
+    <lbModelList>Model List</lbModelList>
+    <RadioByParameter>Create Event Model By Parameter</RadioByParameter>
+    <RadioFromModel>Create Event Model By Custom Model</RadioFromModel>
+    <frmSetEventModel>Set Event Model</frmSetEventModel>
+    <frmModelInfo>Save Event Model</frmModelInfo>
+    <frmPhaseInfo>Phase Info</frmPhaseInfo>
+    <frmMatchInfo>Match Info</frmMatchInfo>
+    <MsgSaveEventModel0>Successed to Save Event Model!</MsgSaveEventModel0>
+    <MsgSaveEventModel1>Failed to Save Event Model!</MsgSaveEventModel1>
+    <MsgLoadEventModel1>You have to select one Model first!</MsgLoadEventModel1>
+    <MsgLoadEventModel2>Setting Event Model will drop all phases under this Event! Are you going to set this event model?</MsgLoadEventModel2>
+    <MsgLoadEventModel3>Failed to Set Event Model, This Event's status is not allowed to Set Event Model!</MsgLoadEventModel3>
+    <MsgLoadEventModel4>Successed to Set Event Model!</MsgLoadEventModel4>
+    <MsgImportEventModel1>Failed to pick up a file!</MsgImportEventModel1>
+    <MsgImportEventModel2>Failed to import event model from a file!</MsgImportEventModel2>
+    <MsgDelEventModel1>You have to select one Model first!</MsgDelEventModel1>
+    <MsgDelEventModel2>You are going to delete a model, Deleted model can not be restored! Are you going to delete this model?</MsgDelEventModel2>
+    <MsgDelEventModel3>Failed to delete this Event Model!</MsgDelEventModel3>
+    <MsgExportEventModel1>You have to select one Model first!</MsgExportEventModel1>
+    <MsgExportEventModel2>Failed to set Output file path!</MsgExportEventModel2>
+    <MsgExportEventModel3>Successed to Export this Event Model!</MsgExportEventModel3>
+    <MsgAddPhase1>Failed to add new phase!</MsgAddPhase1>
+    <MsgAddPhase2>Failed to add new phase, @EventID or @FatherPhaseID is Invalid!</MsgAddPhase2>
+    <MsgAddPhase3>Please choose one event or phase, the add new phase!</MsgAddPhase3>
+    <MsgAddPhase4>Failed to add new phase, This Node's status is not allowed to add new phase!</MsgAddPhase4>
+    <MsgEditPhase1>Failed to edit phase!</MsgEditPhase1>
+    <MsgEditPhase2>Failed to edit phase! Parameters are Invalid!</MsgEditPhase2>
+    <MsgDelPhase1>You are going to delete a phase, Deleted phase can not be restored! Are you going to delete this phase?</MsgDelPhase1>
+    <MsgDelPhase2>Failed to delete this phase！</MsgDelPhase2>
+    <MsgDelPhase3>Failed to delete this phase，@PhaseID is Invalid!</MsgDelPhase3>
+    <MsgDelPhase4>Failed to delete this phase，The phase's status is not allowed to delete!</MsgDelPhase4>
+    <MsgDelPhase5>Failed to delete this phase，The phase's children phase's status is not allowed to delete!</MsgDelPhase5>
+    <MsgDelPhase6>Failed to delete this phase，The phase's children match's status is not allowed to delete!</MsgDelPhase6>
+    <MsgDelPhase7>Failed to delete this phase，The phase's parent Node's status is not allowed to delete this phase!</MsgDelPhase7>
+    <MsgDelEventPhase1>Failed to delete the phases of this event!</MsgDelEventPhase1>
+    <MsgDelEventPhase2>Failed to delete the phases of this event, @EventID is invalidate!</MsgDelEventPhase2>
+    <MsgDelEventPhase3>Failed to delete the phases of this event, the status of this event not allowed to delete the phase!</MsgDelEventPhase3>
+    <MsgDelEventPhase4>Failed to delete the phases of this event, the status of this event's children phase not allowed to delete the phase!</MsgDelEventPhase4>
+    <MsgDelEventPhase5>Failed to delete the phases of this event, the status of this event's children match not allowed to delete the phase!</MsgDelEventPhase5>
+    <MsgAddMatch1>Failed to add new match!</MsgAddMatch1>
+    <MsgAddMatch2>Failed to add new match! @DisciplineIDis Invalid!</MsgAddMatch2>
+    <MsgAddMatch3>Failed to add new match! The status of this match's Parent phase is not allowed to Add Match!</MsgAddMatch3>
+    <MsgEditMatch1>Failed to edit match!</MsgEditMatch1>
+    <MsgEditMatch2>Failed to edit match，@MatchID is Invalid!</MsgEditMatch2>
+    <MsgDelMatch1>You are going to delete a match, Deleted match can not be restored! Are you going to delete this match?</MsgDelMatch1>
+    <MsgDelMatch2>Failed to delete this match!</MsgDelMatch2>
+    <MsgDelMatch3>Failed to delete this match，@MatchID is Invalid!</MsgDelMatch3>
+    <MsgDelMatch4>Failed to delete this match，The match's status is not allowed to delete!</MsgDelMatch4>
+    <MsgDelMatch5>Failed to delete this match，The status of this match's Parent phase is not allowed to delete!</MsgDelMatch5>
+    <MsgUpdateSourceMatch1>Failed to change match's source match!</MsgUpdateSourceMatch1>
+    <MsgUpdateStartPhase1>Failed to change match's start phase!</MsgUpdateStartPhase1>
+    <MsgUpdateSourcePhase1>Failed to change match's source phase!</MsgUpdateSourcePhase1>
+    <MsgUpdateMatchCompetitor1>Failed to change match's competitors!</MsgUpdateMatchCompetitor1>
+    <MsgUpdateGroupCompetitor1>Failed to change group's competitors!</MsgUpdateGroupCompetitor1>
+    <MsgDelEventModel>This is event auto draw model, you are going to delete all the information of the draw model, are you sure to delete and do the new operator?</MsgDelEventModel>
+    <MsgAutoEventModel>Event auto draw model!</MsgAutoEventModel>
+    <MsgUpdatePhasePosition2Match1>Failed to Set Competitors, @@PhaseID/@EventID is Invalid!</MsgUpdatePhasePosition2Match1>
+    <MsgUpdatePhasePosition2Match2>Failed to Set Competitors, Some match has started!</MsgUpdatePhasePosition2Match2>
+    <MsgUpdatePhasePosition2Match3>Successed to Set Competitors!</MsgUpdatePhasePosition2Match3>
+
+    <MsgCleanMatchCompetitorFromPostion1>Failed to Clean Match Competitors, @PhaseID/@EventID is Invalid!</MsgCleanMatchCompetitorFromPostion1>
+    <MsgCleanMatchCompetitorFromPostion2>Failed to Clean Match Competitors, Some match has started!</MsgCleanMatchCompetitorFromPostion2>
+    <MsgCleanMatchCompetitorFromPostion3>Successed to Clean Match Competitors!</MsgCleanMatchCompetitorFromPostion3>
+
+    <MsgAddCompetitionPosition1>Failed to Add Competition Position!</MsgAddCompetitionPosition1>
+    <MsgAddCompetitionPosition2>Failed to Add Competition Position, MatchID is invalidate!</MsgAddCompetitionPosition2>
+    <MsgDelCompetitionPosition1>You are going to delete Selected Competition Positions, Deleted Positions can not be restored! Are you going to delete these Competition Positions?</MsgDelCompetitionPosition1>
+    <MsgDelCompetitionPosition2>Failed to Delete Competition Position!</MsgDelCompetitionPosition2>
+    <MsgDelCompetitionPosition3>Failed to Delete Competition Position, MatchID is Invalid!</MsgDelCompetitionPosition3>
+
+    <MsgUpdateSourceProgressDes>Failed to change match's source progress description!</MsgUpdateSourceProgressDes>
+    <MsgUpdateProgressDes>Failed to change match's progress description!</MsgUpdateProgressDes>
+
+    <frmSetMatchesRule>Set Matches Rule</frmSetMatchesRule>
+    <lbCompetitionRule>Competition Rule:</lbCompetitionRule>
+    <MsgUpdateMatchesCompetitionRule1>Failed to Update Matches' Competition Rule!</MsgUpdateMatchesCompetitionRule1>
+    <MsgUpdateMatchesCompetitionRule2>Failed to Update Matches' Competition Rule, @CompetitionRuleID is Invalid!</MsgUpdateMatchesCompetitionRule2>
+    <MsgUpdateMatchesCompetitionRule3>Failed to Update Matches' Competition Rule, Some Selected Matches' Status are not allowed to Change Matches' Competition Rule!</MsgUpdateMatchesCompetitionRule3>
+
+    <frmMatchCompetitionPositionInfo>Match Competition Position Infomation</frmMatchCompetitionPositionInfo>
+    <lbPosition>Position</lbPosition>
+    <lbPositionDes1>Position1</lbPositionDes1>
+    <lbPositionDes2>Position2</lbPositionDes2>
+    <lbMatchName>Match Name</lbMatchName>
+    <lbCompetitorName>Competitor Name</lbCompetitorName>
+    <LbPositionSourceDes>Position Source Description</LbPositionSourceDes>
+    <lbStartPhase>Phase</lbStartPhase>
+    <lbPhasePosition>Position</lbPhasePosition>
+    <RadioFromPhasePosition>From Phase Position</RadioFromPhasePosition>
+    <RadioFromPhaseRank>From Phase Rank</RadioFromPhaseRank>
+    <RadioFromMatchRank>From Match Rank</RadioFromMatchRank>
+    <RadioFromMatchHistory>From Match History</RadioFromMatchHistory>
+    <lbSourcePhase>Phase</lbSourcePhase>
+    <lbPhaseRank>Rank</lbPhaseRank>
+
+    <lbSourcePhaseforMatch>Phase</lbSourcePhaseforMatch>
+    <lbSourceMatch>Match</lbSourceMatch>
+    <lbMatchRank>Rank</lbMatchRank>
+
+
+    <lbSourcePhaseforHistoryMatch>Phase</lbSourcePhaseforHistoryMatch>
+    <lbHistoryMatch>Match</lbHistoryMatch>
+    <lbHistoryMatchRank>Rank</lbHistoryMatchRank>
+    <lbHistoryLevel>History Level</lbHistoryLevel>
+
+    <btnAutoDraw>Auto Draw</btnAutoDraw>
+    <btnCleanDraw>Clean Draw</btnCleanDraw>
+    <btnChosePhaseCompetitors>Choose Phase Competitors</btnChosePhaseCompetitors>
+    <btnCreateMatchUp>Create MatchUp</btnCreateMatchUp>
+    <btnCleanMatchUp>Clean MatchUp</btnCleanMatchUp>
+    <MsgDelPhaseCompetitorsFailed>Failed to Delete Competitor, this Competitor has Draw Position!</MsgDelPhaseCompetitorsFailed>
+    <menuAddPosition>Add Position</menuAddPosition>
+    <menuDelPosition>Del Position</menuDelPosition>
+    <menuAddMultiPosition>Add Multi-Position</menuAddMultiPosition>
+    <menuDelDrawPos>Cancel Draw</menuDelDrawPos>
+    <lbRegisterID>RegisterID</lbRegisterID>
+    <lbLongName>LongName</lbLongName>
+    <lbNOC>NOC</lbNOC>
+    <lbPosition>PhasePosition</lbPosition>
+    <lbDrawPlayers>Drawed Players</lbDrawPlayers>
+    <lbAvailablePlayers>Candidates</lbAvailablePlayers>
+    <lbEventPlayers>Available Players</lbEventPlayers>
+    <lbPhasePlayers>Candidates</lbPhasePlayers>
+    <titleChosePhaseCompetitors>Choose Phase Competitors</titleChosePhaseCompetitors>
+    <MsgUpdatePosition>The Same Position has Exist in This PhaseID! Are You Sure To Delete?</MsgUpdatePosition>
+    <MsgEditPosition>Edit Position</MsgEditPosition>
+    <MsgDrawPositionExist>Draw Position Exist!Please Clean the Position First!</MsgDrawPositionExist>
+    <MsgCleanDrawPosition>Are You Sure to Clean the Exist Position!</MsgCleanDrawPosition>
+    <MsgCleanPosition>Clean Draw Position</MsgCleanPosition>
+    <MsgAutoProgress1>Auto Progress Success!</MsgAutoProgress1>
+    <MsgProgressByes1>Progress BYE Success!</MsgProgressByes1>
+    <frmSetPositionNum>SetPositionNum</frmSetPositionNum>
+    <lbPosNum>PositionNum</lbPosNum>
+    <MsgDelDrawPosition>Are You Sure to Delete the Select Position!</MsgDelDrawPosition>
+    <MsgDelPosition>Delete Draw Position</MsgDelPosition>
+    <MsgCancelDrawRegister>Are You Sure to Clean the Register From This Phase!</MsgCancelDrawRegister>
+    <MsgCancelDraw>Cancel Draw</MsgCancelDraw>
+    <menuDelInscription>Cancel Inscription</menuDelInscription>
+    <MsgDelInscription>Are You Sure to Clean the Register's Inscription?</MsgDelInscription>
+    <MsgCancelInscription>Cancel Inscription</MsgCancelInscription>
+    <DelInsriptionPromotion_Failed>Failed to del inscription!</DelInsriptionPromotion_Failed>
+    <DelInscriptionPromotion_Uneffect>Failed to del because the Register is not effect!</DelInscriptionPromotion_Uneffect>
+    <DelInscriptionPromotion_HasMatch>Failed to del because having match!</DelInscriptionPromotion_HasMatch>
+
+
+
+    <btnPrevious>Previous</btnPrevious>
+    <btnNext>Next</btnNext>
+    <lbSourceProgress>Source Progress Des</lbSourceProgress>
+    <lbProgress>Progress Des</lbProgress>
+
+    <MsgEditMatchStatus1>Failed to change this match status!</MsgEditMatchStatus1>
+    <MsgEditMatchStatus2>Failed to change this match status, @MatchID or @StatusID is Invalid!</MsgEditMatchStatus2>
+    <MsgEditPhaseStatus1>Failed to change this phase status!</MsgEditPhaseStatus1>
+    <MsgEditPhaseStatus2>Failed to change this phase status, @PhaseID or @StatusID is Invalid!</MsgEditPhaseStatus2>
+    <MsgEditPhaseStatus3>Failed to change this phase status, The status of this phase's Phase children or Match Chirldren is not allowed to do this operating!</MsgEditPhaseStatus3>
+    <MsgSetEventStatus1>Failed to change this Event's Status</MsgSetEventStatus1>
+    <MsgSetEventStatus2>Failed to change this Event's Status, @eventID is Invalid!</MsgSetEventStatus2>
+    <MsgSetEventStatus3>Failed to change this Event's Status, The status of this Event's Phase children or Match Chirldren is not allowed to do this operating!</MsgSetEventStatus3>
+
+    <MenuCompetitionPos1Setting>Competition Position1 Setting</MenuCompetitionPos1Setting>
+    <MenuCompetitionPos2Setting>Competition Position2 Setting</MenuCompetitionPos2Setting>
+    <MenuCompetitionSourceSetting>Competition Source Setting</MenuCompetitionSourceSetting>
+
+    <CompetitionPosSetForm>Competition Position Setting</CompetitionPosSetForm>
+    <CompetitionPosSetForm_labXStartNumber>StartNumber:</CompetitionPosSetForm_labXStartNumber>
+    <CompetitionPosSetForm_labXStep>Step:</CompetitionPosSetForm_labXStep>
+    <CompetitionPosSetForm_labXCodeLength>CodeLength:</CompetitionPosSetForm_labXCodeLength>
+    <CompetitionPosSetForm_btnXOK>OK</CompetitionPosSetForm_btnXOK>
+    <CompetitionPosSetForm_btnXCancel>Cancel</CompetitionPosSetForm_btnXCancel>
+    <CompetitionPosSetForm_MsgNumberInput>Please insert the number!</CompetitionPosSetForm_MsgNumberInput>
+
+    <frmMatchCompetitionSourceSet>Competition Source Setting</frmMatchCompetitionSourceSet>
+    <lbStep>Step</lbStep>
+    <lbStartPos>Start Position</lbStartPos>
+    <lbStartPhaseRank>Start Phase Rank</lbStartPhaseRank>
+    <lbStartMatchRank>Start Match Rank</lbStartMatchRank>
+  </OVRDrawArrange>
+
+  <OVRDrawModel>
+    <lbTitle>Title</lbTitle>
+    <lbType>Type</lbType>
+    <lbNumber>Number</lbNumber>
+    <lbRank>Rank</lbRank>
+    <chbBracket>Bracket</chbBracket>
+    <chbUseBegol>UseBegol</chbUseBegol>
+    <btnOk>OK</btnOk>
+    <btnCancel>Cancel</btnCancel>
+    <btnPrevious>Previous</btnPrevious>
+    <btnNext>Next</btnNext>
+    <btnFinish>Finish</btnFinish>
+    <lbMaxSize>MaxSize</lbMaxSize>
+    <lbRankSize>RankSize</lbRankSize>
+    <lbStageTitle>StageTitle</lbStageTitle>
+    <lbGroupSize>GroupSize</lbGroupSize>
+    <lbGroupCount>GroupCount</lbGroupCount>
+    <lbGroupQual>GroupQual</lbGroupQual>
+    <lbGroupName>GroupName</lbGroupName>
+    <lbNamingMode>NamingMode</lbNamingMode>
+    <gpRankFirst>Rank First</gpRankFirst>
+    <gpRankSecond>Rank Second</gpRankSecond>
+    <gpRankThird>Rank Third</gpRankThird>
+    <chbRank>Use</chbRank>
+    <cbTypeManual>Manual</cbTypeManual>
+    <cbTypeRoundRobin>RoundRobin</cbTypeRoundRobin>
+    <cbTypeKnockOut>KnockOut</cbTypeKnockOut>
+    <tbTitleManual>Phase</tbTitleManual>
+    <tbTypeRoundRobin>Group</tbTypeRoundRobin>
+    <RankPlayerError>Please correct the rank number！</RankPlayerError>
+    <DelModelOrNot>Are you sure to delete the model?All the Information will be lost!</DelModelOrNot>
+    <frmDrawModel>Event Draw Model</frmDrawModel>
+    <SingleKnockOut>Single KnockOut</SingleKnockOut>
+    <SingleRoundRobin>Single RoundRobin</SingleRoundRobin>
+    <RoundRobinKnockOut>First RoundRobin, Then KnockOut</RoundRobinKnockOut>
+    <DoubleKnockOut>First KnockOut, Then KnockOut</DoubleKnockOut>
+    <RoundRobinMultiKnockOut>First RoundRobin, Then Multi-KnockOut</RoundRobinMultiKnockOut>
+    <tbTypeFinal>Final</tbTypeFinal>
+    <KORankPlayerError>The maxsize must more than ranksize!</KORankPlayerError>
+    <KOStageQual>Qual</KOStageQual>
+    <KOGroupKnock>KnockOut</KOGroupKnock>
+    <KOGroupGroup>Group</KOGroupGroup>
+    <GroupNameLetter>For Example:{0}A,{1}B,{2}C,{3}D</GroupNameLetter>
+    <GroupNameNumber>For Example:{0}1,{1}2,{2}3,{3}4</GroupNameNumber>
+    <GroupInfo>{0:D} Groups,Per Group {1:D} players,Advance {2:D} Players.Total {3:D} Players,total {4:D} Advance</GroupInfo>
+    <KnockOut1Error>The First KnockOut more than 8 players</KnockOut1Error>
+    <KnockOut2Error>The Second KnockOut more than 8 players</KnockOut2Error>
+    <KnockOut3Error>The Third KnockOut more than 8 players</KnockOut3Error>
+    <tbRank1Title>First</tbRank1Title>
+    <tbRank2Title>Second</tbRank2Title>
+    <tbRank3Title>Third</tbRank3Title>
+    <lbRankInfo>Get {0:D}-{1:D} players</lbRankInfo>
+    <lbRankStart>Per Group From {0:D} To</lbRankStart>
+    <lbRankFirst>Per Group From 1 To</lbRankFirst>
+    <lbHelp1Welcome>Welcome to Use the DrawModel</lbHelp1Welcome>
+    <lbHelp2Choose>Please choose one model</lbHelp2Choose>
+    <lbMKoToSKo>Muti-KnockOut -> Single KonckOut</lbMKoToSKo>
+    <lbRRToSKo>RoundRobin -> Single KnockOut</lbRRToSKo>
+    <lbRRToMKo>RoundRobin -> Muti-KnockOut</lbRRToMKo>
+    <lbSetRRParam>1.Set RoundRobin Params</lbSetRRParam>
+    <lbSetKOParam>Set KnockOut Params</lbSetKOParam>
+    <lbSetFirstPhaseParam>1.Set First Phase KnockOut Params</lbSetFirstPhaseParam>
+    <lbSetSecondPhaseParam>2.Set Second Phase KnockOut Params</lbSetSecondPhaseParam>
+    <frmDrawModelEdit>SetPhaseModel</frmDrawModelEdit>
+  </OVRDrawModel>
+
+  <OVRMatchSchedule>
+    <OVRMatchScheduleFrom_tabItemSchedule>Match Schedule</OVRMatchScheduleFrom_tabItemSchedule>
+    <OVRMatchScheduleFrom_btnXUpdate>Refresh</OVRMatchScheduleFrom_btnXUpdate>
+    <OVRMatchScheduleFrom_btnXAdd>Add</OVRMatchScheduleFrom_btnXAdd>
+    <OVRMatchScheduleFrom_btnXAddAll>Add All</OVRMatchScheduleFrom_btnXAddAll>
+    <OVRMatchScheduleFrom_btnXDate>Date</OVRMatchScheduleFrom_btnXDate>
+    <OVRMatchScheduleFrom_btnXSession>Session</OVRMatchScheduleFrom_btnXSession>
+    <OVRMatchScheduleFrom_btnXRound>Round</OVRMatchScheduleFrom_btnXRound>
+    <OVRMatchScheduleFrom_btnXRemove>Remove</OVRMatchScheduleFrom_btnXRemove>
+    <OVRMatchScheduleFrom_btnXRemoveAll>Remove All</OVRMatchScheduleFrom_btnXRemoveAll>
+    <OVRMatchScheduleFrom_labXDate>Date</OVRMatchScheduleFrom_labXDate>
+    <OVRMatchScheduleFrom_labXSession>Session</OVRMatchScheduleFrom_labXSession>
+    <OVRMatchScheduleFrom_labXVenue>Venue</OVRMatchScheduleFrom_labXVenue>
+    <OVRMatchScheduleFrom_labXCourt>Court</OVRMatchScheduleFrom_labXCourt>
+    <OVRMatchScheduleFrom_labXEvent>Event</OVRMatchScheduleFrom_labXEvent>
+    <OVRMatchScheduleFrom_labXPhase>Phase</OVRMatchScheduleFrom_labXPhase>
+    <OVRMatchScheduleFrom_labXRound>Round</OVRMatchScheduleFrom_labXRound>
+    <OVRMatchScheduleFrom_chkXStatus>Status</OVRMatchScheduleFrom_chkXStatus>
+    <OVRMatchScheduleFrom_chkXTime>Time</OVRMatchScheduleFrom_chkXTime>
+    <OVRMatchScheduleFrom_labXStartTime>Start</OVRMatchScheduleFrom_labXStartTime>
+    <OVRMatchScheduleFrom_labXSpendTime>Spend</OVRMatchScheduleFrom_labXSpendTime>
+    <OVRMatchScheduleFrom_labXSpanTime>Span</OVRMatchScheduleFrom_labXSpanTime>
+    <OVRMatchSchedule_DateFrom_txtTitle>Date</OVRMatchSchedule_DateFrom_txtTitle>
+    <OVRMatchSchedule_DateFrom_btnXAdd>Add</OVRMatchSchedule_DateFrom_btnXAdd>
+    <OVRMatchSchedule_DateFrom_btnXDel>Delete</OVRMatchSchedule_DateFrom_btnXDel>
+    <OVRMatchSchedule_DateFrom_AddFailed>Add date failed!</OVRMatchSchedule_DateFrom_AddFailed>
+    <OVRMatchSchedule_DateFrom_AddFailed_F1>Add date failed,The date has already existed!</OVRMatchSchedule_DateFrom_AddFailed_F1>
+    <OVRMatchSchedule_DateFrom_DelTip>Do you want to delete the date?</OVRMatchSchedule_DateFrom_DelTip>
+    <OVRMatchSchedule_DateFrom_DelFailed>Delete date failed!</OVRMatchSchedule_DateFrom_DelFailed>
+    <OVRMatchSchedule_DateFrom_DelFailed_F2>Delete date Failed,The date already bound session!</OVRMatchSchedule_DateFrom_DelFailed_F2>
+    <OVRMatchSchedule_SessionFrom_txtTitle>Session</OVRMatchSchedule_SessionFrom_txtTitle>
+    <OVRMatchSchedule_SessionFrom_btnXAdd>Add</OVRMatchSchedule_SessionFrom_btnXAdd>
+    <OVRMatchSchedule_SessionFrom_btnXDel>Delete</OVRMatchSchedule_SessionFrom_btnXDel>
+    <OVRMatchScheduleFrom_btnXSearchMatches>Search</OVRMatchScheduleFrom_btnXSearchMatches>
+    <OVRMatchSchedule_SessionFrom_AddFailed>Add session failed!</OVRMatchSchedule_SessionFrom_AddFailed>
+    <OVRMatchSchedule_SessionFrom_DelTip>Do you want to delete the session?</OVRMatchSchedule_SessionFrom_DelTip>
+    <OVRMatchSchedule_SessionFrom_DelFailed>Delete session failed!</OVRMatchSchedule_SessionFrom_DelFailed>
+    <OVRMatchSchedule_RoundFrom_txtTitle>Round</OVRMatchSchedule_RoundFrom_txtTitle>
+    <OVRMatchSchedule_RoundFrom_btnXAdd>Add</OVRMatchSchedule_RoundFrom_btnXAdd>
+    <OVRMatchSchedule_RoundFrom_btnXDel>Delete</OVRMatchSchedule_RoundFrom_btnXDel>
+    <OVRMatchSchedule_RoundFrom_AddFailed>Add round failed!</OVRMatchSchedule_RoundFrom_AddFailed>
+    <OVRMatchSchedule_RoundFrom_DelTip>Do you want to delete the round?</OVRMatchSchedule_RoundFrom_DelTip>
+    <OVRMatchSchedule_RoundFrom_DelFailed>Delete round failed!</OVRMatchSchedule_RoundFrom_DelFailed>
+    <OVRMatchScheduleFrom_menuSetRaceNumber>Race Number Setting</OVRMatchScheduleFrom_menuSetRaceNumber>
+    <OVRMatchScheduleFrom_menuSetMatchCode>Match Code Setting</OVRMatchScheduleFrom_menuSetMatchCode>
+    <OVRMatchScheduleFrom_menuSetMatchDate>Match Date Setting</OVRMatchScheduleFrom_menuSetMatchDate>
+    <OVRMatchScheduleFrom_menuSetMatchSession>Match Session Setting</OVRMatchScheduleFrom_menuSetMatchSession>
+    <OVRMatchScheduleFrom_menuSetMatchStartTime>Match Start Time Setting</OVRMatchScheduleFrom_menuSetMatchStartTime>
+    <OVRMatchScheduleFrom_menuSetMatchEndTime>Match End Time Setting</OVRMatchScheduleFrom_menuSetMatchEndTime>
+    <OVRMatchScheduleFrom_menuSetMatchVenue>Match Venue Setting</OVRMatchScheduleFrom_menuSetMatchVenue>
+    <OVRMatchScheduleFrom_menuSetMatchCourt>Match Court Setting</OVRMatchScheduleFrom_menuSetMatchCourt>
+    <OVRMatchScheduleFrom_menuSetMatchOIS>Order In Session Setting</OVRMatchScheduleFrom_menuSetMatchOIS>
+    <OVRMatchScheduleFrom_menuSetMatchOIR>Order In Round Setting</OVRMatchScheduleFrom_menuSetMatchOIR>
+    <OVRMatchSchedule_RaceNumberForm>Race Number Settting</OVRMatchSchedule_RaceNumberForm>
+    <OVRMatchSchedule_RaceNumberForm_labXPreFix>PreFix:</OVRMatchSchedule_RaceNumberForm_labXPreFix>
+    <OVRMatchSchedule_RaceNumberForm_labXStartNumber>StartNumber:</OVRMatchSchedule_RaceNumberForm_labXStartNumber>
+    <OVRMatchSchedule_RaceNumberForm_labXStep>Step:</OVRMatchSchedule_RaceNumberForm_labXStep>
+    <OVRMatchSchedule_RaceNumberForm_labXCodeLength>Length:</OVRMatchSchedule_RaceNumberForm_labXCodeLength>
+    <OVRMatchSchedule_RaceNumberForm_chkXSortByTime>Sort by time:</OVRMatchSchedule_RaceNumberForm_chkXSortByTime>
+    <OVRMatchSchedule_RaceNumberForm_btnXOK>OK</OVRMatchSchedule_RaceNumberForm_btnXOK>
+    <OVRMatchSchedule_RaceNumberForm_btnXCancel>Cancel</OVRMatchSchedule_RaceNumberForm_btnXCancel>
+    <OVRMatchSchedule_RaceNumberForm_PreFixMsgBox>Please insert the PreFix!</OVRMatchSchedule_RaceNumberForm_PreFixMsgBox>
+    <OVRMatchSchedule_RaceNumberForm_StartNumberMsgBox>Please insert the Startnumber!</OVRMatchSchedule_RaceNumberForm_StartNumberMsgBox>
+    <OVRMatchSchedule_RaceNumberForm_StepMsgBox>Please insert the Stp!</OVRMatchSchedule_RaceNumberForm_StepMsgBox>
+    <OVRMatchSchedule_RaceNumberForm_CodeLengthMsgBox>Please insert the Codelength!</OVRMatchSchedule_RaceNumberForm_CodeLengthMsgBox>
+    <OVRMatchSchedule_RaceNumberForm_NumberMsgBox>Please insert the number!</OVRMatchSchedule_RaceNumberForm_NumberMsgBox>
+    <OVRMatchSchedule_MatchCodeForm>Match Code Settting</OVRMatchSchedule_MatchCodeForm>
+    <OVRMatchSchedule_MatchCodeForm_labXPreFix>PreFix:</OVRMatchSchedule_MatchCodeForm_labXPreFix>
+    <OVRMatchSchedule_MatchCodeForm_labXStartNumber>StartNumber:</OVRMatchSchedule_MatchCodeForm_labXStartNumber>
+    <OVRMatchSchedule_MatchCodeForm_labXStep>Step:</OVRMatchSchedule_MatchCodeForm_labXStep>
+    <OVRMatchSchedule_MatchCodeForm_labXCodeLength>Length:</OVRMatchSchedule_MatchCodeForm_labXCodeLength>
+    <OVRMatchSchedule_MatchCodeForm_chkXSortByTime>Sort by time:</OVRMatchSchedule_MatchCodeForm_chkXSortByTime>
+    <OVRMatchSchedule_MatchCodeForm_btnXOK>OK</OVRMatchSchedule_MatchCodeForm_btnXOK>
+    <OVRMatchSchedule_MatchCodeForm_btnXCancel>Cancel</OVRMatchSchedule_MatchCodeForm_btnXCancel>
+    <OVRMatchSchedule_MatchCodeForm_PreFixMsgBox>Please insert the PreFix!</OVRMatchSchedule_MatchCodeForm_PreFixMsgBox>
+    <OVRMatchSchedule_MatchCodeForm_StartNumberMsgBox>Please insert the Startnumber!</OVRMatchSchedule_MatchCodeForm_StartNumberMsgBox>
+    <OVRMatchSchedule_MatchCodeForm_StepMsgBox>Please insert the Stp!</OVRMatchSchedule_MatchCodeForm_StepMsgBox>
+    <OVRMatchSchedule_MatchCodeForm_CodeLengthMsgBox>Please insert the Codelength!</OVRMatchSchedule_MatchCodeForm_CodeLengthMsgBox>
+    <OVRMatchSchedule_MatchCodeForm_NumberMsgBox>Please insert the number!</OVRMatchSchedule_MatchCodeForm_NumberMsgBox>
+    <OVRMatchSchedule_MatchDateForm>Match Date Settting</OVRMatchSchedule_MatchDateForm>
+    <OVRMatchSchedule_MatchDateForm_labXDate>Date:</OVRMatchSchedule_MatchDateForm_labXDate>
+    <OVRMatchSchedule_MatchDateForm_btnXOK>OK</OVRMatchSchedule_MatchDateForm_btnXOK>
+    <OVRMatchSchedule_MatchDateForm_btnXCancel>Cancel</OVRMatchSchedule_MatchDateForm_btnXCancel>
+    <OVRMatchSchedule_MatchSessionForm>Match Session Settting</OVRMatchSchedule_MatchSessionForm>
+    <OVRMatchSchedule_MatchSessionForm_labXDate>Date:</OVRMatchSchedule_MatchSessionForm_labXDate>
+    <OVRMatchSchedule_MatchSessionForm_labXSession>Session:</OVRMatchSchedule_MatchSessionForm_labXSession>
+    <OVRMatchSchedule_MatchSessionForm_btnXOK>OK</OVRMatchSchedule_MatchSessionForm_btnXOK>
+    <OVRMatchSchedule_MatchSessionForm_btnXCancel>Cancel</OVRMatchSchedule_MatchSessionForm_btnXCancel>
+    <OVRMatchSchedule_MatchStartTimeForm>Match Start Time Settting</OVRMatchSchedule_MatchStartTimeForm>
+    <OVRMatchSchedule_MatchStartTimeForm_labXStartTime>Start Time:</OVRMatchSchedule_MatchStartTimeForm_labXStartTime>
+    <OVRMatchSchedule_MatchStartTimeForm_labXSpendTime>Spend Time:</OVRMatchSchedule_MatchStartTimeForm_labXSpendTime>
+    <OVRMatchSchedule_MatchStartTimeForm_labXSpanTime>Span Time:</OVRMatchSchedule_MatchStartTimeForm_labXSpanTime>
+    <OVRMatchSchedule_MatchStartTimeForm_labXAdvanceTime>Advance Time:</OVRMatchSchedule_MatchStartTimeForm_labXAdvanceTime>
+    <OVRMatchSchedule_MatchStartTimeForm_labXDelayTime>Delay Time:</OVRMatchSchedule_MatchStartTimeForm_labXDelayTime>
+    <OVRMatchSchedule_MatchStartTimeForm_btnXOK>OK</OVRMatchSchedule_MatchStartTimeForm_btnXOK>
+    <OVRMatchSchedule_MatchStartTimeForm_btnXCancel>Cancel</OVRMatchSchedule_MatchStartTimeForm_btnXCancel>
+    <OVRMatchSchedule_MatchEndTimeForm>Match End Time Settting</OVRMatchSchedule_MatchEndTimeForm>
+    <OVRMatchSchedule_MatchEndTimeForm_labXEndTime>End Time:</OVRMatchSchedule_MatchEndTimeForm_labXEndTime>
+    <OVRMatchSchedule_MatchEndTimeForm_labXSpanTime>Span Time:</OVRMatchSchedule_MatchEndTimeForm_labXSpanTime>
+    <OVRMatchSchedule_MatchEndTimeForm_btnXOK>OK</OVRMatchSchedule_MatchEndTimeForm_btnXOK>
+    <OVRMatchSchedule_MatchEndTimeForm_btnXCancel>Cancel</OVRMatchSchedule_MatchEndTimeForm_btnXCancel>
+    <OVRMatchSchedule_MatchVenueForm>Match Venue Settting</OVRMatchSchedule_MatchVenueForm>
+    <OVRMatchSchedule_MatchVenueForm_labXVenue>Venue:</OVRMatchSchedule_MatchVenueForm_labXVenue>
+    <OVRMatchSchedule_MatchVenueForm_btnXOK>OK</OVRMatchSchedule_MatchVenueForm_btnXOK>
+    <OVRMatchSchedule_MatchVenueForm_btnXCancel>Cancel</OVRMatchSchedule_MatchVenueForm_btnXCancel>
+    <OVRMatchSchedule_MatchCourtForm>Match Court Settting</OVRMatchSchedule_MatchCourtForm>
+    <OVRMatchSchedule_MatchCourtForm_labXVenue>Venue:</OVRMatchSchedule_MatchCourtForm_labXVenue>
+    <OVRMatchSchedule_MatchCourtForm_labXCourt>Court:</OVRMatchSchedule_MatchCourtForm_labXCourt>
+    <OVRMatchSchedule_MatchCourtForm_btnXOK>OK</OVRMatchSchedule_MatchCourtForm_btnXOK>
+    <OVRMatchSchedule_MatchCourtForm_btnXCancel>Cancel</OVRMatchSchedule_MatchCourtForm_btnXCancel>
+    <OVRMatchSchedule_OrderInSessionForm>Order In Session Settting</OVRMatchSchedule_OrderInSessionForm>
+    <OVRMatchSchedule_OrderInSessionForm_labXStartNumber>StartNumber:</OVRMatchSchedule_OrderInSessionForm_labXStartNumber>
+    <OVRMatchSchedule_OrderInSessionForm_labXStep>Step:</OVRMatchSchedule_OrderInSessionForm_labXStep>
+    <OVRMatchSchedule_OrderInSessionForm_labXCodeLength>Length:</OVRMatchSchedule_OrderInSessionForm_labXCodeLength>
+    <OVRMatchSchedule_OrderInSessionForm_btnXOK>OK</OVRMatchSchedule_OrderInSessionForm_btnXOK>
+    <OVRMatchSchedule_OrderInSessionForm_btnXCancel>Cancel</OVRMatchSchedule_OrderInSessionForm_btnXCancel>
+    <OVRMatchSchedule_OrderInSessionForm_StartNumberMsgBox>Please insert the Startnumber!</OVRMatchSchedule_OrderInSessionForm_StartNumberMsgBox>
+    <OVRMatchSchedule_OrderInSessionForm_StepMsgBox>Please insert the Stp!</OVRMatchSchedule_OrderInSessionForm_StepMsgBox>
+    <OVRMatchSchedule_OrderInSessionForm_CodeLengthMsgBox>Please insert the Codelength!</OVRMatchSchedule_OrderInSessionForm_CodeLengthMsgBox>
+    <OVRMatchSchedule_OrderInSessionForm_NumberMsgBox>Please insert the number!</OVRMatchSchedule_OrderInSessionForm_NumberMsgBox>
+    <OVRMatchSchedule_OrderInRoundForm>Order In Round Settting</OVRMatchSchedule_OrderInRoundForm>
+    <OVRMatchSchedule_OrderInRoundForm_labXStartNumber>StartNumber:</OVRMatchSchedule_OrderInRoundForm_labXStartNumber>
+    <OVRMatchSchedule_OrderInRoundForm_labXStep>Step:</OVRMatchSchedule_OrderInRoundForm_labXStep>
+    <OVRMatchSchedule_OrderInRoundForm_labXCodeLength>Length:</OVRMatchSchedule_OrderInRoundForm_labXCodeLength>
+    <OVRMatchSchedule_OrderInRoundForm_btnXOK>OK</OVRMatchSchedule_OrderInRoundForm_btnXOK>
+    <OVRMatchSchedule_OrderInRoundForm_btnXCancel>Cancel</OVRMatchSchedule_OrderInRoundForm_btnXCancel>
+    <OVRMatchSchedule_OrderInRoundForm_StartNumberMsgBox>Please insert the Startnumber!</OVRMatchSchedule_OrderInRoundForm_StartNumberMsgBox>
+    <OVRMatchSchedule_OrderInRoundForm_StepMsgBox>Please insert the Stp!</OVRMatchSchedule_OrderInRoundForm_StepMsgBox>
+    <OVRMatchSchedule_OrderInRoundForm_CodeLengthMsgBox>Please insert the Codelength!</OVRMatchSchedule_OrderInRoundForm_CodeLengthMsgBox>
+    <OVRMatchSchedule_OrderInRoundForm_NumberMsgBox>Please insert the number!</OVRMatchSchedule_OrderInRoundForm_NumberMsgBox>
+
+
+  </OVRMatchSchedule>
+
+  <OVRPluginMgr>
+    <LoadPluginError>Load Plugin Error</LoadPluginError>
+    <Update>Update</Update>
+    <MatchList>Match List</MatchList>
+    <Event>Event</Event>
+    <Date>Date</Date>
+    <Venue>Venue</Venue>
+    <Phase>Phase</Phase>
+    <Court>Court</Court>
+  </OVRPluginMgr>
+
+  <OVRReportMgr>
+    <lbDiscInfo>Disc Info</lbDiscInfo>
+    <lbCurGame>Cur Game</lbCurGame>
+    <lbCurDisc>Cur Disc</lbCurDisc>
+    <lbRptInfo>Rpt Info</lbRptInfo>
+    <btnRefleshDisc>Refresh</btnRefleshDisc>
+    <btnLoadTpl>Load Tpl</btnLoadTpl>
+    <btnDesign>Modify Tpl</btnDesign>
+    <btnRender>Gen Report</btnRender>
+    <_RoundOrder>Round</_RoundOrder>
+    <_RoundLongName>Long Name</_RoundLongName>
+    <_RoundShortName>Short Name</_RoundShortName>
+    <_SessionNum>Session</_SessionNum>
+    <_SessionDate>Date</_SessionDate>
+    <_SessionType>Type</_SessionType>
+    <_TplName>Template Name</_TplName>
+    <_RptName>Report Name</_RptName>
+    <_VarName>Varible Name</_VarName>
+    <_VarType>Type</_VarType>
+    <_VarValue>Value</_VarValue>
+    <TplDirNotExist>Template Directory Not Exist</TplDirNotExist>
+    <LoadTplFailed>Load Template Failed</LoadTplFailed>
+    <RptDirNotExist>Report Directory Not Exist</RptDirNotExist>
+    <LoadRptFailed>Load Report Failed</LoadRptFailed>
+    <InvdVarValue>Invalid Value Exist, Please Reset Again!</InvdVarValue>
+    <GenRptError>Report Generation Error</GenRptError>
+  </OVRReportMgr>
+
+  <OVRRankMedal>
+    <lbResult>Result/Rank</lbResult>
+    <btnRefresh>Refresh</btnRefresh>
+    <btnExportResult>ExportResult...</btnExportResult>
+    <btnEventResult>Cal Event Result</btnEventResult>
+    <btnGroupResult>Cal Group Rank</btnGroupResult>
+    <btnGroupPoints>Set Points Rule</btnGroupPoints>
+    <btnSendEventResult>Send Event Result</btnSendEventResult>
+    <MsgSendEventResult>Send Event Result Successed！</MsgSendEventResult>
+    <cmdAddResult>Add Result</cmdAddResult>
+    <cmdDelResult>Del Result</cmdDelResult>
+    <cmdExportResult>Export Result</cmdExportResult>
+    <btnEventDateSetting>ResultDate Setting</btnEventDateSetting>
+    <btnMedalDateSetting>MedalDate Setting</btnMedalDateSetting>
+    <ExpResSucceed>Export Results Succeed!</ExpResSucceed>
+    <ExpResFailed>Export Results Failed!</ExpResFailed>
+    <CalRankSucceed>Event Ranking Succeed!</CalRankSucceed>
+    <CalGrpResSucceed>Calculate Group Results Succeed!</CalGrpResSucceed>
+    <AddResultFailed>Add Result Failed!</AddResultFailed>
+    <AddResultFailed_InvdEvtID>Add Result Failed! Invalid EventID!</AddResultFailed_InvdEvtID>
+    <DelResultConfirm>Are you sure to delete selected result?</DelResultConfirm>
+    <DelResultFailed>Del Result Failed!</DelResultFailed>
+    <DelResultFailed_Invd>Del Result Failed! Invalid EventID or Position!</DelResultFailed_Invd>
+    <UpdEvtMdlFailed>Medal Modify Failed!</UpdEvtMdlFailed>
+    <UpdEvtMdlFailed_InvdParam>Medal Modify Failed, Invalid Parameters!</UpdEvtMdlFailed_InvdParam>
+    <UpdEvtMdlFailed_NotAllowed>Medal Modify Failed, Not Allowed In Current Event State!</UpdEvtMdlFailed_NotAllowed>
+    <SetGrpPointsFailed>Reset Points Rule Failed!</SetGrpPointsFailed>
+    <SetGrpPointsFailed_NotGrp>Reset Points Rule Failed, Not Round Robin!</SetGrpPointsFailed_NotGrp>
+    <btnOK>OK</btnOK>
+    <btnCancel>Cancel</btnCancel>
+    <lbWinPoints>Win Points</lbWinPoints>
+    <lbDrawPoints>Draw Points</lbDrawPoints>
+    <lbLostPoints>Lost Points</lbLostPoints>
+    <MenuEditEventStatus>Edit Event Status</MenuEditEventStatus>
+    <MsgSetEventStatus1>Failed to change this Event's Status</MsgSetEventStatus1>
+    <MsgSetEventStatus2>Failed to change this Event's Status, @eventID is Invalid!</MsgSetEventStatus2>
+    <MsgSetEventStatus3>Failed to change this Event's Status, The status of this Event's Phase children or Match Chirldren is not allowed to do this operating!</MsgSetEventStatus3>
+    <lbEventLongName>Long Name</lbEventLongName>
+    <lbEventShortName>Short Name</lbEventShortName>
+    <lbEventStatus>Event Status</lbEventStatus>
+
+  </OVRRankMedal>
+
+  <OVRROPlugin>
+    <frmOVRSPMatchWeatherConfig>Weather</frmOVRSPMatchWeatherConfig>
+    <lbAirtemp>Air Temp.</lbAirtemp>
+    <lbWater>Water</lbWater>
+    <lbHumidity>Humidity</lbHumidity>
+    <lbDescription>Description</lbDescription>
+    <groupBWind>Wind</groupBWind>
+    <lbStartWind>Start</lbStartWind>
+    <lbFinishWind>Finish</lbFinishWind>
+    <lbUnit>m/s</lbUnit>
+    <lbWindDirection>Direction</lbWindDirection>
+    <frmOVRSPMatchJudgeConfig>Race officials</frmOVRSPMatchJudgeConfig>
+    <lbJudgeName>Name:</lbJudgeName>
+    <lbJudgeFunction>Function:</lbJudgeFunction>
+    <gvcMatchJudgeOrder>Order</gvcMatchJudgeOrder>
+    <gvcMatchJudgeName>Name</gvcMatchJudgeName>
+    <gvcMatchJudgeFunction>Function</gvcMatchJudgeFunction>
+  </OVRROPlugin>
+
+  <OVRCBPlugin>
+    <frmOVRSPMatchWeatherConfig>Weather</frmOVRSPMatchWeatherConfig>
+    <lbAirtemp>Air Temp.</lbAirtemp>
+    <lbHumidity>Humidity</lbHumidity>
+    <lbDescription>Weather Description</lbDescription>
+    <groupBWind>Wind</groupBWind>
+    <lbWindSpeed>Speed</lbWindSpeed>
+    <lbUnit>m/s</lbUnit>
+    <lbWindDirection>Direction</lbWindDirection>
+    <SelectMatchInfo>Select a match please!</SelectMatchInfo>
+    <btnOK>OK</btnOK>
+    <btnCancel>Cancel</btnCancel>
+    <ExitInfo>Are you sure to exit?</ExitInfo>
+    <OtherMatchInto>Please exit the current match!</OtherMatchInto>
+    <ExitWithReceivedThreadOpen>The match can not exit when received thread is still in running,stop the data receiving port first!</ExitWithReceivedThreadOpen>
+    <labelX_SerialPort>COM Port:</labelX_SerialPort>
+    <labelX_Baudrate>Baudrate:</labelX_Baudrate>
+    <labelX_Parity>Parity:</labelX_Parity>
+    <labelX_Databits>Databits:</labelX_Databits>
+    <labelX_Stopbits>Stopbits:</labelX_Stopbits>
+    <SerialPortOpen_Error>The specified port has open,please select other port!</SerialPortOpen_Error>
+    <groupBox_Receive_Setting>Data Receive Setting</groupBox_Receive_Setting>
+    <label_ConnectionType>Type:</label_ConnectionType>
+    <label_Port>Port:</label_Port>
+    <btn_ReceiceSetting>Settings...</btn_ReceiceSetting>
+    <btn_start_receive>Start</btn_start_receive>
+    <btn_stop_receive>Stop</btn_stop_receive>
+  </OVRCBPlugin>
+
+  <OVRCRPlugin>
+    <chk_SetOperateLog>Record Operate Log</chk_SetOperateLog>
+    <CR_DataBase_NOT_Exist>CyclingRoad is not in current database,please select other database!</CR_DataBase_NOT_Exist>
+    <TR_DataBase_NOT_Exist>Triathlon is not in current database,please select other database!</TR_DataBase_NOT_Exist>
+    <CM_DataBase_NOT_Exist>CyclingMountain is not in current database,please select other database!</CM_DataBase_NOT_Exist>
+
+    <btnMatchSet>CourseSetting...</btnMatchSet>
+    <btnRunSetUp>RunSetUp...</btnRunSetUp>
+    <btnWeatherSet>Weather Setting...</btnWeatherSet>
+    <btnExit>Exit</btnExit>
+    <WarnExitMatchFirst>It can not change to other match,you should quit the curent match first!</WarnExitMatchFirst>
+    <ExitInfo>Are you sure to exit?</ExitInfo>
+    <MatchSettingWithReceivedThreadOpen>The match can not be set when received thread is still in running,stop the data receiving port first!</MatchSettingWithReceivedThreadOpen>
+    <ExitWithReceivedThreadOpen>The match can not exit when received thread is still in running,stop the data receiving port first!</ExitWithReceivedThreadOpen>
+    <label_CurSplit>CurSplit:</label_CurSplit>
+    <label_CurGroup>CurGroup:</label_CurGroup>
+    <btnX_Schedule>Schedule</btnX_Schedule>
+    <btnX_StartList>StartList</btnX_StartList>
+    <btnX_Running>Running</btnX_Running>
+    <btnX_Suspend>Suspend</btnX_Suspend>
+    <btnX_Unofficial>Unofficial</btnX_Unofficial>
+    <btnX_Finished>Finished</btnX_Finished>
+    <btnX_Revision>Revision</btnX_Revision>
+    <btnX_Canceled>Canceled</btnX_Canceled>
+    <MenuItem_Edit_StartTime>Edit StartTime</MenuItem_Edit_StartTime>
+    <MenuItem_Adjust_StartTime>Adjust StartTime</MenuItem_Adjust_StartTime>
+    <MenuItem_Shift_StartTime>Shift</MenuItem_Shift_StartTime>
+    <MenuItem_Shift_AllStartTime>Shift All</MenuItem_Shift_AllStartTime>
+    <MenuItem_Shift_StartTime_By_GroupNumber>Shift by Group</MenuItem_Shift_StartTime_By_GroupNumber>
+    <MenuItem_Change_Bib>Change Bib</MenuItem_Change_Bib>
+    <MenuItem_Change_StartOrder>Change StartOrder</MenuItem_Change_StartOrder>
+    <MenuItem_Change_Group>Change Group</MenuItem_Change_Group>
+    <SwapTime>Swap Time </SwapTime>
+    <BibForSwapTime>Input the Bib number</BibForSwapTime>
+    <MenuItem_Swap_Time>Swap Time with...</MenuItem_Swap_Time>
+    <MenuItem_UseTimeFromLOG>Use Time From LOG</MenuItem_UseTimeFromLOG>
+    <MenuItem_ReCanculateAll>Rebuild all results</MenuItem_ReCanculateAll>
+    <MenuItem_Shift_StartTime_Error>Can`t shift the time because of the athlete has started </MenuItem_Shift_StartTime_Error>
+    <MenuItem_Shift_StartTime_OutRange_Error> The Shift value is out of the range</MenuItem_Shift_StartTime_OutRange_Error>
+    <MenuItem_ShiftAll_StartTime_Error>Can`t shift the time because of some athletes have started</MenuItem_ShiftAll_StartTime_Error>
+    <MenuItem_ShiftAll_StartTime_OutRange_Error>The Shift value for some athletes is out of the range</MenuItem_ShiftAll_StartTime_OutRange_Error>
+
+    <status_OK>OK</status_OK>
+    <status_REL>REL-Relegated</status_REL>
+    <status_DNF>DNF-Did Not Finish</status_DNF>
+    <status_DNS>DNS-Did Not Start</status_DNS>
+    <status_DSQ>DSQ-Disqualified</status_DSQ>
+    <status_DSQ_C>DSQ_C -DSQ and Clear</status_DSQ_C>
+    <status_LAP>OVL/LAP-Lapped</status_LAP>
+    <StripMenuItem_Restart>Restart</StripMenuItem_Restart>
+    <frm_MatchSetting>CourseSetting</frm_MatchSetting>
+    <frm_RunSetUp>Run SetUp</frm_RunSetUp>
+    <label_RaceDesc>Race Description</label_RaceDesc>
+    <label_StartTime>Start Time</label_StartTime>
+    <label_Interval>Interval</label_Interval>
+    <label_GapTime>Gap Time</label_GapTime>
+    <label_Intermediate>Intermediate Times:</label_Intermediate>
+    <label_Range>Range Times(Sections):</label_Range>
+    <checkBox_SetStartTime>Set Start Time</checkBox_SetStartTime>
+    <checkBox_TeamTimeTrial>Team Time Trial</checkBox_TeamTimeTrial>
+    <btnOK>OK</btnOK>
+    <btnCancel>Cancel</btnCancel>
+    <addToolStripMenuItem>Add</addToolStripMenuItem>
+    <deleteToolStripMenuItem>Delete</deleteToolStripMenuItem>
+    <insertToolStripMenuItem>Insert</insertToolStripMenuItem>
+    <QueryMatch_Error>Query match information failed,unable to fill DataGridView!</QueryMatch_Error>
+    <Interval_NULL_Error>Please input time interval for time trial!</Interval_NULL_Error>
+    <Interval_Format_Error>The format of time interval for time trial is not correct!</Interval_Format_Error>
+    <LegSet_NULL_Error>Please input number for textbox!</LegSet_NULL_Error>
+    <LegSet_Format_Error>The number should be lagger than 0!</LegSet_Format_Error>
+    <StartTime_Format_Error>The format of start time is not correct!</StartTime_Format_Error>
+    <Hour_Format_Error>The hour format is not correct!</Hour_Format_Error>
+    <Minute_Format_Error>The minute format is not correct!</Minute_Format_Error>
+    <Second_Format_Error>The second format is not correct!</Second_Format_Error>
+    <StartOrderNULL_Error>The Startorder in range section should not be NULL!</StartOrderNULL_Error>
+    <StartOrderOutofRange_Error>The Startorder is beyond the split range!</StartOrderOutofRange_Error>
+    <EndOrderOutofRange_Error>The Endorder is beyond the split range!</EndOrderOutofRange_Error>
+    <EndOrderNULL_Error>The Endorder in range section should be bigger than zero!</EndOrderNULL_Error>
+    <Start_End_Order_Error>The Endorder should be bigger than Startorder!</Start_End_Order_Error>
+    <SelectMatchInfo>Select a match please!</SelectMatchInfo>
+    <MatchTypeError>The match type is not correct,unable to config match!</MatchTypeError>
+    <EditTime>Edit Time</EditTime>
+    <NewTime>New Time for</NewTime>
+    <NewBib>New Bib for</NewBib>
+    <NewStartOrder>New Start Order for</NewStartOrder>
+    <NewGroupNumber>New Group Number </NewGroupNumber>
+    <EditStartTime>Edit Start Time</EditStartTime>
+    <TimeOutofRange_Error>The new start time is beyond the logic range of split result</TimeOutofRange_Error>
+    <RestartMatchInfo>Do you really want to restart the match? It will remove all the data!</RestartMatchInfo>
+    <ShiftStartTime>Shift StartTime</ShiftStartTime>
+    <ShiftAllStartTime>Shift All StartTime</ShiftAllStartTime>
+    <ShiftStartTimeCaption>Shift by (sample:"20" "-2:30" )</ShiftStartTimeCaption>
+
+    <OVRCRWeatherConfig>Weather Setting</OVRCRWeatherConfig>
+    <lbAirtemp>Air Temperature</lbAirtemp>
+    <lbWatertemp>Water Temperature</lbWatertemp>
+    <lbHumidity>Humidity</lbHumidity>
+    <lbWeatherConditionDes>Weather Condition</lbWeatherConditionDes>
+    <lbWindSpeed>Wind Speed</lbWindSpeed>
+    <lbUnit>km/h</lbUnit>
+    <lbWindDirection>Direction</lbWindDirection>
+
+    <checkbox_RELasLastPlace>Rank RELed player last place in one group</checkbox_RELasLastPlace>
+    <checkbox_LapAsDNF>Treat LAP as DNF for ordering</checkbox_LapAsDNF>
+    <checkbox_RankLap>Rank LAPed player</checkbox_RankLap>
+    <checkbox_SubsortDNFbyLastLapTime>Subsort DNF by last lap time</checkbox_SubsortDNFbyLastLapTime>
+    <checkbox_DNSbeforeDSQ>Sort DNS before DSQ</checkbox_DNSbeforeDSQ>
+    <checkbox_SubsortDNSbyNOC>Subsort DNS by NOC</checkbox_SubsortDNSbyNOC>
+    <checkbox_SubsortDSQbyNOC>Subsort DSQ by NOC</checkbox_SubsortDSQbyNOC>
+
+    <labelX_SerialPort>COM Port:</labelX_SerialPort>
+    <labelX_Baudrate>Baudrate:</labelX_Baudrate>
+    <labelX_Parity>Parity:</labelX_Parity>
+    <labelX_Databits>Databits:</labelX_Databits>
+    <labelX_Stopbits>Stopbits:</labelX_Stopbits>
+    <SerialPortOpen_Error>The specified port has open,please select other port!</SerialPortOpen_Error>
+    <groupBox_Receive_Setting>Data Receive Setting</groupBox_Receive_Setting>
+    <label_ConnectionType>Type:</label_ConnectionType>
+    <label_Port>Port:</label_Port>
+    <btn_ReceiceSetting>Settings...</btn_ReceiceSetting>
+    <btn_start_receive>Start</btn_start_receive>
+    <btn_stop_receive>Stop</btn_stop_receive>
+    <btn_Save>Save...</btn_Save>
+    <btn_Load>Load...</btn_Load>
+    <LoadCourseSetting>Load Course Setting</LoadCourseSetting>
+    <SaveCourseSetting>Save Course Setting</SaveCourseSetting>
+    <btn_LegSetup>Set Leg...</btn_LegSetup>
+
+    <LogWindowText>Select Time</LogWindowText>
+    <label_LEG>LEG</label_LEG>
+    <label_SplitPoint>Split</label_SplitPoint>
+    <label_SplitTime>Time</label_SplitTime>
+    <LoadCourseSetting_Warning>Do you really want to load the new CourseSetting? It will clear all the current result data</LoadCourseSetting_Warning>
+
+    <lb_Swim>Swim Lap:</lb_Swim>
+    <lb_Bike>Bike Lap:</lb_Bike>
+    <lb_Run>Run Lap:</lb_Run>
+
+    <frm_ModeSel>Select Mode</frm_ModeSel>
+    <chk_DataEntry>Data entry mode</chk_DataEntry>
+    <chk_DataMonitor>Data monitor mode</chk_DataMonitor>
+    <lbModeDesc>You can do any operation in entry mode,but can only monitor data in monitor mode.  Only the computer connected with timing and scoring device can select the data entry mode!</lbModeDesc>
+    <chkAutoUpdate>Auto Update by 1 minute</chkAutoUpdate>
+    <btnUpdate>Update</btnUpdate>
+  </OVRCRPlugin>
+
+  <OVRSQPlugin>
+    <gbMatchInfo>Match Info</gbMatchInfo>
+    <gbMatchScore>Match Score</gbMatchScore>
+    <lbSportName>SportName:</lbSportName>
+    <lbPhaseName>PhaseName:</lbPhaseName>
+    <lbDate>Date:</lbDate>
+    <lbVenue>Venue:</lbVenue>
+    <lbTotalScore>TotalScore</lbTotalScore>
+    <lbPlayers>Players</lbPlayers>
+    <lbGameTotal>GameTotal</lbGameTotal>
+    <lbRegu>Match:</lbRegu>
+    <btnxOfficialInfo>Official Info</btnxOfficialInfo>
+    <btnxTeamInfo>Team Info</btnxTeamInfo>
+    <btnxExitMatch>Exit Match</btnxExitMatch>
+    <btnxModifyResult>Modify Result</btnxModifyResult>
+    <btnxModifyTime>Modify Time</btnxModifyTime>
+    <btnxSchedule>Scheduled</btnxSchedule>
+    <btnxStartList>StartList</btnxStartList>
+    <btnxRunning>Running</btnxRunning>
+    <btnxSuspend>Suspend</btnxSuspend>
+    <btnxUnofficial>Unofficial</btnxUnofficial>
+    <btnxFinished>Official</btnxFinished>
+    <btnxRevision>Revision</btnxRevision>
+    <btnxCanceled>Canceled</btnxCanceled>
+    <btnxMatch1>Match 1</btnxMatch1>
+    <btnxMatch2>Match 2</btnxMatch2>
+    <btnxMatch3>Match 3</btnxMatch3>
+    <btnxMatch4>Match 4</btnxMatch4>
+    <btnxMatch5>Match 5</btnxMatch5>
+    <radServerA>ServerA</radServerA>
+    <radServerB>ServerB</radServerB>
+    <SubMatchResult>Match Result</SubMatchResult>
+    <GameResult>Game Result</GameResult>
+    <radGame1>Game1</radGame1>
+    <radGame2>Game2</radGame2>
+    <radGame3>Game3</radGame3>
+    <radGame4>Game4</radGame4>
+    <radGame5>Game5</radGame5>
+    <frmModifyResult>Modify Result</frmModifyResult>
+    <frmModifyTime>Modify Time</frmModifyTime>
+    <frmEntryOfficial>Entry Officials</frmEntryOfficial>
+    <lbAvailableOfficials>Available Officials</lbAvailableOfficials>
+    <lbMatchOfficials>Match Officials</lbMatchOfficials>
+    <frmSetTeamPlayers>Set Team Players</frmSetTeamPlayers>
+    <lbAvailablePlayers>Available Players</lbAvailablePlayers>
+    <lbMatchPlayers>Match Players</lbMatchPlayers>
+    <mbRunningMatch>Please Exit CurMatch!</mbRunningMatch>
+    <mbChooseMatch>Please Choose One Match First!</mbChooseMatch>
+    <mbMatchStatus>MatchStatus: </mbMatchStatus>
+    <mbConfigMatchUp>Please Confirm the MatchUp!</mbConfigMatchUp>
+    <mbExitMatch>Are You Sure to Exit CurMatch!</mbExitMatch>
+    <mbMatchRule>Please Set Match Rule!</mbMatchRule>
+    <mbCreateSplit>Create Splits Failed!</mbCreateSplit>
+    <mbUpdateTime>Update Time Failed!</mbUpdateTime>
+    <mbUpdateServer>Update Server Failed!</mbUpdateServer>
+    <mbSetTeamPlayers>Please Set Team Players First!</mbSetTeamPlayers>
+    <gbExportImport>Import And Export</gbExportImport>
+    <lbSelectDate>Select Date</lbSelectDate>
+    <lbExportPath>Export Path</lbExportPath>
+    <btnxExportAthlete>Export Athlete</btnxExportAthlete>
+    <btnxExportSchedule>Export Schedule</btnxExportSchedule>
+    <lbImportPath>Import Path</lbImportPath>
+    <btnxImportMatchInfo>Import MatchInfo</btnxImportMatchInfo>
+    <btnxImportAction>Import Action</btnxImportAction>
+    <btnxImportResult>Import Result</btnxImportResult>
+    <chkAutoImport>Auto Import</chkAutoImport>
+    <chkExternalData>External Data</chkExternalData>
+    <msgExportPath>The Export Path Is Invalidate!</msgExportPath>
+    <msgImportPath>The Import Path Is Invalidate!</msgImportPath>
+    <msgSelectDate>Please Select Date First!</msgSelectDate>
+    <msgFilePath>The File Not Exists!</msgFilePath>
+    <msgExportFile>Export File Successful!</msgExportFile>
+    <msgImportMatchInfoSuc>Import MatchInfo Successful!</msgImportMatchInfoSuc>
+    <msgImportActionSuc>Import ActionList Successful!</msgImportActionSuc>
+    <msgImportResultSuc>Import MatchResult Successful!</msgImportResultSuc>
+    <msgImportMatchInfo>Import MatchInfo Failed!</msgImportMatchInfo>
+    <msgImportAction>Import ActionList Failed!</msgImportAction>
+    <msgImportMatchResult>Import MatchResult Failed!</msgImportMatchResult>
+  </OVRSQPlugin>
+
+  <OVRSLPlugin>
+    <OVRSLPlugin_OVRSLDataEntryForm_labX_IP>IP:</OVRSLPlugin_OVRSLDataEntryForm_labX_IP>
+    <OVRSLPlugin_OVRSLDataEntryForm_labX_Port>Port:</OVRSLPlugin_OVRSLDataEntryForm_labX_Port>
+    <OVRSLPlugin_OVRSLDataEntryForm_chkX_Connect>Connect</OVRSLPlugin_OVRSLDataEntryForm_chkX_Connect>
+    <OVRSLPlugin_OVRSLDataEntryForm_labX_MatchInfo>Match Name</OVRSLPlugin_OVRSLDataEntryForm_labX_MatchInfo>
+    <OVRSLPlugin_OVRSLDataEntryForm_labX_Sel>Ready And Run:</OVRSLPlugin_OVRSLDataEntryForm_labX_Sel>
+    <OVRSLPlugin_OVRSLDataEntryForm_labX_All>Start List:</OVRSLPlugin_OVRSLDataEntryForm_labX_All>
+    <OVRSLPlugin_OVRSLDataEntryForm_btnX_MatchSetting>Match Setting</OVRSLPlugin_OVRSLDataEntryForm_btnX_MatchSetting>
+    <OVRSLPlugin_OVRSLDataEntryForm_btnX_WeatherSetting>Weather Setting</OVRSLPlugin_OVRSLDataEntryForm_btnX_WeatherSetting>
+    <OVRSLPlugin_OVRSLDataEntryForm_btnX_StatusSetting>Status Setting</OVRSLPlugin_OVRSLDataEntryForm_btnX_StatusSetting>
+    <OVRSLPlugin_OVRSLDataEntryForm_btnX_Exit>Exit</OVRSLPlugin_OVRSLDataEntryForm_btnX_Exit>
+    <OVRSLPlugin_OVRSLDataEntryForm_menX_OK>OK</OVRSLPlugin_OVRSLDataEntryForm_menX_OK>
+    <OVRSLPlugin_OVRSLDataEntryForm_menX_Cancel>Cancel</OVRSLPlugin_OVRSLDataEntryForm_menX_Cancel>
+    <OVRSLPlugin_OVRSLDataEntryForm_menX_Ready>Read</OVRSLPlugin_OVRSLDataEntryForm_menX_Ready>
+    <OVRSLPlugin_OVRSLDataEntryForm_menX_Clear>Clear</OVRSLPlugin_OVRSLDataEntryForm_menX_Clear>
+    <OVRSLPlugin_OVRSLDataEntryForm_menX_EditForerunInfo>Edit Forerun Info</OVRSLPlugin_OVRSLDataEntryForm_menX_EditForerunInfo>
+    <OVRSLPlugin_OVRSLDataEntryForm_menX_EditStartTime>Edit Start Time</OVRSLPlugin_OVRSLDataEntryForm_menX_EditStartTime>
+    <OVRSLPlugin_OVRSLDataEntryForm_Msg_SelectMatchInfo>Select a match please!</OVRSLPlugin_OVRSLDataEntryForm_Msg_SelectMatchInfo>
+    <OVRSLPlugin_OVRSLDataEntryForm_Msg_UpdateMatchInfo>Do you want to update match?</OVRSLPlugin_OVRSLDataEntryForm_Msg_UpdateMatchInfo>
+    <OVRSLPlugin_OVRSLDataEntryForm_Msg_ChangeMatchInfo>Do you want to change match?</OVRSLPlugin_OVRSLDataEntryForm_Msg_ChangeMatchInfo>
+    <OVRSLPlugin_OVRSLDataEntryForm_Msg_ExitMatchInfo>Do you want to exit match?</OVRSLPlugin_OVRSLDataEntryForm_Msg_ExitMatchInfo>
+
+    <OVRSLPlugin_MatchSettingForm_titleText>Match Setting</OVRSLPlugin_MatchSettingForm_titleText>
+    <OVRSLPlugin_MatchSettingForm_labX_SplitCount>Split Count:</OVRSLPlugin_MatchSettingForm_labX_SplitCount>
+    <OVRSLPlugin_MatchSettingForm_labX_GateCount>Gate Count:</OVRSLPlugin_MatchSettingForm_labX_GateCount>
+    <OVRSLPlugin_MatchSettingForm_labX_SplitGate1>Split Gate1:</OVRSLPlugin_MatchSettingForm_labX_SplitGate1>
+    <OVRSLPlugin_MatchSettingForm_labX_SplitGate2>Split Gate2:</OVRSLPlugin_MatchSettingForm_labX_SplitGate2>
+    <OVRSLPlugin_MatchSettingForm_labX_SplitGate3>Split Gate3:</OVRSLPlugin_MatchSettingForm_labX_SplitGate3>
+    <OVRSLPlugin_MatchSettingForm_labX_SplitGate4>Split Gate4:</OVRSLPlugin_MatchSettingForm_labX_SplitGate4>
+    <OVRSLPlugin_MatchSettingForm_labX_WaterSpeed>Water Speed:</OVRSLPlugin_MatchSettingForm_labX_WaterSpeed>
+    <OVRSLPlugin_MatchSettingForm_btnX_OK>OK</OVRSLPlugin_MatchSettingForm_btnX_OK>
+    <OVRSLPlugin_MatchSettingForm_btnX_Cancel>Cancel</OVRSLPlugin_MatchSettingForm_btnX_Cancel>
+
+    <OVRSLWeatherForm>Weather Setting</OVRSLWeatherForm>
+    <lbAirtemp>Air Temperature:</lbAirtemp>
+    <lbWatertemp>Water Temperature:</lbWatertemp>
+    <lbHumidity>Humidity:</lbHumidity>
+    <lbWeatherConditionDes>Weather Condition:</lbWeatherConditionDes>
+    <lbWindSpeed>Wind Speed:</lbWindSpeed>
+    <lbUnit>km/h</lbUnit>
+    <lbWindDirection>Direction:</lbWindDirection>
+    <btnX_OK>OK</btnX_OK>
+    <btnX_Cancel>Cancel</btnX_Cancel>
+
+    <OVRSLPlugin_OVRSLEditTimeFrom_titleText>Edit Start Time</OVRSLPlugin_OVRSLEditTimeFrom_titleText>
+    <OVRSLPlugin_OVRSLEditTimeFrom_labXStartTime>Start Time:</OVRSLPlugin_OVRSLEditTimeFrom_labXStartTime>
+    <OVRSLPlugin_OVRSLEditTimeFrom_labXSpanTime>Span Time:</OVRSLPlugin_OVRSLEditTimeFrom_labXSpanTime>
+    <OVRSLPlugin_OVRSLEditTimeFrom_btnXOK>OK</OVRSLPlugin_OVRSLEditTimeFrom_btnXOK>
+    <OVRSLPlugin_OVRSLEditTimeFrom_btnXCancel>Cancel</OVRSLPlugin_OVRSLEditTimeFrom_btnXCancel>
+
+    <OVRSLPlugin_OVRSLEditForerunInfoFrom_titleText>Edit Forerun Info</OVRSLPlugin_OVRSLEditForerunInfoFrom_titleText>
+    <OVRSLPlugin_OVRSLEditForerunInfoFrom_labXRegister>Register:</OVRSLPlugin_OVRSLEditForerunInfoFrom_labXRegister>
+    <OVRSLPlugin_OVRSLEditForerunInfoFrom_labXEvent>Event:</OVRSLPlugin_OVRSLEditForerunInfoFrom_labXEvent>
+    <OVRSLPlugin_OVRSLEditForerunInfoFrom_btnXOK>OK</OVRSLPlugin_OVRSLEditForerunInfoFrom_btnXOK>
+    <OVRSLPlugin_OVRSLEditForerunInfoFrom_btnXCancel>Cancel</OVRSLPlugin_OVRSLEditForerunInfoFrom_btnXCancel>
+
+    <OVRSLPlugin_OVRSLEditPenSecFrom_titleText>Edit Pen Sec</OVRSLPlugin_OVRSLEditPenSecFrom_titleText>
+    <OVRSLPlugin_OVRSLEditPenSecFrom_btnXOK>OK</OVRSLPlugin_OVRSLEditPenSecFrom_btnXOK>
+    <OVRSLPlugin_OVRSLEditPenSecFrom_btnXCancel>Cancel</OVRSLPlugin_OVRSLEditPenSecFrom_btnXCancel>
+  </OVRSLPlugin>
+
+  <OVRARPlugin>
+    <OVRARPlugin_OVRARDataEntryForm_labX_MatchInfo>Match Name</OVRARPlugin_OVRARDataEntryForm_labX_MatchInfo>
+    <OVRARPlugin_OVRARDataEntryForm_labX_EndCount>End Count :</OVRARPlugin_OVRARDataEntryForm_labX_EndCount>
+    <OVRARPlugin_OVRARDataEntryForm_labX_ArrowCount>Arrow Count / End:</OVRARPlugin_OVRARDataEntryForm_labX_ArrowCount>
+    <OVRARPlugin_OVRARDataEntryForm_btnX_MatchSetting>Match Setting</OVRARPlugin_OVRARDataEntryForm_btnX_MatchSetting>
+    <OVRARPlugin_OVRARDataEntryForm_btnX_StatusSetting>Status Setting</OVRARPlugin_OVRARDataEntryForm_btnX_StatusSetting>
+    <OVRARPlugin_OVRARDataEntryForm_btnX_Exit>Exit</OVRARPlugin_OVRARDataEntryForm_btnX_Exit>
+    <OVRARPlugin_OVRARDataEntryForm_btnX_Edit>Edit</OVRARPlugin_OVRARDataEntryForm_btnX_Edit>
+    <OVRARPlugin_OVRARDataEntryForm_btnX_Officials>Officials</OVRARPlugin_OVRARDataEntryForm_btnX_Officials>
+    <OVRARPlugin_OVRARDataEntryForm_labX_Interface>Receive Interface Data</OVRARPlugin_OVRARDataEntryForm_labX_Interface>
+    <OVRARPlugin_OVRARDataEntryForm_btnX_Check>Check Results</OVRARPlugin_OVRARDataEntryForm_btnX_Check>
+
+    <OVRARPlugin_MatchSettingForm_titleText>Match Setting</OVRARPlugin_MatchSettingForm_titleText>
+    <OVRARPlugin_MatchSettingForm_labX_EndCount>End Count:</OVRARPlugin_MatchSettingForm_labX_EndCount>
+    <OVRARPlugin_MatchSettingForm_labX_ArrowCount>Arrow Count / End:</OVRARPlugin_MatchSettingForm_labX_ArrowCount>
+    <OVRARPlugin_MatchSettingForm_btnX_OK>OK</OVRARPlugin_MatchSettingForm_btnX_OK>
+    <OVRARPlugin_MatchSettingForm_btnX_Cancel>Cancel</OVRARPlugin_MatchSettingForm_btnX_Cancel>
+
+    <OVRARPlugin_UCQualification_columnHeader_Target>Target</OVRARPlugin_UCQualification_columnHeader_Target>
+    <OVRARPlugin_UCQualification_columnHeader_Name>Name</OVRARPlugin_UCQualification_columnHeader_Name>
+    <OVRARPlugin_UCQualification_columnHeader_Noc>NOC</OVRARPlugin_UCQualification_columnHeader_Noc>
+    <OVRARPlugin_UCQualification_columnHeader_Result>Result</OVRARPlugin_UCQualification_columnHeader_Result>
+    <OVRARPlugin_UCQualification_columnHeader_Rank>Rank</OVRARPlugin_UCQualification_columnHeader_Rank>
+    <OVRARPlugin_UCQualification_columnHeader_Records>Records</OVRARPlugin_UCQualification_columnHeader_Records>
+
+    <OVRARPlugin_UCElimination_labX_Winner>Winner</OVRARPlugin_UCElimination_labX_Winner>
+    <OVRARPlugin_UCElimination_labX_Loser>Loser</OVRARPlugin_UCElimination_labX_Loser> 
+    <OVRARPlugin_UCElimination_labX_AutoUpdateScore>Auto Update Score</OVRARPlugin_UCElimination_labX_AutoUpdateScore>
+    <OVRARPlugin_UCElimination_labX_AutoUpdatePoint>Auto Update Point</OVRARPlugin_UCElimination_labX_AutoUpdatePoint>
+    <OVRARPlugin_UCElimination_labX_AutoUpdateWinner>Auto Update Winner</OVRARPlugin_UCElimination_labX_AutoUpdateWinner>
+    <OVRARPlugin_UCElimination_labX_Totals>Totals 10's and X's：</OVRARPlugin_UCElimination_labX_Totals>
+  
+</OVRARPlugin>
+
+  <OVRSGPlugin>
+    <OVRSGPlugin_OVRSGDataEntryForm_labX_MatchInfo>Match Name</OVRSGPlugin_OVRSGDataEntryForm_labX_MatchInfo>
+    <OVRSGPlugin_OVRSGDataEntryForm_btnX_StatusSetting>Status Setting</OVRSGPlugin_OVRSGDataEntryForm_btnX_StatusSetting>
+    <OVRSGPlugin_OVRSGDataEntryForm_btnX_Exit>Exit</OVRSGPlugin_OVRSGDataEntryForm_btnX_Exit>
+    <OVRSGPlugin_OVRSGDataEntryForm_Msg_SelectMatchInfo>Select a match please!</OVRSGPlugin_OVRSGDataEntryForm_Msg_SelectMatchInfo>
+    <OVRSGPlugin_OVRSGDataEntryForm_Msg_UpdateMatchInfo>Do you want to update match?</OVRSGPlugin_OVRSGDataEntryForm_Msg_UpdateMatchInfo>
+    <OVRSGPlugin_OVRSGDataEntryForm_Msg_ChangeMatchInfo>Do you want to change match?</OVRSGPlugin_OVRSGDataEntryForm_Msg_ChangeMatchInfo>
+    <OVRSGPlugin_OVRSGDataEntryForm_Msg_ExitMatchInfo>Do you want to exit match?</OVRSGPlugin_OVRSGDataEntryForm_Msg_ExitMatchInfo>
+    <OVRSGPlugin_OVRSGDataEntryForm_menX_GetResult>Get Result</OVRSGPlugin_OVRSGDataEntryForm_menX_GetResult>
+    <OVRSGPlugin_OVRSGDataEntryForm_menX_ClearResult>Clear Result</OVRSGPlugin_OVRSGDataEntryForm_menX_ClearResult>
+    <OVRSGPlugin_OVRSGDataEntryForm_menX_Delete>Delete</OVRSGPlugin_OVRSGDataEntryForm_menX_Delete>
+
+    <OVRSGPlugin_OVRSGSelRecordTypeFrom_titleText>Select Record Type</OVRSGPlugin_OVRSGSelRecordTypeFrom_titleText>
+    <OVRSGPlugin_OVRSGSelRecordTypeFrom_labXRecordType>Record Type:</OVRSGPlugin_OVRSGSelRecordTypeFrom_labXRecordType>
+    <OVRSGPlugin_OVRSGSelRecordTypeFrom_btnXOK>OK</OVRSGPlugin_OVRSGSelRecordTypeFrom_btnXOK>
+    <OVRSGPlugin_OVRSGSelRecordTypeFrom_btnXCancel>Cancel</OVRSGPlugin_OVRSGSelRecordTypeFrom_btnXCancel>
+  </OVRSGPlugin>
+
+  <OVRWLPlugin>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_MatchInfo>Match Name</OVRWLPlugin_OVRWLDataEntryForm_labX_MatchInfo>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_Weighin>Weigh-In Time:</OVRWLPlugin_OVRWLDataEntryForm_labX_Weighin>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_AtheleName>Match Name</OVRWLPlugin_OVRWLDataEntryForm_labX_AtheleName>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_Order>Order</OVRWLPlugin_OVRWLDataEntryForm_labX_Order>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_Bib>Bib</OVRWLPlugin_OVRWLDataEntryForm_labX_Bib>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_Weight>Weight</OVRWLPlugin_OVRWLDataEntryForm_labX_Weight>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_NOC>NOC</OVRWLPlugin_OVRWLDataEntryForm_labX_NOC>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_IRM>IRM</OVRWLPlugin_OVRWLDataEntryForm_labX_IRM>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_MatchName>Match Name</OVRWLPlugin_OVRWLDataEntryForm_labX_MatchName>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_1st>1st</OVRWLPlugin_OVRWLDataEntryForm_labX_1st>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_2nd>2nd</OVRWLPlugin_OVRWLDataEntryForm_labX_2nd>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_3rd>3rd</OVRWLPlugin_OVRWLDataEntryForm_labX_3rd>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_Result>Result</OVRWLPlugin_OVRWLDataEntryForm_labX_Result>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_AvailableOfficial>Available Officials</OVRWLPlugin_OVRWLDataEntryForm_labX_AvailableOfficial>
+    <OVRWLPlugin_OVRWLDataEntryForm_labX_MatchOfficial>Match Officials</OVRWLPlugin_OVRWLDataEntryForm_labX_MatchOfficial>
+
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_StatusSetting>Status Setting</OVRWLPlugin_OVRWLDataEntryForm_btnX_StatusSetting>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_Exit>Exit</OVRWLPlugin_OVRWLDataEntryForm_btnX_Exit>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_Officials>Officials</OVRWLPlugin_OVRWLDataEntryForm_btnX_Officials>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_Draw>Draw</OVRWLPlugin_OVRWLDataEntryForm_btnX_Draw>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_TS>Set T/S Path</OVRWLPlugin_OVRWLDataEntryForm_btnX_TS>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_LoadTS>Load T/S Data</OVRWLPlugin_OVRWLDataEntryForm_btnX_LoadTS>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_Attempt>Set Attempt</OVRWLPlugin_OVRWLDataEntryForm_btnX_Attempt>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_CurrentAttempt>Current Attempt</OVRWLPlugin_OVRWLDataEntryForm_btnX_CurrentAttempt>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_LightStatus>Light Status</OVRWLPlugin_OVRWLDataEntryForm_btnX_LightStatus>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_Finished>Finished</OVRWLPlugin_OVRWLDataEntryForm_btnX_Finished>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_1st>1st Attempt</OVRWLPlugin_OVRWLDataEntryForm_btnX_1st>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_2nd>2nd Attempt</OVRWLPlugin_OVRWLDataEntryForm_btnX_2nd>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_3rd>3rd Attempt</OVRWLPlugin_OVRWLDataEntryForm_btnX_3rd>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_SetOfficialGroup>Set Official Group</OVRWLPlugin_OVRWLDataEntryForm_btnX_SetOfficialGroup>
+    <OVRWLPlugin_OVRWLDataEntryForm_btnX_Login>Login</OVRWLPlugin_OVRWLDataEntryForm_btnX_Login>
+
+    <OVRWLPlugin_OVRWLDataEntryForm_cbX_TS>Receive T/S Data</OVRWLPlugin_OVRWLDataEntryForm_cbX_TS>
+    <OVRWLPlugin_OVRWLDataEntryForm_cbX_MixTS>Receive T/S Mix Data</OVRWLPlugin_OVRWLDataEntryForm_cbX_MixTS>
+    <OVRWLPlugin_OVRWLDataEntryForm_cbX_Attempt>Auto Set Attempt</OVRWLPlugin_OVRWLDataEntryForm_cbX_Attempt>
+
+    <OVRWLPlugin_OVRWLDataEntryForm_frmEntryOfficial>Entry Officials</OVRWLPlugin_OVRWLDataEntryForm_frmEntryOfficial>
+    <OVRWLPlugin_OVRWLDataEntryForm_frmEntryOfficialGroup>Entry Officials Group</OVRWLPlugin_OVRWLDataEntryForm_frmEntryOfficialGroup>
+    <OVRWLPlugin_OVRWLDataEntryForm_frmOVRWLAutoDraw>Weightlifting Draw</OVRWLPlugin_OVRWLDataEntryForm_frmOVRWLAutoDraw>
+
+    <OVRWLPlugin_OVRWLDataEntryForm_Msg_SelectMatchInfo>Select a match please!</OVRWLPlugin_OVRWLDataEntryForm_Msg_SelectMatchInfo>
+    <OVRWLPlugin_OVRWLDataEntryForm_Msg_UpdateMatchInfo>Do you want to update match?</OVRWLPlugin_OVRWLDataEntryForm_Msg_UpdateMatchInfo>
+    <OVRWLPlugin_OVRWLDataEntryForm_Msg_ChangeMatchInfo>Do you want to change match?</OVRWLPlugin_OVRWLDataEntryForm_Msg_ChangeMatchInfo>
+    <OVRWLPlugin_OVRWLDataEntryForm_Msg_ExitMatchInfo>Do you want to exit match?</OVRWLPlugin_OVRWLDataEntryForm_Msg_ExitMatchInfo>
+    <OVRWLPlugin_OVRWLDataEntryForm_Msg_WrongPassworld>The password is invalid!</OVRWLPlugin_OVRWLDataEntryForm_Msg_WrongPassworld>
+    <OVRWLPlugin_OVRWLDataEntryForm_Msg_ValueExisted>The input value has existed, please type other number!</OVRWLPlugin_OVRWLDataEntryForm_Msg_ValueExisted>
+  </OVRWLPlugin>
+
+  <OVRFBPlugin>
+    <mbExit>Please exit the current match!</mbExit>
+    <mbExitMatch>Are you sure to exit the match?</mbExitMatch>
+    <Msg_Register>The Player of the match is error!</Msg_Register>
+    <Msg_period>There is no effect period!</Msg_period>
+    <Msg_Action>There is pre Other Action, so it's failed!</Msg_Action>
+    <Msg_ErrorPlayer>The shirtnumber of this player in this action is null!</Msg_ErrorPlayer>
+    <Msg_ErrorPlayerIn>Please first remove one player on the court!</Msg_ErrorPlayerIn>
+    <MatchStatusWarning>This match is in running state are you sure to get in this match?</MatchStatusWarning>
+    <YCardWarn>You could choose only one yellow card</YCardWarn>
+    <Y2CardWarn>Please choose one yellow card before you choose 2nd yellow card</Y2CardWarn>
+    <lbHomePossTime>Home</lbHomePossTime>
+    <lbVisitPossTime>Visit</lbVisitPossTime>
+    <lbHome>H</lbHome>
+    <lbVisit>V</lbVisit>
+    <lbSet1>Set1</lbSet1>
+    <lbSet2>Set2</lbSet2>
+    <lbExa1>Extra1</lbExa1>
+    <lbExa2>Extra2</lbExa2>
+    <btnStop>Stop</btnStop>
+    <btnStart>Start</btnStart>
+    <btnStartPeriod>StartPeriod</btnStartPeriod>
+    <btnEndPeriod>EndPeriod</btnEndPeriod>
+    <btnOfficial>Official Info</btnOfficial>
+    <btnTeamInfo>Team Info</btnTeamInfo>
+    <btnWeatherSet>Weather...</btnWeatherSet>
+    <btnExit>Exit</btnExit>
+    <btnPenaltyScore>PenaltyScore</btnPenaltyScore>
+    <btnMatchResult>MatchResult</btnMatchResult>
+    <btnAllOut_Home>All Out</btnAllOut_Home>
+    <btnAllOut_Visit>All Out</btnAllOut_Visit>
+    <btn_Export>Export</btn_Export>
+    <btnx_Schedule>Schedule</btnx_Schedule>
+    <btnx_StartList>StartList</btnx_StartList>
+    <btnx_Running>Running</btnx_Running>
+    <btnx_Suspend>Suspend</btnx_Suspend>
+    <btnx_Unofficial>UnOfficial</btnx_Unofficial>
+    <btnx_Finished>Official</btnx_Finished>
+    <btnx_Revision>Revision</btnx_Revision>
+    <btnx_Canceled>Canceled</btnx_Canceled>
+    <btnx_Score>Score</btnx_Score>
+    <btnx_Statistic>Statistic</btnx_Statistic>
+    <btnx_Result>Result</btnx_Result>
+    <btnCorner>Corner</btnCorner>
+    <btnOffside>Offside</btnOffside>
+    <btnShot>Shot</btnShot>
+    <btnFreeKick>FreeKick</btnFreeKick>
+    <btnPenalty>Penalty</btnPenalty>
+    <btnGoal>Goal</btnGoal>
+    <btnBlock>Block</btnBlock>
+    <btnMissed>Missed</btnMissed>
+    <btnCrossbar>Crossbar</btnCrossbar>
+    <btnOwnGoal>Own Goal</btnOwnGoal>
+    <btnYCard>Yellow Card</btnYCard>
+    <btn2YCard>2nd Yellow Card</btn2YCard>
+    <btnRCard>Red Card</btnRCard>
+    <btnOut>Out</btnOut>
+    <btnIn>In</btnIn>
+    <btnFoulS>Foul Suffered</btnFoulS>
+    <btnFoulC>Foul Committed</btnFoulC>
+    <gbAttempt>Attempt</gbAttempt>
+    <gbResult>Result</gbResult>
+    <gbCards>Cards</gbCards>
+    <gbSubstitutions>Substitutions</gbSubstitutions>
+    <gbFouls>Fouls</gbFouls>
+    <gbTeamPlay>Team Plays</gbTeamPlay>
+    <gbBallPossesion>Ball Possesion</gbBallPossesion>
+    <gbMatchScore>Match Result</gbMatchScore>
+    <lbAddTime>AddTime</lbAddTime>
+    <OVROWWeatherConfig>Weather Setting</OVROWWeatherConfig>
+    <lbAirtemp>Air Temperature</lbAirtemp>
+    <lbWatertemp>Water Temperature</lbWatertemp>
+    <lbHumidity>Humidity</lbHumidity>
+    <lbWeatherConditionDes>Weather Condition</lbWeatherConditionDes>
+    <lbWindSpeed>Wind Speed</lbWindSpeed>
+    <lbUnit>m/s</lbUnit>
+    <lbWindDirection>Direction</lbWindDirection>
+    <btnOK>OK</btnOK>
+    <btnCancel>Cancel</btnCancel>
+    <lbAvailableOfficial>Available Officials</lbAvailableOfficial>
+    <lbMatchOfficial>Match Officials</lbMatchOfficial>
+    <frmEntryOfficial>Officials Setting</frmEntryOfficial>
+    <frmTeamMember>Team Info</frmTeamMember>
+    <lbAvailable_Home>Home Available</lbAvailable_Home>
+    <lbAvailable_Visit>Visit Available</lbAvailable_Visit>
+    <lbMember_Home>Match Member</lbMember_Home>
+    <lbMember_Visit>Match Member</lbMember_Visit>
+    <lbUniform_Home>Uniform</lbUniform_Home>
+    <lbUniform_Visit>Uniform</lbUniform_Visit>
+    <lbAttendance>Attendance</lbAttendance>
+    <lbMatchMode>Match Mode</lbMatchMode>
+    <YellowItem>Caution...</YellowItem>
+    <RedItem>Expulsion...</RedItem>
+    <CardAttribute>Card Attribute</CardAttribute>
+    <chkMissMatch1>Misses next match</chkMissMatch1>
+    <chkMissMatch2>Misses next 2 matches</chkMissMatch2>
+    <btnClearAction>Clear Action</btnClearAction>
+    <lbMin>Min</lbMin>
+    <ResultForm>If the result is valid and you accept it, press yes button,the result will not be recalculated when the match status become official.If you press no button,the result will be recalculated when match status become official!</ResultForm>
+
+  </OVRFBPlugin>
+
+  <OVRHBPlugin>
+     <mbExit>Please exit the current match!</mbExit>
+     <mbExitMatch>Are you sure to exit the match?</mbExitMatch>
+     <Msg_Register>The Player of the match is error!</Msg_Register>
+     <Msg_period>There is no effect period!</Msg_period>
+     <Msg_Action>There is pre Other Action, so it's failed!</Msg_Action>
+     <lbMatchTime>MatchTime</lbMatchTime>
+     <lbWaterTem>WaterT（℃）</lbWaterTem>
+     <lbHome>H</lbHome>
+     <lbVisit>V</lbVisit>
+     <lbSet1>Set1</lbSet1>
+     <lbSet2>Set2</lbSet2>
+     <lbExa1>Extra1</lbExa1>
+     <lbExa2>Extra2</lbExa2>
+     <btnStart>Start</btnStart>
+     <btnStop>Stop</btnStop>
+     <btnReset>Reset</btnReset>
+     <btnStartPeriod>StartPeriod</btnStartPeriod>
+     <btnEndPeriod>EndPeriod</btnEndPeriod>
+     <btnOfficial>Official Info</btnOfficial>
+     <btnTeamInfo>Team Info</btnTeamInfo>
+     <btnExit>Exit</btnExit>
+     <btnPenaltyScore>PenaltyScore</btnPenaltyScore>
+     <btnMatchResult>MatchResult</btnMatchResult>
+     <btnAllOut_Home>All Out</btnAllOut_Home>
+     <btnAllOut_Visit>All Out</btnAllOut_Visit>
+     <btnTimeOut_Home>Time Out</btnTimeOut_Home>
+     <btnTimeOut_Visit>Time Out</btnTimeOut_Visit>
+     <btnFreeThrow>Free Throw</btnFreeThrow>
+     <btnCornerThrow_Home>Corner Throw</btnCornerThrow_Home>
+     <btnCornerThrow_Visit>Corner Throw</btnCornerThrow_Visit>
+     <btnActionShot>A Shot</btnActionShot>
+     <btnCentreShot>C Shot</btnCentreShot>
+     <btnXShot>X Shot</btnXShot>
+     <btn5mShot>5m Shot</btn5mShot>
+     <btnPSShot>PS Shot</btnPSShot>
+     <btnCounterShot>CA Shot</btnCounterShot>
+     <btnGoal>Goal</btnGoal>
+     <btnSaved>Saved</btnSaved>
+     <btnMissed>Missed</btnMissed>
+     <btnPost>Post</btnPost>
+     <btnAssist>Assist</btnAssist>
+     <btnTournOver>TournOver</btnTournOver>
+     <btnSteal>Steal</btnSteal>
+     <btnBlockShot>Block Shot</btnBlockShot>
+     <btnBlock>Block</btnBlock>
+     <btn20C>20C</btn20C>
+     <btn20F>20F</btn20F>
+     <btnEXS>EX-S</btnEXS>
+     <btnEXN>EX-N</btnEXN>
+     <btnSpinWon>Spin Won</btnSpinWon>
+     <btnSpinLost>Spin Lost</btnSpinLost>
+     <btnPenalty>Penalty</btnPenalty>
+     <gbMatchScore>Match Result</gbMatchScore>
+     <gbMatchStatistic>Match Statistic</gbMatchStatistic>
+     <gbHome>HomeTeam</gbHome>
+     <gbVisit>VisitTeam</gbVisit>
+     <gbAttempt>Attempt</gbAttempt>
+     <gbResult>Result</gbResult>
+     <gbStatistic>Statisitc</gbStatistic>
+     <btnx_Schedule>Schedule</btnx_Schedule>
+     <btnx_StartList>StartList</btnx_StartList>
+     <btnx_Running>Running</btnx_Running>
+     <btnx_Suspend>Suspend</btnx_Suspend>
+     <btnx_Unofficial>UnOfficial</btnx_Unofficial>
+     <btnx_Finished>Official</btnx_Finished>
+     <btnx_Revision>Revision</btnx_Revision>
+     <btnx_Canceled>Canceled</btnx_Canceled>
+     <btnx_Score>Score</btnx_Score>
+     <btnx_Statistic>Statistic</btnx_Statistic>
+     <btnx_Result>Result</btnx_Result>
+
+    <btnx_6MShot>6M Shot</btnx_6MShot>
+    <btnx_7MShot>7M Shot</btnx_7MShot>
+    <btnx_9MShot>9M Shot</btnx_9MShot>
+    <btnx_WingShot>Wing Shot</btnx_WingShot>
+    <btnx_FastbreakShot>Fastbreak Shot</btnx_FastbreakShot>
+    <btnx_BreakthroughShot>Breakthrough Shot</btnx_BreakthroughShot>
+    
+    <btnx_Goal>Goal</btnx_Goal>
+    <btnx_Save>Save</btnx_Save>
+    <btnx_Missed>Missed</btnx_Missed>
+    <btnx_Post>Post</btnx_Post>
+    <btnx_Blocked>Blocked</btnx_Blocked>
+
+    <btnx_YellowCard>Yellow Card</btnx_YellowCard>
+    <btnx_2Min>2 Min</btnx_2Min>
+    <btnx_RedCard>Red Card</btnx_RedCard>
+    <btnx_DR>DR</btnx_DR>
+    <btnx_TimeOut>Time Out</btnx_TimeOut>
+
+    <btnx_SubstituteIn>Substitute In</btnx_SubstituteIn>
+    <btnx_SubstituteOut>Substitute Out</btnx_SubstituteOut>
+
+    <btnX_SelCol_Home>Color</btnX_SelCol_Home>
+    <btnX_SelCol_Visit>Color</btnX_SelCol_Visit>
+    <btnX_MakeStat>Make Stat</btnX_MakeStat>
+
+    <lbPossTime>PossTime</lbPossTime>
+     <lbPossNum>PossNum</lbPossNum>
+
+     <frmEntryOfficial>Entry Official</frmEntryOfficial>
+     <lbAvailableOfficial>Available</lbAvailableOfficial>
+     <lbMatchOfficial>Match Official</lbMatchOfficial>
+
+     <frmTeamMember>Entry Team Member</frmTeamMember>
+     <lbAvailable_Home>Available</lbAvailable_Home>
+     <lbAvailable_Visit>Available</lbAvailable_Visit>
+     <lbMember_Home>MatchMember</lbMember_Home>
+     <lbMember_Visit>MatchMember</lbMember_Visit>
+     <lbUniform_Home>Uniform</lbUniform_Home>
+     <lbUniform_Visit>Uniform</lbUniform_Visit>
+
+     <frmMatchResultEntry>Match Result Entry</frmMatchResultEntry>
+     <frmPenalytScore>Penalty Score Entry</frmPenalytScore>
+     <btnSetPlayer>Chose Player</btnSetPlayer>
+     <lbGK>GoalKeeper</lbGK>
+     <btnOK>OK</btnOK>
+     <btnCancel>Cancel</btnCancel>
+     <labelX_SerialPort>COM Port:</labelX_SerialPort>
+     <labelX_Baudrate>Baudrate:</labelX_Baudrate>
+     <labelX_Parity>Parity:</labelX_Parity>
+     <labelX_Databits>Databits:</labelX_Databits>
+     <labelX_Stopbits>Stopbits:</labelX_Stopbits>
+     <SerialPortOpen_Error>The specified port has open,please select other port!</SerialPortOpen_Error>
+     <btn_ReceiceSetting>Settings...</btn_ReceiceSetting>
+     <btn_start_receive>Start</btn_start_receive>
+     <btn_stop_receive>Stop</btn_stop_receive>
+  
+
+
+
+</OVRHBPlugin>
+
+  <OVRWPPlugin>
+    <mbExit>Please exit the current match!</mbExit>
+    <mbExitMatch>Are you sure to exit the match?</mbExitMatch>
+    <Msg_Register>The Player of the match is error!</Msg_Register>
+    <Msg_period>There is no effect period!</Msg_period>
+    <Msg_Action>There is pre Other Action, so it's failed!</Msg_Action>
+    <lbMatchTime>MatchTime</lbMatchTime>
+    <lbWaterTem>WaterT（℃）</lbWaterTem>
+    <lbHome>H</lbHome>
+    <lbVisit>V</lbVisit>
+    <lbSet1>Set1</lbSet1>
+    <lbSet2>Set2</lbSet2>
+    <lbSet3>Set3</lbSet3>
+    <lbSet4>Set4</lbSet4>
+    <lbExa1>Extra1</lbExa1>
+    <lbExa2>Extra2</lbExa2>
+    <btnStart>Start</btnStart>
+    <btnStop>Stop</btnStop>
+    <btnReset>Reset</btnReset>
+    <btnStartPeriod>StartPeriod</btnStartPeriod>
+    <btnEndPeriod>EndPeriod</btnEndPeriod>
+    <btnOfficial>Official Info</btnOfficial>
+    <btnTeamInfo>Team Info</btnTeamInfo>
+    <btnExit>Exit</btnExit>
+    <btnWeatherSet>Weather...</btnWeatherSet>
+    <btnPenaltyScore>PenaltyScore</btnPenaltyScore>
+    <btnMatchResult>MatchResult</btnMatchResult>
+    <btnAllOut_Home>All Out</btnAllOut_Home>
+    <btnAllOut_Visit>All Out</btnAllOut_Visit>
+    <btnTimeOut_Home>Time Out</btnTimeOut_Home>
+    <btnTimeOut_Visit>Time Out</btnTimeOut_Visit>
+    <btnFreeThrow>Free Throw</btnFreeThrow>
+    <btnCornerThrow_Home>Corner Throw</btnCornerThrow_Home>
+    <btnCornerThrow_Visit>Corner Throw</btnCornerThrow_Visit>
+    <btnActionShot>A Shot</btnActionShot>
+    <btnCentreShot>C Shot</btnCentreShot>
+    <btnXShot>X Shot</btnXShot>
+    <btn5mShot>5m Shot</btn5mShot>
+    <btnPSShot>PS Shot</btnPSShot>
+    <btnCounterShot>CA Shot</btnCounterShot>
+    <btnGoal>Goal</btnGoal>
+    <btnSaved>Saved</btnSaved>
+    <btnMissed>Missed</btnMissed>
+    <btnPost>Post</btnPost>
+    <btnAssist>Assist</btnAssist>
+    <btnTournOver>TurnOver</btnTournOver>
+    <btnSteal>Steal</btnSteal>
+    <btnBlockShot>Block Shot</btnBlockShot>
+    <btnBlock>Block</btnBlock>
+    <btn20C>20C</btn20C>
+    <btn20F>20F</btn20F>
+    <btnEXS>EX-S</btnEXS>
+    <btnEXN>EX-N</btnEXN>
+    <btnSpinWon>SP Won</btnSpinWon>
+    <btnSpinLost>SP Lost</btnSpinLost>
+    <btnPenalty>Penalty</btnPenalty>
+    <btnIn>In</btnIn>
+    <btnOut>Out</btnOut>
+    <gbMatchScore>Match Result</gbMatchScore>
+    <gbMatchStatistic>Match Statistic</gbMatchStatistic>
+    <gbHome>HomeTeam</gbHome>
+    <gbVisit>VisitTeam</gbVisit>
+    <gbAttempt>Attempt</gbAttempt>
+    <gbResult>Result</gbResult>
+    <gbStatistic>Statisitc</gbStatistic>
+    <gbSubstitutions>Substitutions</gbSubstitutions>
+    <btnx_Schedule>Schedule</btnx_Schedule>
+    <btnx_StartList>StartList</btnx_StartList>
+    <btnx_Running>Running</btnx_Running>
+    <btnx_Suspend>Suspend</btnx_Suspend>
+    <btnx_Unofficial>UnOfficial</btnx_Unofficial>
+    <btnx_Finished>Official</btnx_Finished>
+    <btnx_Revision>Revision</btnx_Revision>
+    <btnx_Canceled>Canceled</btnx_Canceled>
+    <btnx_Score>Score</btnx_Score>
+    <btnx_Statistic>Statistic</btnx_Statistic>
+    <btnx_Result>Result</btnx_Result>
+    <btn_Export>Export</btn_Export>
+    <lbPossTime>PossTime</lbPossTime>
+    <lbPossNum>PossNum</lbPossNum>
+
+    <frmEntryOfficial>Entry Official</frmEntryOfficial>
+    <lbAvailableOfficial>Available</lbAvailableOfficial>
+    <lbMatchOfficial>Match Official</lbMatchOfficial>
+
+    <frmTeamMember>Entry Team Member</frmTeamMember>
+    <lbAvailable_Home>Available</lbAvailable_Home>
+    <lbAvailable_Visit>Available</lbAvailable_Visit>
+    <lbMember_Home>MatchMember</lbMember_Home>
+    <lbMember_Visit>MatchMember</lbMember_Visit>
+    <lbUniform_Home>Uniform</lbUniform_Home>
+    <lbUniform_Visit>Uniform</lbUniform_Visit>
+
+    <frmMatchResultEntry>Match Result Entry</frmMatchResultEntry>
+    <btnClearAction>Clear Action</btnClearAction>
+    <frmPenalytScore>Penalty Score Entry</frmPenalytScore>
+    <btnSetPlayer>Chose Player</btnSetPlayer>
+    <lbGK>GoalKeeper</lbGK>
+    <btnOK>OK</btnOK>
+    <btnCancel>Cancel</btnCancel>
+    <labelX_SerialPort>COM Port:</labelX_SerialPort>
+    <labelX_Baudrate>Baudrate:</labelX_Baudrate>
+    <labelX_Parity>Parity:</labelX_Parity>
+    <labelX_Databits>Databits:</labelX_Databits>
+    <labelX_Stopbits>Stopbits:</labelX_Stopbits>
+    <SerialPortOpen_Error>The specified port has open,please select other port!</SerialPortOpen_Error>
+    <btn_ReceiceSetting>Settings...</btn_ReceiceSetting>
+    <btn_start_receive>Start</btn_start_receive>
+    <btn_stop_receive>Stop</btn_stop_receive>
+
+    <OVROWWeatherConfig>Weather Setting</OVROWWeatherConfig>
+    <lbAirtemp>Air Temperature</lbAirtemp>
+    <lbWatertemp>Water Temperature</lbWatertemp>
+    <lbHumidity>Humidity</lbHumidity>
+    <lbWeatherConditionDes>Weather Condition</lbWeatherConditionDes>
+    <lbWindSpeed>Wind Speed</lbWindSpeed>
+    <lbUnit>m/s</lbUnit>
+    <lbWindDirection>Direction</lbWindDirection>
+    <btnOK>OK</btnOK>
+    <btnCancel>Cancel</btnCancel>
+    <Msg_ErrorPlayerIn>Please first remove one player on the court!</Msg_ErrorPlayerIn>
+
+    <frm_ModeSel>Select Mode</frm_ModeSel>
+    <lbModeDesc>You can do all kinds of operations in single machine mode for the dataentry of a match in the situation of only one machine, or you can choose multiple machines mode in which multiple machines coordinate with each other to input data for one match!</lbModeDesc>
+    <rd_SingleMode>Single Machine Mode</rd_SingleMode>
+    <lb_MultipleMode>Multiple Machines Mode</lb_MultipleMode>
+    <rd_Monitor>Monitor</rd_Monitor>
+    <rd_Admin>Administrator</rd_Admin>
+    <rd_Substitute>Substitution</rd_Substitute>
+    <rd_WhiteStat>White Team Statistics</rd_WhiteStat>
+    <rd_BlueStat>Blue Team Statistics</rd_BlueStat>
+    <rd_DoubleStat>Double Teams Statistics</rd_DoubleStat>
+
+  </OVRWPPlugin>
+
+  <OVRBKPlugin>
+    <mbExit>Please exit the current match!</mbExit>
+    <mbExitMatch>Are you sure to exit the match?</mbExitMatch>
+    <Msg_Register>The Player of the match is error!</Msg_Register>
+    <Msg_period>There is no effect period!</Msg_period>
+    <Msg_Action>There is pre Other Action, so it's failed!</Msg_Action>
+    <lbMatchTime>MatchTime</lbMatchTime>
+    <lbWaterTem>WaterT（℃）</lbWaterTem>
+    <lbHome>H</lbHome>
+    <lbVisit>V</lbVisit>
+    <lbSet1>Set1</lbSet1>
+    <lbSet2>Set2</lbSet2>
+    <lbSet3>Set3</lbSet3>
+    <lbSet4>Set4</lbSet4>
+    <lbExa1>Extra1</lbExa1>
+    <lbExa2>Extra2</lbExa2>
+    <lbExa3>Extra3</lbExa3>
+    <lbExa4>Extra4</lbExa4>
+    <btnStart>Start</btnStart>
+    <btnStop>Stop</btnStop>
+    <btnReset>Reset</btnReset>
+    <btnStartPeriod>StartPeriod</btnStartPeriod>
+    <btnEndPeriod>EndPeriod</btnEndPeriod>
+    <btnOfficial>Official Info</btnOfficial>
+    <btnTeamInfo>Team Info</btnTeamInfo>
+    <btnExit>Exit</btnExit>
+    <btnPenaltyScore>PenaltyScore</btnPenaltyScore>
+    <btnMatchResult>MatchResult</btnMatchResult>
+    <btnAllOut_Home>All Out</btnAllOut_Home>
+    <btnAllOut_Visit>All Out</btnAllOut_Visit>
+    <btnTimeOut_Home>Time Out</btnTimeOut_Home>
+    <btnTimeOut_Visit>Time Out</btnTimeOut_Visit>
+    <btnFreeThrow>Free Throw</btnFreeThrow>
+    <btnCornerThrow_Home>Corner Throw</btnCornerThrow_Home>
+    <btnCornerThrow_Visit>Corner Throw</btnCornerThrow_Visit>
+    <btnActionShot>A Shot</btnActionShot>
+    <btnCentreShot>C Shot</btnCentreShot>
+    <btnXShot>X Shot</btnXShot>
+    <btn5mShot>5m Shot</btn5mShot>
+    <btnPSShot>PS Shot</btnPSShot>
+    <btnCounterShot>CA Shot</btnCounterShot>
+    <btnGoal>Goal</btnGoal>
+    <btnSaved>Saved</btnSaved>
+    <btnMissed>Missed</btnMissed>
+    <btnPost>Post</btnPost>
+    <btnAssist>Assist</btnAssist>
+    <btnTournOver>TournOver</btnTournOver>
+    <btnSteal>Steal</btnSteal>
+    <btnBlockShot>Block Shot</btnBlockShot>
+    <btnBlock>Block</btnBlock>
+    <btn20C>20C</btn20C>
+    <btn20F>20F</btn20F>
+    <btnEXS>EX-S</btnEXS>
+    <btnEXN>EX-N</btnEXN>
+    <btnSpinWon>Spin Won</btnSpinWon>
+    <btnSpinLost>Spin Lost</btnSpinLost>
+    <btnPenalty>Penalty</btnPenalty>
+    <gbMatchScore>Match Result</gbMatchScore>
+    <gbMatchStatistic>Match Statistic</gbMatchStatistic>
+    <gbHome>HomeTeam</gbHome>
+    <gbVisit>VisitTeam</gbVisit>
+    <gbAttempt>Attempt</gbAttempt>
+    <gbResult>Result</gbResult>
+    <gbStatistic>Statisitc</gbStatistic>
+    <btnx_Schedule>Schedule</btnx_Schedule>
+    <btnx_StartList>StartList</btnx_StartList>
+    <btnx_Running>Running</btnx_Running>
+    <btnx_Suspend>Suspend</btnx_Suspend>
+    <btnx_Unofficial>UnOfficial</btnx_Unofficial>
+    <btnx_Finished>Official</btnx_Finished>
+    <btnx_Revision>Revision</btnx_Revision>
+    <btnx_Canceled>Canceled</btnx_Canceled>
+    <btnx_Score>Score</btnx_Score>
+    <btnx_Statistic>Statistic</btnx_Statistic>
+    <btnx_Result>Result</btnx_Result>
+
+    <btnx_2PointsMade>2PointsMade</btnx_2PointsMade>
+    <btnx_2PointsMissed>2PointsMissed</btnx_2PointsMissed>
+    <btnx_3PointsMade>3PointsMade</btnx_3PointsMade>
+    <btnx_3PointsMissed>3PointsMissed</btnx_3PointsMissed>
+    <btnx_FreeThrowMade>FreeThrowMade</btnx_FreeThrowMade>
+    <btnx_FreeThrowMissed>FreeThrowMissed</btnx_FreeThrowMissed>
+    <btnx_OffensiveRebound>OffensiveRebound</btnx_OffensiveRebound>
+    <btnx_DefensiveRebound>DefensiveRebound</btnx_DefensiveRebound>
+    <btnx_Assist>Assist</btnx_Assist>
+    <btnx_Turnover>Turnover</btnx_Turnover>
+    <btnx_Steal>Steal</btnx_Steal>
+    <btnx_BlockedShot>BlockedShot</btnx_BlockedShot>
+    <btnx_OffensiveFoul>OffensiveFoul</btnx_OffensiveFoul>
+    <btnx_DefensiveFoul>DefensiveFoul</btnx_DefensiveFoul>
+    <btnx_SubstituteIn>SubstituteIn</btnx_SubstituteIn>
+    <btnx_SubstituteOut>SubstituteOut</btnx_SubstituteOut>
+
+    <lbPossTime>PossTime</lbPossTime>
+    <lbPossNum>PossNum</lbPossNum>
+
+    <frmEntryOfficial>Entry Official</frmEntryOfficial>
+    <lbAvailableOfficial>Available</lbAvailableOfficial>
+    <lbMatchOfficial>Match Official</lbMatchOfficial>
+
+    <frmTeamMember>Entry Team Member</frmTeamMember>
+    <lbAvailable_Home>Available</lbAvailable_Home>
+    <lbAvailable_Visit>Available</lbAvailable_Visit>
+    <lbMember_Home>MatchMember</lbMember_Home>
+    <lbMember_Visit>MatchMember</lbMember_Visit>
+    <lbUniform_Home>Uniform</lbUniform_Home>
+    <lbUniform_Visit>Uniform</lbUniform_Visit>
+
+    <frmMatchResultEntry>Match Result Entry</frmMatchResultEntry>
+    <frmPenalytScore>Penalty Score Entry</frmPenalytScore>
+    <btnSetPlayer>Chose Player</btnSetPlayer>
+    <lbGK>GoalKeeper</lbGK>
+    <btnOK>OK</btnOK>
+    <btnCancel>Cancel</btnCancel>
+    <labelX_SerialPort>COM Port:</labelX_SerialPort>
+    <labelX_Baudrate>Baudrate:</labelX_Baudrate>
+    <labelX_Parity>Parity:</labelX_Parity>
+    <labelX_Databits>Databits:</labelX_Databits>
+    <labelX_Stopbits>Stopbits:</labelX_Stopbits>
+    <SerialPortOpen_Error>The specified port has open,please select other port!</SerialPortOpen_Error>
+    <btn_ReceiceSetting>Settings...</btn_ReceiceSetting>
+    <btn_start_receive>Start</btn_start_receive>
+    <btn_stop_receive>Stop</btn_stop_receive>
+  </OVRBKPlugin>
+
+  <OVRSTPlugin>
+    <gbMatchInfo>Match Info</gbMatchInfo>
+    <gbMatchScore>Match Score</gbMatchScore>
+    <lbSportName>SportName:</lbSportName>
+    <lbPhaseName>PhaseName:</lbPhaseName>
+    <lbDate>Date:</lbDate>
+    <lbVenue>Venue:</lbVenue>
+    <lbTotalScore>TotalScore</lbTotalScore>
+    <lbGameTotal>GameTotal</lbGameTotal>
+    <lbHomeFeed>Home Feed</lbHomeFeed>
+    <lbVisitorFeed>Visitor Feed</lbVisitorFeed>
+    <btnxOfficialInfo>Official Info</btnxOfficialInfo>
+    <btnxHomePlayer>Home Player</btnxHomePlayer>
+    <btnxVisitorPlayer>Visitor Player</btnxVisitorPlayer>
+    <btnxExitMatch>Exit Match</btnxExitMatch>
+    <btnxModifyResult>Modify Result</btnxModifyResult>
+    <btnxSchedule>Scheduled</btnxSchedule>
+    <btnxStartList>StartList</btnxStartList>
+    <btnxRunning>Running</btnxRunning>
+    <btnxSuspend>Suspend</btnxSuspend>
+    <btnxUnofficial>Unofficial</btnxUnofficial>
+    <btnxFinished>Official</btnxFinished>
+    <btnxRevision>Revision</btnxRevision>
+    <btnxCanceled>Canceled</btnxCanceled>
+    <btnxMatch1>Match 1</btnxMatch1>
+    <btnxMatch2>Match 2</btnxMatch2>
+    <btnxMatch3>Match 3</btnxMatch3>
+    <btnxMatchResult>Match Result</btnxMatchResult>
+    <btnxModifyTime>Modify Time</btnxModifyTime>
+    <btnxServer>Server</btnxServer>
+    <btnxSpikesSuccess>Spikes Success</btnxSpikesSuccess>
+    <btnxSpikesFault>Spikes Fault</btnxSpikesFault>
+    <btnxAces>Aces</btnxAces>
+    <btnxBlocksSuccess>Blocks Success</btnxBlocksSuccess>
+    <btnxBlocksFault>Blocks Fault</btnxBlocksFault>
+    <btnxPass>Pass</btnxPass>
+    <btnxFault>Fault</btnxFault>
+    <btnxYellowCard>Yellow Card</btnxYellowCard>
+    <btnxRedCard>Red Card</btnxRedCard>
+    <btnUndo>Undo</btnUndo>
+    <radServerA>ServerA</radServerA>
+    <radServerB>ServerB</radServerB>
+    <radGame1>Game1</radGame1>
+    <radGame2>Game2</radGame2>
+    <radGame3>Game3</radGame3>
+    <frmModifyResult>Modify Result</frmModifyResult>
+    <frmModifyTime>Modify Time</frmModifyTime>
+    <frmEntryOfficial>Entry Officials</frmEntryOfficial>
+    <lbAvailableOfficials>Available Officials</lbAvailableOfficials>
+    <lbMatchOfficials>Match Officials</lbMatchOfficials>
+    <frmSetTeamPlayers>Set Team Players</frmSetTeamPlayers>
+    <lbAvailablePlayers>Available Players</lbAvailablePlayers>
+    <lbMatchPlayers>Match Players</lbMatchPlayers>
+    <lbRegu>Regu:</lbRegu>
+    <lbUniform>Uniform:</lbUniform>
+    <mbRunningMatch>Please Exit CurMatch!</mbRunningMatch>
+    <mbChooseMatch>Please Choose One Match First!</mbChooseMatch>
+    <mbMatchStatus>MatchStatus: </mbMatchStatus>
+    <mbConfigMatchUp>Please Confirm the MatchUp!</mbConfigMatchUp>
+    <mbExitMatch>Are You Sure to Exit CurMatch!</mbExitMatch>
+    <mbMatchRule>Please Set Match Rule!</mbMatchRule>
+    <mbCreateSplit>Create Splits Failed!</mbCreateSplit>
+    <mbUpdateTime>Update Time Failed!</mbUpdateTime>
+    <mbUpdateServer>Update Server Failed!</mbUpdateServer>
+    <mbSetTeamPlayers>Please Set Team Players First!</mbSetTeamPlayers>
+    <gbExportImport>Import And Export</gbExportImport>
+    <lbSelectDate>Select Date</lbSelectDate>
+    <lbExportPath>Export Path</lbExportPath>
+    <btnxExportAthlete>Export Athlete</btnxExportAthlete>
+    <btnxExportSchedule>Export Schedule</btnxExportSchedule>
+    <lbImportPath>Import Path</lbImportPath>
+    <btnxImportMatchInfo>Import MatchInfo</btnxImportMatchInfo>
+    <btnxImportAction>Import Action</btnxImportAction>
+    <btnxImportResult>Import Result</btnxImportResult>
+    <chkAutoImport>Auto Import</chkAutoImport>
+    <chkExternalData>External Data</chkExternalData>
+    <msgExportPath>The Export Path Is Invalidate!</msgExportPath>
+    <msgImportPath>The Import Path Is Invalidate!</msgImportPath>
+    <msgSelectDate>Please Select Date First!</msgSelectDate>
+    <msgFilePath>The File Not Exists!</msgFilePath>
+    <msgExportFile>Export File Successful!</msgExportFile>
+    <msgImportMatchInfoSuc>Import MatchInfo Successful!</msgImportMatchInfoSuc>
+    <msgImportActionSuc>Import ActionList Successful!</msgImportActionSuc>
+    <msgImportResultSuc>Import MatchResult Successful!</msgImportResultSuc>
+    <msgImportMatchInfo>Import MatchInfo Failed!</msgImportMatchInfo>
+    <msgImportAction>Import ActionList Failed!</msgImportAction>
+    <msgImportMatchResult>Import MatchResult Failed!</msgImportMatchResult>
+    <gbExportImport>Import And Export</gbExportImport>
+    <lbSelectDate>Select Date</lbSelectDate>
+    <lbExportPath>Export Path</lbExportPath>
+    <btnxExportAthlete>Export Athlete</btnxExportAthlete>
+    <btnxExportSchedule>Export Schedule</btnxExportSchedule>
+    <btnxExportTeam>Export Team</btnxExportTeam>
+    <lbImportPath>Import Path</lbImportPath>
+    <btnxImportMatchInfo>Import MatchInfo</btnxImportMatchInfo>
+    <btnxImportAction>Import Action</btnxImportAction>
+    <btnxImportStatistic>Import Statistic</btnxImportStatistic>
+    <chkAutoImport>Auto Import</chkAutoImport>
+    <chkExternalData>External Data</chkExternalData>
+    <msgExportPath>The Export Path Is Invalidate!</msgExportPath>
+    <msgImportPath>The Import Path Is Invalidate!</msgImportPath>
+    <msgSelectDate>Please Select Date First!</msgSelectDate>
+    <msgFilePath>The File Not Exists!</msgFilePath>
+    <msgExportFile>Export File Successful!</msgExportFile>
+    <msgImportMatchInfoSuc>Import MatchInfo Successful!</msgImportMatchInfoSuc>
+    <msgImportActionSuc>Import ActionList Successful!</msgImportActionSuc>
+    <msgImportStatisticSuc>Import Statistic Successful!</msgImportStatisticSuc>
+    <msgImportMatchInfo>Import MatchInfo Failed!</msgImportMatchInfo>
+    <msgImportAction>Import ActionList Failed!</msgImportAction>
+    <msgImportStatistic>Import Statistic Failed!</msgImportStatistic>
+  </OVRSTPlugin>
+
+  <OVRTEPlugin>
+    <mbRunningMatch>Please Exit Current Match first!</mbRunningMatch>
+    <mbChooseMatch>Please Select one Match first!</mbChooseMatch>
+    <mbExitMatch>Are You Sure to Exit current Match!</mbExitMatch>
+    <MsgSaveOnePoint2DataBase1>Failed to Save One Point to DataBase!</MsgSaveOnePoint2DataBase1>
+    <MsgDelRule1>Failed to delete the Competition Rule!</MsgDelRule1>
+    <MsgDelRule2>Failed to delete the Competition Rule, The RuleID is invalid!</MsgDelRule2>
+    <MsgDelRule3>Failed to delete the Competition Rule, The Competition Rule is being used by some matches!</MsgDelRule3>
+    <MsgDelRule4>Please select one Competition Rule first!</MsgDelRule4>
+    <MsgDelRule5>You are going to delete Selected Competition Rule, Deleted Rule can not be restored! Are you going to delete the Competition Rule?</MsgDelRule5>
+    <MsgDelSet1>Please select one Set Rule first!</MsgDelSet1>
+    <MsgDelSet2>You are going to delete Selected Set Rule, Deleted Rule can not be restored! Are you going to delete the Set Rule?</MsgDelSet2>
+    <MsgApplySelRule1>You are going to apply selected Match Rule, the current match results will be cleaned! Are you going to apply selected Match Rule?</MsgApplySelRule1>
+    <MsgApplySelRule2>Successed to apply selected Match Rule!</MsgApplySelRule2>
+    <MsgApplySelRule3>Failed to apply selected Match Rule, the Match ID or the Match Rule ID is Invalid!</MsgApplySelRule3>
+    <MsgApplySelRule4>Failed to apply selected Match Rule, the match status is not allowed to do this!</MsgApplySelRule4>
+    <MsgApplySelRule5>Failed to apply selected Match Rule!</MsgApplySelRule5>
+    <MsgMatchNoConfiged1>This Match has not been configed, Please config this match first!</MsgMatchNoConfiged1>
+    <MsgMatchNoOfficial>This Match has not been Configed the Officials, Do you want to go on?</MsgMatchNoOfficial>
+    <MsgSetServerPosition>Please Set Server Position First!</MsgSetServerPosition>
+    <MsgDataEntryTypeError>Failed to select the DataEntryType, the match status is not correct!</MsgDataEntryTypeError>
+    <MsgImportMatchResultError>Failed to Load Match Result!</MsgImportMatchResultError>
+    <frmEntryOfficial>Entry Officials</frmEntryOfficial>
+    <lbAvailableOfficial>Available Officials</lbAvailableOfficial>
+    <lbMatchOfficial>Match Officials</lbMatchOfficial>
+    <ExportAthlete>Export Athlete XML Succeed!</ExportAthlete>
+    <ExportSchedule>Export Daily Schedule Succeed!</ExportSchedule>
+    <MsgExportPath>Please select the export path!</MsgExportPath>
+    <MsgUdpPort>Please input the udp port!</MsgUdpPort>
+    <MsgMatchDate>Please select the date to export!</MsgMatchDate>
+    <OVRTEWeatherConfig>Weather Setting</OVRTEWeatherConfig>
+    <lbAirtemp>Air Temperature</lbAirtemp>
+    <lbWatertemp>Water Temperature</lbWatertemp>
+    <lbHumidity>Humidity</lbHumidity>
+    <lbWeatherConditionDes>WeatherCondition</lbWeatherConditionDes>
+    <lbWindSpeed>Wind Speed</lbWindSpeed>
+    <lbWindDirection>Wind Direction</lbWindDirection>
+
+    <btnx_Exit>Exit</btnx_Exit>
+    <btnx_Config>Match Config</btnx_Config>
+    <btnx_Judges>Match Official</btnx_Judges>
+    <btnWeather>Weather Setting</btnWeather>
+    <lbUDP>UDP Port</lbUDP>
+    <btnOpenPort>Open Port</btnOpenPort>
+    <btnClosePort>Close Port</btnClosePort>
+    <btnImportResult>Import Result</btnImportResult>
+    <btnExportPath>Export Path</btnExportPath>
+    <btnExportAthlete>Export Athlete</btnExportAthlete>
+    <btnPreAthlete>Pre Athlete</btnPreAthlete>
+    <btnExportSchedule>Export Schedule</btnExportSchedule>
+    <btnPreSchedule>Pre Schedule</btnPreSchedule>
+    <lb_Event>Event</lb_Event>
+    <lb_Venue>Venue</lb_Venue>
+    <lb_Date>Date</lb_Date>
+    <lb_Match>Match</lb_Match>
+    <btnx_Points>Points</btnx_Points>
+    <btnx_Statistics>Statistics</btnx_Statistics>
+    <btnx_Both>Both</btnx_Both>
+    <btnx_FinalResult>FinalResult</btnx_FinalResult>
+    <btnx_Schedule>Scheduled</btnx_Schedule>
+    <btnx_StartList>StartList</btnx_StartList>
+    <btnx_Running>Running</btnx_Running>
+    <btnx_Suspend>Suspend</btnx_Suspend>
+    <btnx_Unofficial>Unofficial</btnx_Unofficial>
+    <btnx_Finished>Official</btnx_Finished>
+    <btnx_Revision>Revision</btnx_Revision>
+    <btnx_Canceled>Canceled</btnx_Canceled>
+    <btnx_MatchResult>MatchResult</btnx_MatchResult>
+    <lb_MatchTime>MatchTime</lb_MatchTime>
+    <btnx_StartTiming>Start</btnx_StartTiming>
+    <btnx_Stop>Stop</btnx_Stop>
+    <lb_SetTime>SetTime</lb_SetTime>
+    <btnx_Serve>Serve</btnx_Serve>
+    <btnx_Fault>Fault</btnx_Fault>
+    <btnx_DoubleFault>Double Foult</btnx_DoubleFault>
+    <btnx_Ace>Ace</btnx_Ace>
+    <btnx_Point2A>Point to A</btnx_Point2A>
+    <btnx_Point2B>Point to B</btnx_Point2B>
+    <btnx_ServiceWinner>Service Winner</btnx_ServiceWinner>
+    <btn_Others>Others</btn_Others>
+    <btnx_Unforced>Unforced</btnx_Unforced>
+    <btnx_Winning>Winning</btnx_Winning>
+    <btnx_Return>Return</btnx_Return>
+    <btnx_Forehand>Forehand</btnx_Forehand>
+    <btnx_Backhand>Backhand</btnx_Backhand>
+    <btnx_Smassh>Smassh</btnx_Smassh>
+    <btnx_PassLob>Pass/Lob</btnx_PassLob>
+    <btnx_Volley>Volley</btnx_Volley>
+    <btnx_DriveDrop>Drive/Drop</btnx_DriveDrop>
+    <btnx_PassVolley>Pass Volley</btnx_PassVolley>
+    <btnx_StrokeNet>Stroke at Net</btnx_StrokeNet>
+    <btnx_ExtraBtns>Extra Play Buttons</btnx_ExtraBtns>
+    <btnx_ChangeServe>Change Serve to Oppose</btnx_ChangeServe>
+    <btnx_PenaltyAPoint>Penalty Point to A</btnx_PenaltyAPoint>
+    <btnx_PenaltyBPoint>Penalty Point to B</btnx_PenaltyBPoint>
+    <btnx_PenaltyAGame>Penalty Game to A</btnx_PenaltyAGame>
+    <btnx_PenaltyBGame>Penalty Game to B</btnx_PenaltyBGame>
+
+    <btnx_TeamMember>Team Member</btnx_TeamMember>
+    <btn_TSInteraction>Real Score</btn_TSInteraction>
+  </OVRTEPlugin>
+
+  <OVRSTPlugin>
+    <mbRunningMatch>Please Exit Current Match first!</mbRunningMatch>
+    <mbChooseMatch>Please Select one Match first!</mbChooseMatch>
+    <mbExitMatch>Are You Sure to Exit current Match!</mbExitMatch>
+    <MsgSaveOnePoint2DataBase1>Failed to Save One Point to DataBase!</MsgSaveOnePoint2DataBase1>
+    <MsgDelRule1>Failed to delete the Competition Rule!</MsgDelRule1>
+    <MsgDelRule2>Failed to delete the Competition Rule, The RuleID is invalid!</MsgDelRule2>
+    <MsgDelRule3>Failed to delete the Competition Rule, The Competition Rule is being used by some matches!</MsgDelRule3>
+    <MsgDelRule4>Please select one Competition Rule first!</MsgDelRule4>
+    <MsgDelRule5>You are going to delete Selected Competition Rule, Deleted Rule can not be restored! Are you going to delete the Competition Rule?</MsgDelRule5>
+    <MsgDelSet1>Please select one Set Rule first!</MsgDelSet1>
+    <MsgDelSet2>You are going to delete Selected Set Rule, Deleted Rule can not be restored! Are you going to delete the Set Rule?</MsgDelSet2>
+    <MsgApplySelRule1>You are going to apply selected Match Rule, the current match results will be cleaned! Are you going to apply selected Match Rule?</MsgApplySelRule1>
+    <MsgApplySelRule2>Successed to apply selected Match Rule!</MsgApplySelRule2>
+    <MsgApplySelRule3>Failed to apply selected Match Rule, the Match ID or the Match Rule ID is Invalid!</MsgApplySelRule3>
+    <MsgApplySelRule4>Failed to apply selected Match Rule, the match status is not allowed to do this!</MsgApplySelRule4>
+    <MsgApplySelRule5>Failed to apply selected Match Rule!</MsgApplySelRule5>
+    <MsgMatchNoConfiged1>This Match has not been configed, Please config this match first!</MsgMatchNoConfiged1>
+    <MsgMatchNoOfficial>This Match has not been Configed the Officials, Do you want to go on?</MsgMatchNoOfficial>
+    <MsgSetServerPosition>Please Set Server Position First!</MsgSetServerPosition>
+    <MsgDataEntryTypeError>Failed to select the DataEntryType, the match status is not correct!</MsgDataEntryTypeError>
+    <MsgImportMatchResultError>Failed to Load Match Result!</MsgImportMatchResultError>
+    <frmEntryOfficial>Entry Officials</frmEntryOfficial>
+    <lbAvailableOfficial>Available Officials</lbAvailableOfficial>
+    <lbMatchOfficial>Match Officials</lbMatchOfficial>
+    <ExportAthlete>Export Athlete XML Succeed!</ExportAthlete>
+    <ExportSchedule>Export Daily Schedule Succeed!</ExportSchedule>
+    <MsgExportPath>Please select the export path!</MsgExportPath>
+    <MsgUdpPort>Please input the udp port!</MsgUdpPort>
+    <MsgMatchDate>Please select the date to export!</MsgMatchDate>
+    <OVRTEWeatherConfig>Weather Setting</OVRTEWeatherConfig>
+    <lbAirtemp>Air Temperature</lbAirtemp>
+    <lbWatertemp>Water Temperature</lbWatertemp>
+    <lbHumidity>Humidity</lbHumidity>
+    <lbWeatherConditionDes>WeatherCondition</lbWeatherConditionDes>
+    <lbWindSpeed>Wind Speed</lbWindSpeed>
+    <lbWindDirection>Wind Direction</lbWindDirection>
+
+    <btnx_Exit>Exit</btnx_Exit>
+    <btnx_Config>Match Config</btnx_Config>
+    <btnx_Judges>Match Official</btnx_Judges>
+    <btnWeather>Weather Setting</btnWeather>
+    <lbUDP>UDP Port</lbUDP>
+    <btnOpenPort>Open Port</btnOpenPort>
+    <btnClosePort>Close Port</btnClosePort>
+    <btnImportResult>Import Result</btnImportResult>
+    <btnExportPath>Export Path</btnExportPath>
+    <btnExportAthlete>Export Athlete</btnExportAthlete>
+    <btnPreAthlete>Pre Athlete</btnPreAthlete>
+    <btnExportSchedule>Export Schedule</btnExportSchedule>
+    <btnPreSchedule>Pre Schedule</btnPreSchedule>
+    <lb_Event>Event</lb_Event>
+    <lb_Venue>Venue</lb_Venue>
+    <lb_Date>Date</lb_Date>
+    <lb_Match>Match</lb_Match>
+    <btnx_Points>Points</btnx_Points>
+    <btnx_Statistics>Statistics</btnx_Statistics>
+    <btnx_Both>Both</btnx_Both>
+    <btnx_FinalResult>FinalResult</btnx_FinalResult>
+    <btnx_Schedule>Scheduled</btnx_Schedule>
+    <btnx_StartList>StartList</btnx_StartList>
+    <btnx_Running>Running</btnx_Running>
+    <btnx_Suspend>Suspend</btnx_Suspend>
+    <btnx_Unofficial>Unofficial</btnx_Unofficial>
+    <btnx_Finished>Official</btnx_Finished>
+    <btnx_Revision>Revision</btnx_Revision>
+    <btnx_Canceled>Canceled</btnx_Canceled>
+    <btnx_MatchResult>MatchResult</btnx_MatchResult>
+    <lb_MatchTime>MatchTime</lb_MatchTime>
+    <btnx_StartTiming>Start</btnx_StartTiming>
+    <btnx_Stop>Stop</btnx_Stop>
+    <lb_SetTime>SetTime</lb_SetTime>
+    <btnx_Serve>Serve</btnx_Serve>
+    <btnx_Fault>Fault</btnx_Fault>
+    <btnx_DoubleFault>Double Foult</btnx_DoubleFault>
+    <btnx_Ace>Ace</btnx_Ace>
+    <btnx_Point2A>Point to A</btnx_Point2A>
+    <btnx_Point2B>Point to B</btnx_Point2B>
+    <btnx_ServiceWinner>Service Winner</btnx_ServiceWinner>
+    <btn_Others>Others</btn_Others>
+    <btnx_Unforced>Unforced</btnx_Unforced>
+    <btnx_Winning>Winning</btnx_Winning>
+    <btnx_Return>Return</btnx_Return>
+    <btnx_Forehand>Forehand</btnx_Forehand>
+    <btnx_Backhand>Backhand</btnx_Backhand>
+    <btnx_Smassh>Smassh</btnx_Smassh>
+    <btnx_PassLob>Pass/Lob</btnx_PassLob>
+    <btnx_Volley>Volley</btnx_Volley>
+    <btnx_DriveDrop>Drive/Drop</btnx_DriveDrop>
+    <btnx_PassVolley>Pass Volley</btnx_PassVolley>
+    <btnx_StrokeNet>Stroke at Net</btnx_StrokeNet>
+    <btnx_ExtraBtns>Extra Play Buttons</btnx_ExtraBtns>
+    <btnx_ChangeServe>Change Serve to Oppose</btnx_ChangeServe>
+    <btnx_PenaltyAPoint>Penalty Point to A</btnx_PenaltyAPoint>
+    <btnx_PenaltyBPoint>Penalty Point to B</btnx_PenaltyBPoint>
+    <btnx_PenaltyAGame>Penalty Game to A</btnx_PenaltyAGame>
+    <btnx_PenaltyBGame>Penalty Game to B</btnx_PenaltyBGame>
+  </OVRSTPlugin>
+
+  <OVRSTPlugin>
+    <mbRunningMatch>Please Exit Current Match first!</mbRunningMatch>
+    <mbChooseMatch>Please Select one Match first!</mbChooseMatch>
+    <mbExitMatch>Are You Sure to Exit current Match!</mbExitMatch>
+    <MsgSaveOnePoint2DataBase1>Failed to Save One Point to DataBase!</MsgSaveOnePoint2DataBase1>
+    <MsgDelRule1>Failed to delete the Competition Rule!</MsgDelRule1>
+    <MsgDelRule2>Failed to delete the Competition Rule, The RuleID is invalid!</MsgDelRule2>
+    <MsgDelRule3>Failed to delete the Competition Rule, The Competition Rule is being used by some matches!</MsgDelRule3>
+    <MsgDelRule4>Please select one Competition Rule first!</MsgDelRule4>
+    <MsgDelRule5>You are going to delete Selected Competition Rule, Deleted Rule can not be restored! Are you going to delete the Competition Rule?</MsgDelRule5>
+    <MsgDelSet1>Please select one Set Rule first!</MsgDelSet1>
+    <MsgDelSet2>You are going to delete Selected Set Rule, Deleted Rule can not be restored! Are you going to delete the Set Rule?</MsgDelSet2>
+    <MsgApplySelRule1>You are going to apply selected Match Rule, the current match results will be cleaned! Are you going to apply selected Match Rule?</MsgApplySelRule1>
+    <MsgApplySelRule2>Successed to apply selected Match Rule!</MsgApplySelRule2>
+    <MsgApplySelRule3>Failed to apply selected Match Rule, the Match ID or the Match Rule ID is Invalid!</MsgApplySelRule3>
+    <MsgApplySelRule4>Failed to apply selected Match Rule, the match status is not allowed to do this!</MsgApplySelRule4>
+    <MsgApplySelRule5>Failed to apply selected Match Rule!</MsgApplySelRule5>
+    <MsgMatchNoConfiged1>This Match has not been configed, Please config this match first!</MsgMatchNoConfiged1>
+    <MsgMatchNoOfficial>This Match has not been Configed the Officials, Do you want to go on?</MsgMatchNoOfficial>
+    <MsgSetServerPosition>Please Set Server Position First!</MsgSetServerPosition>
+    <MsgDataEntryTypeError>Failed to select the DataEntryType, the match status is not correct!</MsgDataEntryTypeError>
+    <MsgImportMatchResultError>Failed to Load Match Result!</MsgImportMatchResultError>
+    <frmEntryOfficial>Entry Officials</frmEntryOfficial>
+    <lbAvailableOfficial>Available Officials</lbAvailableOfficial>
+    <lbMatchOfficial>Match Officials</lbMatchOfficial>
+    <ExportAthlete>Export Athlete XML Succeed!</ExportAthlete>
+    <ExportSchedule>Export Daily Schedule Succeed!</ExportSchedule>
+    <MsgExportPath>Please select the export path!</MsgExportPath>
+    <MsgUdpPort>Please input the udp port!</MsgUdpPort>
+    <MsgMatchDate>Please select the date to export!</MsgMatchDate>
+    <OVRTEWeatherConfig>Weather Setting</OVRTEWeatherConfig>
+    <lbAirtemp>Air Temperature</lbAirtemp>
+    <lbWatertemp>Water Temperature</lbWatertemp>
+    <lbHumidity>Humidity</lbHumidity>
+    <lbWeatherConditionDes>WeatherCondition</lbWeatherConditionDes>
+    <lbWindSpeed>Wind Speed</lbWindSpeed>
+    <lbWindDirection>Wind Direction</lbWindDirection>
+
+    <btnx_Exit>Exit</btnx_Exit>
+    <btnx_Config>Match Config</btnx_Config>
+    <btnx_Judges>Match Official</btnx_Judges>
+    <btnWeather>Weather Setting</btnWeather>
+    <lbUDP>UDP Port</lbUDP>
+    <btnOpenPort>Open Port</btnOpenPort>
+    <btnClosePort>Close Port</btnClosePort>
+    <btnImportResult>Import Result</btnImportResult>
+    <btnExportPath>Export Path</btnExportPath>
+    <btnExportAthlete>Export Athlete</btnExportAthlete>
+    <btnPreAthlete>Pre Athlete</btnPreAthlete>
+    <btnExportSchedule>Export Schedule</btnExportSchedule>
+    <btnPreSchedule>Pre Schedule</btnPreSchedule>
+    <lb_Event>Event</lb_Event>
+    <lb_Venue>Venue</lb_Venue>
+    <lb_Date>Date</lb_Date>
+    <lb_Match>Match</lb_Match>
+    <btnx_Points>Points</btnx_Points>
+    <btnx_Statistics>Statistics</btnx_Statistics>
+    <btnx_Both>Both</btnx_Both>
+    <btnx_FinalResult>FinalResult</btnx_FinalResult>
+    <btnx_Schedule>Scheduled</btnx_Schedule>
+    <btnx_StartList>StartList</btnx_StartList>
+    <btnx_Running>Running</btnx_Running>
+    <btnx_Suspend>Suspend</btnx_Suspend>
+    <btnx_Unofficial>Unofficial</btnx_Unofficial>
+    <btnx_Finished>Official</btnx_Finished>
+    <btnx_Revision>Revision</btnx_Revision>
+    <btnx_Canceled>Canceled</btnx_Canceled>
+    <btnx_MatchResult>MatchResult</btnx_MatchResult>
+    <lb_MatchTime>MatchTime</lb_MatchTime>
+    <btnx_StartTiming>Start</btnx_StartTiming>
+    <btnx_Stop>Stop</btnx_Stop>
+    <lb_SetTime>SetTime</lb_SetTime>
+    <btnx_Serve>Serve</btnx_Serve>
+    <btnx_Fault>Fault</btnx_Fault>
+    <btnx_DoubleFault>Double Foult</btnx_DoubleFault>
+    <btnx_Ace>Ace</btnx_Ace>
+    <btnx_Point2A>Point to A</btnx_Point2A>
+    <btnx_Point2B>Point to B</btnx_Point2B>
+    <btnx_ServiceWinner>Service Winner</btnx_ServiceWinner>
+    <btn_Others>Others</btn_Others>
+    <btnx_Unforced>Unforced</btnx_Unforced>
+    <btnx_Winning>Winning</btnx_Winning>
+    <btnx_Return>Return</btnx_Return>
+    <btnx_Forehand>Forehand</btnx_Forehand>
+    <btnx_Backhand>Backhand</btnx_Backhand>
+    <btnx_Smassh>Smassh</btnx_Smassh>
+    <btnx_PassLob>Pass/Lob</btnx_PassLob>
+    <btnx_Volley>Volley</btnx_Volley>
+    <btnx_DriveDrop>Drive/Drop</btnx_DriveDrop>
+    <btnx_PassVolley>Pass Volley</btnx_PassVolley>
+    <btnx_StrokeNet>Stroke at Net</btnx_StrokeNet>
+    <btnx_ExtraBtns>Extra Play Buttons</btnx_ExtraBtns>
+    <btnx_ChangeServe>Change Serve to Oppose</btnx_ChangeServe>
+    <btnx_PenaltyAPoint>Penalty Point to A</btnx_PenaltyAPoint>
+    <btnx_PenaltyBPoint>Penalty Point to B</btnx_PenaltyBPoint>
+    <btnx_PenaltyAGame>Penalty Game to A</btnx_PenaltyAGame>
+    <btnx_PenaltyBGame>Penalty Game to B</btnx_PenaltyBGame>
+  </OVRSTPlugin>
+
+  <OVRGFPlugin>
+    <lbSportName>SportName:</lbSportName>
+    <lbDate>Date:</lbDate>
+    <lbEagleBetter>Eagle / Better</lbEagleBetter>
+    <lbBirdie>Birdie</lbBirdie>
+    <lbPar>Par</lbPar>
+    <lbBogey>Bogey</lbBogey>
+    <lbDBgeyWorse>D.Bogey / Worse</lbDBgeyWorse>
+    <lbHole>Hole</lbHole>
+    <lbCurRule>Cur Match Rule</lbCurRule>
+    <lbSides>Sides By Group:</lbSides>
+    <lbStartGroup>Start Group:</lbStartGroup>
+    <lbFinishGroup>Finish Group:</lbFinishGroup>
+    <lbStartTee>Starting Tees:</lbStartTee>
+    <lbStartTime>Start Time:</lbStartTime>
+    <lbSpanTime>Time Between Groups:</lbSpanTime>
+    <lbGroup>Groups</lbGroup>
+    <lbServerIP>IP:</lbServerIP>
+    <lbServerPort>Port:</lbServerPort>
+    <btnxStart>Start</btnxStart>
+    <btnxStop>Stop</btnxStop>
+    <btnxSchedule>Scheduled</btnxSchedule>
+    <btnxStartList>StartList</btnxStartList>
+    <btnxRunning>Running</btnxRunning>
+    <btnxSuspend>Suspend</btnxSuspend>
+    <btnxUnofficial>Unofficial</btnxUnofficial>
+    <btnxOfficial>Official</btnxOfficial>
+    <btnxRevision>Revision</btnxRevision>
+    <btnxCanceled>Canceled</btnxCanceled>
+    <btnxCreateGroup>Create Group</btnxCreateGroup>
+    <btnxSetTee>Set Tee</btnxSetTee>
+    <btnxModifyGroup>Modify Group</btnxModifyGroup>
+    <btnxCourse>Course</btnxCourse>
+    <btnxExit>Exit Match</btnxExit>
+    <btnxDraw>Draw</btnxDraw>
+    <btnxCreateCourse>Create Course</btnxCreateCourse>
+    <btnxDelCourse>Delete Course</btnxDelCourse>
+    <btnxApplayCourse>Applay Course</btnxApplayCourse>
+    <btnxSaveXML>Save Course</btnxSaveXML>
+    <mbRunningMatch>Please Exit Current Match first!</mbRunningMatch>
+    <mbChooseMatch>Please Select one Match first!</mbChooseMatch>
+    <mbExitMatch>Are You Sure to Exit current Match!</mbExitMatch>
+    <MsgHoleNum>Hole Number Is Invalided!</MsgHoleNum>
+    <MsgAddRule1>Failed to Add the Competition Rule!</MsgAddRule1>
+    <MsgDelRule1>Failed to delete the Competition Rule!</MsgDelRule1>
+    <MsgDelRule2>Failed to delete the Competition Rule, The RuleID is invalid!</MsgDelRule2>
+    <MsgDelRule3>Failed to delete the Competition Rule, The Competition Rule is being used by some matches!</MsgDelRule3>
+    <MsgDelRule4>Please select one Competition Rule first!</MsgDelRule4>
+    <MsgDelRule5>You are going to delete Selected Competition Rule, Deleted Rule can not be restored! Are you going to delete the Competition Rule?</MsgDelRule5>
+    <MsgApplySelRule1>You are going to apply selected Match Rule, the current match results will be cleaned! Are you going to apply selected Match Rule?</MsgApplySelRule1>
+    <MsgApplySelRule2>Successed to apply selected Match Rule!</MsgApplySelRule2>
+    <MsgApplySelRule3>Failed to apply selected Match Rule, the MatchID or the Match RuleID is Invalid!</MsgApplySelRule3>
+    <MsgApplySelRule4>Failed to apply selected Match Rule, the match status is not allowed to do this!</MsgApplySelRule4>
+    <MsgApplySelRule5>Failed to apply selected Match Rule!</MsgApplySelRule5>
+    <MsgGreateGroup1>You are going to create group, the current group info will be cleaned! Are you going to do this?</MsgGreateGroup1>
+    <MsgGreateGroup2>Successed to cretea group!</MsgGreateGroup2>
+    <MsgGreateGroup3>Failed to cretea group, the MatchID is Invalid!</MsgGreateGroup3>
+    <MsgGreateGroup4>Failed to cretea group, the tee is not exists!</MsgGreateGroup4>
+    <MsgGreateGroup5>Failed to cretea group, the player is not exists!</MsgGreateGroup5>
+    <MsgGreateGroup6>Failed to cretea group!</MsgGreateGroup6>
+    <MsgModifyGroup1>Please select one group first!</MsgModifyGroup1>
+    <MsgModifyGroup2>Please Create Group First!</MsgModifyGroup2>
+    <MsgModifyGroup3>Successed to Modify group!</MsgModifyGroup3>
+    <MsgModifyGroup4>Failed to modify group, the MatchID or group is Invalid!</MsgModifyGroup4>
+    <MsgModifyGroup5>Failed to midify group, the Tee is Invalid!</MsgModifyGroup5>
+    <MsgModifyGroup6>Failed to midify group!</MsgModifyGroup6>
+    <MsgUpdateHole1>Failed to update hole result!</MsgUpdateHole1>
+    <MsgAutoDraw1>The Match Position Is NULL, Please Add Position First!</MsgAutoDraw1>
+    <MsgAutoDraw2>Please Create Group First!</MsgAutoDraw2>
+    <MsgAutoDraw3>This action will clean the exists players, Are you sure to continue?</MsgAutoDraw3>
+    <MsgAutoDraw4>Auto Draw Succeed!</MsgAutoDraw4>
+    <MsgAutoDraw5>Auto Draw Failed!</MsgAutoDraw5>
+  </OVRGFPlugin>
+
+  <OVRBDPlugin>
+    <gbMatchInfo>Match Info</gbMatchInfo>
+    <gbMatchScore>Match Score</gbMatchScore>
+    <lbSportName>SportName:</lbSportName>
+    <lbPhaseName>PhaseName:</lbPhaseName>
+    <lbDate>Date:</lbDate>
+    <lbVenue>Venue:</lbVenue>
+    <lbTotalScore>TotalScore</lbTotalScore>
+    <lbPlayers>Players</lbPlayers>
+    <lbGameTotal>GameTotal</lbGameTotal>
+    <lbMatchName>Match Name:</lbMatchName>
+    <lbRuleName>Rule:</lbRuleName>
+    <lbMatchTime>Time：</lbMatchTime>
+    <lbMatchCourt>Court：</lbMatchCourt>
+    <lbMatchID>Match ID:</lbMatchID>
+    <lbMatchRSC>Match RSC:</lbMatchRSC>
+    <lbRegu>Match:</lbRegu>
+    <btnxOfficialInfo>Official Info</btnxOfficialInfo>
+    <btnxTeamInfo>Team Info</btnxTeamInfo>
+    <btnxExitMatch>Exit Match</btnxExitMatch>
+    <btnxModifyResult>Modify Result</btnxModifyResult>
+    <btnxModifyTime>Modify Time</btnxModifyTime>
+    <btnxSchedule>Scheduled</btnxSchedule>
+    <btnxStartList>StartList</btnxStartList>
+    <btnxRunning>Running</btnxRunning>
+    <btnxSuspend>Suspend</btnxSuspend>
+    <btnxUnofficial>Unofficial</btnxUnofficial>
+    <btnxFinished>Official</btnxFinished>
+    <btnxRevision>Revision</btnxRevision>
+    <btnxCanceled>Canceled</btnxCanceled>
+    <btnxMatch1>Set 1</btnxMatch1>
+    <btnxMatch2>Set 2</btnxMatch2>
+    <btnxMatch3>Set 3</btnxMatch3>
+    <btnxMatch4>Set 4</btnxMatch4>
+    <btnxMatch5>Set 5</btnxMatch5>
+    <radServerA>ServerA</radServerA>
+    <radServerB>ServerB</radServerB>
+    <SubMatchResult>Set Result</SubMatchResult>
+    <GameResult>Game Result</GameResult>
+    <radGame1>Game1</radGame1>
+    <radGame2>Game2</radGame2>
+    <radGame3>Game3</radGame3>
+    <radGame4>Game4</radGame4>
+    <radGame5>Game5</radGame5>
+    <radGame6>Game6</radGame6>
+    <radGame7>Game7</radGame7>
+    <frmModifyResult>Modify Result</frmModifyResult>
+    <frmModifyTime>Modify Time</frmModifyTime>
+    <frmEntryOfficial>Entry Officials</frmEntryOfficial>
+    <lbAvailableOfficials>Available Officials</lbAvailableOfficials>
+    <lbMatchOfficials>Match Officials</lbMatchOfficials>
+    <frmSetTeamPlayers>Set Team Players</frmSetTeamPlayers>
+    <lbAvailablePlayers>Available Players</lbAvailablePlayers>
+    <lbMatchPlayers>Match Players</lbMatchPlayers>
+    <mbRunningMatch>Please Exit CurMatch!</mbRunningMatch>
+    <mbChooseMatch>Please Choose One Match First!</mbChooseMatch>
+    <mbMatchStatus>MatchStatus: </mbMatchStatus>
+    <mbConfigMatchUp>Please Confirm the MatchUp!</mbConfigMatchUp>
+    <mbExitMatch>Are You Sure to Exit CurMatch!</mbExitMatch>
+    <mbMatchRule>Please Set Match Rule!</mbMatchRule>
+    <mbCreateSplit>Create Sets Failed!</mbCreateSplit>
+    <mbUpdateTime>Update Time Failed!</mbUpdateTime>
+    <mbUpdateServer>Update Server Failed!</mbUpdateServer>
+    <mbSetTeamPlayers>Please Set Team Players First!</mbSetTeamPlayers>
+    <gbExportImport>Import And Export</gbExportImport>
+    <lbSelectDate>Select Date</lbSelectDate>
+    <lbExportPath>Export Path</lbExportPath>
+    <btnxExportAthlete>Export Athlete</btnxExportAthlete>
+    <btnxExportSchedule>Export Schedule</btnxExportSchedule>
+    <lbImportPath>Import Path</lbImportPath>
+    <btnxImportMatchInfo>Import MatchInfo</btnxImportMatchInfo>
+    <btnxImportAction>Import Action</btnxImportAction>
+    <btnxImportResult>Import Result</btnxImportResult>
+    <btnScoreBoard>Score Board</btnScoreBoard>
+    <btnClearResult>Clear Result</btnClearResult>
+    <btnOpenMonitor>Open Monitor</btnOpenMonitor>
+    <btnOpenConfig>Open Config</btnOpenConfig>
+    <btnDelAction>Del Action</btnDelAction>
+    <btnAutoScore>Auto Score</btnAutoScore>
+    <chkAutoImport>Auto Import</chkAutoImport>
+    <chkExternalData>External Data</chkExternalData>
+    <msgExportPath>The Export Path Is Invalidate!</msgExportPath>
+    <msgImportPath>The Import Path Is Invalidate!</msgImportPath>
+    <msgSelectDate>Please Select Date First!</msgSelectDate>
+    <msgFilePath>The File Not Exists!</msgFilePath>
+    <msgExportFile>Export File Successful!</msgExportFile>
+    <msgImportMatchInfoSuc>Import MatchInfo Successful!</msgImportMatchInfoSuc>
+    <msgImportActionSuc>Import ActionList Successful!</msgImportActionSuc>
+    <msgImportResultSuc>Import MatchResult Successful!</msgImportResultSuc>
+    <msgImportMatchInfo>Import MatchInfo Failed!</msgImportMatchInfo>
+    <msgImportAction>Import ActionList Failed!</msgImportAction>
+    <msgImportMatchResult>Import MatchResult Failed!</msgImportMatchResult>
+  </OVRBDPlugin>
+
+  <OVROWPlugin>
+    <chk_SetOperateLog>Record Operate Log</chk_SetOperateLog>
+    <OW_DataBase_NOT_Exist>CyclingRoad is not in current database,please select other database!</OW_DataBase_NOT_Exist>
+    <TR_DataBase_NOT_Exist>Triathlon is not in current database,please select other database!</TR_DataBase_NOT_Exist>
+    <CM_DataBase_NOT_Exist>CyclingMountain is not in current database,please select other database!</CM_DataBase_NOT_Exist>
+
+    <btnMatchSet>CourseSetting...</btnMatchSet>
+    <btnRunSetUp>RunSetUp...</btnRunSetUp>
+    <btnWeatherSet>Weather Setting...</btnWeatherSet>
+    <btnExit>Exit</btnExit>
+    <WarnExitMatchFirst>It can not change to other match,you should quit the curent match first!</WarnExitMatchFirst>
+    <ExitInfo>Are you sure to exit?</ExitInfo>
+    <MatchSettingWithReceivedThreadOpen>The match can not be set when received thread is still in running,stop the data receiving port first!</MatchSettingWithReceivedThreadOpen>
+    <ExitWithReceivedThreadOpen>The match can not exit when received thread is still in running,stop the data receiving port first!</ExitWithReceivedThreadOpen>
+    <label_CurSplit>CurSplit:</label_CurSplit>
+    <label_CurGroup>CurGroup:</label_CurGroup>
+    <btnX_Schedule>Schedule</btnX_Schedule>
+    <btnX_StartList>StartList</btnX_StartList>
+    <btnX_Running>Running</btnX_Running>
+    <btnX_Suspend>Suspend</btnX_Suspend>
+    <btnX_Unofficial>Unofficial</btnX_Unofficial>
+    <btnX_Finished>Finished</btnX_Finished>
+    <btnX_Revision>Revision</btnX_Revision>
+    <btnX_Canceled>Canceled</btnX_Canceled>
+    <MenuItem_Edit_StartTime>Edit StartTime</MenuItem_Edit_StartTime>
+    <MenuItem_Adjust_StartTime>Adjust StartTime</MenuItem_Adjust_StartTime>
+    <MenuItem_Shift_StartTime>Shift</MenuItem_Shift_StartTime>
+    <MenuItem_Shift_AllStartTime>Shift All</MenuItem_Shift_AllStartTime>
+    <MenuItem_Shift_StartTime_By_GroupNumber>Shift by Group</MenuItem_Shift_StartTime_By_GroupNumber>
+    <MenuItem_Change_Bib>Change Bib</MenuItem_Change_Bib>
+    <MenuItem_Change_StartOrder>Change StartOrder</MenuItem_Change_StartOrder>
+    <MenuItem_Change_Group>Change Group</MenuItem_Change_Group>
+    <SwapTime>Swap Time </SwapTime>
+    <BibForSwapTime>Input the Bib number</BibForSwapTime>
+    <MenuItem_Swap_Time>Swap Time with...</MenuItem_Swap_Time>
+    <MenuItem_UseTimeFromLOG>Use Time From LOG</MenuItem_UseTimeFromLOG>
+    <MenuItem_ReCanculateAll>Rebuild all results</MenuItem_ReCanculateAll>
+    <MenuItem_Shift_StartTime_Error>Can`t shift the time because of the athlete has started </MenuItem_Shift_StartTime_Error>
+    <MenuItem_Shift_StartTime_OutRange_Error> The Shift value is out of the range</MenuItem_Shift_StartTime_OutRange_Error>
+    <MenuItem_ShiftAll_StartTime_Error>Can`t shift the time because of some athletes have started</MenuItem_ShiftAll_StartTime_Error>
+    <MenuItem_ShiftAll_StartTime_OutRange_Error>The Shift value for some athletes is out of the range</MenuItem_ShiftAll_StartTime_OutRange_Error>
+
+    <status_OK>OK</status_OK>
+    <status_REL>REL-Relegated</status_REL>
+    <status_DNF>DNF-Did Not Finish</status_DNF>
+    <status_DNS>DNS-Did Not Start</status_DNS>
+    <status_DSQ>DSQ-Disqualified</status_DSQ>
+    <status_DSQ_C>DSQ_C -DSQ and Clear</status_DSQ_C>
+    <status_LAP>OTL-Out of Time Limit</status_LAP>
+    <StripMenuItem_Restart>Restart</StripMenuItem_Restart>
+    <frm_MatchSetting>CourseSetting</frm_MatchSetting>
+    <frm_RunSetUp>Run SetUp</frm_RunSetUp>
+    <label_RaceDesc>Race Description</label_RaceDesc>
+    <label_StartTime>Start Time</label_StartTime>
+    <label_Interval>Interval</label_Interval>
+    <label_GapTime>Gap Time</label_GapTime>
+    <label_Intermediate>Intermediate Times:</label_Intermediate>
+    <label_Range>Range Times(Sections):</label_Range>
+    <checkBox_SetStartTime>Set Start Time</checkBox_SetStartTime>
+    <btnOK>OK</btnOK>
+    <btnCancel>Cancel</btnCancel>
+    <addToolStripMenuItem>Add</addToolStripMenuItem>
+    <deleteToolStripMenuItem>Delete</deleteToolStripMenuItem>
+    <insertToolStripMenuItem>Insert</insertToolStripMenuItem>
+    <QueryMatch_Error>Query match information failed,unable to fill DataGridView!</QueryMatch_Error>
+    <Interval_NULL_Error>Please input time interval for time trial!</Interval_NULL_Error>
+    <Interval_Format_Error>The format of time interval for time trial is not correct!</Interval_Format_Error>
+    <LegSet_NULL_Error>Please input number for textbox!</LegSet_NULL_Error>
+    <LegSet_Format_Error>The number should be lagger than 0!</LegSet_Format_Error>
+    <StartTime_Format_Error>The format of start time is not correct!</StartTime_Format_Error>
+    <Hour_Format_Error>The hour format is not correct!</Hour_Format_Error>
+    <Minute_Format_Error>The minute format is not correct!</Minute_Format_Error>
+    <Second_Format_Error>The second format is not correct!</Second_Format_Error>
+    <StartOrderNULL_Error>The Startorder in range section should not be NULL!</StartOrderNULL_Error>
+    <StartOrderOutofRange_Error>The Startorder is beyond the split range!</StartOrderOutofRange_Error>
+    <EndOrderOutofRange_Error>The Endorder is beyond the split range!</EndOrderOutofRange_Error>
+    <EndOrderNULL_Error>The Endorder in range section should be bigger than zero!</EndOrderNULL_Error>
+    <Start_End_Order_Error>The Endorder should be bigger than Startorder!</Start_End_Order_Error>
+    <SelectMatchInfo>Select a match please!</SelectMatchInfo>
+    <MatchTypeError>The match type is not correct,unable to config match!</MatchTypeError>
+    <EditTime>Edit Time</EditTime>
+    <NewTime>New Time for</NewTime>
+    <NewBib>New Bib for</NewBib>
+    <NewStartOrder>New Start Order for</NewStartOrder>
+    <NewGroupNumber>New Group Number </NewGroupNumber>
+    <EditStartTime>Edit Start Time</EditStartTime>
+    <TimeOutofRange_Error>The new start time is beyond the logic range of split result</TimeOutofRange_Error>
+    <RestartMatchInfo>Do you really want to restart the match? It will remove all the data!</RestartMatchInfo>
+    <ShiftStartTime>Shift StartTime</ShiftStartTime>
+    <ShiftAllStartTime>Shift All StartTime</ShiftAllStartTime>
+    <ShiftStartTimeCaption>Shift by (sample:"20" "-2:30" )</ShiftStartTimeCaption>
+
+    <OVROWWeatherConfig>Weather Setting</OVROWWeatherConfig>
+    <lbAirtemp>Air Temperature</lbAirtemp>
+    <lbWatertemp>Water Temperature</lbWatertemp>
+    <lbHumidity>Humidity</lbHumidity>
+    <lbWeatherConditionDes>Weather Condition</lbWeatherConditionDes>
+    <lbWindSpeed>Wind Speed</lbWindSpeed>
+    <lbUnit>km/h</lbUnit>
+    <lbWindDirection>Direction</lbWindDirection>
+
+    <checkbox_RELasLastPlace>Rank RELed player last place in one group</checkbox_RELasLastPlace>
+    <checkbox_LapAsDNF>Treat OTL as DNF for ordering</checkbox_LapAsDNF>
+    <checkbox_RankLap>Rank OTLed player</checkbox_RankLap>
+    <checkbox_SubsortDNFbyLastLapTime>Subsort DNF by last lap time</checkbox_SubsortDNFbyLastLapTime>
+    <checkbox_DNSbeforeDSQ>Sort DNS before DSQ</checkbox_DNSbeforeDSQ>
+    <checkbox_SubsortDNSbyNOC>Subsort DNS by NOC</checkbox_SubsortDNSbyNOC>
+    <checkbox_SubsortDSQbyNOC>Subsort DSQ by NOC</checkbox_SubsortDSQbyNOC>
+
+    <labelX_SerialPort>COM Port:</labelX_SerialPort>
+    <labelX_Baudrate>Baudrate:</labelX_Baudrate>
+    <labelX_Parity>Parity:</labelX_Parity>
+    <labelX_Databits>Databits:</labelX_Databits>
+    <labelX_Stopbits>Stopbits:</labelX_Stopbits>
+    <SerialPortOpen_Error>The specified port has open,please select other port!</SerialPortOpen_Error>
+    <groupBox_Receive_Setting>Data Receive Setting</groupBox_Receive_Setting>
+    <label_ConnectionType>Type:</label_ConnectionType>
+    <label_Port>Port:</label_Port>
+    <btn_ReceiceSetting>Settings...</btn_ReceiceSetting>
+    <btn_start_receive>Start</btn_start_receive>
+    <btn_stop_receive>Stop</btn_stop_receive>
+    <btn_Save>Save...</btn_Save>
+    <btn_Load>Load...</btn_Load>
+    <LoadCourseSetting>Load Course Setting</LoadCourseSetting>
+    <SaveCourseSetting>Save Course Setting</SaveCourseSetting>
+    <btn_LegSetup>Set Leg...</btn_LegSetup>
+
+    <LogWindowText>Select Time</LogWindowText>
+    <label_LEG>LEG</label_LEG>
+    <label_SplitPoint>Split</label_SplitPoint>
+    <label_SplitTime>Time</label_SplitTime>
+    <LoadCourseSetting_Warning>Do you really want to load the new CourseSetting? It will clear all the current result data</LoadCourseSetting_Warning>
+
+    <lb_Swim>Swim Lap:</lb_Swim>
+    <lb_Bike>Bike Lap:</lb_Bike>
+    <lb_Run>Run Lap:</lb_Run>
+
+    <frm_ModeSel>Select Mode</frm_ModeSel>
+    <chk_DataEntry>Data entry mode</chk_DataEntry>
+    <chk_DataMonitor>Data monitor mode</chk_DataMonitor>
+    <lbModeDesc>You can do any operation in entry mode,but can only monitor data in monitor mode.  Only the computer connected with timing and scoring device can select the data entry mode!</lbModeDesc>
+    <chkAutoUpdate>Auto Update by 1 minute</chkAutoUpdate>
+    <btnUpdate>Update</btnUpdate>
+  </OVROWPlugin>
+
+  <OVRTKPlugin>
+
+    <lblName>Name</lblName>
+    <lblNOCCode>
+      NOC
+      Code
+    </lblNOCCode>
+    <lblBibNo>
+      Bib
+      No
+    </lblBibNo>
+    <lblTotal>Total</lblTotal>
+    <lblRounds>Rounds</lblRounds>
+    <lblTotalPoints>
+      Total
+      Deuk-jeom
+      (points)
+    </lblTotalPoints>
+    <lblTotalDeductions>
+      Total
+      Deductions
+    </lblTotalDeductions>
+    <Status_Available>Available</Status_Available>
+    <Status_Startlist>Startlist</Status_Startlist>
+    <Status_Running>Running</Status_Running>
+    <Status_Unofficial>Unofficial</Status_Unofficial>
+    <Status_Official>Official</Status_Official>
+    <Status_Revision>Revision</Status_Revision>
+    <lblRound>Round</lblRound>
+    <lblTime>Time</lblTime>
+    <lblWinner>Winner</lblWinner>
+    <cmbWinner_Blue>Blue</cmbWinner_Blue>
+    <cmbWinner_Red>Red</cmbWinner_Red>
+    <lblDecision>Decision</lblDecision>
+    <btnHelp>&amp;Help</btnHelp>
+    <btnJudges_Poomsae>Referee &amp;&amp; &amp;Judges</btnJudges_Poomsae>
+
+    <strHelp_Title>Help</strHelp_Title>
+    <strHelp_Kyorugi>
+      K   - Kyong-go (warning penalty)
+      G   - Gam-jeom (deduction penalty)
+      O1  - Offensive kick - 1 point
+      O2  - Offensive kick - 2 points
+      O3  - Offensive kick - 3 points
+      O4  - Offensive kick - 4 points
+      D1  - Defensive kick - 1 point
+      D2  - Defensive kick - 2 points
+      D3  - Defensive kick - 3 points
+      D4  - Defensive kick - 4 points
+      OP  - Offensive punch
+      DP  - Defensive punch
+
+      KO  - Won by Knockout
+      RSC - Won by Referee Stop Contest
+      PTF - Won by Final Score
+      PTG - Won by Points Gap
+      SDP - Won by Sudden Death
+      SUP - Won by Superiority
+      WDR - Won by Withdrawal
+      DSQ - Won by Disqualification
+      PUN - Won by Punitive Declaration
+    </strHelp_Kyorugi>
+
+    <strError_Title>Error</strError_Title>
+    <strError_CheckRound>Please Check the Status of the Round!</strError_CheckRound>
+    <strError_CheckMatch>Please Check the Status of the Match!</strError_CheckMatch>
+    <strError_SelectWinner>Please Select Winner and Decision!</strError_SelectWinner>
+
+    <btnRank>&amp;Rank</btnRank>
+    <btnJudges_Kyorugi>&amp;Judges</btnJudges_Kyorugi>
+    <btnOptions>&amp;Options</btnOptions>
+
+    <lblCompetitorStatus>Competitor Status</lblCompetitorStatus>
+    <lblCompetitorIRM>Competitor IRM</lblCompetitorIRM>
+
+    <lblPoomsae1>Poomsae 1</lblPoomsae1>
+    <lblPoomsae1Name>Poomsae 1 Name</lblPoomsae1Name>
+    <lblPoomsae1Status>Poomsae 1 Status</lblPoomsae1Status>
+    <lblPoomsae1IRM>Poomsae 1 IRM</lblPoomsae1IRM>
+
+    <lblPoomsae2>Poomsae 2</lblPoomsae2>
+    <lblPoomsae2Name>Poomsae 2 Name</lblPoomsae2Name>
+    <lblPoomsae2Status>Poomsae 2 Status</lblPoomsae2Status>
+    <lblPoomsae2IRM>Poomsae 2 IRM</lblPoomsae2IRM>
+
+    <strHelp_Poomsae>
+      Acc. - Accuracy
+      Pre. - Presentation
+      Ded. - Deduction
+      Tot. - Total
+
+      RF   - Referee
+      Jn   - Judge n
+    </strHelp_Poomsae>
+
+    <strError_InputError>Input Error.</strError_InputError>
+
+    <Fight_Start>Fight Start</Fight_Start>
+    <New_Point>{0} {1}</New_Point>
+    <Fight_Long_Pause>Fight Pause</Fight_Long_Pause>
+    <Fight_Resume>Fight Resume</Fight_Resume>
+    <Fight_Stop_Round>Round {0} Stop</Fight_Stop_Round>
+    <Fight_Stop_Match>Fight Stop. Winner is {0}</Fight_Stop_Match>
+    <Fight_Time>Fight Time</Fight_Time>
+
+    <Type_Punch>a Punch on trunk protector (1 pt)</Type_Punch>
+    <Type_Head>a Kick to the head (3 pts)</Type_Head>
+    <Type_Exceed>a Exceed Kick (1 pt)</Type_Exceed>
+    <Type_Tech>a valid turning kick (1 pt)</Type_Tech>
+    <Type_Hogu>a Kick to the trunk protector (1 pt)</Type_Hogu>
+    <Type_ManualAdd>Manual Add 1 point</Type_ManualAdd>
+    <Type_ManualDed>Manual Ded 1 point</Type_ManualDed>
+    <Type_Warning>Warning</Type_Warning>
+    <Type_DedWarning>Cancel Warning</Type_DedWarning>
+
+    <MessageString>Court: {0} Contest No.: {1} Round: {2} Time: {3} Action: {4} Points: {5} Warning: {6}</MessageString>
+
+    <LogColumn_Court>Court</LogColumn_Court>
+    <LogColumn_ContestNo>Contest No.</LogColumn_ContestNo>
+    <LogColumn_Round>Round</LogColumn_Round>
+    <LogColumn_Time>Time</LogColumn_Time>
+    <LogColumn_Action>Action</LogColumn_Action>
+    <LogColumn_Points>Points</LogColumn_Points>
+    <LogColumn_Warning>Warning</LogColumn_Warning>
+
+  </OVRTKPlugin>
+
+  <OVRHOPlugin>
+    <mbRunningMatch>Please exit current match!</mbRunningMatch>
+    <mbChooseMatch>Please choose one match first!</mbChooseMatch>
+    <mbExitMatch>Are you Sure to exit the match?</mbExitMatch>
+    <Msg_Register>Team not available!</Msg_Register>
+    <Msg_Period>Period not available!</Msg_Period>
+    <Msg_ErrorPlayerIn>Please first remove one player on the court!</Msg_ErrorPlayerIn>
+    <Msg_ChoosePlayer>Please choose player first!</Msg_ChoosePlayer>
+
+    <btnx_Official>Official Info</btnx_Official>
+    <btnx_TeamInfo>Team Info</btnx_TeamInfo>
+    <btnx_Exit>Exit</btnx_Exit>
+
+    <btnx_Schedule>Schedule</btnx_Schedule>
+    <btnx_StartList>StartList</btnx_StartList>
+    <btnx_Running>Running</btnx_Running>
+    <btnx_Suspend>Suspend</btnx_Suspend>
+    <btnx_Unofficial>Unofficial</btnx_Unofficial>
+    <btnx_Finished>Finished</btnx_Finished>
+    <btnx_Revision>Revision</btnx_Revision>
+    <btnx_Canceled>Canceled</btnx_Canceled>
+
+    <lb_Half1>Set1</lb_Half1>
+    <lb_Half2>Set2</lb_Half2>
+    <lb_Extra1>Extra1</lb_Extra1>
+    <lb_Extra2>Extra2</lb_Extra2>
+    <lb_Pso>PSO</lb_Pso>
+
+    <btnx_Stop>Stop</btnx_Stop>
+    <btnx_Start>Start</btnx_Start>
+    <btnx_StartPeriod>StartPeriod</btnx_StartPeriod>
+    <btnx_EndPeriod>EndPeriod</btnx_EndPeriod>
+    <btnx_MatchResult>MatchResult</btnx_MatchResult>
+
+    <btnx_Score>Score</btnx_Score>
+    <btnx_Statistic>Statistic</btnx_Statistic>
+    <btnx_Result>Result</btnx_Result>
+
+    <gbAction>Action</gbAction>
+    <gbCards>Cards</gbCards>
+    <gbSubstitutions>Substitution</gbSubstitutions>
+    <gb23M>23M</gb23M>
+
+    <btnx_FGGoal>FG Goal</btnx_FGGoal>
+    <btnx_FGMiss>FG Miss</btnx_FGMiss>
+    <btnx_FGBlock>FG Block</btnx_FGBlock>
+    <btnx_PCGoal>PC Goal</btnx_PCGoal>
+    <btnx_PCMiss>PC Miss</btnx_PCMiss>
+    <btnx_PCBlock>PC Block</btnx_PCBlock>
+    <btnx_PSGoal>PS Goal</btnx_PSGoal>
+    <btnx_PSMiss>PS Miss</btnx_PSMiss>
+    <btnx_PSBlock>PS Block</btnx_PSBlock>
+    <btnx_GreenCard>Green Card</btnx_GreenCard>
+    <btnx_YellowCard>Yellow Card</btnx_YellowCard>
+    <btnx_RedCard>Red Card</btnx_RedCard>
+    <btnx_Out>Out</btnx_Out>
+    <btnx_In>In</btnx_In>
+    <btnx_23MGoal>23M Goal</btnx_23MGoal>
+    <btnx_23MMiss>23M Miss</btnx_23MMiss>
+    <btnx_23MBlock>23M Block</btnx_23MBlock>
+
+    <frmEntryOfficial>Choose Official</frmEntryOfficial>
+    <lbEventOfficial>Available Officials</lbEventOfficial>
+    <lbMatchOfficials>Match Officials</lbMatchOfficials>
+
+    <frmTeamPlayers>Choose Team Players</frmTeamPlayers>
+    <gbHome>Home</gbHome>
+    <gbVisit>Visit</gbVisit>
+    <lbPlayers>Available Players</lbPlayers>
+    <lbMatchPlayers>Match Players</lbMatchPlayers>
+    <lbUniform>Uniform</lbUniform>
+  </OVRHOPlugin>
+  <OVREQPlugin>
+    <mbRunningMatch>Please exit current match!</mbRunningMatch>
+    <mbChooseMatch>Please choose one match first!</mbChooseMatch>
+    <mbExitMatch>Are you Sure to exit the match?</mbExitMatch>
+
+    <mbSelectIndividualMatch>Please select individual match to input result!</mbSelectIndividualMatch>
+    <mbMatchNotConfiged>Please intial match config first!</mbMatchNotConfiged>
+    <mbClearData>Warning!Click Yes will clear match config and result!</mbClearData>
+    <mbRegisterNotArranged>Warning!Exist match position not select rider,or rider not select horse,Please arrange first!</mbRegisterNotArranged>
+    <mbMatchNoOfficial>Please select match official!</mbMatchNoOfficial>
+
+    <g_MatchInfo>MatchInfo</g_MatchInfo>
+    <g_MatchScore>MatchScore</g_MatchScore>
+    <g_MatchScoreDetail>MatchScoreDetail</g_MatchScoreDetail>
+
+    <lb_Event>Event</lb_Event>
+    <lb_Venue>Venue</lb_Venue>
+    <lb_Date>Date</lb_Date>
+    <lb_Match>Match</lb_Match>
+
+    <btnx_Exit>Exit</btnx_Exit>
+    <btnx_Config>Config</btnx_Config>
+    <btnx_Judges>Judges</btnx_Judges>
+    <btnx_ClearData>Clear Data</btnx_ClearData>
+    <btnx_Refresh>Refresh</btnx_Refresh>
+
+    <btnx_Status>Match Status</btnx_Status>
+    <btnx_Schedule>Schedule</btnx_Schedule>
+    <btnx_StartList>StartList</btnx_StartList>
+    <btnx_Running>Running</btnx_Running>
+    <btnx_Suspend>Suspend</btnx_Suspend>
+    <btnx_Unofficial>Unofficial</btnx_Unofficial>
+    <btnx_Finished>Finished</btnx_Finished>
+    <btnx_Revision>Revision</btnx_Revision>
+    <btnx_Canceled>Canceled</btnx_Canceled>
+    
+    <btnx_TeamResult>Team Result</btnx_TeamResult>
+    <btnx_IndividualResult>Individual Result</btnx_IndividualResult>
+
+    <frmEntryOfficial>Choose Official</frmEntryOfficial>
+    <lbEventOfficial>Available Officials</lbEventOfficial>
+    <lbMatchOfficials>Match Officials</lbMatchOfficials>
+
+
+    <OVREQMatchConfig>Match Config</OVREQMatchConfig>
+    <lb_MatchConfig>Match Config</lb_MatchConfig>
+    <btnx_MovementConfig>Movement Config</btnx_MovementConfig>
+    <btnx_FenceConfig>Fence Config</btnx_FenceConfig>
+
+    <OVREQMatchMovement>Movement</OVREQMatchMovement>
+    <btnx_Movement>Movement Library</btnx_Movement>
+
+    <OVREQMatchFence>Fence</OVREQMatchFence>
+    <btnx_Fence>Fence Library</btnx_Fence>
+
+    <OVREQMovement>Movement</OVREQMovement>
+    <lbListInfo_MF>List</lbListInfo_MF>
+
+    <OVREQEditTime>Edit Time</OVREQEditTime>
+    <labXStartTime>Start Time:</labXStartTime>
+    <labXSpanTime>Span Time:</labXSpanTime>
+    <labXBreakTime>Break Time:</labXBreakTime>
+    <btnXOK>OK</btnXOK>
+    <btnXCancel>Cancel</btnXCancel>
+
+    <OVREQJPTime>Time Modify</OVREQJPTime>
+    <labXPauseTime>Pause Time:</labXPauseTime>
+    <labXCorrectTime>Correct Time:</labXCorrectTime>
+    <labXFinalTime>Final Time:</labXFinalTime>
+    
+    <OVREQIPadMark>Score Monitor</OVREQIPadMark>
+  </OVREQPlugin>
+  <OVRDVPlugin>
+    <mbRunningMatch>Please Exit Current Match first!</mbRunningMatch>
+    <mbChooseMatch>Please Select one Match first!</mbChooseMatch>
+    <mbExitMatch>Are You Sure to Exit current Match!</mbExitMatch>
+    <MsgSaveOnePoint2DataBase1>Failed to Save One Point to DataBase!</MsgSaveOnePoint2DataBase1>
+    <MsgDelRule1>Failed to delete the Competition Rule!</MsgDelRule1>
+    <MsgDelRule2>Failed to delete the Competition Rule, The RuleID is invalid!</MsgDelRule2>
+    <MsgDelRule3>Failed to delete the Competition Rule, The Competition Rule is being used by some matches!</MsgDelRule3>
+    <MsgDelRule4>Please select one Competition Rule first!</MsgDelRule4>
+    <MsgDelRule5>You are going to delete Selected Competition Rule, Deleted Rule can not be restored! Are you going to delete the Competition Rule?</MsgDelRule5>
+    <MsgDelSet1>Please select one Set Rule first!</MsgDelSet1>
+    <MsgDelSet2>You are going to delete Selected Set Rule, Deleted Rule can not be restored! Are you going to delete the Set Rule?</MsgDelSet2>
+    <MsgApplySelRule1>You are going to apply selected Match Rule, the current match results will be cleaned! Are you going to apply selected Match Rule?</MsgApplySelRule1>
+    <MsgApplySelRule2>Successed to apply selected Match Rule!</MsgApplySelRule2>
+    <MsgApplySelRule3>Failed to apply selected Match Rule, the Match ID or the Match Rule ID is Invalid!</MsgApplySelRule3>
+    <MsgApplySelRule4>Failed to apply selected Match Rule, the match status is not allowed to do this!</MsgApplySelRule4>
+    <MsgApplySelRule5>Failed to apply selected Match Rule!</MsgApplySelRule5>
+    <MsgMatchNoConfiged1>This Match has not been configed, Please config this match first!</MsgMatchNoConfiged1>
+    <MsgMatchNoOfficial>This Match has not been Configed the Officials, Do you want to go on?</MsgMatchNoOfficial>
+    <MsgSetServerPosition>Please Set Server Position First!</MsgSetServerPosition>
+    <MsgDataEntryTypeError>Failed to select the DataEntryType, the match status is not correct!</MsgDataEntryTypeError>
+    <MsgImportMatchResultError>Failed to Load Match Result!</MsgImportMatchResultError>
+    <frmEntryOfficial>Entry Officials</frmEntryOfficial>
+    <lbAvailableOfficial>Available Officials</lbAvailableOfficial>
+    <lbMatchOfficial>Match Officials</lbMatchOfficial>
+    <ExportAthlete>Export Athlete XML Succeed!</ExportAthlete>
+    <ExportSchedule>Export Daily Schedule Succeed!</ExportSchedule>
+    <MsgExportPath>Please select the export path!</MsgExportPath>
+    <MsgUdpPort>Please input the udp port!</MsgUdpPort>
+    <MsgMatchDate>Please select the date to export!</MsgMatchDate>
+    <OVRTEWeatherConfig>Weather Setting</OVRTEWeatherConfig>
+    <lbAirtemp>Air Temperature</lbAirtemp>
+    <lbWatertemp>Water Temperature</lbWatertemp>
+    <lbHumidity>Humidity</lbHumidity>
+    <lbWeatherConditionDes>WeatherCondition</lbWeatherConditionDes>
+    <lbWindSpeed>Wind Speed</lbWindSpeed>
+    <lbWindDirection>Wind Direction</lbWindDirection>
+
+    <btnx_Exit>Exit</btnx_Exit>
+    <btnx_Config>Match Config</btnx_Config>
+    <btnx_Judges>Match Official</btnx_Judges>
+    <btnWeather>Weather Setting</btnWeather>
+    <lbUDP>UDP Port</lbUDP>
+    <btnOpenPort>Open Port</btnOpenPort>
+    <btnClosePort>Close Port</btnClosePort>
+    <btnImportResult>Import Result</btnImportResult>
+    <btnExportPath>Export Path</btnExportPath>
+    <btnExportAthlete>Export Athlete</btnExportAthlete>
+    <btnPreAthlete>Pre Athlete</btnPreAthlete>
+    <btnExportSchedule>Export Schedule</btnExportSchedule>
+    <btnPreSchedule>Pre Schedule</btnPreSchedule>
+    <lb_Event>Event</lb_Event>
+    <lb_Venue>Venue</lb_Venue>
+    <lb_Date>Date</lb_Date>
+    <lb_Match>Match</lb_Match>
+    <btnx_Points>Points</btnx_Points>
+    <btnx_Statistics>Statistics</btnx_Statistics>
+    <btnx_Both>Both</btnx_Both>
+    <btnx_FinalResult>FinalResult</btnx_FinalResult>
+    <btnx_Schedule>Scheduled</btnx_Schedule>
+    <btnx_StartList>StartList</btnx_StartList>
+    <btnx_Running>Running</btnx_Running>
+    <btnx_Suspend>Suspend</btnx_Suspend>
+    <btnx_Unofficial>Unofficial</btnx_Unofficial>
+    <btnx_Finished>Official</btnx_Finished>
+    <btnx_Revision>Revision</btnx_Revision>
+    <btnx_Canceled>Canceled</btnx_Canceled>
+    <btnx_MatchResult>MatchResult</btnx_MatchResult>
+    <lb_MatchTime>MatchTime</lb_MatchTime>
+    <btnx_StartTiming>Start</btnx_StartTiming>
+    <btnx_Stop>Stop</btnx_Stop>
+    <lb_SetTime>SetTime</lb_SetTime>
+    <btnx_Serve>Serve</btnx_Serve>
+    <btnx_Fault>Fault</btnx_Fault>
+    <btnx_DoubleFault>Double Foult</btnx_DoubleFault>
+    <btnx_Ace>Ace</btnx_Ace>
+    <btnx_Point2A>Point to A</btnx_Point2A>
+    <btnx_Point2B>Point to B</btnx_Point2B>
+    <btnx_ServiceWinner>Service Winner</btnx_ServiceWinner>
+    <btn_Others>Others</btn_Others>
+    <btnx_Unforced>Unforced</btnx_Unforced>
+    <btnx_Winning>Winning</btnx_Winning>
+    <btnx_Return>Return</btnx_Return>
+    <btnx_Forehand>Forehand</btnx_Forehand>
+    <btnx_Backhand>Backhand</btnx_Backhand>
+    <btnx_Smassh>Smassh</btnx_Smassh>
+    <btnx_PassLob>Pass/Lob</btnx_PassLob>
+    <btnx_Volley>Volley</btnx_Volley>
+    <btnx_DriveDrop>Drive/Drop</btnx_DriveDrop>
+    <btnx_PassVolley>Pass Volley</btnx_PassVolley>
+    <btnx_StrokeNet>Stroke at Net</btnx_StrokeNet>
+    <btnx_ExtraBtns>Extra Play Buttons</btnx_ExtraBtns>
+    <btnx_ChangeServe>Change Serve to Oppose</btnx_ChangeServe>
+    <btnx_PenaltyAPoint>Penalty Point to A</btnx_PenaltyAPoint>
+    <btnx_PenaltyBPoint>Penalty Point to B</btnx_PenaltyBPoint>
+    <btnx_PenaltyAGame>Penalty Game to A</btnx_PenaltyAGame>
+    <btnx_PenaltyBGame>Penalty Game to B</btnx_PenaltyBGame>
+  </OVRDVPlugin>
+</Localization>
